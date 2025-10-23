@@ -5,26 +5,43 @@ This document provides instructions for using all preprocessing scripts for the 
 ## Dataset Overview
 
 - **Weather Stations**: 636 stations across Germany
-- **Weather Data Files**: 633 CSV files (99.5% complete)
+- **Weather Data Files**: 480 stations with full 2024 data (75.8% of total)
 - **Cloud Type Data**: 320 files (53.7% complete - 276 files missing)
-- **Date Range**: 1893-2024 (131 years)
-- **Total Records**: 151+ million hourly measurements
+- **Date Range**: 2024 only (filtered from historical data 1893-2024)
+- **Total Records**: 4.2+ million hourly measurements (2024 only)
 - **Parameters**: Temperature (TT_TU), Humidity (RF_TU), Quality flags (QN_9)
+- **Regional Files**: 16 Bundesland-consolidated files
 
 ## Directory Structure
 
 ```
 Bachelor abroad/
-├── Temp/                       # Weather data files (named by station ID)
-│   ├── 3987.csv
-│   ├── 5100.csv
-│   └── ... (633 files)
-├── Cloud_type/                 # Cloud observation data files
+├── Tempreture/                          # Individual station files (2024 only)
+│   ├── 44.csv
+│   ├── 73.csv
+│   └── ... (480 files)
+├── Bundesland_Combined/                 # Regional consolidated files
+│   ├── Bayern.csv
+│   ├── Baden-Württemberg.csv
+│   ├── Nordrhein-Westfalen.csv
+│   ├── ... (16 Bundesland files)
+│   └── _SUMMARY.csv
+├── Bundesland_Aggregated/               # Hourly aggregated regional files
+│   ├── Bayern_aggregated.csv
+│   ├── Baden-Württemberg_aggregated.csv
+│   ├── ... (16 Bundesland files)
+│   └── _AGGREGATION_SUMMARY.csv
+├── Germany_Aggregated/                  # Germany-wide aggregated data
+│   ├── Germany_aggregated.csv
+│   └── Germany_statistics_2024.txt
+├── Cloud_type/                          # Cloud observation data files
 │   └── produkt_cs_stunde_*.txt (320 files)
-├── regions.csv                 # Station metadata
-├── stations_data.csv           # Data file inventory
-├── cloudtypedata.csv           # Cloud data inventory
-├── missing_cloud_files.csv     # List of missing cloud files
+├── regions.csv                          # Station metadata with Bundesland
+├── stations_2024_coverage_metadata.csv  # 2024 coverage analysis
+├── stations_2024_coverage_summary.txt   # Summary of 2024 coverage
+├── stations_data.csv                    # Data file inventory
+├── cloudtypedata.csv                    # Cloud data inventory
+├── missing_cloud_files.csv              # List of missing cloud files
 └── [preprocessing scripts]
 ```
 
@@ -116,6 +133,101 @@ Coverage: 99.5%
 
 ---
 
+### 5. 2024 Data Coverage Analysis
+**Purpose**: Analyze which stations have complete 2024 data coverage
+
+**Features**:
+- Identifies stations with full 2024 data (≥95% coverage)
+- Calculates coverage percentage for each station
+- Generates detailed metadata file
+- Creates human-readable summary report
+
+**Automated Process** (already executed):
+```python
+# Analysis performed automatically
+# Results saved to:
+# - stations_2024_coverage_metadata.csv
+# - stations_2024_coverage_summary.txt
+```
+
+**Results**:
+- 480 stations with full 2024 data (75.83%)
+- 153 stations with incomplete 2024 data (removed)
+
+---
+
+### 6. Bundesland Metadata Integration
+**Purpose**: Add German state (Bundesland) information to station metadata
+
+**Process**:
+- Joined `stations_2024_coverage_metadata.csv` with `regions.csv`
+- Normalized station IDs (removed leading zeros)
+- 100% match rate (all 633 stations matched)
+
+**Output**: Enhanced metadata with Bundesland column
+
+---
+
+### 7. Data Filtering - Remove Incomplete Stations
+**Purpose**: Remove station files without full 2024 data
+
+**Automated Process** (already executed):
+```python
+# Removed 153 files without full 2024 data
+# Kept 480 files with ≥95% 2024 coverage
+# Space freed: 1,100 MB
+```
+
+**Result**: Clean dataset with only complete 2024 stations
+
+---
+
+### 8. Temporal Filtering - 2024 Data Only
+**Purpose**: Filter all station files to keep only 2024 measurements
+
+**Automated Process** (already executed):
+```python
+# Processed 480 files
+# Removed 122+ million historical rows
+# Kept 4.2 million 2024 rows
+# Data reduction: 96.66%
+# Final size: 150.76 MB
+```
+
+**Before**:
+- Total rows: 126,312,706 (1893-2024)
+- Multiple years per file
+- Large file sizes
+
+**After**:
+- Total rows: 4,213,746 (2024 only)
+- Date range: 2024-01-01 to 2024-12-31
+- Optimized file sizes
+
+---
+
+### 9. Regional Consolidation
+**Purpose**: Combine all stations from the same Bundesland into single files
+
+**Automated Process** (already executed):
+```python
+# Combined 480 stations into 16 Bundesland files
+# Each file contains all stations from that state
+# Data sorted by STATIONS_ID and MESS_DATUM
+```
+
+**Output**: `Bundesland_Combined/` directory with:
+- 16 state-level consolidated files
+- `_SUMMARY.csv` with statistics
+- Files named by Bundesland (e.g., `Bayern.csv`)
+
+**Largest Files**:
+1. Bayern: 102 stations, 895,563 rows, 32.04 MB
+2. Baden-Württemberg: 61 stations, 535,394 rows, 19.21 MB
+3. Niedersachsen: 48 stations, 421,056 rows, 15.00 MB
+
+---
+
 ## Data Files
 
 ### regions.csv
@@ -135,10 +247,10 @@ Coverage: 99.5%
 
 ---
 
-### Weather Data Files (Temp/*.csv)
-**Description**: Hourly temperature and humidity measurements per station
+### Weather Data Files (Tempreture/*.csv)
+**Description**: Hourly temperature and humidity measurements per station (2024 only)
 
-**Naming Convention**: `{station_id}.csv` (e.g., `3987.csv`, `5100.csv`)
+**Naming Convention**: `{station_id}.csv` (e.g., `44.csv`, `73.csv`)
 
 **Columns**:
 - `STATIONS_ID`: Station identifier (matches regions.csv)
@@ -147,7 +259,9 @@ Coverage: 99.5%
 - `TT_TU`: Temperature (°C)
 - `RF_TU`: Relative humidity (%)
 
-**File Count**: 633 files
+**File Count**: 480 files (with full 2024 data)
+**Date Range**: 2024-01-01 00:00:00 to 2024-12-31 23:00:00
+**Rows per File**: ~8,784 (366 days × 24 hours for leap year 2024)
 
 ---
 
@@ -180,6 +294,52 @@ Coverage: 99.5%
 
 ---
 
+### stations_2024_coverage_metadata.csv
+**Description**: Comprehensive metadata for all stations with 2024 data coverage analysis
+
+**Columns**:
+- `station_id`: Station identifier (normalized, no leading zeros)
+- `Bundesland`: German state
+- `filename`: CSV filename
+- `has_full_2024`: Yes/No indicator for ≥95% coverage
+- `start_date_2024`: First 2024 measurement date
+- `end_date_2024`: Last 2024 measurement date
+- `coverage_percentage`: Percentage of 2024 data present
+
+**Records**: 633 stations analyzed
+
+---
+
+### Bundesland_Combined Files
+**Description**: Regional consolidated files combining all stations from each German state
+
+**Location**: `Bundesland_Combined/` directory
+
+**Files** (16 total):
+- `Baden-Württemberg.csv` (61 stations)
+- `Bayern.csv` (102 stations)
+- `Berlin.csv` (2 stations)
+- `Brandenburg.csv` (25 stations)
+- `Bremen.csv` (2 stations)
+- `Hamburg.csv` (3 stations)
+- `Hessen.csv` (34 stations)
+- `Mecklenburg-Vorpommern.csv` (26 stations)
+- `Niedersachsen.csv` (48 stations)
+- `Nordrhein-Westfalen.csv` (42 stations)
+- `Rheinland-Pfalz.csv` (23 stations)
+- `Saarland.csv` (6 stations)
+- `Sachsen.csv` (27 stations)
+- `Sachsen-Anhalt.csv` (24 stations)
+- `Schleswig-Holstein.csv` (27 stations)
+- `Thüringen.csv` (28 stations)
+- `_SUMMARY.csv` (statistics for all Bundesländer)
+
+**Structure**: Same columns as individual station files, sorted by STATIONS_ID and MESS_DATUM
+
+**Total Size**: 150.74 MB (all 16 files combined)
+
+---
+
 ## Known Issues
 
 ### Corrupted Weather Files
@@ -200,6 +360,7 @@ Three weather station files could not be processed due to NUL character corrupti
 
 ## Complete Preprocessing Workflow
 
+### Phase 1: Initial Data Preparation
 If starting from raw data, follow these steps in order:
 
 1. **Extract weather data zip files** → Raw .txt files
@@ -221,17 +382,68 @@ If starting from raw data, follow these steps in order:
    python data_verification.py
    ```
 
+### Phase 2: 2024 Data Focus (Completed)
+✅ All steps below have been executed and completed:
+
+7. **Analyze 2024 Coverage**:
+   - Generated `stations_2024_coverage_metadata.csv`
+   - Identified 480 stations with full 2024 data
+   - Created summary report
+
+8. **Add Bundesland Information**:
+   - Joined metadata with regions.csv
+   - Added German state information to each station
+   - 100% match rate achieved
+
+9. **Remove Incomplete Stations**:
+   - Deleted 153 files without full 2024 data
+   - Kept 480 files with ≥95% 2024 coverage
+   - Freed 1.1 GB of storage
+
+10. **Filter to 2024 Data Only**:
+    - Processed 480 station files
+    - Removed 122+ million historical rows
+    - Kept 4.2 million 2024 rows
+    - Reduced dataset by 96.66%
+
+11. **Consolidate by Bundesland**:
+    - Combined stations by German state
+    - Created 16 regional files
+    - Generated summary statistics
+    - Organized in `Bundesland_Combined/` directory
+
+12. **Hourly Aggregation by Bundesland**:
+    - Aggregated data hourly for each Bundesland
+    - Calculated mean temperature, humidity, and quality flag
+    - Included contributing station IDs and count
+    - Organized in `Bundesland_Aggregated/` directory
+    - 16 aggregated files (8,784 hours each)
+
+13. **Germany-Wide Aggregation**:
+    - Created national-level hourly aggregation
+    - Aggregated across all 480 stations
+    - Mean values calculated for each hour of 2024
+    - Includes station count and contributing station IDs
+    - Single file: `Germany_aggregated.csv` (8,784 rows)
+    - Statistics file: `Germany_statistics_2024.txt`
+    - Data reduction: 99.79% (4.2M → 8.7K rows)
+
 ---
 
 ## Data Quality
 
-### Weather Data
-- ✅ **99.5% Complete** (633 of 636 stations)
+### Weather Data (Current State)
+- ✅ **75.8% of Stations** with full 2024 data (480 of 633)
+- ✅ **2024 Focus** - all historical data filtered out
 - ✅ **CSV Format** with proper headers
-- ✅ **Datetime Format** converted
+- ✅ **Datetime Format** standardized
 - ✅ **Clean Structure** (no unnecessary columns)
 - ✅ **Organized** by station ID
-- ⚠️ **3 Corrupted Files** need attention
+- ✅ **Regional Files** available (16 Bundesland files)
+- ✅ **Regional Aggregated** available (16 hourly aggregated files)
+- ✅ **Germany-Wide Aggregation** available (single national file)
+- ✅ **Optimized Size** - 150.76 MB individual stations (down from 2+ GB)
+- ✅ **Quality Verified** - all stations have ≥95% 2024 coverage
 
 ### Cloud Data
 - ⚠️ **53.7% Complete** (320 of 596 files)
@@ -243,14 +455,48 @@ If starting from raw data, follow these steps in order:
 
 ## For Data Analysis
 
-The dataset is ready for:
-- Weather pattern analysis
-- Climate research
-- Time series forecasting
-- Machine learning applications
-- Geographic weather modeling
+The dataset is optimized and ready for:
+- **2024 Weather Pattern Analysis** (full year coverage)
+- **Regional Climate Studies** (16 Bundesland files)
+- **National Climate Analysis** (Germany-wide aggregation)
+- **Time Series Forecasting** (hourly 2024 data)
+- **Machine Learning Applications** (clean, structured data)
+- **Comparative State Analysis** (consolidated regional files)
+- **Spatial Weather Modeling** (480 stations across Germany)
 
-**Recommendation**: Complete the cloud type dataset extraction before final analysis for comprehensive weather characterization.
+### Analysis Options:
+
+**Individual Station Analysis**:
+- Use files in `Tempreture/` directory
+- 480 stations with complete 2024 hourly data
+- Perfect for single-location studies
+- **Size**: ~150 MB total
+
+**Regional Analysis (Raw Data)**:
+- Use files in `Bundesland_Combined/` directory
+- Compare weather patterns across German states
+- All station data combined per Bundesland
+- **Size**: ~150 MB total
+
+**Regional Analysis (Aggregated)**:
+- Use files in `Bundesland_Aggregated/` directory
+- Hourly mean values per Bundesland
+- Includes station counts and contributing stations
+- Ideal for regional trends without individual station noise
+- **Size**: ~2 MB total (98% reduction)
+
+**National Analysis (Germany-Wide)**:
+- Use `Germany_Aggregated/Germany_aggregated.csv`
+- Single hourly timeseries for all of Germany
+- Mean across all 480 stations per hour
+- Perfect for national weather trends
+- **Size**: 20 MB (99.79% reduction from raw data)
+
+**Recommendation**: 
+- Use **Germany-wide file** for national overview and time series analysis
+- Use **Bundesland aggregated** for regional comparisons
+- Use **Bundesland combined** when you need all stations but organized by region
+- Use **individual stations** for detailed local analysis or spatial modeling
 
 ---
 
@@ -258,13 +504,46 @@ The dataset is ready for:
 
 - **data_processing_steps.txt**: Detailed log of all preprocessing steps
 - **stations_data.csv**: Complete inventory of weather data files
+- **stations_2024_coverage_metadata.csv**: 2024 coverage analysis with Bundesland
+- **stations_2024_coverage_summary.txt**: Human-readable coverage summary
+- **Bundesland_Combined/_SUMMARY.csv**: Regional consolidation statistics
+- **Bundesland_Aggregated/_AGGREGATION_SUMMARY.csv**: Regional aggregation statistics
+- **Germany_Aggregated/Germany_statistics_2024.txt**: Germany-wide weather statistics
 - **README_PREPROCESSING.md**: This file
 
 ---
 
+## Processing Statistics
+
+### Data Reduction Summary:
+- **Original**: 126+ million rows (1893-2024)
+- **After 2024 filtering**: 4.2 million rows (96.66% reduction)
+- **Storage reduction**: From 2+ GB to 150.76 MB
+
+### Station Coverage:
+- **Total stations in dataset**: 636
+- **Stations with full 2024 data**: 480 (75.83%)
+- **Stations removed (incomplete)**: 153
+- **Stations per Bundesland**: 2-102 (average: 30)
+
+### File Organization:
+- **Individual station files**: 480 files in `Tempreture/` (~150 MB)
+- **Regional consolidated files**: 16 files in `Bundesland_Combined/` (~150 MB)
+- **Regional aggregated files**: 16 files in `Bundesland_Aggregated/` (~2 MB)
+- **Germany-wide aggregated**: 1 file in `Germany_Aggregated/` (~20 MB)
+- **Largest state**: Bayern (102 stations, 32.04 MB raw)
+- **Smallest states**: Berlin, Bremen (2 stations each)
+- **Aggregation efficiency**: 99.79% data reduction (national level)
+
+---
+
 ## Last Updated
-2025-10-23
+2024-10-23
 
 ## Version
-Dataset v1.0 - Weather data complete (99.5%), Cloud data partial (53.7%)
+Dataset v2.0 - 2024 Data Focus
+- Weather data: 480 stations with complete 2024 coverage (75.8%)
+- Regional consolidation: 16 Bundesland files
+- Temporal scope: 2024 only
+- Cloud data: partial (53.7%)
 

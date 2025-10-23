@@ -1,0 +1,17 @@
+Bundesland,Original_Rows,Aggregated_Rows,Unique_Stations,Avg_Stations_Per_Hour,Avg_Temp_2024,Avg_Humidity_2024
+Bayern,895563,8784,102,102.0,6.2,75.18
+Baden-Württemberg,535394,8784,61,61.0,8.88,76.93
+Niedersachsen,421056,8784,48,47.9,8.82,75.64
+Nordrhein-Westfalen,368806,8784,42,42.0,7.67,75.45
+Hessen,298594,8784,34,34.0,8.56,76.38
+Thüringen,245952,8784,28,28.0,8.75,76.54
+Sachsen,237167,8784,27,27.0,8.56,73.44
+Schleswig-Holstein,236886,8784,27,27.0,8.48,78.55
+Mecklenburg-Vorpommern,228196,8784,26,26.0,7.58,77.0
+Brandenburg,219586,8784,25,25.0,10.58,74.86
+Sachsen-Anhalt,210816,8784,24,24.0,6.86,72.26
+Rheinland-Pfalz,201676,8784,23,23.0,8.96,71.78
+Saarland,52704,8784,6,6.0,7.84,68.29
+Hamburg,26214,8784,3,3.0,9.47,71.46
+Berlin,17568,8784,2,2.0,11.72,74.81
+Bremen,17568,8784,2,2.0,0.46,68.63

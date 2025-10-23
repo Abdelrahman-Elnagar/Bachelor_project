@@ -1,0 +1,25 @@
+================================================================================
+GERMANY-WIDE WEATHER STATISTICS - 2024
+================================================================================
+
+Data Period: 2024-01-01 00:00:00 to 2024-12-31 23:00:00
+Total Hours: 8,784
+Total Stations: 480
+Average Stations per Hour: 479.7
+
+Temperature Statistics (°C):
+  Mean: 8.02
+  Minimum: -14.68
+  Maximum: 28.40
+  Std Dev: 6.56
+
+Relative Humidity Statistics (%):
+  Mean: 75.36
+  Minimum: 24.74
+  Maximum: 97.27
+  Std Dev: 13.86
+
+Data Reduction:
+  Original rows (all stations): 4,213,746
+  Aggregated rows: 8,784
+  Reduction: 99.79%
