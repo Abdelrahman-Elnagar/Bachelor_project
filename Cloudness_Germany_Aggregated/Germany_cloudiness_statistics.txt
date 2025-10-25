@@ -1,0 +1,36 @@
+Germany-Wide Cloudiness Data Aggregation Summary
+====================================================
+
+Generated: 2025-10-25 03:29:24
+
+Data Overview:
+- Total Original Records: 1,694,282
+- Aggregated Records: 8,784
+- Unique Stations: 202
+- Average Stations Per Hour: 192.9
+- Average Cloudiness 2024: 5.96
+
+Date Range:
+- Start: 2024-01-01 00:00:00
+- End: 2024-12-31 23:00:00
+- Total Hours: 8784 hours
+
+Data Quality:
+- All stations contributing to each hour: 0 hours
+- Minimum stations per hour: 173
+- Maximum stations per hour: 201
+
+Files Created:
+- Germany_cloudiness_aggregated.csv: Main aggregated dataset
+- Germany_cloudiness_statistics.csv: Summary statistics
+- Germany_cloudiness_statistics.txt: This summary file
+
+Data Structure:
+- MESS_DATUM: Date and time (2024 data only)
+- V_N_mean: Average cloudiness value across all stations
+- QN_8_mean: Average quality indicator
+- V_N_I_mean: Most common cloudiness indicator
+- STATION_COUNT: Number of stations contributing to each hour
+- STATIONS_CONTRIBUTING: List of station IDs used for each hour
+
+This dataset provides a comprehensive view of cloudiness patterns across all of Germany for 2024.

@@ -1,0 +1,17 @@
+Bundesland,Original_Rows,Aggregated_Rows,Unique_Stations,Avg_Stations_Per_Hour,Avg_Cloudiness_2024
+Bayern,308733,8784,37,35.1,6.03
+Niedersachsen,182392,8784,23,20.8,5.93
+Baden-Württemberg,173074,8784,20,19.7,6.06
+Nordrhein-Westfalen,138381,8784,16,15.8,6.07
+Schleswig-Holstein,128060,8784,16,14.6,5.99
+Mecklenburg-Vorpommern,139177,8784,16,15.8,5.84
+Sachsen,108541,8784,13,12.4,5.73
+Brandenburg,104590,8784,12,11.9,5.82
+Hessen,103550,8784,12,11.8,6.06
+Sachsen-Anhalt,86906,8784,10,9.9,5.88
+Thüringen,78447,8784,9,8.9,5.96
+Rheinland-Pfalz,72591,8784,9,8.3,5.87
+Saarland,26177,8784,3,3.0,6.09
+Hamburg,8778,8777,2,1.0,6.06
+Berlin,17516,8784,2,2.0,5.57
+Bremen,17369,8784,2,2.0,6.11
