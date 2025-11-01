@@ -1,0 +1,2386 @@
+Download Results
+==================================================
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/
+File: None
+Status: Skipped directory or empty filename: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00071_20091201_20111231_hist.zip
+File: stundenwerte_N_00071_20091201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00071_20091201_20111231_hist.zip (12086 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00073_20070401_20111231_hist.zip
+File: stundenwerte_N_00073_20070401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00073_20070401_20111231_hist.zip (21474 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00044_19790101_20111231_hist.zip
+File: stundenwerte_N_00044_19790101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00044_19790101_20111231_hist.zip (150465 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/N_Stundenwerte_Beschreibung_Stationen.txt
+File: N_Stundenwerte_Beschreibung_Stationen.txt
+Status: Downloaded: N_Stundenwerte_Beschreibung_Stationen.txt (603429 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00003_19500401_20110401_hist.zip
+File: stundenwerte_N_00003_19500401_20110401_hist.zip
+Status: Downloaded: stundenwerte_N_00003_19500401_20110401_hist.zip (1105491 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00078_20041101_20111231_hist.zip
+File: stundenwerte_N_00078_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00078_20041101_20111231_hist.zip (29866 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00091_20040901_20111231_hist.zip
+File: stundenwerte_N_00091_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00091_20040901_20111231_hist.zip (30089 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00096_20190410_20241231_hist.zip
+File: stundenwerte_N_00096_20190410_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00096_20190410_20241231_hist.zip (159084 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00102_19820105_19981110_hist.zip
+File: stundenwerte_N_00102_19820105_19981110_hist.zip
+Status: Downloaded: stundenwerte_N_00102_19820105_19981110_hist.zip (9340 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00098_19490101_19541206_hist.zip
+File: stundenwerte_N_00098_19490101_19541206_hist.zip
+Status: Downloaded: stundenwerte_N_00098_19490101_19541206_hist.zip (54607 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00131_20041101_20111231_hist.zip
+File: stundenwerte_N_00131_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00131_20041101_20111231_hist.zip (28211 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00142_20051201_20111231_hist.zip
+File: stundenwerte_N_00142_20051201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00142_20051201_20111231_hist.zip (24505 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00125_19930301_20241231_hist.zip
+File: stundenwerte_N_00125_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00125_19930301_20241231_hist.zip (577174 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00151_20050301_20120108_hist.zip
+File: stundenwerte_N_00151_20050301_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00151_20050301_20120108_hist.zip (28241 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00150_20050701_20120106_hist.zip
+File: stundenwerte_N_00150_20050701_20120106_hist.zip
+Status: Downloaded: stundenwerte_N_00150_20050701_20120106_hist.zip (27089 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00154_20050301_20111231_hist.zip
+File: stundenwerte_N_00154_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00154_20050301_20111231_hist.zip (28372 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00167_20040901_20111231_hist.zip
+File: stundenwerte_N_00167_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00167_20040901_20111231_hist.zip (30555 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00161_20110901_20241231_hist.zip
+File: stundenwerte_N_00161_20110901_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00161_20110901_20241231_hist.zip (364096 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00175_19511101_19760430_hist.zip
+File: stundenwerte_N_00175_19511101_19760430_hist.zip
+Status: Downloaded: stundenwerte_N_00175_19511101_19760430_hist.zip (194182 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00164_19750701_20241231_hist.zip
+File: stundenwerte_N_00164_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00164_19750701_20241231_hist.zip (1311672 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00183_19760401_20241231_hist.zip
+File: stundenwerte_N_00183_19760401_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00183_19760401_20241231_hist.zip (1347169 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00191_20050301_20111231_hist.zip
+File: stundenwerte_N_00191_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00191_20050301_20111231_hist.zip (28205 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00217_20050101_20120108_hist.zip
+File: stundenwerte_N_00217_20050101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00217_20050101_20120108_hist.zip (29379 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00198_19750701_20241231_hist.zip
+File: stundenwerte_N_00198_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00198_19750701_20241231_hist.zip (1353558 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00257_20021101_20111231_hist.zip
+File: stundenwerte_N_00257_20021101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00257_20021101_20111231_hist.zip (34905 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00222_19900612_20111231_hist.zip
+File: stundenwerte_N_00222_19900612_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00222_19900612_20111231_hist.zip (46380 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00259_20040701_20120108_hist.zip
+File: stundenwerte_N_00259_20040701_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00259_20040701_20120108_hist.zip (31140 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00232_19490101_20241231_hist.zip
+File: stundenwerte_N_00232_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00232_19490101_20241231_hist.zip (1547373 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00294_20040701_20110630_hist.zip
+File: stundenwerte_N_00294_20040701_20110630_hist.zip
+Status: Downloaded: stundenwerte_N_00294_20040701_20110630_hist.zip (27482 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00298_19900612_20241231_hist.zip
+File: stundenwerte_N_00298_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00298_19900612_20241231_hist.zip (667765 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00305_19911104_19960110_hist.zip
+File: stundenwerte_N_00305_19911104_19960110_hist.zip
+Status: Downloaded: stundenwerte_N_00305_19911104_19960110_hist.zip (72263 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00282_19490101_20241231_hist.zip
+File: stundenwerte_N_00282_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00282_19490101_20241231_hist.zip (1333346 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00314_20040501_20111231_hist.zip
+File: stundenwerte_N_00314_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00314_20040501_20111231_hist.zip (30261 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00303_20010402_20241231_hist.zip
+File: stundenwerte_N_00303_20010402_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00303_20010402_20241231_hist.zip (450423 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00320_20060701_20111231_hist.zip
+File: stundenwerte_N_00320_20060701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00320_20060701_20111231_hist.zip (22543 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00326_20040701_20110821_hist.zip
+File: stundenwerte_N_00326_20040701_20110821_hist.zip
+Status: Downloaded: stundenwerte_N_00326_20040701_20110821_hist.zip (29865 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00330_20040801_20111231_hist.zip
+File: stundenwerte_N_00330_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00330_20040801_20111231_hist.zip (30829 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00348_19891215_20110902_hist.zip
+File: stundenwerte_N_00348_19891215_20110902_hist.zip
+Status: Downloaded: stundenwerte_N_00348_19891215_20110902_hist.zip (280428 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00342_20101202_20241231_hist.zip
+File: stundenwerte_N_00342_20101202_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00342_20101202_20241231_hist.zip (387612 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00361_19490101_19751219_hist.zip
+File: stundenwerte_N_00361_19490101_19751219_hist.zip
+Status: Downloaded: stundenwerte_N_00361_19490101_19751219_hist.zip (150212 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00377_20041001_20111231_hist.zip
+File: stundenwerte_N_00377_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00377_20041001_20111231_hist.zip (29622 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00368_19930301_20241231_hist.zip
+File: stundenwerte_N_00368_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00368_19930301_20241231_hist.zip (824949 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00390_20040701_20120108_hist.zip
+File: stundenwerte_N_00390_20040701_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00390_20040701_20120108_hist.zip (30487 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00399_19900611_19920229_hist.zip
+File: stundenwerte_N_00399_19900611_19920229_hist.zip
+Status: Downloaded: stundenwerte_N_00399_19900611_19920229_hist.zip (34283 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00400_20040601_20111231_hist.zip
+File: stundenwerte_N_00400_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00400_20040601_20111231_hist.zip (29965 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00410_20040501_20111231_hist.zip
+File: stundenwerte_N_00410_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00410_20040501_20111231_hist.zip (29693 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00420_20070801_20111231_hist.zip
+File: stundenwerte_N_00420_20070801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00420_20070801_20111231_hist.zip (18569 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00403_19550101_20241231_hist.zip
+File: stundenwerte_N_00403_19550101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00403_19550101_20241231_hist.zip (1333846 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00427_19750701_20241231_hist.zip
+File: stundenwerte_N_00427_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00427_19750701_20241231_hist.zip (1268366 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00445_20050701_20111231_hist.zip
+File: stundenwerte_N_00445_20050701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00445_20050701_20111231_hist.zip (26234 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00450_20051101_20111220_hist.zip
+File: stundenwerte_N_00450_20051101_20111220_hist.zip
+Status: Downloaded: stundenwerte_N_00450_20051101_20111220_hist.zip (25822 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00433_19490101_20241231_hist.zip
+File: stundenwerte_N_00433_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00433_19490101_20241231_hist.zip (1511872 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00430_19610102_20210504_hist.zip
+File: stundenwerte_N_00430_19610102_20210504_hist.zip
+Status: Downloaded: stundenwerte_N_00430_19610102_20210504_hist.zip (1335352 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00535_20040601_20120108_hist.zip
+File: stundenwerte_N_00535_20040601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00535_20040601_20120108_hist.zip (30863 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00555_20080101_20111231_hist.zip
+File: stundenwerte_N_00555_20080101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00555_20080101_20111231_hist.zip (19077 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00553_19531222_19740903_hist.zip
+File: stundenwerte_N_00553_19531222_19740903_hist.zip
+Status: Downloaded: stundenwerte_N_00553_19531222_19740903_hist.zip (165919 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00460_19490101_20241231_hist.zip
+File: stundenwerte_N_00460_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00460_19490101_20241231_hist.zip (1068400 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00554_19490101_20020827_hist.zip
+File: stundenwerte_N_00554_19490101_20020827_hist.zip
+Status: Downloaded: stundenwerte_N_00554_19490101_20020827_hist.zip (572979 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00599_19820713_19900806_hist.zip
+File: stundenwerte_N_00599_19820713_19900806_hist.zip
+Status: Downloaded: stundenwerte_N_00599_19820713_19900806_hist.zip (44840 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00591_19750701_20241231_hist.zip
+File: stundenwerte_N_00591_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00591_19750701_20241231_hist.zip (1107641 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00617_20040601_20111231_hist.zip
+File: stundenwerte_N_00617_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00617_20040601_20111231_hist.zip (30857 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00603_20080103_20241231_hist.zip
+File: stundenwerte_N_00603_20080103_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00603_20080103_20241231_hist.zip (423110 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00596_19750701_20241231_hist.zip
+File: stundenwerte_N_00596_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00596_19750701_20241231_hist.zip (1365759 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00649_19911101_19941001_hist.zip
+File: stundenwerte_N_00649_19911101_19941001_hist.zip
+Status: Downloaded: stundenwerte_N_00649_19911101_19941001_hist.zip (61428 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00620_19790103_19880715_hist.zip
+File: stundenwerte_N_00620_19790103_19880715_hist.zip
+Status: Downloaded: stundenwerte_N_00620_19790103_19880715_hist.zip (92088 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00685_19920317_19941021_hist.zip
+File: stundenwerte_N_00685_19920317_19941021_hist.zip
+Status: Downloaded: stundenwerte_N_00685_19920317_19941021_hist.zip (7669 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00656_19490101_20241231_hist.zip
+File: stundenwerte_N_00656_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00656_19490101_20241231_hist.zip (1110713 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00662_19501001_20241231_hist.zip
+File: stundenwerte_N_00662_19501001_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00662_19501001_20241231_hist.zip (1489511 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00701_19490101_20241231_hist.zip
+File: stundenwerte_N_00701_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00701_19490101_20241231_hist.zip (1528087 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00691_19490101_20241231_hist.zip
+File: stundenwerte_N_00691_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00691_19490101_20241231_hist.zip (1883020 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00706_19790101_19920630_hist.zip
+File: stundenwerte_N_00706_19790101_19920630_hist.zip
+Status: Downloaded: stundenwerte_N_00706_19790101_19920630_hist.zip (55777 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00704_19900422_20241231_hist.zip
+File: stundenwerte_N_00704_19900422_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00704_19900422_20241231_hist.zip (442300 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00757_20040601_20120108_hist.zip
+File: stundenwerte_N_00757_20040601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00757_20040601_20120108_hist.zip (31292 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00755_20040601_20111231_hist.zip
+File: stundenwerte_N_00755_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00755_20040601_20111231_hist.zip (31178 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00722_19750701_20241231_hist.zip
+File: stundenwerte_N_00722_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00722_19750701_20241231_hist.zip (1324511 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00785_19820112_19850702_hist.zip
+File: stundenwerte_N_00785_19820112_19850702_hist.zip
+Status: Downloaded: stundenwerte_N_00785_19820112_19850702_hist.zip (5408 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00766_19790101_20241231_hist.zip
+File: stundenwerte_N_00766_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00766_19790101_20241231_hist.zip (788942 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00817_20050201_20120108_hist.zip
+File: stundenwerte_N_00817_20050201_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00817_20050201_20120108_hist.zip (29004 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00769_19910329_20241231_hist.zip
+File: stundenwerte_N_00769_19910329_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00769_19910329_20241231_hist.zip (816520 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00863_20071001_20110321_hist.zip
+File: stundenwerte_N_00863_20071001_20110321_hist.zip
+Status: Downloaded: stundenwerte_N_00863_20071001_20110321_hist.zip (16617 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00840_19900614_20241231_hist.zip
+File: stundenwerte_N_00840_19900614_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00840_19900614_20241231_hist.zip (559825 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00850_19930301_20241231_hist.zip
+File: stundenwerte_N_00850_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00850_19930301_20241231_hist.zip (818815 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00856_19820205_20241231_hist.zip
+File: stundenwerte_N_00856_19820205_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00856_19820205_20241231_hist.zip (448532 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00853_19750701_20241231_hist.zip
+File: stundenwerte_N_00853_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00853_19750701_20241231_hist.zip (1357506 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00876_19750701_19821231_hist.zip
+File: stundenwerte_N_00876_19750701_19821231_hist.zip
+Status: Downloaded: stundenwerte_N_00876_19750701_19821231_hist.zip (181576 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00879_19790101_20030611_hist.zip
+File: stundenwerte_N_00879_19790101_20030611_hist.zip
+Status: Downloaded: stundenwerte_N_00879_19790101_20030611_hist.zip (443577 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00867_19490101_20241231_hist.zip
+File: stundenwerte_N_00867_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00867_19490101_20241231_hist.zip (1098918 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00880_19830103_20241231_hist.zip
+File: stundenwerte_N_00880_19830103_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00880_19830103_20241231_hist.zip (1154639 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00891_19490101_20241231_hist.zip
+File: stundenwerte_N_00891_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00891_19490101_20241231_hist.zip (1494202 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00896_20040801_20111231_hist.zip
+File: stundenwerte_N_00896_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00896_20040801_20111231_hist.zip (29032 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00917_20040901_20111231_hist.zip
+File: stundenwerte_N_00917_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00917_20040901_20111231_hist.zip (29764 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00920_19490101_19870929_hist.zip
+File: stundenwerte_N_00920_19490101_19870929_hist.zip
+Status: Downloaded: stundenwerte_N_00920_19490101_19870929_hist.zip (75794 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00979_20040901_20120108_hist.zip
+File: stundenwerte_N_00979_20040901_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_00979_20040901_20120108_hist.zip (29822 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00954_19790101_20220720_hist.zip
+File: stundenwerte_N_00954_19790101_20220720_hist.zip
+Status: Downloaded: stundenwerte_N_00954_19790101_20220720_hist.zip (73563 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00953_19500701_20241231_hist.zip
+File: stundenwerte_N_00953_19500701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00953_19500701_20241231_hist.zip (990492 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00983_20061201_20111231_hist.zip
+File: stundenwerte_N_00983_20061201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00983_20061201_20111231_hist.zip (21137 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00963_19930211_20241231_hist.zip
+File: stundenwerte_N_00963_19930211_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_00963_19930211_20241231_hist.zip (861012 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_00991_20050201_20111231_hist.zip
+File: stundenwerte_N_00991_20050201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_00991_20050201_20111231_hist.zip (28867 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01050_20060401_20111231_hist.zip
+File: stundenwerte_N_01050_20060401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01050_20060401_20111231_hist.zip (23510 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01001_19750701_20241231_hist.zip
+File: stundenwerte_N_01001_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01001_19750701_20241231_hist.zip (786549 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01048_19750701_20241231_hist.zip
+File: stundenwerte_N_01048_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01048_19750701_20241231_hist.zip (1328663 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01052_20040701_20120108_hist.zip
+File: stundenwerte_N_01052_20040701_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_01052_20040701_20120108_hist.zip (29544 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01051_20070301_20111231_hist.zip
+File: stundenwerte_N_01051_20070301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01051_20070301_20111231_hist.zip (21741 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01072_20040601_20120108_hist.zip
+File: stundenwerte_N_01072_20040601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_01072_20040601_20120108_hist.zip (31987 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01103_20061001_20111231_hist.zip
+File: stundenwerte_N_01103_20061001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01103_20061001_20111231_hist.zip (23084 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01107_20041201_20111231_hist.zip
+File: stundenwerte_N_01107_20041201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01107_20041201_20111231_hist.zip (29358 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01161_20050201_20080202_hist.zip
+File: stundenwerte_N_01161_20050201_20080202_hist.zip
+Status: Downloaded: stundenwerte_N_01161_20050201_20080202_hist.zip (15259 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01130_19790101_20050422_hist.zip
+File: stundenwerte_N_01130_19790101_20050422_hist.zip
+Status: Downloaded: stundenwerte_N_01130_19790101_20050422_hist.zip (381930 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01078_19490501_20241231_hist.zip
+File: stundenwerte_N_01078_19490501_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01078_19490501_20241231_hist.zip (1873909 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01197_20021101_20111231_hist.zip
+File: stundenwerte_N_01197_20021101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01197_20021101_20111231_hist.zip (36439 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01185_19790101_19981110_hist.zip
+File: stundenwerte_N_01185_19790101_19981110_hist.zip
+Status: Downloaded: stundenwerte_N_01185_19790101_19981110_hist.zip (92455 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01200_19900110_20241231_hist.zip
+File: stundenwerte_N_01200_19900110_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01200_19900110_20241231_hist.zip (455632 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01207_20060301_20120105_hist.zip
+File: stundenwerte_N_01207_20060301_20120105_hist.zip
+Status: Downloaded: stundenwerte_N_01207_20060301_20120105_hist.zip (24944 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01214_20040801_20111231_hist.zip
+File: stundenwerte_N_01214_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01214_20040801_20111231_hist.zip (30643 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01224_20021201_20120108_hist.zip
+File: stundenwerte_N_01224_20021201_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_01224_20021201_20120108_hist.zip (36728 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01239_20040701_20071231_hist.zip
+File: stundenwerte_N_01239_20040701_20071231_hist.zip
+Status: Downloaded: stundenwerte_N_01239_20040701_20071231_hist.zip (15508 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01228_19910101_20240101_hist.zip
+File: stundenwerte_N_01228_19910101_20240101_hist.zip
+Status: Downloaded: stundenwerte_N_01228_19910101_20240101_hist.zip (9238 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01219_19490101_19970630_hist.zip
+File: stundenwerte_N_01219_19490101_19970630_hist.zip
+Status: Downloaded: stundenwerte_N_01219_19490101_19970630_hist.zip (628246 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01255_20021201_20111231_hist.zip
+File: stundenwerte_N_01255_20021201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01255_20021201_20111231_hist.zip (36725 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01260_19490101_19500630_hist.zip
+File: stundenwerte_N_01260_19490101_19500630_hist.zip
+Status: Downloaded: stundenwerte_N_01260_19490101_19500630_hist.zip (16213 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01261_19790101_19911113_hist.zip
+File: stundenwerte_N_01261_19790101_19911113_hist.zip
+Status: Downloaded: stundenwerte_N_01261_19790101_19911113_hist.zip (35588 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01266_20040601_20111231_hist.zip
+File: stundenwerte_N_01266_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01266_20040601_20111231_hist.zip (29502 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01279_20060701_20111231_hist.zip
+File: stundenwerte_N_01279_20060701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01279_20060701_20111231_hist.zip (22278 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01262_19920517_20241231_hist.zip
+File: stundenwerte_N_01262_19920517_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01262_19920517_20241231_hist.zip (880514 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01297_20041001_20111231_hist.zip
+File: stundenwerte_N_01297_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01297_20041001_20111231_hist.zip (29710 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01300_20040601_20111231_hist.zip
+File: stundenwerte_N_01300_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01300_20040601_20111231_hist.zip (30892 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01270_19750701_20241231_hist.zip
+File: stundenwerte_N_01270_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01270_19750701_20241231_hist.zip (1302255 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01327_20040801_20111231_hist.zip
+File: stundenwerte_N_01327_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01327_20040801_20111231_hist.zip (29532 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01332_20050301_20111231_hist.zip
+File: stundenwerte_N_01332_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01332_20050301_20111231_hist.zip (28423 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01341_19790103_19840313_hist.zip
+File: stundenwerte_N_01341_19790103_19840313_hist.zip
+Status: Downloaded: stundenwerte_N_01341_19790103_19840313_hist.zip (51902 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01303_19490101_20241231_hist.zip
+File: stundenwerte_N_01303_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01303_19490101_20241231_hist.zip (1436190 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01355_19790101_19861127_hist.zip
+File: stundenwerte_N_01355_19790101_19861127_hist.zip
+Status: Downloaded: stundenwerte_N_01355_19790101_19861127_hist.zip (31471 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01339_19930301_20241231_hist.zip
+File: stundenwerte_N_01339_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01339_19930301_20241231_hist.zip (786495 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01357_20050301_20111231_hist.zip
+File: stundenwerte_N_01357_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01357_20050301_20111231_hist.zip (28337 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01402_19910117_19930217_hist.zip
+File: stundenwerte_N_01402_19910117_19930217_hist.zip
+Status: Downloaded: stundenwerte_N_01402_19910117_19930217_hist.zip (9879 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01346_19490101_20241231_hist.zip
+File: stundenwerte_N_01346_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01346_19490101_20241231_hist.zip (1426579 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01411_20070101_20111231_hist.zip
+File: stundenwerte_N_01411_20070101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01411_20070101_20111231_hist.zip (22442 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01426_19750701_19821203_hist.zip
+File: stundenwerte_N_01426_19750701_19821203_hist.zip
+Status: Downloaded: stundenwerte_N_01426_19750701_19821203_hist.zip (40233 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01358_19750701_20241231_hist.zip
+File: stundenwerte_N_01358_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01358_19750701_20241231_hist.zip (1304438 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01451_20040601_20120108_hist.zip
+File: stundenwerte_N_01451_20040601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_01451_20040601_20120108_hist.zip (30612 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01420_19490101_20241231_hist.zip
+File: stundenwerte_N_01420_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01420_19490101_20241231_hist.zip (1880177 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01473_20060101_20111231_hist.zip
+File: stundenwerte_N_01473_20060101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01473_20060101_20111231_hist.zip (24114 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01443_19490101_20241231_hist.zip
+File: stundenwerte_N_01443_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01443_19490101_20241231_hist.zip (1374167 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01490_19490101_19770729_hist.zip
+File: stundenwerte_N_01490_19490101_19770729_hist.zip
+Status: Downloaded: stundenwerte_N_01490_19490101_19770729_hist.zip (258652 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01468_19490101_20241231_hist.zip
+File: stundenwerte_N_01468_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01468_19490101_20241231_hist.zip (1303399 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01503_20121001_20241231_hist.zip
+File: stundenwerte_N_01503_20121001_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01503_20121001_20241231_hist.zip (338004 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01526_20041101_20110426_hist.zip
+File: stundenwerte_N_01526_20041101_20110426_hist.zip
+Status: Downloaded: stundenwerte_N_01526_20041101_20110426_hist.zip (26157 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01515_19790101_20030731_hist.zip
+File: stundenwerte_N_01515_19790101_20030731_hist.zip
+Status: Downloaded: stundenwerte_N_01515_19790101_20030731_hist.zip (209882 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01504_19930301_20241231_hist.zip
+File: stundenwerte_N_01504_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01504_19930301_20241231_hist.zip (852702 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01544_19750701_20241231_hist.zip
+File: stundenwerte_N_01544_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01544_19750701_20241231_hist.zip (903305 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01584_20090601_20110331_hist.zip
+File: stundenwerte_N_01584_20090601_20110331_hist.zip
+Status: Downloaded: stundenwerte_N_01584_20090601_20110331_hist.zip (9860 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01550_19490101_20241231_hist.zip
+File: stundenwerte_N_01550_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01550_19490101_20241231_hist.zip (1139013 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01580_19860101_20241231_hist.zip
+File: stundenwerte_N_01580_19860101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01580_19860101_20241231_hist.zip (446732 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01572_19930215_20241231_hist.zip
+File: stundenwerte_N_01572_19930215_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01572_19930215_20241231_hist.zip (756559 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01590_20030701_20111231_hist.zip
+File: stundenwerte_N_01590_20030701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01590_20030701_20111231_hist.zip (34557 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01587_19820127_20241231_hist.zip
+File: stundenwerte_N_01587_19820127_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01587_19820127_20241231_hist.zip (472213 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01602_20040701_20111231_hist.zip
+File: stundenwerte_N_01602_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01602_20040701_20111231_hist.zip (29693 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01605_19900612_20241231_hist.zip
+File: stundenwerte_N_01605_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01605_19900612_20241231_hist.zip (459037 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01645_20040501_20120105_hist.zip
+File: stundenwerte_N_01645_20040501_20120105_hist.zip
+Status: Downloaded: stundenwerte_N_01645_20040501_20120105_hist.zip (31483 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01639_19490101_20241231_hist.zip
+File: stundenwerte_N_01639_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01639_19490101_20241231_hist.zip (1523192 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01612_19750701_20241231_hist.zip
+File: stundenwerte_N_01612_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01612_19750701_20241231_hist.zip (1366545 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01666_19790101_20200821_hist.zip
+File: stundenwerte_N_01666_19790101_20200821_hist.zip
+Status: Downloaded: stundenwerte_N_01666_19790101_20200821_hist.zip (788477 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01721_20061001_20111231_hist.zip
+File: stundenwerte_N_01721_20061001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01721_20061001_20111231_hist.zip (21203 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01684_19750701_20241231_hist.zip
+File: stundenwerte_N_01684_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01684_19750701_20241231_hist.zip (1354613 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01694_19900612_20241231_hist.zip
+File: stundenwerte_N_01694_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01694_19900612_20241231_hist.zip (455901 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01735_20050301_20120107_hist.zip
+File: stundenwerte_N_01735_20050301_20120107_hist.zip
+Status: Downloaded: stundenwerte_N_01735_20050301_20120107_hist.zip (28273 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01691_19501001_20241231_hist.zip
+File: stundenwerte_N_01691_19501001_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01691_19501001_20241231_hist.zip (1309993 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01736_20020702_20111231_hist.zip
+File: stundenwerte_N_01736_20020702_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01736_20020702_20111231_hist.zip (37767 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01803_20040901_20111231_hist.zip
+File: stundenwerte_N_01803_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01803_20040901_20111231_hist.zip (30533 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01759_20010131_20241231_hist.zip
+File: stundenwerte_N_01759_20010131_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01759_20010131_20241231_hist.zip (497953 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01757_19780101_20241231_hist.zip
+File: stundenwerte_N_01757_19780101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01757_19780101_20241231_hist.zip (1314181 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01863_20071201_20111231_hist.zip
+File: stundenwerte_N_01863_20071201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01863_20071201_20111231_hist.zip (17577 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01766_19891001_20241231_hist.zip
+File: stundenwerte_N_01766_19891001_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01766_19891001_20241231_hist.zip (954096 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01832_19821101_20241231_hist.zip
+File: stundenwerte_N_01832_19821101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01832_19821101_20241231_hist.zip (1005138 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01833_19490101_19821031_hist.zip
+File: stundenwerte_N_01833_19490101_19821031_hist.zip
+Status: Downloaded: stundenwerte_N_01833_19490101_19821031_hist.zip (363691 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01869_19900612_20241231_hist.zip
+File: stundenwerte_N_01869_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01869_19900612_20241231_hist.zip (474282 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01964_20050501_20120107_hist.zip
+File: stundenwerte_N_01964_20050501_20120107_hist.zip
+Status: Downloaded: stundenwerte_N_01964_20050501_20120107_hist.zip (27291 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01892_19490103_20131028_hist.zip
+File: stundenwerte_N_01892_19490103_20131028_hist.zip
+Status: Downloaded: stundenwerte_N_01892_19490103_20131028_hist.zip (162728 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01981_20050301_20111231_hist.zip
+File: stundenwerte_N_01981_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_01981_20050301_20111231_hist.zip (26962 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_01975_19490101_20241231_hist.zip
+File: stundenwerte_N_01975_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_01975_19490101_20241231_hist.zip (1915383 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02039_20061101_20111231_hist.zip
+File: stundenwerte_N_02039_20061101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02039_20061101_20111231_hist.zip (22685 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02023_19820111_20241231_hist.zip
+File: stundenwerte_N_02023_19820111_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02023_19820111_20241231_hist.zip (456031 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02014_19490101_20241231_hist.zip
+File: stundenwerte_N_02014_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02014_19490101_20241231_hist.zip (2008249 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02074_20040601_20120107_hist.zip
+File: stundenwerte_N_02074_20040601_20120107_hist.zip
+Status: Downloaded: stundenwerte_N_02074_20040601_20120107_hist.zip (31471 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02044_19900612_20241231_hist.zip
+File: stundenwerte_N_02044_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02044_19900612_20241231_hist.zip (593845 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02080_20040701_20111231_hist.zip
+File: stundenwerte_N_02080_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02080_20040701_20111231_hist.zip (30497 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02088_20040601_20050511_hist.zip
+File: stundenwerte_N_02088_20040601_20050511_hist.zip
+Status: Downloaded: stundenwerte_N_02088_20040601_20050511_hist.zip (6587 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02110_20030101_20111231_hist.zip
+File: stundenwerte_N_02110_20030101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02110_20030101_20111231_hist.zip (36383 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02174_20101101_20120108_hist.zip
+File: stundenwerte_N_02174_20101101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_02174_20101101_20120108_hist.zip (7384 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02167_20050301_20111231_hist.zip
+File: stundenwerte_N_02167_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02167_20050301_20111231_hist.zip (28306 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02252_20050701_20111231_hist.zip
+File: stundenwerte_N_02252_20050701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02252_20050701_20111231_hist.zip (25810 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02201_20050801_20111231_hist.zip
+File: stundenwerte_N_02201_20050801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02201_20050801_20111231_hist.zip (27123 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02171_19520901_20241231_hist.zip
+File: stundenwerte_N_02171_19520901_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02171_19520901_20241231_hist.zip (1238960 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02211_20041001_20111231_hist.zip
+File: stundenwerte_N_02211_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02211_20041001_20111231_hist.zip (29421 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02115_19520301_20241231_hist.zip
+File: stundenwerte_N_02115_19520301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02115_19520301_20241231_hist.zip (1473465 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02306_20050801_20111231_hist.zip
+File: stundenwerte_N_02306_20050801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02306_20050801_20111231_hist.zip (25556 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02261_19490101_20241231_hist.zip
+File: stundenwerte_N_02261_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02261_19490101_20241231_hist.zip (1529861 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02290_19490101_20241231_hist.zip
+File: stundenwerte_N_02290_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02290_19490101_20241231_hist.zip (1452354 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02319_20050601_20111231_hist.zip
+File: stundenwerte_N_02319_20050601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02319_20050601_20111231_hist.zip (26174 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02303_19790101_20241231_hist.zip
+File: stundenwerte_N_02303_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02303_19790101_20241231_hist.zip (898373 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02315_19911101_20241231_hist.zip
+File: stundenwerte_N_02315_19911101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02315_19911101_20241231_hist.zip (848191 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02323_20060701_20111231_hist.zip
+File: stundenwerte_N_02323_20060701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02323_20060701_20111231_hist.zip (22555 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02362_20040801_20111231_hist.zip
+File: stundenwerte_N_02362_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02362_20040801_20111231_hist.zip (30553 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02374_19490101_19740623_hist.zip
+File: stundenwerte_N_02374_19490101_19740623_hist.zip
+Status: Downloaded: stundenwerte_N_02374_19490101_19740623_hist.zip (219342 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02338_19790101_20051223_hist.zip
+File: stundenwerte_N_02338_19790101_20051223_hist.zip
+Status: Downloaded: stundenwerte_N_02338_19790101_20051223_hist.zip (377750 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02385_19930301_20241231_hist.zip
+File: stundenwerte_N_02385_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02385_19930301_20241231_hist.zip (873402 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02410_19930301_20241231_hist.zip
+File: stundenwerte_N_02410_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02410_19930301_20241231_hist.zip (572183 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02444_20040801_20111231_hist.zip
+File: stundenwerte_N_02444_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02444_20040801_20111231_hist.zip (28858 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02429_19930301_20241231_hist.zip
+File: stundenwerte_N_02429_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02429_19930301_20241231_hist.zip (823757 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02437_19790101_20241231_hist.zip
+File: stundenwerte_N_02437_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02437_19790101_20241231_hist.zip (798855 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02480_20040901_20111231_hist.zip
+File: stundenwerte_N_02480_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02480_20040901_20111231_hist.zip (28740 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02456_19790101_20050826_hist.zip
+File: stundenwerte_N_02456_19790101_20050826_hist.zip
+Status: Downloaded: stundenwerte_N_02456_19790101_20050826_hist.zip (396773 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02486_20050301_20111231_hist.zip
+File: stundenwerte_N_02486_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02486_20050301_20111231_hist.zip (28738 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02485_20110502_20241231_hist.zip
+File: stundenwerte_N_02485_20110502_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02485_20110502_20241231_hist.zip (371999 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02483_19541207_20241231_hist.zip
+File: stundenwerte_N_02483_19541207_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02483_19541207_20241231_hist.zip (1475754 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02497_20040801_20111231_hist.zip
+File: stundenwerte_N_02497_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02497_20040801_20111231_hist.zip (28780 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02494_19930301_20130930_hist.zip
+File: stundenwerte_N_02494_19930301_20130930_hist.zip
+Status: Downloaded: stundenwerte_N_02494_19930301_20130930_hist.zip (548833 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02503_19750701_19981230_hist.zip
+File: stundenwerte_N_02503_19750701_19981230_hist.zip
+Status: Downloaded: stundenwerte_N_02503_19750701_19981230_hist.zip (137765 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02542_20040601_20111231_hist.zip
+File: stundenwerte_N_02542_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02542_20040601_20111231_hist.zip (29058 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02522_19490101_20081031_hist.zip
+File: stundenwerte_N_02522_19490101_20081031_hist.zip
+Status: Downloaded: stundenwerte_N_02522_19490101_20081031_hist.zip (919269 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02532_19490101_20131030_hist.zip
+File: stundenwerte_N_02532_19490101_20131030_hist.zip
+Status: Downloaded: stundenwerte_N_02532_19490101_20131030_hist.zip (1066727 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02575_20070522_20111231_hist.zip
+File: stundenwerte_N_02575_20070522_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02575_20070522_20111231_hist.zip (21113 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02564_19790101_20241231_hist.zip
+File: stundenwerte_N_02564_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02564_19790101_20241231_hist.zip (1114084 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02559_19490101_20241231_hist.zip
+File: stundenwerte_N_02559_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02559_19490101_20241231_hist.zip (1417799 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02578_20040701_20111231_hist.zip
+File: stundenwerte_N_02578_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02578_20040701_20111231_hist.zip (31038 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02565_19490101_19881014_hist.zip
+File: stundenwerte_N_02565_19490101_19881014_hist.zip
+Status: Downloaded: stundenwerte_N_02565_19490101_19881014_hist.zip (464696 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02600_20050301_20120108_hist.zip
+File: stundenwerte_N_02600_20050301_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_02600_20050301_20120108_hist.zip (27234 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02618_20041001_20111231_hist.zip
+File: stundenwerte_N_02618_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02618_20041001_20111231_hist.zip (29649 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02627_20040701_20120108_hist.zip
+File: stundenwerte_N_02627_20040701_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_02627_20040701_20120108_hist.zip (31019 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02597_19490101_20241231_hist.zip
+File: stundenwerte_N_02597_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02597_19490101_20241231_hist.zip (1300394 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02601_19490101_20241231_hist.zip
+File: stundenwerte_N_02601_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02601_19490101_20241231_hist.zip (1200883 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02629_20040701_20111231_hist.zip
+File: stundenwerte_N_02629_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02629_20040701_20111231_hist.zip (30713 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02641_20040901_20120108_hist.zip
+File: stundenwerte_N_02641_20040901_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_02641_20040901_20120108_hist.zip (30257 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02680_20050601_20120108_hist.zip
+File: stundenwerte_N_02680_20050601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_02680_20050601_20120108_hist.zip (27849 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02700_20041201_20111231_hist.zip
+File: stundenwerte_N_02700_20041201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02700_20041201_20111231_hist.zip (28971 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02638_19490101_20241231_hist.zip
+File: stundenwerte_N_02638_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02638_19490101_20241231_hist.zip (1101110 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02656_19490524_19891214_hist.zip
+File: stundenwerte_N_02656_19490524_19891214_hist.zip
+Status: Downloaded: stundenwerte_N_02656_19490524_19891214_hist.zip (449227 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02703_19910104_19941227_hist.zip
+File: stundenwerte_N_02703_19910104_19941227_hist.zip
+Status: Downloaded: stundenwerte_N_02703_19910104_19941227_hist.zip (7400 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02667_19490101_20241231_hist.zip
+File: stundenwerte_N_02667_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02667_19490101_20241231_hist.zip (1706963 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02708_20060701_20120105_hist.zip
+File: stundenwerte_N_02708_20060701_20120105_hist.zip
+Status: Downloaded: stundenwerte_N_02708_20060701_20120105_hist.zip (23745 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02704_20040501_20111231_hist.zip
+File: stundenwerte_N_02704_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02704_20040501_20111231_hist.zip (31245 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02750_20051101_20120108_hist.zip
+File: stundenwerte_N_02750_20051101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_02750_20051101_20120108_hist.zip (23757 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02712_19520101_20241231_hist.zip
+File: stundenwerte_N_02712_19520101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02712_19520101_20241231_hist.zip (1441975 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02773_19930301_20241231_hist.zip
+File: stundenwerte_N_02773_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02773_19930301_20241231_hist.zip (899830 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02796_19911101_20241231_hist.zip
+File: stundenwerte_N_02796_19911101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02796_19911101_20241231_hist.zip (919248 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02814_20021101_20111231_hist.zip
+File: stundenwerte_N_02814_20021101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02814_20021101_20111231_hist.zip (36383 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02794_19900612_20241231_hist.zip
+File: stundenwerte_N_02794_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02794_19900612_20241231_hist.zip (448260 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02812_19950104_20241231_hist.zip
+File: stundenwerte_N_02812_19950104_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02812_19950104_20241231_hist.zip (810089 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02856_20040701_20111231_hist.zip
+File: stundenwerte_N_02856_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02856_20040701_20111231_hist.zip (29174 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02829_19790101_20171222_hist.zip
+File: stundenwerte_N_02829_19790101_20171222_hist.zip
+Status: Downloaded: stundenwerte_N_02829_19790101_20171222_hist.zip (729040 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02886_19930301_20241231_hist.zip
+File: stundenwerte_N_02886_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02886_19930301_20241231_hist.zip (829442 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02905_19790101_20241231_hist.zip
+File: stundenwerte_N_02905_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02905_19790101_20241231_hist.zip (831266 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02907_19790101_20241231_hist.zip
+File: stundenwerte_N_02907_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02907_19790101_20241231_hist.zip (719925 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02925_19760401_20241231_hist.zip
+File: stundenwerte_N_02925_19760401_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02925_19760401_20241231_hist.zip (1186162 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02947_20061001_20111231_hist.zip
+File: stundenwerte_N_02947_20061001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02947_20061001_20111231_hist.zip (22943 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02928_19970407_20241231_hist.zip
+File: stundenwerte_N_02928_19970407_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02928_19970407_20241231_hist.zip (692222 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02951_20040601_20111231_hist.zip
+File: stundenwerte_N_02951_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02951_20040601_20111231_hist.zip (31198 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02953_20070401_20111231_hist.zip
+File: stundenwerte_N_02953_20070401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_02953_20070401_20111231_hist.zip (19772 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02961_19790101_19981110_hist.zip
+File: stundenwerte_N_02961_19790101_19981110_hist.zip
+Status: Downloaded: stundenwerte_N_02961_19790101_19981110_hist.zip (10653 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02932_19750701_20241231_hist.zip
+File: stundenwerte_N_02932_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02932_19750701_20241231_hist.zip (1329539 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_02985_19910305_20241231_hist.zip
+File: stundenwerte_N_02985_19910305_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_02985_19910305_20241231_hist.zip (783456 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03031_20040701_20111231_hist.zip
+File: stundenwerte_N_03031_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03031_20040701_20111231_hist.zip (30878 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03015_19750701_20241231_hist.zip
+File: stundenwerte_N_03015_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03015_19750701_20241231_hist.zip (1305975 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03023_19501001_20161231_hist.zip
+File: stundenwerte_N_03023_19501001_20161231_hist.zip
+Status: Downloaded: stundenwerte_N_03023_19501001_20161231_hist.zip (1122027 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03028_19710401_20241231_hist.zip
+File: stundenwerte_N_03028_19710401_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03028_19710401_20241231_hist.zip (1190171 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03034_20070101_20111231_hist.zip
+File: stundenwerte_N_03034_20070101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03034_20070101_20111231_hist.zip (22417 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03042_20080601_20111231_hist.zip
+File: stundenwerte_N_03042_20080601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03042_20080601_20111231_hist.zip (17126 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03044_20070701_20120105_hist.zip
+File: stundenwerte_N_03044_20070701_20120105_hist.zip
+Status: Downloaded: stundenwerte_N_03044_20070701_20120105_hist.zip (18531 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03083_20050101_20111231_hist.zip
+File: stundenwerte_N_03083_20050101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03083_20050101_20111231_hist.zip (29217 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03032_19490101_20241231_hist.zip
+File: stundenwerte_N_03032_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03032_19490101_20241231_hist.zip (1474747 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03085_19490101_19850214_hist.zip
+File: stundenwerte_N_03085_19490101_19850214_hist.zip
+Status: Downloaded: stundenwerte_N_03085_19490101_19850214_hist.zip (412221 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03097_19880217_19930910_hist.zip
+File: stundenwerte_N_03097_19880217_19930910_hist.zip
+Status: Downloaded: stundenwerte_N_03097_19880217_19930910_hist.zip (76722 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03086_19850215_20241231_hist.zip
+File: stundenwerte_N_03086_19850215_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03086_19850215_20241231_hist.zip (804684 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03098_19940112_20241231_hist.zip
+File: stundenwerte_N_03098_19940112_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03098_19940112_20241231_hist.zip (764301 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03093_19490101_20241231_hist.zip
+File: stundenwerte_N_03093_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03093_19490101_20241231_hist.zip (1171464 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03155_20040801_20111231_hist.zip
+File: stundenwerte_N_03155_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03155_20040801_20111231_hist.zip (29798 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03164_20060701_20111231_hist.zip
+File: stundenwerte_N_03164_20060701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03164_20060701_20111231_hist.zip (24194 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03126_19750701_20241231_hist.zip
+File: stundenwerte_N_03126_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03126_19750701_20241231_hist.zip (1344194 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03158_19900612_20241231_hist.zip
+File: stundenwerte_N_03158_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03158_19900612_20241231_hist.zip (783338 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03166_19900612_20241231_hist.zip
+File: stundenwerte_N_03166_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03166_19900612_20241231_hist.zip (231363 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03170_19930701_20121221_hist.zip
+File: stundenwerte_N_03170_19930701_20121221_hist.zip
+Status: Downloaded: stundenwerte_N_03170_19930701_20121221_hist.zip (148849 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03167_19490101_20241231_hist.zip
+File: stundenwerte_N_03167_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03167_19490101_20241231_hist.zip (1339274 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03204_20080701_20120108_hist.zip
+File: stundenwerte_N_03204_20080701_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03204_20080701_20120108_hist.zip (15427 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03226_20060801_20111231_hist.zip
+File: stundenwerte_N_03226_20060801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03226_20060801_20111231_hist.zip (24022 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03196_19770420_20241231_hist.zip
+File: stundenwerte_N_03196_19770420_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03196_19770420_20241231_hist.zip (911469 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03234_20050201_20111231_hist.zip
+File: stundenwerte_N_03234_20050201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03234_20050201_20111231_hist.zip (27650 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03244_20090801_20111231_hist.zip
+File: stundenwerte_N_03244_20090801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03244_20090801_20111231_hist.zip (11698 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03245_19790101_20021120_hist.zip
+File: stundenwerte_N_03245_19790101_20021120_hist.zip
+Status: Downloaded: stundenwerte_N_03245_19790101_20021120_hist.zip (310213 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03231_19790101_20241231_hist.zip
+File: stundenwerte_N_03231_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03231_19790101_20241231_hist.zip (1289686 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03257_20040601_20120108_hist.zip
+File: stundenwerte_N_03257_20040601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03257_20040601_20120108_hist.zip (31693 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03246_19930301_20070614_hist.zip
+File: stundenwerte_N_03246_19930301_20070614_hist.zip
+Status: Downloaded: stundenwerte_N_03246_19930301_20070614_hist.zip (390896 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03254_19700401_20241231_hist.zip
+File: stundenwerte_N_03254_19700401_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03254_19700401_20241231_hist.zip (676282 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03271_20041101_20111231_hist.zip
+File: stundenwerte_N_03271_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03271_20041101_20111231_hist.zip (29456 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03278_20030101_20111231_hist.zip
+File: stundenwerte_N_03278_20030101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03278_20030101_20111231_hist.zip (33710 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03284_20050501_20111231_hist.zip
+File: stundenwerte_N_03284_20050501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03284_20050501_20111231_hist.zip (27384 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03268_19930301_20241231_hist.zip
+File: stundenwerte_N_03268_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03268_19930301_20241231_hist.zip (757009 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03289_20041101_20111231_hist.zip
+File: stundenwerte_N_03289_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03289_20041101_20111231_hist.zip (29881 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03307_20080401_20111231_hist.zip
+File: stundenwerte_N_03307_20080401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03307_20080401_20111231_hist.zip (17955 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03319_20060901_20111231_hist.zip
+File: stundenwerte_N_03319_20060901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03319_20060901_20111231_hist.zip (23492 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03340_20050501_20111231_hist.zip
+File: stundenwerte_N_03340_20050501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03340_20050501_20111231_hist.zip (27354 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03287_19871005_20241231_hist.zip
+File: stundenwerte_N_03287_19871005_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03287_19871005_20241231_hist.zip (903533 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03348_20040601_20111231_hist.zip
+File: stundenwerte_N_03348_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03348_20040601_20111231_hist.zip (29187 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03376_20040601_20111231_hist.zip
+File: stundenwerte_N_03376_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03376_20040601_20111231_hist.zip (29447 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03362_19810119_20241231_hist.zip
+File: stundenwerte_N_03362_19810119_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03362_19810119_20241231_hist.zip (442978 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03366_19530101_20241231_hist.zip
+File: stundenwerte_N_03366_19530101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03366_19530101_20241231_hist.zip (1268711 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03402_20021101_20120108_hist.zip
+File: stundenwerte_N_03402_20021101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03402_20021101_20120108_hist.zip (37180 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03379_19790101_20241231_hist.zip
+File: stundenwerte_N_03379_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03379_19790101_20241231_hist.zip (1081077 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03390_19490101_19920516_hist.zip
+File: stundenwerte_N_03390_19490101_19920516_hist.zip
+Status: Downloaded: stundenwerte_N_03390_19490101_19920516_hist.zip (1008833 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03426_20040601_20111231_hist.zip
+File: stundenwerte_N_03426_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03426_20040601_20111231_hist.zip (31036 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03404_19490101_19891002_hist.zip
+File: stundenwerte_N_03404_19490101_19891002_hist.zip
+Status: Downloaded: stundenwerte_N_03404_19490101_19891002_hist.zip (574926 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03442_20041001_20111231_hist.zip
+File: stundenwerte_N_03442_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03442_20041001_20111231_hist.zip (29423 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03485_20050501_20111231_hist.zip
+File: stundenwerte_N_03485_20050501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03485_20050501_20111231_hist.zip (28065 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03490_20040901_20120108_hist.zip
+File: stundenwerte_N_03490_20040901_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03490_20040901_20120108_hist.zip (27977 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03478_19770420_20030819_hist.zip
+File: stundenwerte_N_03478_19770420_20030819_hist.zip
+Status: Downloaded: stundenwerte_N_03478_19770420_20030819_hist.zip (717153 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03509_20041001_20111231_hist.zip
+File: stundenwerte_N_03509_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03509_20041001_20111231_hist.zip (27830 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03484_19790101_20241231_hist.zip
+File: stundenwerte_N_03484_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03484_19790101_20241231_hist.zip (891156 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03518_19930301_19940624_hist.zip
+File: stundenwerte_N_03518_19930301_19940624_hist.zip
+Status: Downloaded: stundenwerte_N_03518_19930301_19940624_hist.zip (34079 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03527_20040501_20111231_hist.zip
+File: stundenwerte_N_03527_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03527_20040501_20111231_hist.zip (30799 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03538_19790101_19960419_hist.zip
+File: stundenwerte_N_03538_19790101_19960419_hist.zip
+Status: Downloaded: stundenwerte_N_03538_19790101_19960419_hist.zip (6418 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03540_20041101_20111231_hist.zip
+File: stundenwerte_N_03540_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03540_20041101_20111231_hist.zip (29626 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03513_19900206_20241231_hist.zip
+File: stundenwerte_N_03513_19900206_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03513_19900206_20241231_hist.zip (945565 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03571_20080301_20120106_hist.zip
+File: stundenwerte_N_03571_20080301_20120106_hist.zip
+Status: Downloaded: stundenwerte_N_03571_20080301_20120106_hist.zip (16537 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03545_20050301_20120109_hist.zip
+File: stundenwerte_N_03545_20050301_20120109_hist.zip
+Status: Downloaded: stundenwerte_N_03545_20050301_20120109_hist.zip (28485 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03591_20040601_20111231_hist.zip
+File: stundenwerte_N_03591_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03591_20040601_20111231_hist.zip (29479 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03575_19490616_19830110_hist.zip
+File: stundenwerte_N_03575_19490616_19830110_hist.zip
+Status: Downloaded: stundenwerte_N_03575_19490616_19830110_hist.zip (326041 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03612_20070401_20111231_hist.zip
+File: stundenwerte_N_03612_20070401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03612_20070401_20111231_hist.zip (21650 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03552_19750701_20190408_hist.zip
+File: stundenwerte_N_03552_19750701_20190408_hist.zip
+Status: Downloaded: stundenwerte_N_03552_19750701_20190408_hist.zip (1173815 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03621_20060101_20120108_hist.zip
+File: stundenwerte_N_03621_20060101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03621_20060101_20120108_hist.zip (25801 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03603_19930301_20241231_hist.zip
+File: stundenwerte_N_03603_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03603_19930301_20241231_hist.zip (869836 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03623_19790101_20241231_hist.zip
+File: stundenwerte_N_03623_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03623_19790101_20241231_hist.zip (908439 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03639_19790101_20241231_hist.zip
+File: stundenwerte_N_03639_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03639_19790101_20241231_hist.zip (933717 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03631_19490101_20241231_hist.zip
+File: stundenwerte_N_03631_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03631_19490101_20241231_hist.zip (1457965 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03659_19490101_19950306_hist.zip
+File: stundenwerte_N_03659_19490101_19950306_hist.zip
+Status: Downloaded: stundenwerte_N_03659_19490101_19950306_hist.zip (627714 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03667_20050301_20111231_hist.zip
+File: stundenwerte_N_03667_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03667_20050301_20111231_hist.zip (26841 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03679_20061101_20120108_hist.zip
+File: stundenwerte_N_03679_20061101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03679_20061101_20120108_hist.zip (21521 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03660_19950306_20241231_hist.zip
+File: stundenwerte_N_03660_19950306_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03660_19950306_20241231_hist.zip (812528 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03734_20040701_20111231_hist.zip
+File: stundenwerte_N_03734_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03734_20040701_20111231_hist.zip (29389 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03735_19490101_19511231_hist.zip
+File: stundenwerte_N_03735_19490101_19511231_hist.zip
+Status: Downloaded: stundenwerte_N_03735_19490101_19511231_hist.zip (22391 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03739_20050301_20120108_hist.zip
+File: stundenwerte_N_03739_20050301_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03739_20050301_20120108_hist.zip (26960 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03668_19490101_20241231_hist.zip
+File: stundenwerte_N_03668_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03668_19490101_20241231_hist.zip (1708401 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03730_19490101_20241231_hist.zip
+File: stundenwerte_N_03730_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03730_19490101_20241231_hist.zip (1270768 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03775_19580101_20010816_hist.zip
+File: stundenwerte_N_03775_19580101_20010816_hist.zip
+Status: Downloaded: stundenwerte_N_03775_19580101_20010816_hist.zip (226886 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03761_19490101_20241231_hist.zip
+File: stundenwerte_N_03761_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03761_19490101_20241231_hist.zip (1343213 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03791_19790101_20121001_hist.zip
+File: stundenwerte_N_03791_19790101_20121001_hist.zip
+Status: Downloaded: stundenwerte_N_03791_19790101_20121001_hist.zip (667399 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03811_19830103_20240529_hist.zip
+File: stundenwerte_N_03811_19830103_20240529_hist.zip
+Status: Downloaded: stundenwerte_N_03811_19830103_20240529_hist.zip (1133846 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03815_19490101_20101130_hist.zip
+File: stundenwerte_N_03815_19490101_20101130_hist.zip
+Status: Downloaded: stundenwerte_N_03815_19490101_20101130_hist.zip (772250 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03836_20060301_20111231_hist.zip
+File: stundenwerte_N_03836_20060301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03836_20060301_20111231_hist.zip (23542 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03857_20050101_20111231_hist.zip
+File: stundenwerte_N_03857_20050101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03857_20050101_20111231_hist.zip (27484 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03868_19820110_19891212_hist.zip
+File: stundenwerte_N_03868_19820110_19891212_hist.zip
+Status: Downloaded: stundenwerte_N_03868_19820110_19891212_hist.zip (6143 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03821_19900612_20241231_hist.zip
+File: stundenwerte_N_03821_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03821_19900612_20241231_hist.zip (443071 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03873_19911101_19960227_hist.zip
+File: stundenwerte_N_03873_19911101_19960227_hist.zip
+Status: Downloaded: stundenwerte_N_03873_19911101_19960227_hist.zip (68501 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03904_20040901_20111231_hist.zip
+File: stundenwerte_N_03904_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03904_20040901_20111231_hist.zip (30306 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03875_20050101_20120108_hist.zip
+File: stundenwerte_N_03875_20050101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_03875_20050101_20120108_hist.zip (29390 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03897_19900209_20241231_hist.zip
+File: stundenwerte_N_03897_19900209_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03897_19900209_20241231_hist.zip (448500 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03879_19490101_19970103_hist.zip
+File: stundenwerte_N_03879_19490101_19970103_hist.zip
+Status: Downloaded: stundenwerte_N_03879_19490101_19970103_hist.zip (786750 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03925_20050901_20111231_hist.zip
+File: stundenwerte_N_03925_20050901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03925_20050901_20111231_hist.zip (26576 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03927_20040701_20111231_hist.zip
+File: stundenwerte_N_03927_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03927_20040701_20111231_hist.zip (30924 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03921_19790101_19970528_hist.zip
+File: stundenwerte_N_03921_19790101_19970528_hist.zip
+Status: Downloaded: stundenwerte_N_03921_19790101_19970528_hist.zip (166208 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03939_20041001_20111231_hist.zip
+File: stundenwerte_N_03939_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03939_20041001_20111231_hist.zip (30136 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03975_20050301_20111231_hist.zip
+File: stundenwerte_N_03975_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_03975_20050301_20111231_hist.zip (28776 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03946_19750701_20241231_hist.zip
+File: stundenwerte_N_03946_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03946_19750701_20241231_hist.zip (716345 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03997_19911101_19941230_hist.zip
+File: stundenwerte_N_03997_19911101_19941230_hist.zip
+Status: Downloaded: stundenwerte_N_03997_19911101_19941230_hist.zip (105883 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04026_19900116_19941203_hist.zip
+File: stundenwerte_N_04026_19900116_19941203_hist.zip
+Status: Downloaded: stundenwerte_N_04026_19900116_19941203_hist.zip (5522 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04024_19900612_20241231_hist.zip
+File: stundenwerte_N_04024_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04024_19900612_20241231_hist.zip (449448 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_03987_19750701_20241231_hist.zip
+File: stundenwerte_N_03987_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_03987_19750701_20241231_hist.zip (1355293 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04032_20061201_20111231_hist.zip
+File: stundenwerte_N_04032_20061201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04032_20061201_20111231_hist.zip (21014 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04036_20070301_20111231_hist.zip
+File: stundenwerte_N_04036_20070301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04036_20070301_20111231_hist.zip (21871 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04063_20030701_20120109_hist.zip
+File: stundenwerte_N_04063_20030701_20120109_hist.zip
+Status: Downloaded: stundenwerte_N_04063_20030701_20120109_hist.zip (34884 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04094_20040601_20111231_hist.zip
+File: stundenwerte_N_04094_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04094_20040601_20111231_hist.zip (30898 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04039_20070619_20241231_hist.zip
+File: stundenwerte_N_04039_20070619_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04039_20070619_20241231_hist.zip (444754 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04127_20050101_20111231_hist.zip
+File: stundenwerte_N_04127_20050101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04127_20050101_20111231_hist.zip (29099 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04104_19490101_20241231_hist.zip
+File: stundenwerte_N_04104_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04104_19490101_20241231_hist.zip (1544160 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04169_20021101_20111231_hist.zip
+File: stundenwerte_N_04169_20021101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04169_20021101_20111231_hist.zip (36673 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04174_19930301_20171219_hist.zip
+File: stundenwerte_N_04174_19930301_20171219_hist.zip
+Status: Downloaded: stundenwerte_N_04174_19930301_20171219_hist.zip (608781 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04175_20040601_20111231_hist.zip
+File: stundenwerte_N_04175_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04175_20040601_20111231_hist.zip (30977 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04177_20081101_20241231_hist.zip
+File: stundenwerte_N_04177_20081101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04177_20081101_20241231_hist.zip (449287 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04190_19900211_19921230_hist.zip
+File: stundenwerte_N_04190_19900211_19921230_hist.zip
+Status: Downloaded: stundenwerte_N_04190_19900211_19921230_hist.zip (7795 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04189_20040801_20111231_hist.zip
+File: stundenwerte_N_04189_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04189_20040801_20111231_hist.zip (29198 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04261_20060301_20120108_hist.zip
+File: stundenwerte_N_04261_20060301_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_04261_20060301_20120108_hist.zip (25469 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04275_20041201_20110118_hist.zip
+File: stundenwerte_N_04275_20041201_20110118_hist.zip
+Status: Downloaded: stundenwerte_N_04275_20041201_20110118_hist.zip (26199 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04271_19750701_20241231_hist.zip
+File: stundenwerte_N_04271_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04271_19750701_20241231_hist.zip (1334313 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04287_20050101_20111231_hist.zip
+File: stundenwerte_N_04287_20050101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04287_20050101_20111231_hist.zip (27709 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04280_19930301_20241231_hist.zip
+File: stundenwerte_N_04280_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04280_19930301_20241231_hist.zip (791698 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04300_20040701_20111231_hist.zip
+File: stundenwerte_N_04300_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04300_20040701_20111231_hist.zip (30803 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04323_20050301_20111231_hist.zip
+File: stundenwerte_N_04323_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04323_20050301_20111231_hist.zip (28387 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04301_20050301_20111231_hist.zip
+File: stundenwerte_N_04301_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04301_20050301_20111231_hist.zip (28453 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04354_20060101_20111231_hist.zip
+File: stundenwerte_N_04354_20060101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04354_20060101_20111231_hist.zip (24056 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04349_20040601_20111231_hist.zip
+File: stundenwerte_N_04349_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04349_20040601_20111231_hist.zip (31300 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04154_20110201_20111231_hist.zip
+File: stundenwerte_N_04154_20110201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04154_20110201_20111231_hist.zip (7931 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04336_19490101_20241231_hist.zip
+File: stundenwerte_N_04336_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04336_19490101_20241231_hist.zip (1757518 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04160_20040701_20111223_hist.zip
+File: stundenwerte_N_04160_20040701_20111223_hist.zip
+Status: Downloaded: stundenwerte_N_04160_20040701_20111223_hist.zip (29483 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04377_20050901_20120108_hist.zip
+File: stundenwerte_N_04377_20050901_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_04377_20050901_20120108_hist.zip (25459 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04411_20040501_20111231_hist.zip
+File: stundenwerte_N_04411_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04411_20040501_20111231_hist.zip (31383 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04425_19490101_19670928_hist.zip
+File: stundenwerte_N_04425_19490101_19670928_hist.zip
+Status: Downloaded: stundenwerte_N_04425_19490101_19670928_hist.zip (134826 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04393_19991201_20241231_hist.zip
+File: stundenwerte_N_04393_19991201_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04393_19991201_20241231_hist.zip (689132 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04445_19900612_20111231_hist.zip
+File: stundenwerte_N_04445_19900612_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04445_19900612_20111231_hist.zip (34043 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04371_19501001_20241231_hist.zip
+File: stundenwerte_N_04371_19501001_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04371_19501001_20241231_hist.zip (1149146 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04480_20040901_20120107_hist.zip
+File: stundenwerte_N_04480_20040901_20120107_hist.zip
+Status: Downloaded: stundenwerte_N_04480_20040901_20120107_hist.zip (30809 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04464_19900612_20241231_hist.zip
+File: stundenwerte_N_04464_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04464_19900612_20241231_hist.zip (456978 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04485_20050201_20111231_hist.zip
+File: stundenwerte_N_04485_20050201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04485_20050201_20111231_hist.zip (26932 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04466_19510312_20241231_hist.zip
+File: stundenwerte_N_04466_19510312_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04466_19510312_20241231_hist.zip (1506019 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04501_19780701_20241231_hist.zip
+File: stundenwerte_N_04501_19780701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04501_19780701_20241231_hist.zip (1092060 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04508_20040801_20111231_hist.zip
+File: stundenwerte_N_04508_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04508_20040801_20111231_hist.zip (28623 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04548_20070701_20111231_hist.zip
+File: stundenwerte_N_04548_20070701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04548_20070701_20111231_hist.zip (18795 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04559_20050501_20111231_hist.zip
+File: stundenwerte_N_04559_20050501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04559_20050501_20111231_hist.zip (27904 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04592_20051201_20120108_hist.zip
+File: stundenwerte_N_04592_20051201_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_04592_20051201_20120108_hist.zip (24429 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04560_20050201_20111231_hist.zip
+File: stundenwerte_N_04560_20050201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04560_20050201_20111231_hist.zip (27928 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04605_20041101_20111231_hist.zip
+File: stundenwerte_N_04605_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04605_20041101_20111231_hist.zip (28385 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04629_19790101_19991130_hist.zip
+File: stundenwerte_N_04629_19790101_19991130_hist.zip
+Status: Downloaded: stundenwerte_N_04629_19790101_19991130_hist.zip (246989 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04651_20041101_20111231_hist.zip
+File: stundenwerte_N_04651_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04651_20041101_20111231_hist.zip (29849 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04665_19671128_19750513_hist.zip
+File: stundenwerte_N_04665_19671128_19750513_hist.zip
+Status: Downloaded: stundenwerte_N_04665_19671128_19750513_hist.zip (41336 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04625_19750701_20241231_hist.zip
+File: stundenwerte_N_04625_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04625_19750701_20241231_hist.zip (1330448 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04703_20021101_20120108_hist.zip
+File: stundenwerte_N_04703_20021101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_04703_20021101_20120108_hist.zip (36706 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04642_19770420_20241231_hist.zip
+File: stundenwerte_N_04642_19770420_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04642_19770420_20241231_hist.zip (1279562 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04704_20050501_20111231_hist.zip
+File: stundenwerte_N_04704_20050501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04704_20050501_20111231_hist.zip (28344 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04702_19950105_20071115_hist.zip
+File: stundenwerte_N_04702_19950105_20071115_hist.zip
+Status: Downloaded: stundenwerte_N_04702_19950105_20071115_hist.zip (264458 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04706_20050301_20120105_hist.zip
+File: stundenwerte_N_04706_20050301_20120105_hist.zip
+Status: Downloaded: stundenwerte_N_04706_20050301_20120105_hist.zip (28565 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04719_19900119_19921028_hist.zip
+File: stundenwerte_N_04719_19900119_19921028_hist.zip
+Status: Downloaded: stundenwerte_N_04719_19900119_19921028_hist.zip (6822 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04748_20041101_20101230_hist.zip
+File: stundenwerte_N_04748_20041101_20101230_hist.zip
+Status: Downloaded: stundenwerte_N_04748_20041101_20101230_hist.zip (24724 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04763_20041001_20111231_hist.zip
+File: stundenwerte_N_04763_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04763_20041001_20111231_hist.zip (29909 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04752_19750701_19930331_hist.zip
+File: stundenwerte_N_04752_19750701_19930331_hist.zip
+Status: Downloaded: stundenwerte_N_04752_19750701_19930331_hist.zip (104639 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04745_19580601_20241231_hist.zip
+File: stundenwerte_N_04745_19580601_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04745_19580601_20241231_hist.zip (1098188 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04841_20040701_20111231_hist.zip
+File: stundenwerte_N_04841_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04841_20040701_20111231_hist.zip (30848 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04878_20050201_20120108_hist.zip
+File: stundenwerte_N_04878_20050201_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_04878_20050201_20120108_hist.zip (27050 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04857_20040901_20120108_hist.zip
+File: stundenwerte_N_04857_20040901_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_04857_20040901_20120108_hist.zip (28657 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04896_20050701_20111231_hist.zip
+File: stundenwerte_N_04896_20050701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04896_20050701_20111231_hist.zip (25810 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04887_19490101_20241231_hist.zip
+File: stundenwerte_N_04887_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04887_19490101_20241231_hist.zip (1457728 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04926_20021101_20111231_hist.zip
+File: stundenwerte_N_04926_20021101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04926_20021101_20111231_hist.zip (36718 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04911_19930301_20241231_hist.zip
+File: stundenwerte_N_04911_19930301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04911_19930301_20241231_hist.zip (839355 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04927_19490101_19840730_hist.zip
+File: stundenwerte_N_04927_19490101_19840730_hist.zip
+Status: Downloaded: stundenwerte_N_04927_19490101_19840730_hist.zip (298999 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04950_19920316_19920821_hist.zip
+File: stundenwerte_N_04950_19920316_19920821_hist.zip
+Status: Downloaded: stundenwerte_N_04950_19920316_19920821_hist.zip (11120 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04978_20021101_20111231_hist.zip
+File: stundenwerte_N_04978_20021101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04978_20021101_20111231_hist.zip (37195 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04928_19840807_20241231_hist.zip
+File: stundenwerte_N_04928_19840807_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04928_19840807_20241231_hist.zip (834496 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04997_20050301_20111231_hist.zip
+File: stundenwerte_N_04997_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_04997_20050301_20111231_hist.zip (28639 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_04931_19490101_20241231_hist.zip
+File: stundenwerte_N_04931_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_04931_19490101_20241231_hist.zip (1838926 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05017_20051101_20120108_hist.zip
+File: stundenwerte_N_05017_20051101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_05017_20051101_20120108_hist.zip (26175 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05014_20040701_20111231_hist.zip
+File: stundenwerte_N_05014_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05014_20040701_20111231_hist.zip (29383 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05009_19750701_20111231_hist.zip
+File: stundenwerte_N_05009_19750701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05009_19750701_20111231_hist.zip (562429 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05046_20080301_20111231_hist.zip
+File: stundenwerte_N_05046_20080301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05046_20080301_20111231_hist.zip (16540 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05064_20041201_20111231_hist.zip
+File: stundenwerte_N_05064_20041201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05064_20041201_20111231_hist.zip (29790 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05029_19750515_20241231_hist.zip
+File: stundenwerte_N_05029_19750515_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05029_19750515_20241231_hist.zip (930276 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05063_19490101_19750327_hist.zip
+File: stundenwerte_N_05063_19490101_19750327_hist.zip
+Status: Downloaded: stundenwerte_N_05063_19490101_19750327_hist.zip (232085 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05097_20050101_20111231_hist.zip
+File: stundenwerte_N_05097_20050101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05097_20050101_20111231_hist.zip (29111 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05111_20060401_20111231_hist.zip
+File: stundenwerte_N_05111_20060401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05111_20060401_20111231_hist.zip (24923 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05133_20040901_20111231_hist.zip
+File: stundenwerte_N_05133_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05133_20040901_20111231_hist.zip (29723 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05100_19490101_20241231_hist.zip
+File: stundenwerte_N_05100_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05100_19490101_20241231_hist.zip (1560520 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05120_19500101_19781215_hist.zip
+File: stundenwerte_N_05120_19500101_19781215_hist.zip
+Status: Downloaded: stundenwerte_N_05120_19500101_19781215_hist.zip (183525 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05109_19911101_20241231_hist.zip
+File: stundenwerte_N_05109_19911101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05109_19911101_20241231_hist.zip (867608 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05146_20040601_20111231_hist.zip
+File: stundenwerte_N_05146_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05146_20040601_20111231_hist.zip (31270 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05149_20050101_20111231_hist.zip
+File: stundenwerte_N_05149_20050101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05149_20050101_20111231_hist.zip (27799 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05142_19750701_20241231_hist.zip
+File: stundenwerte_N_05142_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05142_19750701_20241231_hist.zip (769400 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05155_19490101_20140901_hist.zip
+File: stundenwerte_N_05155_19490101_20140901_hist.zip
+Status: Downloaded: stundenwerte_N_05155_19490101_20140901_hist.zip (906366 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05277_19870104_19931203_hist.zip
+File: stundenwerte_N_05277_19870104_19931203_hist.zip
+Status: Downloaded: stundenwerte_N_05277_19870104_19931203_hist.zip (6925 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05158_19900613_20241231_hist.zip
+File: stundenwerte_N_05158_19900613_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05158_19900613_20241231_hist.zip (474304 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05275_20040601_20111231_hist.zip
+File: stundenwerte_N_05275_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05275_20040601_20111231_hist.zip (30490 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05229_20040801_20120108_hist.zip
+File: stundenwerte_N_05229_20040801_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_05229_20040801_20120108_hist.zip (29257 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05280_20070301_20111231_hist.zip
+File: stundenwerte_N_05280_20070301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05280_20070301_20111231_hist.zip (21427 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05279_20040901_20111231_hist.zip
+File: stundenwerte_N_05279_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05279_20040901_20111231_hist.zip (30493 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05300_20040701_20111231_hist.zip
+File: stundenwerte_N_05300_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05300_20040701_20111231_hist.zip (31106 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05335_20060801_20120104_hist.zip
+File: stundenwerte_N_05335_20060801_20120104_hist.zip
+Status: Downloaded: stundenwerte_N_05335_20060801_20120104_hist.zip (22255 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05347_19900309_20241231_hist.zip
+File: stundenwerte_N_05347_19900309_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05347_19900309_20241231_hist.zip (452080 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05349_20140710_20241231_hist.zip
+File: stundenwerte_N_05349_20140710_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05349_20140710_20241231_hist.zip (289336 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05424_20070601_20111231_hist.zip
+File: stundenwerte_N_05424_20070601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05424_20070601_20111231_hist.zip (19345 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05404_20081124_20241231_hist.zip
+File: stundenwerte_N_05404_20081124_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05404_20081124_20241231_hist.zip (437948 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05397_19490101_20241231_hist.zip
+File: stundenwerte_N_05397_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05397_19490101_20241231_hist.zip (1455804 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05371_19490101_20241231_hist.zip
+File: stundenwerte_N_05371_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05371_19490101_20241231_hist.zip (1536476 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05433_20040901_20111231_hist.zip
+File: stundenwerte_N_05433_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05433_20040901_20111231_hist.zip (29993 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05426_19520418_20241231_hist.zip
+File: stundenwerte_N_05426_19520418_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05426_19520418_20241231_hist.zip (1159425 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05440_19490101_20241231_hist.zip
+File: stundenwerte_N_05440_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05440_19490101_20241231_hist.zip (1400400 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05480_19790102_20241231_hist.zip
+File: stundenwerte_N_05480_19790102_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05480_19790102_20241231_hist.zip (696832 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05467_19510101_20120921_hist.zip
+File: stundenwerte_N_05467_19510101_20120921_hist.zip
+Status: Downloaded: stundenwerte_N_05467_19510101_20120921_hist.zip (965213 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05490_19750701_20241231_hist.zip
+File: stundenwerte_N_05490_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05490_19750701_20241231_hist.zip (565390 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05538_20050101_20111230_hist.zip
+File: stundenwerte_N_05538_20050101_20111230_hist.zip
+Status: Downloaded: stundenwerte_N_05538_20050101_20111230_hist.zip (29127 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05541_20040801_20111231_hist.zip
+File: stundenwerte_N_05541_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05541_20040801_20111231_hist.zip (29634 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05516_19960613_20241231_hist.zip
+File: stundenwerte_N_05516_19960613_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05516_19960613_20241231_hist.zip (778784 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05562_20040601_20111231_hist.zip
+File: stundenwerte_N_05562_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05562_20040601_20111231_hist.zip (29806 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05546_19900612_20241231_hist.zip
+File: stundenwerte_N_05546_19900612_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05546_19900612_20241231_hist.zip (682837 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05643_20041101_20111231_hist.zip
+File: stundenwerte_N_05643_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05643_20041101_20111231_hist.zip (29725 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05642_19950320_20010928_hist.zip
+File: stundenwerte_N_05642_19950320_20010928_hist.zip
+Status: Downloaded: stundenwerte_N_05642_19950320_20010928_hist.zip (137346 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05640_19790101_20241231_hist.zip
+File: stundenwerte_N_05640_19790101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05640_19790101_20241231_hist.zip (870740 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05663_19920316_19960723_hist.zip
+File: stundenwerte_N_05663_19920316_19960723_hist.zip
+Status: Downloaded: stundenwerte_N_05663_19920316_19960723_hist.zip (20546 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05676_20100901_20120109_hist.zip
+File: stundenwerte_N_05676_20100901_20120109_hist.zip
+Status: Downloaded: stundenwerte_N_05676_20100901_20120109_hist.zip (9629 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05629_19750701_20241231_hist.zip
+File: stundenwerte_N_05629_19750701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05629_19750701_20241231_hist.zip (1272424 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05664_20040701_20111231_hist.zip
+File: stundenwerte_N_05664_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05664_20040701_20111231_hist.zip (30794 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05692_20040901_20111231_hist.zip
+File: stundenwerte_N_05692_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05692_20040901_20111231_hist.zip (30593 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05697_19911101_19940331_hist.zip
+File: stundenwerte_N_05697_19911101_19940331_hist.zip
+Status: Downloaded: stundenwerte_N_05697_19911101_19940331_hist.zip (51337 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05717_20060901_20111231_hist.zip
+File: stundenwerte_N_05717_20060901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05717_20060901_20111231_hist.zip (21780 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05719_20041001_20091105_hist.zip
+File: stundenwerte_N_05719_20041001_20091105_hist.zip
+Status: Downloaded: stundenwerte_N_05719_20041001_20091105_hist.zip (21832 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05731_20040801_20111231_hist.zip
+File: stundenwerte_N_05731_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05731_20040801_20111231_hist.zip (30378 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05715_19790102_20241231_hist.zip
+File: stundenwerte_N_05715_19790102_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05715_19790102_20241231_hist.zip (873783 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05705_19490101_20241231_hist.zip
+File: stundenwerte_N_05705_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05705_19490101_20241231_hist.zip (1511853 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05745_20040601_20111231_hist.zip
+File: stundenwerte_N_05745_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05745_20040601_20111231_hist.zip (30950 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05750_20060301_20111231_hist.zip
+File: stundenwerte_N_05750_20060301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05750_20060301_20111231_hist.zip (23834 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05797_20051201_20111231_hist.zip
+File: stundenwerte_N_05797_20051201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05797_20051201_20111231_hist.zip (25959 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05822_20040701_20111231_hist.zip
+File: stundenwerte_N_05822_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05822_20040701_20111231_hist.zip (28914 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05779_19770420_20241231_hist.zip
+File: stundenwerte_N_05779_19770420_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05779_19770420_20241231_hist.zip (1118317 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05792_19490101_20241231_hist.zip
+File: stundenwerte_N_05792_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05792_19490101_20241231_hist.zip (1495938 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05825_20040501_20111231_hist.zip
+File: stundenwerte_N_05825_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05825_20040501_20111231_hist.zip (29921 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05800_19820108_20241231_hist.zip
+File: stundenwerte_N_05800_19820108_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05800_19820108_20241231_hist.zip (444698 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05839_19970701_20241231_hist.zip
+File: stundenwerte_N_05839_19970701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05839_19970701_20241231_hist.zip (750570 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05856_19970107_20241231_hist.zip
+File: stundenwerte_N_05856_19970107_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05856_19970107_20241231_hist.zip (764030 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05871_19970701_20241231_hist.zip
+File: stundenwerte_N_05871_19970701_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05871_19970701_20241231_hist.zip (739128 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05941_20070301_20111231_hist.zip
+File: stundenwerte_N_05941_20070301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_05941_20070301_20111231_hist.zip (21767 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05906_19490101_20241231_hist.zip
+File: stundenwerte_N_05906_19490101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05906_19490101_20241231_hist.zip (1466980 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06093_20040501_20120108_hist.zip
+File: stundenwerte_N_06093_20040501_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_06093_20040501_20120108_hist.zip (29637 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06105_20040501_20111231_hist.zip
+File: stundenwerte_N_06105_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06105_20040501_20111231_hist.zip (30019 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06109_20040901_20111231_hist.zip
+File: stundenwerte_N_06109_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06109_20040901_20111231_hist.zip (30373 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06124_19930327_19960831_hist.zip
+File: stundenwerte_N_06124_19930327_19960831_hist.zip
+Status: Downloaded: stundenwerte_N_06124_19930327_19960831_hist.zip (28246 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06123_19930119_19960815_hist.zip
+File: stundenwerte_N_06123_19930119_19960815_hist.zip
+Status: Downloaded: stundenwerte_N_06123_19930119_19960815_hist.zip (27374 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_05930_19820203_20241231_hist.zip
+File: stundenwerte_N_05930_19820203_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_05930_19820203_20241231_hist.zip (455713 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06129_20041101_20111231_hist.zip
+File: stundenwerte_N_06129_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06129_20041101_20111231_hist.zip (28187 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06157_20071001_20111231_hist.zip
+File: stundenwerte_N_06157_20071001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06157_20071001_20111231_hist.zip (19107 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06158_20041101_20111231_hist.zip
+File: stundenwerte_N_06158_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06158_20041101_20111231_hist.zip (29817 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06159_20081201_20120104_hist.zip
+File: stundenwerte_N_06159_20081201_20120104_hist.zip
+Status: Downloaded: stundenwerte_N_06159_20081201_20120104_hist.zip (15364 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06163_20070807_20241231_hist.zip
+File: stundenwerte_N_06163_20070807_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_06163_20070807_20241231_hist.zip (448749 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06170_20040601_20120108_hist.zip
+File: stundenwerte_N_06170_20040601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_06170_20040601_20120108_hist.zip (31002 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06182_20040601_20111231_hist.zip
+File: stundenwerte_N_06182_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06182_20040601_20111231_hist.zip (30897 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06189_19930109_19940829_hist.zip
+File: stundenwerte_N_06189_19930109_19940829_hist.zip
+Status: Downloaded: stundenwerte_N_06189_19930109_19940829_hist.zip (28750 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06186_20040801_20120108_hist.zip
+File: stundenwerte_N_06186_20040801_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_06186_20040801_20120108_hist.zip (30215 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06199_20041001_20111231_hist.zip
+File: stundenwerte_N_06199_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06199_20041001_20111231_hist.zip (29366 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06217_20041001_20111231_hist.zip
+File: stundenwerte_N_06217_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06217_20041001_20111231_hist.zip (30092 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06259_20040601_20111231_hist.zip
+File: stundenwerte_N_06259_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06259_20040601_20111231_hist.zip (29197 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06258_20030101_20111231_hist.zip
+File: stundenwerte_N_06258_20030101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06258_20030101_20111231_hist.zip (35753 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06197_20080103_20241231_hist.zip
+File: stundenwerte_N_06197_20080103_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_06197_20080103_20241231_hist.zip (451306 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06260_20021201_20111231_hist.zip
+File: stundenwerte_N_06260_20021201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06260_20021201_20111231_hist.zip (34576 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06262_20021101_20111231_hist.zip
+File: stundenwerte_N_06262_20021101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06262_20021101_20111231_hist.zip (34942 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06264_20040601_20111231_hist.zip
+File: stundenwerte_N_06264_20040601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06264_20040601_20111231_hist.zip (31431 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06263_20040701_20111231_hist.zip
+File: stundenwerte_N_06263_20040701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06263_20040701_20111231_hist.zip (30908 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06265_20040501_20111231_hist.zip
+File: stundenwerte_N_06265_20040501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06265_20040501_20111231_hist.zip (29689 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06266_20040901_20111231_hist.zip
+File: stundenwerte_N_06266_20040901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06266_20040901_20111231_hist.zip (30090 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06272_20041001_20111231_hist.zip
+File: stundenwerte_N_06272_20041001_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06272_20041001_20111231_hist.zip (29715 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06273_20040601_20120108_hist.zip
+File: stundenwerte_N_06273_20040601_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_06273_20040601_20120108_hist.zip (29465 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06275_20040701_20120109_hist.zip
+File: stundenwerte_N_06275_20040701_20120109_hist.zip
+Status: Downloaded: stundenwerte_N_06275_20040701_20120109_hist.zip (30956 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06305_20041201_20120108_hist.zip
+File: stundenwerte_N_06305_20041201_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_06305_20041201_20120108_hist.zip (27192 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06310_20040801_20120105_hist.zip
+File: stundenwerte_N_06310_20040801_20120105_hist.zip
+Status: Downloaded: stundenwerte_N_06310_20040801_20120105_hist.zip (29164 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06312_20041101_20111231_hist.zip
+File: stundenwerte_N_06312_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06312_20041101_20111231_hist.zip (27784 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06337_20040801_20111231_hist.zip
+File: stundenwerte_N_06337_20040801_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06337_20040801_20111231_hist.zip (30725 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06336_20051101_20111231_hist.zip
+File: stundenwerte_N_06336_20051101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06336_20051101_20111231_hist.zip (24590 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06314_20050801_20120108_hist.zip
+File: stundenwerte_N_06314_20050801_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_06314_20050801_20120108_hist.zip (25362 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06344_20041201_20111230_hist.zip
+File: stundenwerte_N_06344_20041201_20111230_hist.zip
+Status: Downloaded: stundenwerte_N_06344_20041201_20111230_hist.zip (28357 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06346_20050201_20111231_hist.zip
+File: stundenwerte_N_06346_20050201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06346_20050201_20111231_hist.zip (28835 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_06347_20050301_20111231_hist.zip
+File: stundenwerte_N_06347_20050301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_06347_20050301_20111231_hist.zip (28366 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07075_20050201_20111231_hist.zip
+File: stundenwerte_N_07075_20050201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07075_20050201_20111231_hist.zip (27226 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07099_20041101_20111231_hist.zip
+File: stundenwerte_N_07099_20041101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07099_20041101_20111231_hist.zip (29259 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07105_20050601_20111231_hist.zip
+File: stundenwerte_N_07105_20050601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07105_20050601_20111231_hist.zip (25819 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07106_20060901_20110907_hist.zip
+File: stundenwerte_N_07106_20060901_20110907_hist.zip
+Status: Downloaded: stundenwerte_N_07106_20060901_20110907_hist.zip (21653 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07187_20041201_20111231_hist.zip
+File: stundenwerte_N_07187_20041201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07187_20041201_20111231_hist.zip (29004 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07298_20050701_20111231_hist.zip
+File: stundenwerte_N_07298_20050701_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07298_20050701_20111231_hist.zip (25797 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07319_20050301_20120108_hist.zip
+File: stundenwerte_N_07319_20050301_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_07319_20050301_20120108_hist.zip (26996 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07321_20050901_20111231_hist.zip
+File: stundenwerte_N_07321_20050901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07321_20050901_20111231_hist.zip (26611 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07244_19930203_20040930_hist.zip
+File: stundenwerte_N_07244_19930203_20040930_hist.zip
+Status: Downloaded: stundenwerte_N_07244_19930203_20040930_hist.zip (153620 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07329_20051101_20111231_hist.zip
+File: stundenwerte_N_07329_20051101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07329_20051101_20111231_hist.zip (23931 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07330_20051001_20091122_hist.zip
+File: stundenwerte_N_07330_20051001_20091122_hist.zip
+Status: Downloaded: stundenwerte_N_07330_20051001_20091122_hist.zip (18790 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07325_20110901_20151231_hist.zip
+File: stundenwerte_N_07325_20110901_20151231_hist.zip
+Status: Downloaded: stundenwerte_N_07325_20110901_20151231_hist.zip (109652 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07331_20050901_20111231_hist.zip
+File: stundenwerte_N_07331_20050901_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07331_20050901_20111231_hist.zip (26864 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07340_20080326_20191220_hist.zip
+File: stundenwerte_N_07340_20080326_20191220_hist.zip
+Status: Downloaded: stundenwerte_N_07340_20080326_20191220_hist.zip (251528 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07343_20060401_20111231_hist.zip
+File: stundenwerte_N_07343_20060401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07343_20060401_20111231_hist.zip (24770 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07350_20060801_20120104_hist.zip
+File: stundenwerte_N_07350_20060801_20120104_hist.zip
+Status: Downloaded: stundenwerte_N_07350_20060801_20120104_hist.zip (23363 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07341_20050718_20241231_hist.zip
+File: stundenwerte_N_07341_20050718_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07341_20050718_20241231_hist.zip (463657 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07351_20060411_20241231_hist.zip
+File: stundenwerte_N_07351_20060411_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07351_20060411_20241231_hist.zip (454343 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07364_20070101_20111231_hist.zip
+File: stundenwerte_N_07364_20070101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07364_20070101_20111231_hist.zip (22172 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07367_20081017_20241231_hist.zip
+File: stundenwerte_N_07367_20081017_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07367_20081017_20241231_hist.zip (446488 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07373_20060301_20111231_hist.zip
+File: stundenwerte_N_07373_20060301_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07373_20060301_20111231_hist.zip (23609 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07368_20080103_20241231_hist.zip
+File: stundenwerte_N_07368_20080103_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07368_20080103_20241231_hist.zip (445459 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07369_20080604_20241231_hist.zip
+File: stundenwerte_N_07369_20080604_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07369_20080604_20241231_hist.zip (449815 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07370_20080906_20241231_hist.zip
+File: stundenwerte_N_07370_20080906_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07370_20080906_20241231_hist.zip (445424 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07389_20061201_20111231_hist.zip
+File: stundenwerte_N_07389_20061201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07389_20061201_20111231_hist.zip (22494 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07374_20060301_20241231_hist.zip
+File: stundenwerte_N_07374_20060301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07374_20060301_20241231_hist.zip (452673 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07393_20100101_20241231_hist.zip
+File: stundenwerte_N_07393_20100101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07393_20100101_20241231_hist.zip (413411 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07394_20080604_20241231_hist.zip
+File: stundenwerte_N_07394_20080604_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07394_20080604_20241231_hist.zip (453702 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07395_20080103_20241231_hist.zip
+File: stundenwerte_N_07395_20080103_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07395_20080103_20241231_hist.zip (451042 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07396_20080604_20241231_hist.zip
+File: stundenwerte_N_07396_20080604_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07396_20080604_20241231_hist.zip (415771 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07403_20090528_20241231_hist.zip
+File: stundenwerte_N_07403_20090528_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07403_20090528_20241231_hist.zip (425410 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07419_20061201_20111231_hist.zip
+File: stundenwerte_N_07419_20061201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07419_20061201_20111231_hist.zip (20998 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07410_20110201_20241231_hist.zip
+File: stundenwerte_N_07410_20110201_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07410_20110201_20241231_hist.zip (379982 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07412_20081110_20241231_hist.zip
+File: stundenwerte_N_07412_20081110_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_07412_20081110_20241231_hist.zip (390570 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07420_20070401_20111231_hist.zip
+File: stundenwerte_N_07420_20070401_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07420_20070401_20111231_hist.zip (20975 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07424_20061201_20111231_hist.zip
+File: stundenwerte_N_07424_20061201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07424_20061201_20111231_hist.zip (22272 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07427_20070901_20120108_hist.zip
+File: stundenwerte_N_07427_20070901_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_07427_20070901_20120108_hist.zip (18352 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07431_20071101_20111231_hist.zip
+File: stundenwerte_N_07431_20071101_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07431_20071101_20111231_hist.zip (19312 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07428_20070501_20111231_hist.zip
+File: stundenwerte_N_07428_20070501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07428_20070501_20111231_hist.zip (19318 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_07432_20070501_20111231_hist.zip
+File: stundenwerte_N_07432_20070501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_07432_20070501_20111231_hist.zip (19384 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13670_20070601_20111231_hist.zip
+File: stundenwerte_N_13670_20070601_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_13670_20070601_20111231_hist.zip (18679 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13675_20071101_20120108_hist.zip
+File: stundenwerte_N_13675_20071101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_13675_20071101_20120108_hist.zip (17605 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13696_20071201_20111231_hist.zip
+File: stundenwerte_N_13696_20071201_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_13696_20071201_20111231_hist.zip (18695 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13700_20080501_20111231_hist.zip
+File: stundenwerte_N_13700_20080501_20111231_hist.zip
+Status: Downloaded: stundenwerte_N_13700_20080501_20111231_hist.zip (15913 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13710_20080401_20120108_hist.zip
+File: stundenwerte_N_13710_20080401_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_13710_20080401_20120108_hist.zip (16172 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13674_20091201_20241231_hist.zip
+File: stundenwerte_N_13674_20091201_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_13674_20091201_20241231_hist.zip (417056 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13711_20071201_20120108_hist.zip
+File: stundenwerte_N_13711_20071201_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_13711_20071201_20120108_hist.zip (18996 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13777_20080601_20120109_hist.zip
+File: stundenwerte_N_13777_20080601_20120109_hist.zip
+Status: Downloaded: stundenwerte_N_13777_20080601_20120109_hist.zip (17312 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_13713_20071101_20120108_hist.zip
+File: stundenwerte_N_13713_20071101_20120108_hist.zip
+Status: Downloaded: stundenwerte_N_13713_20071101_20120108_hist.zip (18999 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_15207_20131101_20241231_hist.zip
+File: stundenwerte_N_15207_20131101_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_15207_20131101_20241231_hist.zip (303746 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_15000_20110401_20241231_hist.zip
+File: stundenwerte_N_15000_20110401_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_15000_20110401_20241231_hist.zip (382885 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_15444_20140901_20241231_hist.zip
+File: stundenwerte_N_15444_20140901_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_15444_20140901_20241231_hist.zip (287324 bytes)
+------------------------------
+URL: https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/hourly/cloudiness/historical/stundenwerte_N_15813_20220301_20241231_hist.zip
+File: stundenwerte_N_15813_20220301_20241231_hist.zip
+Status: Downloaded: stundenwerte_N_15813_20220301_20241231_hist.zip (79193 bytes)
+------------------------------

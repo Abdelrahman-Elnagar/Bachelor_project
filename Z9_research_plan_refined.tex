@@ -1,0 +1,1187 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{tcolorbox}
+\usepackage{parskip}
+\usepackage{setspace}
+
+% Color definitions
+\definecolor{primaryblue}{rgb}{0.16,0.50,0.73}
+\definecolor{secondaryblue}{rgb}{0.20,0.60,0.86}
+\definecolor{accentorange}{rgb}{0.90,0.49,0.13}
+\definecolor{lightgray}{rgb}{0.96,0.96,0.96}
+\definecolor{darkgray}{rgb}{0.33,0.33,0.33}
+\definecolor{successgreen}{rgb}{0.15,0.68,0.38}
+\definecolor{warningred}{rgb}{0.91,0.30,0.24}
+
+% Page setup
+\geometry{margin=0.8in}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{primaryblue}\textbf{Research Plan - Weather Stability vs Renewable Energy Models}}
+\fancyhead[R]{\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.8pt}
+
+% Title formatting with colors and spacing
+\titleformat{\section}
+{\color{primaryblue}\Large\bfseries}
+{\color{primaryblue}\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{secondaryblue}\large\bfseries}
+{\color{secondaryblue}\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{accentorange}\normalsize\bfseries}
+{\color{accentorange}\thesubsubsection}{1em}{}
+
+% Custom environments
+\newtcolorbox{objectivebox}{
+    colback=lightgray,
+    colframe=primaryblue,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Objective}
+}
+
+\newtcolorbox{deliverablebox}{
+    colback=lightgray,
+    colframe=successgreen,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Deliverables}
+}
+
+\newtcolorbox{checkbox}{
+    colback=lightgray,
+    colframe=warningred,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Checks}
+}
+
+\newtcolorbox{codebox}{
+    colback=lightgray,
+    colframe=darkgray,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Code Example}
+}
+
+% Enhanced code listing setup
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{darkgray},
+    showstringspaces=false,
+    backgroundcolor=\color{lightgray},
+    keywordstyle=\color{primaryblue}\bfseries,
+    commentstyle=\color{darkgray}\itshape,
+    stringstyle=\color{accentorange},
+    numberstyle=\color{darkgray}
+}
+
+% Enhanced list formatting
+\setlist[enumerate,1]{label=\textbf{\color{primaryblue}\arabic*.},leftmargin=1.5em}
+\setlist[enumerate,2]{label=\textbf{\color{secondaryblue}\alph*)},leftmargin=1.5em}
+\setlist[itemize,1]{label=\textcolor{primaryblue}{$\bullet$},leftmargin=1.5em}
+\setlist[itemize,2]{label=\textcolor{secondaryblue}{$\circ$},leftmargin=1.5em}
+
+% Spacing
+\setlength{\parskip}{0.5em}
+\onehalfspacing
+
+% Load hyperref last
+\usepackage{hyperref}
+
+\title{\textbf{\color{primaryblue}Research Plan - Weather Stability Impact on Renewable Energy Prediction}}
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\Huge\bfseries\color{primaryblue}Research Plan}\\[0.5cm]
+{\Large\color{secondaryblue}Weather Stability vs Renewable Energy Model Performance}\\[2cm]
+
+\begin{tcolorbox}[colback=lightgray,colframe=primaryblue,boxrule=2pt,arc=5pt,width=0.8\textwidth]
+\centering
+\large\textbf{Comparative Analysis of Renewable Energy Prediction Models}\\[0.3cm]
+\small Evaluating model robustness under weather-stable vs weather-unstable conditions using 2024 Germany data
+\end{tcolorbox}
+
+\vspace{2cm}
+
+\vfill
+{\large\color{darkgray}Research Methodology}\\[0.2cm]
+{\small\color{darkgray}10 Milestones • Statistical Analysis • Reproducible Research}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Research Overview}
+
+\begin{objectivebox}
+Determine which statistical models for renewable energy prediction perform best under stable vs unstable weather conditions, and provide operational guidance on model selection.
+\end{objectivebox}
+
+\subsection{Research Goal}
+
+This research aims to:
+\begin{enumerate}
+    \item Develop a \textbf{Weather Stability Index (WSI)} using 11 weather attributes to classify periods as stable or unstable
+    \item Apply statistical models from literature to predict renewable energy production for 2024
+    \item Compare model performance under stable vs unstable weather conditions
+    \item Identify which models are most robust to weather instability
+    \item Provide operational recommendations on model selection based on weather conditions
+\end{enumerate}
+
+\subsection{Pipeline Architecture}
+
+The research follows two parallel pipelines that converge for comparative analysis:
+
+\textbf{Pipeline 1: Weather Stability Classification}
+\begin{itemize}
+    \item \textbf{Input:} 11 weather attributes (2024, hourly, Germany-wide + 16 Bundesländer)
+    \begin{itemize}
+        \item Temperature (mean, min, max)
+        \item Cloudiness
+        \item Dew point
+        \item Extreme wind
+        \item Moisture
+        \item Precipitation
+        \item Pressure
+        \item Soil temperature
+        \item Sun
+        \item Visibility
+        \item Weather phenomena
+        \item Wind \& wind\_synop
+    \end{itemize}
+    \item \textbf{Process:} Feature engineering → WSI computation → Stable/Unstable classification
+    \item \textbf{Output:} Timeline with weather stability labels
+\end{itemize}
+
+\textbf{Pipeline 2: Renewable Energy Prediction Models}
+\begin{itemize}
+    \item \textbf{Input:} Renewable energy production data + relevant weather features
+    \begin{itemize}
+        \item Solar: radiation, cloudiness, temperature
+        \item Wind: wind speed, wind direction, pressure
+    \end{itemize}
+    \item \textbf{Process:} Apply statistical models (ARIMA, Prophet, Persistence, etc.) → Generate hourly predictions
+    \item \textbf{Output:} Timeline with predictions and performance metrics (MAE, RMSE, MAPE)
+\end{itemize}
+
+\textbf{Pipeline 3: Comparative Analysis}
+\begin{itemize}
+    \item Merge WSI timeline with model performance timeline
+    \item Statistical tests comparing stable vs unstable periods
+    \item Model ranking by accuracy and robustness
+    \item Operational recommendations
+\end{itemize}
+
+\section{Completed Work - Data Collection \& Preprocessing}
+
+\begin{objectivebox}
+Document the weather data that has already been collected, processed, and aggregated for Germany 2024.
+\end{objectivebox}
+
+\subsection{Data Sources}
+
+\textbf{Data Provider:} Deutscher Wetterdienst (DWD) - German Meteorological Service
+\begin{itemize}
+    \item Source: Hourly weather data from DWD climate data center
+    \item Period: 2024 (full year)
+    \item Spatial Coverage: Germany-wide + 16 Bundesländer
+    \item Station Network: 636+ weather stations
+    \item Data License: Open data license
+\end{itemize}
+
+\subsection{Attributes Collected (11 attributes)}
+\begin{enumerate}
+    \item \textbf{Temperature} - hourly mean, min, max
+    \item \textbf{Cloudiness} - cloud cover percentage
+    \item \textbf{Dew point} - atmospheric moisture
+    \item \textbf{Extreme wind} - peak wind measurements
+    \item \textbf{Moisture} - relative humidity
+    \item \textbf{Precipitation} - rainfall in mm
+    \item \textbf{Pressure} - atmospheric pressure in hPa
+    \item \textbf{Soil temperature} - ground temperature measurements
+    \item \textbf{Sun} - sunshine duration
+    \item \textbf{Visibility} - horizontal visibility
+    \item \textbf{Weather phenomena} - categorical weather events
+    \item \textbf{Wind \& wind\_synop} - wind speed, direction
+\end{enumerate}
+
+\subsection{Data Processing Steps Completed}
+
+\textbf{Step 1: Download \& Initial Processing}
+\begin{itemize}
+    \item Downloaded raw data from DWD servers
+    \item Converted from semicolon-delimited TXT to CSV format
+    \item Standardized timestamp format (MESS\_DATUM column)
+    \item Removed metadata files and cleaned up structure
+    \item Filtered to 2024 data only
+    \item Logged all operations in \texttt{logs/} directory
+\end{itemize}
+
+\textbf{Step 2: Bundesland Aggregation}
+\begin{itemize}
+    \item Mapped 636 weather stations to 16 Bundesländer using \texttt{regions.csv}
+    \item Aggregated station-level data into Bundesland-level files
+    \item Created 16 CSV files per attribute (one per Bundesland)
+    \item Preserved station IDs for traceability
+    \item Output: \texttt{Data/*\_by\_bundesland/*.csv}
+\end{itemize}
+
+\textbf{Step 3: Germany-Wide Aggregation}
+\begin{itemize}
+    \item Combined all Bundesland data into single Germany-wide files
+    \item Aggregated across all 16 states for country-level analysis
+    \item Output: \texttt{Data/*\_germany\_aggregated/Germany\_total.csv}
+\end{itemize}
+
+\textbf{Step 4: Data Quality Assurance}
+\begin{itemize}
+    \item Removed empty files (no data for 2024)
+    \item Validated completeness across attributes
+    \item Documented missing data patterns
+    \item Generated data inventory summary
+\end{itemize}
+
+\subsection{Current Data Structure}
+
+\textbf{Location:} \texttt{Data/} folder
+
+\textbf{Bundesland-Level Files:}
+\begin{itemize}
+    \item \texttt{dew\_point\_by\_bundesland/} - 16 CSV files
+    \item \texttt{extreme\_wind\_by\_bundesland/} - 16 CSV files
+    \item \texttt{moisture\_by\_bundesland/} - 16 CSV files
+    \item \texttt{precipitation\_by\_bundesland/} - 16 CSV files
+    \item \texttt{pressure\_by\_bundesland/} - 16 CSV files
+    \item \texttt{soil\_temperature\_by\_bundesland/} - 16 CSV files
+    \item \texttt{sun\_by\_bundesland/} - 16 CSV files
+    \item \texttt{visibility\_by\_bundesland/} - 16 CSV files
+    \item \texttt{weather\_phenomena\_by\_bundesland/} - 16 CSV files
+    \item \texttt{wind\_by\_bundesland/} - 16 CSV files
+    \item \texttt{wind\_synop\_by\_bundesland/} - 16 CSV files
+    \item \texttt{Temp\_Bundesland\_Aggregated/} - 17 CSV files (includes cloudiness)
+    \item \texttt{Cloudness\_Bundesland\_Aggregated/} - 17 CSV files
+\end{itemize}
+
+\textbf{Germany-Wide Files:}
+\begin{itemize}
+    \item \texttt{dew\_point\_germany\_aggregated/Germany\_total.csv}
+    \item \texttt{extreme\_wind\_germany\_aggregated/Germany\_total.csv}
+    \item \texttt{moisture\_germany\_aggregated/Germany\_total.csv}
+    \item \texttt{pressure\_germany/Germany\_total.csv}
+    \item \texttt{soil\_temperature\_germany/Germany\_total.csv}
+    \item \texttt{sun\_germany/Germany\_total.csv}
+    \item \texttt{Temp\_Germany\_Aggregated/}
+    \item \texttt{Cloudness\_Germany\_Aggregated/}
+\end{itemize}
+
+    \subsection{Processing Scripts}
+
+\textbf{Location:} \texttt{Scripts/} folder
+
+\textbf{Key Scripts:}
+\begin{itemize}
+    \item \texttt{process\_weather\_data.py} - Main processing pipeline
+    \item \texttt{process\_weather\_by\_bundesland.py} - Bundesland aggregation
+    \item \texttt{process\_dew\_point\_data.py} - Dew point specific processing
+    \item \texttt{process\_extreme\_wind\_data.py} - Extreme wind processing
+    \item \texttt{aggregate\_to\_germany.py} - Germany-wide aggregation
+    \item Download scripts for each attribute type
+    \item Data cleaning and filtering scripts
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item Documentation of completed data collection
+    \item Data inventory of available attributes
+    \item File structure summary
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 1 - Define Research Scope \& Success Criteria}
+
+\begin{objectivebox}
+Formalize research questions, hypotheses, and success criteria for the comparative analysis.
+\end{objectivebox}
+
+\subsection{Research Questions (RQs)}
+
+\begin{enumerate}
+    \item \textbf{RQ1:} Does renewable energy prediction accuracy differ significantly between weather-stable and weather-unstable periods?
+    
+    \item \textbf{RQ2:} Which statistical models are most robust to weather instability (i.e., show smallest performance degradation during unstable periods)?
+    
+    \item \textbf{RQ3:} Can weather stability information improve model selection strategies for operational renewable energy forecasting?
+\end{enumerate}
+
+\subsection{Hypotheses (H)}
+
+\begin{enumerate}
+    \item \textbf{H1:} Model prediction accuracy (MAE, RMSE) is significantly worse during weather-unstable periods compared to stable periods.
+    
+    \item \textbf{H2:} Different models show varying degrees of robustness to weather instability, with some models degrading more than others.
+    
+    \item \textbf{H3:} Time series models (Prophet, ARIMA) are more robust to weather instability than persistence models.
+    
+    \item \textbf{H4:} Model performance degradation correlates positively with Weather Stability Index (WSI) magnitude.
+\end{enumerate}
+
+\subsection{Performance Metrics}
+
+\textbf{Primary Metrics:}
+\begin{itemize}
+    \item \textbf{MAE} - Mean Absolute Error (primary accuracy measure)
+    \item \textbf{RMSE} - Root Mean Squared Error (penalizes large errors)
+    \item \textbf{MAPE} - Mean Absolute Percentage Error (relative accuracy)
+\end{itemize}
+
+\textbf{Secondary Metrics:}
+\begin{itemize}
+    \item \textbf{Bias} - Mean error (systematic over/under-prediction)
+    \item \textbf{Forecast Skill} - Improvement over persistence baseline
+    \item \textbf{Error distribution percentiles} - 50th, 75th, 95th
+\end{itemize}
+
+\subsection{Success Criteria}
+
+\textbf{Quantitative Thresholds:}
+\begin{itemize}
+    \item Statistical significance: p < 0.05 (with Bonferroni correction for multiple comparisons)
+    \item Effect size: Cohen's d ≥ 0.3 for stable vs unstable performance difference
+    \item Practical significance: ≥10\% improvement in forecast accuracy for best vs worst model
+    \item At least one model showing <5\% performance degradation in unstable periods
+\end{itemize}
+
+\textbf{Qualitative Criteria:}
+\begin{itemize}
+    \item Clear operational recommendations on which model to use when
+    \item Reproducible methodology with documented code
+    \item Publication-quality figures and report
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{docs/research\_questions.md}
+    \item \texttt{docs/hypotheses.md}
+    \item \texttt{docs/success\_criteria.md}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 2 - Acquire Renewable Energy Production Data}
+
+\begin{objectivebox}
+Obtain 2024 renewable energy production data for Germany to use as ground truth for model evaluation.
+\end{objectivebox}
+
+\subsection{Data Requirements}
+
+\textbf{Required Data:}
+\begin{itemize}
+    \item Hourly renewable energy production for 2024
+    \item Solar PV production (MW or GWh)
+    \item Wind power production (MW or GWh)
+    \item Geographic scope: Germany-wide (ideally also by Bundesland)
+    \item Temporal alignment: Hourly resolution matching weather data
+\end{itemize}
+
+\subsection{Potential Data Sources}
+
+\textbf{Option 1: ENTSO-E Transparency Platform}
+\begin{itemize}
+    \item European grid operator data
+    \item Hourly generation data by type
+    \item URL: transparency.entsoe.eu
+    \item Free access, requires API key registration
+    \item Has historical data for Germany
+\end{itemize}
+
+\textbf{Option 2: Fraunhofer ISE Energy Charts}
+\begin{itemize}
+    \item Public dashboard for German renewable energy
+    \item URL: energy-charts.info
+    \item Provides downloadable CSV files
+    \item Historical data available
+\end{itemize}
+
+\textbf{Option 3: SMARD (Strommarktdaten)}
+\begin{itemize}
+    \item Federal Network Agency (Bundesnetzagentur) platform
+    \item URL: smard.de
+    \item Official market data including renewable generation
+    \item Free registration required
+\end{itemize}
+
+\textbf{Option 4: OpenCinema}
+\begin{itemize}
+    \item Open source platform for energy data
+    \item URL: openoemof.readthedocs.io
+    \item May have aggregated data
+\end{itemize}
+
+\subsection{Data Validation}
+
+\begin{checkbox}
+\begin{itemize}
+    \item Verify complete temporal coverage (all 8760 hours of 2024)
+    \item Check for reasonable values (no negative production, no spikes > installed capacity)
+    \item Validate against known installed capacity statistics
+    \item Document data source and access method
+\end{itemize}
+\end{checkbox}
+
+\subsection{Literature Review for Models}
+
+Survey existing literature on renewable energy forecasting to identify:
+\begin{itemize}
+    \item Commonly used statistical models
+    \item Reported performance benchmarks (MAE, RMSE baselines)
+    \item Input features typically used
+    \item Best practice methodologies
+    \item Similar studies for German context
+\end{itemize}
+
+\textbf{Focus Areas:}
+\begin{itemize}
+    \item Solar PV forecasting papers
+    \item Wind power forecasting papers
+    \item German/EU specific studies
+    \item Comparisons of statistical vs ML methods
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{Data/raw/renewable\_production\_2024.csv}
+    \item \texttt{docs/literature\_review.md} (model summaries)
+    \item \texttt{docs/energy\_data\_sources.txt}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 3 - Data Integration \& Cleaning}
+
+\begin{objectivebox}
+ARP-onize all datasets to common timestamps and prepare unified analysis-ready data.
+\end{objectivebox}
+
+\subsection{Timestamp Harmonization}
+
+\begin{enumerate}
+    \item Standardize all timestamps:
+    \begin{itemize}
+        \item Convert to UTC or consistent timezone
+        \item ISO 8601 format: \texttt{YYYY-MM-DD HH:MM:SS}
+        \item Hourly granularity throughout
+    \end{itemize}
+    
+    \item Create master time index:
+    \begin{itemize}
+        \item Generate complete 2024 hourly sequence
+        \item 8760 hours total (accounting for daylight saving)
+    \end{itemize}
+\end{enumerate}
+
+\subsection{Missing Data Strategy}
+
+\textbf{Tiered Approach:}
+\begin{itemize}
+    \item \textbf{Tier 1 (≤2 hours):} Linear interpolation
+    \item \textbf{Tier 2 (3-6 hours):} Forward-fill with flag
+    \item \textbf{Tier 3 (>6 hours):} Mark as excluded from analysis
+\end{itemize}
+
+\textbf{Documentation:}
+\begin{itemize}
+    \item Log all imputations in \texttt{data/cleaning\_log.csv}
+    \item Track percent of original data retained
+    \item Create missingness heatmap visualization
+\end{itemize}
+
+\subsection{Dataset Merging}
+
+Create unified dataset containing:
+\begin{verbatim}
+timestamp, location, 
+temp_mean, temp_min, temp_max, cloudiness,
+dew_point, extreme_wind, moisture, precipitation,
+pressure, soil_temp, sun, visibility, weather_phenomena,
+wind_speed, wind_dir,
+solar_production, wind_production,
+excluded_flag
+\end{verbatim}
+
+\subsection{Quality Checks}
+
+\begin{checkbox}
+\begin{itemize}
+    \item Check for duplicate timestamps
+    \item Flag outliers using domain knowledge (e.g., temp < -40°C or > 50°C)
+    \item Verify no missing gaps in time series
+    \item Validate production data against installed capacity
+    \item Generate summary statistics for all variables
+\end{itemize}
+\end{checkbox}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/processed/unified\_dataset.csv}
+    \item \texttt{data/cleaning\_log.csv}
+    \item \texttt{notebooks/01\_data\_integration.ipynb}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 4 - Weather Feature Engineering for WSI}
+
+\begin{objectivebox}
+Engineer features from raw weather attributes that capture variability, trends, and extremes for computing Weather Stability Index.
+\end{objectivebox}
+
+\subsection{Variability Features}
+
+Compute rolling statistics (24-hour window):
+\begin{itemize}
+    \item \texttt{temp\_std} - Temperature standard deviation
+    \item \texttt{temp\_range} - Max - min temperature
+    \item \texttt{pressure\_change} - Absolute change in pressure
+    \item \texttt{wind\_cv} - Wind speed coefficient of variation
+    \item \texttt{precip\_intensity} - Precipitation rate changes
+    \item \texttt{humidity\_std} - Dew point/moisture variability
+\end{itemize}
+
+\subsection{Trend Features}
+
+Linear trends over 24-hour window:
+\begin{itemize}
+    \item \texttt{temp\_trend} - Temperature trend (slope)
+    \item \texttt{pressure\_trend} - Barometric pressure trend
+    \item \texttt{wind\_trend} - Wind speed trend
+\end{itemize}
+
+\subsection{Extreme Event Flags}
+
+Categorical indicators of extreme conditions:
+\begin{itemize}
+    \item \texttt{high\_wind\_flag} - Wind > 90th percentile
+    \item \texttt{heavy\_precip\_flag} - Precipitation > threshold
+    \item \texttt{rapid\_temp\_change} - |ΔT| > 5°C in 3 hours
+    \item \texttt{storm\_flag} - Combined wind + pressure drop signal
+\end{itemize}
+
+\subsection{Feature Selection}
+
+\textbf{Correlation Analysis:}
+\begin{itemize}
+    \item Compute correlation matrix for all features
+    \item Identify highly correlated features (r > 0.9)
+    \item Remove redundant features to avoid multicollinearity
+    \item Select final feature set for WSI (typically 6-10 features)
+\end{itemize}
+
+\subsection{Normalization}
+
+\begin{itemize}
+    \item Use robust scaling (median, IQR) to handle outliers
+    \item Orient features so higher values = more instability
+    \item Save scaling parameters to \texttt{models/scalers.json}
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/features/weather\_features.csv}
+    \item \texttt{results/feature\_correlations.png}
+    \item \texttt{notebooks/02\_feature\_engineering.ipynb}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 5 - Compute Weather Stability Index (WSI)}
+
+\begin{objectivebox}
+Create a reproducible continuous WSI score and classify periods as stable/unstable.
+\end{objectivebox}
+
+\subsection{WSI Formula Development}
+
+Test multiple approaches:
+\begin{enumerate}
+    \item \textbf{Equal Weights:} Simple average of normalized features
+    
+    \item \textbf{PCA-Based:} Use first principal component as WSI (captures max variance)
+    
+    \item \textbf{Variance-Weighted:} Weight features by their explained variance
+    
+    \item \textbf{Domain-Expert Weights:} Weight based on meteorological importance
+\end{enumerate}
+
+\textbf{Baseline Formula (Equal Weights):}
+\begin{equation}
+\text{WSI} = \frac{\sum_{i=1}^{n} \text{feature}_i}{n}
+\end{equation}
+
+\subsection{Classification Methods}
+
+\textbf{Primary: K-Means Clustering (k=2)}
+\begin{itemize}
+    \item Cluster into stable/unstable using all features
+    \item Label cluster with higher mean WSI as unstable
+    \item Check cluster balance (avoid 90/10 splits)
+\end{itemize}
+
+\textbf{Secondary: Percentile Threshold}
+\begin{itemize}
+    \item Classify as unstable if WSI ≥ 75th percentile
+    \item Sensitivity test with 70th and 80th percentiles
+\end{itemize}
+
+\textbf{Alternative: Dynamic Seasonal Thresholds}
+\begin{itemize}
+    \item Use season-specific cutoffs (winter vs summer)
+    \item Account for natural seasonal variability
+\end{itemize}
+
+\subsection{Validation}
+
+\begin{checkbox}
+\begin{itemize}
+    \item Inspect cluster sizes (reasonable balance)
+    \item Manually verify unstable periods against known weather events
+    \item Plot WSI timeline to check for reasonable patterns
+    \item Compare different classification methods
+\end{itemize}
+\end{checkbox}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/processed/wsi\_timeline.csv}
+    \item \texttt{models/wsi\_formula.json}
+    \item \texttt{notebooks/03\_wsi\_computation.ipynb}
+    \item \texttt{figures/wsi\_timeline\_2024.png}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 6 - Implement Renewable Energy Prediction Models}
+
+\begin{objectivebox}
+Implement statistical models from literature and generate hourly predictions for 2024.
+\end{objectivebox}
+
+\subsection{Literature-Based Models}
+
+\textbf{Models to Implement:}
+
+1. \textbf{Persistence Model} (Baseline)
+\begin{itemize}
+    \item Simplest:simple: next-hour = current-hour
+    \item Baseline for comparison
+\end{itemize}
+
+2. \textbf{Seasonal Persistence}
+\begin{itemize}
+    \item Use same hour from previous week
+    \item Accounts for weekly patterns
+\end{itemize}
+
+3. \textbf{ARIMA/SARIMA}
+\begin{itemize}
+    \item Classical time series models
+    \item Autoregressive with seasonal components
+\end{itemize}
+
+4. \textbf{Prophet (Facebook)}
+\begin{itemize}
+    \item Additive seasonality model
+    \item Handles trends, seasonality, holidays
+    \item Good for energy forecasting
+\end{itemize}
+
+5. \textbf{Exponential Smoothing (Holt-Winters)}
+\begin{itemize}
+    \item Triple exponential smoothing
+    \item Trend and seasonality components
+\end{itemize}
+
+\subsection{Feature Selection}
+
+\textbf{For Solar Prediction:}
+\begin{itemize}
+    \item Solar radiation (if available)
+    \item Cloudiness percentage
+    \item Temperature
+    \item Hour of day (circular encoding)
+    \item Day of year (seasonality)
+    \item Day of week (weekly patterns)
+\end{itemize}
+
+\textbf{For Wind Prediction:}
+\begin{itemize}
+    \item Wind speed
+    \item Wind direction
+    \item Atmospheric pressure
+    \item Temperature
+    \item Time features (hour, day, season)
+\end{itemize}
+
+\subsection{Walk-Forward Validation}
+
+\textbf{Strategy:}
+\begin{itemize}
+    \item Train window: Previous 30-90 days
+    \item Forecast horizon: Next 24 hours
+    \item Update daily throughout 2024
+    \item Mimics operational forecasting
+\end{itemize}
+
+\subsection{Model Implementation}
+
+\begin{codebox}
+\textbf{Example: Prophet model for solar}
+\begin{lstlisting}[language=Python]
+from prophet import Prophet
+
+# Prepare data
+model_data = df[['timestamp', 'solar_production']].copy()
+model_data.columns = ['ds', 'y']
+
+# Fit Prophet model
+model = Prophet(
+    yearly_seasonality=True,
+    weekly_seasonality=True,
+    daily_seasonality=True
+)
+model.fit(model_data)
+
+# Generate predictions
+forecast = model.predict(future_dates)
+\end{lstlisting}
+\end{codebox}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{models/} - Trained model objects
+    \item \texttt{data/predictions/model\_predictions\_2024.csv}
+    \item \texttt{notebooks/04\_model\_implementation.ipynb}
+    \item \texttt{docs/model\_descriptions.md}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 7 - Compute Model Performance Metrics}
+
+\begin{objectivebox}
+Calculate accuracy metrics for all models and align with WSI timeline for comparative analysis.
+\end{objectivebox}
+
+\subsection{Core Metrics Calculation}
+
+\textbf{Per-Hour Metrics:}
+\begin{itemize}
+    \item \texttt{error} = prediction - actual
+    \item \texttt{abs\_error} = |error|
+    \item \texttt{squared\_error} = error²
+\end{itemize}
+
+\textbf{Aggregated Metrics (Daily/Hourly):}
+\begin{itemize}
+    \item \textbf{MAE} = mean(|error|)
+    \item \textbf{RMSE} = $\sqrt{\text{mean(error}^2)}$
+    \item \textbf{MAPE} = mean(|error/actual|) × 100\%
+    \item \textbf{Bias} = mean(error)
+\end{itemize}
+
+\textbf{Additional Metrics:}
+\begin{itemize}
+    \item \textbf{Forecast Skill} = 1 - (MAE_model / MAE_persistence)
+    \item \textbf{Error percentiles}: 50th, 75th, 95th
+    \item \textbf{Rolling 7-day MAE}
+\end{itemize}
+
+\subsection{Merge with WSI Timeline}
+
+Create unified analysis dataset:
+\begin{verbatim}
+timestamp, location, WSI, stability_label,
+model_name, prediction, actual, error, abs_error,
+MAE_24h, RMSE_24h, MAPE_24h, Bias_24h,
+MAE_7d_rolling, Forecast_skill
+\end{verbatim}
+
+\subsection{Stratified Performance Statistics}
+
+Pre-compute performance by:
+\begin{itemize}
+    \item Stable vs Unstable periods
+    \item Model type
+    \item Season (quarter)
+    \item Location (Germany vs Bundesland)
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/metrics/performance\_timeline.csv}
+    \item \texttt{data/metrics/performance\_by\_stability.csv}
+    \item \texttt{notebooks/05\_performance\_metrics.ipynb}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 8 - Comparative Statistical Analysis}
+
+\begin{objectivebox}
+Test hypotheses and quantify differences in model performance between stable and unstable weather periods.
+\end{objectivebox}
+
+\subsection{Descriptive Statistics}
+
+\textbf{For Each Model:}
+\begin{itemize}
+    \item Mean MAE in stable periods
+    \item Mean MAE in unstable periods
+    \item Difference (degradation)
+    \item 95\% confidence intervals
+    \item Effect size (Cohen's d)
+\end{itemize}
+
+\subsection{Hypothesis Testing}
+
+\textbf{Test H1:} Model accuracy worse in unstable periods
+\begin{itemize}
+    \item Mann-Whitney U test (non-parametric)
+    \item Null hypothesis: No difference in MAE performance
+    \item One-directional test
+\end{itemize}
+
+\textbf{Test H2:} Different models degrade differently
+\begin{itemize}
+    \item Interaction test in regression model
+    \item Compare degradation rates across models
+\end{itemize}
+
+\textbf{Multiple Comparisons Correction:}
+\begin{itemize}
+    \item Bonferroni correction (α/n tests)
+    \item Or Benjamini-Hochberg FDR correction
+\end{itemize}
+
+\subsection{Regression Analysis}
+
+\textbf{Model 1: Core Regression}
+\begin{equation}
+\text{MAE} \sim \text{WSI} + \text{model\_type} + \text{WSI} \times \text{model\_type} + \text{season} + \text{location}
+\end{equation}
+
+\begin{itemize}
+    \item Tests main effects and interactions
+    \item Controls for confounders (season, location)
+    \item Use HAC robust standard errors (account for autocorrelation)
+\end{itemize}
+
+\textbf{Model 2: Mixed-Effects}
+\begin{itemize}
+    \item Include random intercepts for location
+    \item Accounts for geographic clustering
+\end{itemize}
+
+\subsection{Model Ranking}
+
+Rank models on two dimensions:
+\begin{enumerate}
+    \item \textbf{Overall Accuracy} - Mean MAE across all periods
+    \item \textbf{Robustness} - Smallest performance drop in unstable periods
+\end{enumerate}
+
+Create combined score:
+\begin{equation}
+\text{Score} = \alpha \times \text{Accuracy} + (1-\alpha) \times \text{Robustness}
+\end{equation}
+
+\subsection{Time-Lag Analysis}
+
+Test if WSI predicts performance degradation ahead of time:
+\begin{itemize}
+    \item Cross-correlation function (CCF) between WSI and MAE
+    \item Test lags: -48 to +48 hours
+    \item Identify optimal lead time for model switching
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{results/statistical\_tests.csv}
+    \item \texttt{results/model\_rankings.csv}
+    \item \texttt{notebooks/06\_statistical\_analysis.ipynb}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 9 - Visualization \& Interpretation}
+
+\begin{objectivebox}
+Create publication-quality figures that communicate key findings clearly.
+\end{objectivebox}
+
+\subsection{Core Figures}
+
+\textbf{Figure 1: Dual Timeline Plot}
+\begin{itemize}
+    \item Upper panel: WSI timeline with stable/unstable shading
+    \item Lower panel: Rolling MAE (7-day) for top 3 models
+    \item Shared x-axis: 2024 timeline
+    \item Purpose: Visual correlation between stability and performance
+\end{itemize}
+
+\textbf{Figure 2: Performance Comparison by Stability}
+\begin{itemize}
+    \item Grouped boxplots or violin plots
+    \item MAE for each model, split by stable/unstable
+    \item Include means and 95\% CIs
+    \item Add significance markers (*, **, ***)
+\end{itemize}
+
+\textbf{Figure 3: Model Degradation Bar Chart}
+\begin{itemize}
+    \item Performance drop (\%) from stable to unstable for each model
+    \item Sorted by robustness (least to most degraded)
+    \item Color-coded by model type
+\end{itemize}
+
+\textbf{Figure 4: WSI vs Performance Scatter}
+\begin{itemize}
+    \item WSI (x-axis) vs MAE (y-axis) scatterplot
+    \item Different colors for each model
+    \item LOESS smoothing lines
+    \item Annotate Spearman ρ and p-value
+\end{itemize}
+
+\textbf{Figure 5: Geographic Comparison}
+\begin{itemize}
+    \item Heatmap showing performance across Bundesländer
+    \item Side-by-side: stable vs unstable periods
+    \item Identify regions with largest degradation
+\end{itemize}
+
+\textbf{Figure 6: Seasonal Patterns}
+\begin{itemize}
+    \item Monthly aggregation of stability and performance
+    \item Line plots for MAE by month
+    \item Overlay WSI distribution by month
+\end{itemize}
+
+\subsection{Design Guidelines}
+
+\begin{itemize}
+    \item Colorblind-friendly palette (viridis, magma)
+    \item Consistent fonts (Arial or similar sans-serif)
+    \item High resolution: 300 DPI PNG, vector PDF
+    \item Clear axis labels with units
+    \item Figure captions with sample sizes and key parameters
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{figures/*.png} and \texttt{figures/*.pdf}
+    \item \texttt{notebooks/07\_visualization.ipynb}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 10 - Reporting \& Recommendations}
+
+\begin{objectivebox}
+Synthesize findings into actionable conclusions and create final report.
+\end{objectivebox}
+
+\subsection{Final Report Structure}
+
+\textbf{1. Abstract (150-200 words)}
+\begin{itemize}
+    \item Brief summary of research, methods, key findings
+    \item Operational implications
+\end{itemize}
+
+\textbf{2. Introduction}
+\begin{itemize}
+    \item Motivation: Why weather stability matters for renewable forecasting
+    \item Background: Renewable energy in Germany
+    \item Research objectives and questions
+\end{itemize}
+
+\textbf{3. Data \& Methods}
+\begin{itemize}
+    \item Data sources (weather + energy)
+    \item Weather Stability Index construction
+    \item Statistical models implemented
+    \item Analysis methodology
+\end{itemize}
+
+\textbf{4. Results}
+\begin{itemize}
+    \item WSI characteristics (% stable/unstable periods)
+    \item Model performance summary tables
+    \item Statistical test results
+    \item Key figures
+\end{itemize}
+
+\textbf{5. Discussion}
+\begin{itemize}
+    \item Which models are most accurate overall?
+    \item Which models are most robust to instability?
+    \item Practical operational recommendations
+    \item Comparisons with literature
+\end{itemize}
+
+\textbf{6. Limitations}
+\begin{itemize}
+    \item Data quality issues
+    \item Model assumptions
+    \item Generalizability beyond 2024
+\end{itemize}
+
+\textbf{7. Conclusions}
+\begin{itemize}
+    \item Summary of key findings
+    \item Operational guidelines for model selection
+    \item Future research directions
+\end{itemize}
+
+\subsection{Operational Recommendations}
+
+Provide clear guidance on:
+\begin{itemize}
+    \item \textbf{Model selection under stable weather:} Use [Model X] for best accuracy
+    \item \textbf{Model selection under unstable weather:} Use [Model Y] for robust performance
+    \item \textbf{When to switch models:} If WSI exceeds threshold Z, switch from Model X to Model Y
+    \item \textbf{Expected performance:} Typical accuracy under each condition
+\end{itemize}
+
+\subsection{Reproducibility}
+
+\begin{itemize}
+    \item \texttt{requirements.txt} - Python packages with versions
+    \item \texttt{config/parameters.yaml} - All hyperparameters and thresholds
+    \item \texttt{README.md} - Step-by-step instructions to reproduce
+    \item \texttt{run\_all.sh} - Script to run all notebooks sequentially
+    \item All code with comments
+    \item Random seeds documented
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{report/final\_report.pdf}
+    \item \texttt{README.md} (project documentation)
+    \item \texttt{requirements.txt}
+    \item \texttt{config/parameters.yaml}
+    \item All notebooks (numbered 01-07)
+\end{itemize}
+\end{deliverablebox}
+
+\section{Project Timeline \& Milestones}
+
+\subsection{Estimated Timeline}
+
+\begin{itemize}
+    \item \textbf{Milestone 1-2:} 1 week (Scope + Energy data acquisition)
+    \item \textbf{Milestone 3-4:} 1 week (Integration + Feature engineering)
+    \item \textbf{Milestone 5-6:} 2 weeks (WSI + Model implementation)
+    \item \textbf{Milestone 7-8:} 1 week (Metrics + Statistics)
+    \item \textbf{Milestone 9-10:} 1 week (Visualization + Report)
+    \item \textbf{Total:} 6 weeks
+\end{itemize}
+
+\subsection{Dependencies}
+
+\begin{itemize}
+    \item Milestones 3-4 depend on Milestone 2 (energy data)
+    \item Milestone 5 depends on Milestone 4 (features)
+    \item Milestone 6 can be parallel with Milestone 5
+    \item Milestones 7-8 depend on Milestones 5 and 6
+    \item Milestones 9-10 depend on Milestone 8
+\end{itemize}
+
+\section{Risks, Mitigations \& Notes}
+
+\subsection{Potential Risks}
+
+\textbf{Risk 1: Limited or No Energy Data}
+\begin{itemize}
+    \item \textbf{Mitigation:} Identify backup sources early; consider simulated data for methodology validation
+\end{itemize}
+
+\textbf{Risk 2: Missing Data Gaps}
+\begin{itemize}
+    \item \textbf{Mitigation:} Document clearly; use exclusion flags; report impact
+\end{itemize}
+
+\textbf{Risk 3: Autocorrelation in Time Series}
+\begin{itemize}
+    \item \textbf{Mitigation:} Use block bootstrap; HAC robust SEs; account for effective sample size
+\end{itemize}
+
+\textbf{Risk 4: No Significant Differences Found}
+\begin{itemize}
+    \item \textbf{Mitigation:} Still valuable finding; explore why; check power analysis
+\end{itemize}
+
+\textbf{Risk 5: Computational Limitations}
+\begin{itemize}
+    \item \textbf{Mitigation:} Start with Germany-wide before Bundesland analysis; optimize code
+\end{itemize}
+
+\subsection{Key Notes}
+
+\begin{itemize}
+    \item Ensure all random operations use fixed seeds for reproducibility
+    \item Document any manual decisions or tuning (e.g., WSI thresholds)
+    \item Keep original data separate from processed data
+    \item Version control all code and track changes
+    \item Regular backups of intermediate results
+\end{itemize}
+
+\section{Conclusion}
+
+This research plan provides a systematic approach to comparing renewable energy prediction model performance under different weather stability conditions. By leveraging the extensive weather data already collected for 2024 Germany and following the dual-pipeline architecture, we will generate valuable insights for operational renewable energy forecasting.
+
+The key innovation is the integration of a Weather Stability Index with model performance evaluation, enabling data-driven recommendations on which models to use under which conditions. This approach directly addresses the practical need for robust forecasting in the renewable energy sector.
+
+\end{document}
+

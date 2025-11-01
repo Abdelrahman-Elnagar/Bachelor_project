@@ -1,0 +1,667 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{tcolorbox}
+\usepackage{parskip}
+\usepackage{setspace}
+
+% Color definitions
+\definecolor{primaryblue}{rgb}{0.16,0.50,0.73}
+\definecolor{secondaryblue}{rgb}{0.20,0.60,0.86}
+\definecolor{accentorange}{rgb}{0.90,0.49,0.13}
+\definecolor{lightgray}{rgb}{0.96,0.96,0.96}
+\definecolor{darkgray}{rgb}{0.33,0.33,0.33}
+\definecolor{successgreen}{rgb}{0.15,0.68,0.38}
+\definecolor{warningred}{rgb}{0.91,0.30,0.24}
+
+% Page setup
+\geometry{margin=0.8in}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\color{primaryblue}\textbf{Research Plan - Detailed \& Comprehensive Milestones}}
+\fancyhead[R]{\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.8pt}
+
+% Title formatting with colors and spacing
+\titleformat{\section}
+{\color{primaryblue}\Large\bfseries}
+{\color{primaryblue}\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\color{secondaryblue}\large\bfseries}
+{\color{secondaryblue}\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\color{accentorange}\normalsize\bfseries}
+{\color{accentorange}\thesubsubsection}{1em}{}
+
+% Custom environments
+\newtcolorbox{objectivebox}{
+    colback=lightgray,
+    colframe=primaryblue,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Objective}
+}
+
+\newtcolorbox{deliverablebox}{
+    colback=lightgray,
+    colframe=successgreen,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Deliverables}
+}
+
+\newtcolorbox{checkbox}{
+    colback=lightgray,
+    colframe=warningred,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Checks}
+}
+
+\newtcolorbox{codebox}{
+    colback=lightgray,
+    colframe=darkgray,
+    boxrule=1pt,
+    arc=3pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title=\textbf{Code Example}
+}
+
+% Enhanced code listing setup
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{darkgray},
+    showstringspaces=false,
+    backgroundcolor=\color{lightgray},
+    keywordstyle=\color{primaryblue}\bfseries,
+    commentstyle=\color{darkgray}\itshape,
+    stringstyle=\color{accentorange},
+    numberstyle=\color{darkgray}
+}
+
+% Enhanced list formatting
+\setlist[enumerate,1]{label=\textbf{\color{primaryblue}\arabic*.},leftmargin=1.5em}
+\setlist[enumerate,2]{label=\textbf{\color{secondaryblue}\alph*)},leftmargin=1.5em}
+\setlist[itemize,1]{label=\textcolor{primaryblue}{$\bullet$},leftmargin=1.5em}
+\setlist[itemize,2]{label=\textcolor{secondaryblue}{$\circ$},leftmargin=1.5em}
+
+% Spacing
+\setlength{\parskip}{0.5em}
+\onehalfspacing
+
+% Load hyperref last
+\usepackage{hyperref}
+
+\title{\textbf{\color{primaryblue}Research Plan - Detailed \& Comprehensive Milestones}}
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\Huge\bfseries\color{primaryblue}Research Plan}\\[0.5cm]
+{\Large\color{secondaryblue}Detailed \& Comprehensive Milestones}\\[2cm]
+
+\begin{tcolorbox}[colback=lightgray,colframe=primaryblue,boxrule=2pt,arc=5pt,width=0.8\textwidth]
+\centering
+\large\textbf{Weather Stability Impact on Model Performance Analysis}\\[0.3cm]
+\small A systematic approach to quantifying the relationship between weather variability and predictive model accuracy
+\end{tcolorbox}
+
+\vspace{2cm}
+
+\vfill
+{\large\color{darkgray}Comprehensive Research Methodology}\\[0.2cm]
+{\small\color{darkgray}10 Milestones • Statistical Analysis • Reproducible Research}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Milestone 1 - Define Research Scope, Objectives \& Success Criteria}
+
+\begin{objectivebox}
+Unambiguously state what you will measure and how success looks.
+\end{objectivebox}
+
+\subsection{Subtasks}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Write a short project statement (3-5 sentences) that includes: goal, outcome, and why weather matters for this model.
+    
+    \item Enumerate research questions (RQ) and hypotheses (H). Example:
+    \begin{itemize}
+        \item \textbf{RQ1:} Do error metrics differ between weather-stable and weather-unstable periods?
+        \item \textbf{H1:} MAE is higher during unstable-weather periods.
+    \end{itemize}
+    
+    \item Define primary \& secondary metrics:
+    \begin{itemize}
+        \item \textbf{Primary:} MAE (mean absolute error)
+        \item \textbf{Secondary:} RMSE, Bias (mean error), Error Std, 50/75/95\% absolute error percentiles, R² (if appropriate)
+        \item If probabilistic model: CRPS, calibration (PIT)
+    \end{itemize}
+    
+    \item Write success criteria (what ``meaningful'' effect looks like): e.g., Cohen's d ≥ 0.3 for MAE difference, or a consistent positive Spearman ρ ≥ 0.25 between WSI and MAE.
+    
+    \item Create an analysis plan document that lists tests and models you will run (pre-specified) - this prevents p-hacking.
+\end{enumerate}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{docs/project\_statement.md}
+    \item \texttt{docs/analysis\_plan.md} (includes RQs, metrics, success criteria)
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 2 - Data Acquisition \& Inventory}
+
+\begin{objectivebox}
+Collect and inventory all data sources necessary for the analysis.
+\end{objectivebox}
+
+\subsection{Subtasks}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Identify and access:
+    \begin{itemize}
+        \item \textbf{Prediction data:} \texttt{predictions.csv} with columns timestamp, location, model\_version, prediction, ground\_truth.
+        \item \textbf{Weather data:} \texttt{weather.csv} with timestamp, location, temp\_C, temp\_min, temp\_max, humidity\_pct, precip\_mm, wind\_speed\_mps, pressure\_hPa, cloudiness\_pct.
+        \item \textbf{Metadata:} \texttt{metadata.csv} with location\_lat, location\_lon, timezone, sensor\_notes.
+    \end{itemize}
+    
+    \item Verify:
+    \begin{itemize}
+        \item Coverage (start/end timestamps, missing windows).
+        \item Granularity (hourly/daily) - must match model granularity or be aggregatable.
+    \end{itemize}
+    
+    \item Record data provenance (APIs, queries, file paths) in \texttt{data/README.md}.
+    
+    \item If using APIs (e.g., NOAA, OpenWeather), save exact request parameters and API responses (or scripts used to fetch).
+\end{enumerate}
+
+\begin{checkbox}
+\begin{itemize}
+    \item Compute row counts, unique timestamps, duplicates.
+    \item Check that timestamp formats are ISO 8601 and timezone-aware.
+    \item Create sample plot of timestamps to detect missing blocks.
+\end{itemize}
+\end{checkbox}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item Raw files in \texttt{data/raw/} (or links if too large)
+    \item \texttt{data/inventory.csv} (columns: filename, source, start, end, rows, notes)
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 3 - Data Cleaning \& Synchronization}
+
+\begin{objectivebox}
+Make datasets analysis-ready and aligned.
+\end{objectivebox}
+
+\subsection{Subtasks}
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{Standardize timestamps:}
+    \begin{itemize}
+        \item Convert all timestamps to UTC or a single timezone. Use ISO format.
+    \end{itemize}
+    
+    \item \textbf{Handle duplicates:}
+    \begin{itemize}
+        \item Keep most recent record where duplicates exist, or average duplicate sensors if appropriate.
+    \end{itemize}
+    
+    \item \textbf{Missing data strategy:}
+    \begin{itemize}
+        \item Short gaps (< 3 timepoints): interpolate (linear or time-based).
+        \item Medium gaps (3-24 timepoints): use rolling median or seasonal interpolation.
+        \item Long gaps: mark excluded=True for downstream analysis.
+        \item Log every imputation in \texttt{data/cleaning\_log.csv}.
+    \end{itemize}
+    
+    \item \textbf{Outlier handling:}
+    \begin{itemize}
+        \item Flag values beyond domain-realistic thresholds (temp < -60°C or > 60°C etc.) as NaN.
+        \item Use rolling z-score (window=24 for hourly) to flag transient spikes > 4σ.
+    \end{itemize}
+    
+    \item Merge predictions with weather on (timestamp, location) using an outer join and then drop timestamps where ground\_truth is missing (unless you plan to analyze predicted-only behavior).
+    
+    \item Create a harmonized dataset \texttt{data/processed/aligned.csv} with columns:
+    \begin{verbatim}
+    timestamp, location, model_version, prediction, ground_truth,
+    error, abs_error, temp_mean, temp_min, temp_max, temp_std, humidity, 
+    precip_mm, precip_flag, wind_speed, pressure, cloudiness, excluded_flag
+    \end{verbatim}
+\end{enumerate}
+
+\begin{checkbox}
+\begin{itemize}
+    \item Report number/percentage of dropped rows and imputed rows.
+    \item Plot missingness heatmap (timestamps × variables).
+    \item Save \texttt{data/cleaning\_log.csv} with rows: action, affected\_rows, rationale.
+\end{itemize}
+\end{checkbox}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/processed/aligned.csv}
+    \item \texttt{data/cleaning\_log.csv}
+    \item small summary notebook \texttt{notebooks/01\_data\_cleaning.ipynb}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 4 - Weather Feature Engineering}
+
+\begin{objectivebox}
+Compute features that capture variability, trends, and extremes for WSI.
+\end{objectivebox}
+
+\subsection{Core features (per timestamp)}
+\begin{itemize}
+    \item temp\_mean, temp\_min, temp\_max
+    \item temp\_std = rolling std over past 24h (or appropriate window)
+    \item abs\_temp\_change = abs(temp\_mean - temp\_mean\_lag1)
+    \item precip\_mm, precip\_flag = 1 if precip\_mm > 0
+    \item precip\_rolling\_sum\_3d = total precip last 72 hours
+    \item wind\_max = max wind in last 24h
+    \item pressure\_change = pressure - pressure\_lag24
+    \item humid\_mean, humid\_std = rolling stats
+    \item extreme\_flag = logical OR of thresholds (e.g., temp\_std>t1 or precip\_flag or wind\_max>t2)
+\end{itemize}
+
+\subsection{Feature engineering steps}
+\begin{enumerate}[label=\arabic*.]
+    \item Choose windows (e.g., 24h, 72h, 7d) consistent with system dynamics.
+    \item Robust scaling: compute median and IQR for each feature and create feature\_robust = (feature - median)/IQR.
+    \item Save scaling parameters to \texttt{models/scalers.json}.
+\end{enumerate}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/features/weather\_features.csv}
+    \item \texttt{models/scalers.json}
+    \item \texttt{notebooks/02\_feature\_engineering.ipynb} with exploratory plots (distributions and pairwise correlations)
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 5 - Compute Weather Stability Index (WSI)}
+
+\begin{objectivebox}
+Produce a reproducible continuous WSI and a categorical stable/unstable label.
+\end{objectivebox}
+
+\subsection{WSI construction (recommended starting formula)}
+
+\begin{enumerate}[label=\arabic*.]
+    \item Select normalized features oriented so higher = more instability:
+    \begin{itemize}
+        \item temp\_std\_norm, abs\_temp\_change\_norm, precip\_3d\_norm, wind\_max\_norm, pressure\_change\_norm, humid\_std\_norm.
+    \end{itemize}
+    
+    \item Define equal weights initially:
+    \begin{equation}
+    \text{WSI} = \frac{\text{temp\_std\_norm} + \text{abs\_temp\_change\_norm} + \text{precip\_3d\_norm} + \text{wind\_max\_norm} + \text{pressure\_change\_norm} + \text{humid\_std\_norm}}{6}
+    \end{equation}
+    
+    \item Save WSI as continuous score, then compute WSI\_z = (WSI - mean)/std.
+\end{enumerate}
+
+\subsection{Classification to stable/unstable}
+\begin{itemize}
+    \item \textbf{Primary method:} KMeans with n\_clusters=2 on the normalized feature space; label cluster with higher mean WSI as unstable.
+    \item \textbf{Secondary method:} Percentile threshold: unstable if WSI ≥ percentile(75) (sensitivity tests use 70/80).
+    \item \textbf{Alternative:} Fit PCA and use first PC as WSI surrogate (document differences).
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/processed/wsi.csv} with WSI, WSI\_z, and stability\_label\_kmeans, stability\_label\_percentile.
+    \item \texttt{notebooks/03\_wsi.ipynb} describing choice, showing cluster centroids and feature contributions.
+\end{itemize}
+\end{deliverablebox}
+
+\begin{checkbox}
+\begin{itemize}
+    \item Inspect cluster sizes (not too imbalanced).
+    \item Show examples of days labeled unstable and inspect weather attributes manually to verify plausibility.
+\end{itemize}
+\end{checkbox}
+
+\section{Milestone 6 - Model Performance Metric Computation}
+
+\begin{objectivebox}
+Compute daily/hourly performance timelines aligned with WSI.
+\end{objectivebox}
+
+\subsection{Core metrics (per timestamp or aggregated per day)}
+\begin{itemize}
+    \item error = prediction - ground\_truth
+    \item abs\_error
+    \item MAE - average of abs\_error across unit (day/hour)
+    \item RMSE - sqrt of mean squared error
+    \item Bias - mean of error
+    \item ErrorStd - std of error
+    \item Percentile absolute errors: 50th, 75th, 95th
+    \item rolling\_MAE\_7d - smooth to reveal trends
+\end{itemize}
+
+\subsection{Design notes}
+\begin{itemize}
+    \item Compute both instantaneous metrics and rolling-window metrics (7-day, 14-day).
+    \item If model versions change mid-year, compute metrics per model\_version separately and include model\_version as covariate.
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{data/metrics/performance\_metrics.csv} (timestamp, location, MAE, RMSE, Bias, ErrorStd, ...).
+    \item \texttt{notebooks/04\_metrics.ipynb} with plots of raw \& smoothed metrics.
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 7 - Comparative Analysis \& Statistical Testing}
+
+\begin{objectivebox}
+Test associations and differences between weather stability and model performance.
+\end{objectivebox}
+
+\subsection{Analyses to run (pre-specified)}
+
+\subsubsection{Descriptive stats}
+\begin{itemize}
+    \item Grouped summary: mean/median/CI of MAE for stable vs unstable.
+    \item Effect size: Cohen's d (for means) and Cliff's delta (nonparametric).
+\end{itemize}
+
+\subsubsection{Hypothesis testing}
+\begin{itemize}
+    \item Check normality (Shapiro) and equal variance (Levene).
+    \item If normal-ish and variances equal: two-sample t-test (Welch if unequal variances).
+    \item Else: Mann-Whitney U test.
+\end{itemize}
+
+\subsubsection{Time-series aware testing}
+\begin{itemize}
+    \item Block bootstrap (block length = 7 days) to compute CI for mean difference to account for autocorrelation.
+    \item Autocorrelation check: plot ACF of errors and compute effective sample size.
+\end{itemize}
+
+\subsubsection{Regression analysis}
+\begin{itemize}
+    \item OLS (MAE ∼ WSI + day\_of\_week + month + model\_version), use HAC robust SEs (cov\_type='HAC', lags=7).
+    \item Mixed-effects model if multiple locations: MAE ∼ WSI + (1|location) (random intercepts).
+    \item Nonlinear model: GAM (MAE ∼ s(WSI) + s(temp\_std) + ...) or RandomForest with SHAP explanations.
+\end{itemize}
+
+\subsubsection{Lagged analysis}
+\begin{itemize}
+    \item Cross-correlation function (CCF) between WSI and MAE for lags -L to +L (e.g., L=30 days).
+    \item Granger causality tests (careful with assumptions) to test predictive direction.
+\end{itemize}
+
+\subsubsection{Change-point detection}
+\begin{itemize}
+    \item Use ruptures to find changes in MAE mean/variance and compare change dates to peaks in WSI.
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{results/stat\_tests.csv} documenting test names, statistics, p-values, conclusions.
+    \item \texttt{notebooks/05\_analysis.ipynb} with full code of analyses.
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 8 - Visualization, Figures \& Interpretation}
+
+\begin{objectivebox}
+Produce a compact set of publication-quality figures and an interpretive narrative.
+\end{objectivebox}
+
+\subsection{Core figures}
+
+\subsubsection{Dual timeline plot}
+\begin{itemize}
+    \item Upper panel: continuous WSI (line) with shading for unstable segments.
+    \item Lower panel: rolling\_MAE\_7d (line) with vertical markers for change-points.
+    \item Shared x-axis: timestamp (year).
+\end{itemize}
+
+\subsubsection{Boxplot / Violin}
+\begin{itemize}
+    \item MAE distributions for stable vs unstable with means and 95\% CIs.
+\end{itemize}
+
+\subsubsection{Scatter + smoothing}
+\begin{itemize}
+    \item WSI vs MAE scatter with LOESS smoothing line; annotate Spearman ρ and p-value.
+\end{itemize}
+
+\subsubsection{Lag correlation}
+\begin{itemize}
+    \item Bar chart of cross-correlation coefficients at lags -L..L.
+\end{itemize}
+
+\subsubsection{Calendar heatmap}
+\begin{itemize}
+    \item Calendar-style heatmap of daily MAE with overlay color indicating stability\_label.
+\end{itemize}
+
+\subsubsection{Model explanation}
+\begin{itemize}
+    \item Feature importance / SHAP summary from RandomForest or XGBoost fitted to explain abs\_error.
+\end{itemize}
+
+\subsection{Design \& export}
+\begin{itemize}
+    \item Use consistent fonts, labels, and colorblind-friendly palettes.
+    \item Include figure captions that state the dataset used, smoothing parameters, and sample sizes.
+    \item Export high-resolution PNGs and a vector PDF for each figure in \texttt{figures/}.
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{figures/*} (PNG + PDF)
+    \item \texttt{notebooks/06\_visualization.ipynb} with plotting code and figure exports
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 9 - Robustness \& Sensitivity Analyses}
+
+\begin{objectivebox}
+Show that findings aren't artifacts of a particular WSI definition or analysis choice.
+\end{objectivebox}
+
+\subsection{Robustness checks}
+
+Recompute results using:
+\begin{itemize}
+    \item Different WSI weighting schemes (equal weights, PCA-based weights, regression-weighted).
+    \item Different classification thresholds (70th, 75th, 80th percentile).
+    \item Alternate clustering (GaussianMixture vs KMeans).
+    \item Seasonal sub-analyses: restrict to winter vs summer.
+    \item Excluding days with missing or imputed ground\_truth.
+    \item Re-run key tests using block bootstrap; report bootstrap CIs.
+    \item If model updated mid-year: run analyses separately for each model version.
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{results/robustness\_summary.md} - table of sensitivity experiments and outcomes.
+    \item \texttt{notebooks/07\_robustness.ipynb}
+\end{itemize}
+\end{deliverablebox}
+
+\section{Milestone 10 - Reporting, Reproducibility \& Handover}
+
+\begin{objectivebox}
+Produce reproducible artifacts and a final report suitable for submission.
+\end{objectivebox}
+
+\subsection{Report components}
+Abstract (short), Introduction (motivation), Methods (data + WSI computation), Results (statistics \& figures), Discussion (interpretation, limitations), Conclusion, Appendix (robustness), Code availability.
+
+Save as \texttt{report/final\_report.pdf} and \texttt{report/final\_report.docx} (if needed).
+
+\subsection{Reproducibility checklist}
+\begin{itemize}
+    \item \texttt{requirements.txt} (pinned versions)
+    \item \texttt{environment.yml} (optional conda)
+    \item \texttt{run\_all.sh} - script to run all notebooks end-to-end and re-generate figures.
+    \item \texttt{README.md} with instructions: how to reproduce, expected runtimes, hardware needs.
+    \item Save seeds and parameters: \texttt{config/params.json} (WSI formula, thresholds, random seeds).
+\end{itemize}
+
+Use Git commits with messages mapping to milestones. Example commit messages:
+\begin{itemize}
+    \item \texttt{feat(data): add raw predictions and weather files}
+    \item \texttt{fix(cleaning): impute small gaps; log actions}
+    \item \texttt{feat(wsi): implement WSI and kmeans labeling}
+    \item \texttt{chore(report): add draft of methods section}
+\end{itemize}
+
+\begin{deliverablebox}
+\begin{itemize}
+    \item \texttt{report/final\_report.pdf}
+    \item \texttt{notebooks/} (all notebooks)
+    \item \texttt{requirements.txt}, \texttt{run\_all.sh}, \texttt{config/params.json}
+    \item \texttt{archive/} (zipped package if delivering)
+\end{itemize}
+\end{deliverablebox}
+
+\section{Additional Practical Guidance \& Code Snippets}
+
+\begin{codebox}
+\textbf{Pandas merging \& error calculation}
+\begin{lstlisting}[language=Python]
+import pandas as pd
+pred = pd.read_csv('data/raw/predictions.csv', parse_dates=['timestamp'])
+weather = pd.read_csv('data/raw/weather.csv', parse_dates=['timestamp'])
+df = pred.merge(weather, on=['timestamp','location'], how='outer')
+df['error'] = df['prediction'] - df['ground_truth']
+df['abs_error'] = df['error'].abs()
+df.to_csv('data/processed/aligned.csv', index=False)
+\end{lstlisting}
+\end{codebox}
+
+\begin{codebox}
+\textbf{WSI (robust scaling + sum)}
+\begin{lstlisting}[language=Python]
+from sklearn.preprocessing import RobustScaler
+cols = ['temp_std','abs_temp_change','precip_3d','wind_max','pressure_change','humid_std']
+scaler = RobustScaler()
+X = scaler.fit_transform(df[cols].fillna(0))
+df['WSI'] = X.sum(axis=1) / X.shape[1]
+# save scaler params
+import joblib
+joblib.dump(scaler, 'models/scaler_wsi.pkl')
+\end{lstlisting}
+\end{codebox}
+
+\begin{codebox}
+\textbf{KMeans labeling}
+\begin{lstlisting}[language=Python]
+from sklearn.cluster import KMeans
+kmeans = KMeans(n_clusters=2, random_state=0).fit(X)
+df['wsi_cluster'] = kmeans.labels_
+# map label to unstable (cluster with higher mean WSI)
+cluster_means = df.groupby('wsi_cluster')['WSI'].mean()
+unstable_label = cluster_means.idxmax()
+df['stability_label_kmeans'] = df['wsi_cluster'] == unstable_label
+\end{lstlisting}
+\end{codebox}
+
+\begin{codebox}
+\textbf{Block bootstrap (example skeleton)}
+\begin{lstlisting}[language=Python]
+import numpy as np
+def block_bootstrap(series, block_size, n_boot):
+    n = len(series)
+    indices = np.arange(n)
+    boot_stats = []
+    for _ in range(n_boot):
+        starts = np.random.randint(0, n-block_size+1, size=int(np.ceil(n/block_size)))
+        idx = np.concatenate([np.arange(s, s+block_size) for s in starts])[:n]
+        boot_series = series.iloc[idx].reset_index(drop=True)
+        boot_stats.append(boot_series.mean())
+    return np.array(boot_stats)
+\end{lstlisting}
+\end{codebox}
+
+\section{Risks, Mitigations \& Notes}
+
+\begin{itemize}
+    \item \textbf{Model version drift mid-year:} include model\_version in analyses or split the year.
+    \item \textbf{Autocorrelation \& seasonality:} use block bootstrap, include seasonal covariates, or fit time-series models.
+    \item \textbf{Sparse extreme events:} use event-study averaging instead of per-day stats when events are rare.
+    \item \textbf{Sensor/ground-truth outages:} transparently exclude or flag these periods and report how many days omitted.
+\end{itemize}
+
+\section{Suggested Folder Structure (final)}
+
+\begin{verbatim}
+project/
+├─ data/
+│  ├─ raw/
+│  ├─ processed/
+├─ notebooks/
+│  ├─ 01_data_cleaning.ipynb
+│  ├─ 02_feature_engineering.ipynb
+│  ├─ ...
+├─ models/
+├─ figures/
+├─ results/
+├─ report/
+├─ config/
+│  └─ params.json
+├─ requirements.txt
+└─ run_all.sh
+\end{verbatim}
+
+\end{document}
