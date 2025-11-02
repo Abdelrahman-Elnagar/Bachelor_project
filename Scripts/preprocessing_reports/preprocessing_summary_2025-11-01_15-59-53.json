@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-01_15-59-53",
+  "overall_stats": {
+    "files_processed": 0,
+    "total_rows": 0,
+    "missing_values_replaced": 0,
+    "outliers_flagged": 0,
+    "duplicates_found": 0,
+    "validation_errors": []
+  },
+  "file_reports": [],
+  "config": {
+    "missing_value_markers": [
+      -999,
+      -999.0,
+      "-999",
+      "-999.0",
+      -999.0
+    ],
+    "z_score_threshold": 3.0,
+    "iqr_multiplier": 1.5
+  }
+}

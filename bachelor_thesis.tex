@@ -1,0 +1,710 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage{url}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdfborder={0 0 0}
+}
+
+% Page setup
+\geometry{
+    left=1in,
+    right=1in,
+    top=1in,
+    bottom=1in,
+    headheight=14pt
+}
+
+% Line spacing
+\onehalfspacing
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{}
+
+% Title formatting
+\titleformat{\chapter}
+{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Custom colors (if needed)
+\definecolor{primaryblue}{rgb}{0.16,0.50,0.73}
+\definecolor{secondaryblue}{rgb}{0.20,0.60,0.86}
+\definecolor{darkgray}{rgb}{0.33,0.33,0.33}
+
+% Code listing setup
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    captionpos=b
+}
+
+% Title page information
+\title{Weather Stability Impact on Renewable Energy Prediction\\
+\large A Comparative Analysis of Statistical Model Performance under Stable and Unstable Weather Conditions}
+\author{Abdelrahman Elnagar}
+\date{\today}
+
+% Supervisor information (custom command for title page)
+\newcommand{\supervisorOne}{Prof. Dr. Stephan Schlüter}
+\newcommand{\supervisorTwo}{Abhinav Das, M.Sc.}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\Huge\bfseries Weather Stability Impact on Renewable Energy Prediction}\\[0.5cm]
+{\Large A Comparative Analysis of Statistical Model Performance\\under Stable and Unstable Weather Conditions}\\[2cm]
+
+{\Large Bachelor Thesis}\\[1cm]
+
+\vspace{1.5cm}
+
+\begin{flushleft}
+\textbf{Author:}\\
+Abdelrahman Elnagar\\[0.5cm]
+
+\textbf{Supervisors:}\\
+Prof. Dr. Stephan Schlüter\\
+Abhinav Das, M.Sc.\\[0.5cm]
+
+\textbf{Date:}\\
+\today
+\end{flushleft}
+
+\vfill
+
+\end{titlepage}
+\newpage
+
+% Abstract
+\begin{abstract}
+% Abstract content will go here
+\end{abstract}
+\thispagestyle{empty}
+\newpage
+
+% Table of contents
+\tableofcontents
+\newpage
+
+% List of figures (uncomment when you have figures)
+% \listoffigures
+% \newpage
+
+% List of tables (uncomment when you have tables)
+% \listoftables
+% \newpage
+
+% Main content
+\chapter{Introduction}
+\label{chap:introduction}
+
+\section{Motivation}
+\label{sec:motivation}
+
+Renewable energy sources, particularly solar photovoltaics (PV) and wind power, have become integral components of Germany's energy transition towards a carbon-neutral future. As the share of renewable energy in the electricity grid continues to grow, accurate forecasting of renewable energy production has become critical for grid stability, energy market operations, and optimal resource allocation \cite{giebel2011state, antonanzas2016review}. However, the inherent variability and uncertainty associated with weather-dependent renewable energy generation pose significant challenges for prediction models.
+
+Weather conditions exhibit substantial temporal variability, transitioning between relatively stable periods characterized by consistent meteorological patterns and unstable periods marked by rapid changes in atmospheric conditions. These weather regimes directly influence renewable energy production: stable weather typically results in more predictable generation patterns, while unstable weather introduces greater uncertainty and variability. Yet, the extent to which weather stability affects the performance of statistical prediction models remains insufficiently explored in the existing literature.
+
+Grid operators and energy market participants require reliable forecasts under all weather conditions to ensure system stability, optimize dispatch decisions, and manage grid congestion effectively \cite{antonanzas2016review, zhang2019short}. Current operational forecasting systems often employ a single model or ensemble approach without considering the prevailing weather regime \cite{placeholder_weather_selector}. This one-size-fits-all strategy may be suboptimal, as different prediction models may exhibit varying levels of robustness to weather instability. A model that performs excellently under stable conditions may degrade significantly during unstable periods, potentially compromising operational reliability.
+
+Despite the recognized importance of weather variability in renewable energy forecasting, there is a notable gap in the literature regarding systematic evaluation of model robustness across different weather stability regimes. Most studies evaluate model performance on aggregate datasets without explicitly accounting for weather regime characteristics \cite{placeholder_weather_consideration, placeholder_methods_weather}. This research addresses this gap by developing a comprehensive framework to quantify weather stability and assess how statistical prediction models respond to stable versus unstable weather conditions. The framework builds upon established weather regime classification methods \cite{huth2008classifications, michelangeli1995weather, vautard1990multiple} and applies them to renewable energy forecasting contexts.
+
+The significance of this research extends beyond academic interest. By identifying which models are most robust to weather instability and providing operational guidance on model selection based on weather conditions, this work contributes to improving the reliability and efficiency of renewable energy integration. The findings can inform grid operators, energy traders, and forecasting system designers about optimal model selection strategies that adapt to changing weather conditions, ultimately supporting more reliable and cost-effective renewable energy management.
+
+\section{Research Questions}
+\label{sec:research_questions}
+
+To address the research gap identified in Section~\ref{sec:motivation}, this thesis investigates the following research questions:
+
+\begin{enumerate}
+    \item \textbf{RQ1:} Does renewable energy prediction accuracy differ significantly between weather-stable and weather-unstable periods?
+    
+    This question seeks to establish whether weather stability is a meaningful factor influencing prediction model performance. A positive answer would confirm that weather regime characteristics affect forecasting accuracy, justifying the development of weather-adaptive model selection strategies.
+    
+    \item \textbf{RQ2:} Which statistical models are most robust to weather instability (i.e., show smallest performance degradation during unstable periods)?
+    
+    This question aims to identify which models maintain their predictive performance when weather conditions become unstable. Understanding model-specific robustness characteristics enables informed selection of appropriate forecasting models based on expected weather conditions.
+    
+    \item \textbf{RQ3:} Can weather stability information improve model selection strategies for operational renewable energy forecasting?
+    
+    This question evaluates the practical utility of incorporating weather stability information into operational forecasting systems. It assesses whether knowledge of weather regime characteristics can be leveraged to select optimal models dynamically, potentially improving overall forecasting accuracy and reliability.
+\end{enumerate}
+
+These research questions guide the development of the dual-pipeline methodology described in Chapter~\ref{chap:methodology}, where weather stability classification and energy prediction models are evaluated independently before being combined for comparative analysis.
+
+\section{Objectives}
+\label{sec:objectives}
+
+To address the research questions outlined in Section~\ref{sec:research_questions}, this research aims to achieve the following objectives:
+
+\begin{enumerate}
+    \item \textbf{Develop a Weather Stability Index (WSI)} using 11 weather attributes to classify periods as stable or unstable. This index will be computed from meteorological data including temperature, cloudiness, wind, precipitation, pressure, and other relevant atmospheric variables. The WSI will provide a quantitative measure of weather variability, enabling systematic classification of weather regimes throughout the analysis period.
+    
+    \item \textbf{Apply statistical models from literature} to predict renewable energy production for 2024. Multiple established forecasting models, including persistence models, ARIMA/SARIMA, Prophet, and exponential smoothing methods, will be implemented and evaluated using historical renewable energy production data for Germany.
+    
+    \item \textbf{Compare model performance under stable vs unstable weather conditions} by stratifying prediction errors according to the weather stability classification. This comparison will quantify performance differences and identify which models are most affected by weather variability.
+    
+    \item \textbf{Identify which models are most robust to weather instability} by analyzing performance degradation patterns. Models that maintain relatively stable accuracy across different weather regimes will be considered more robust and potentially more suitable for operational deployment.
+    
+    \item \textbf{Provide operational recommendations on model selection} based on weather conditions. The findings will be synthesized into actionable guidance for grid operators and forecasting system designers, suggesting optimal model selection strategies that adapt to prevailing weather stability characteristics.
+\end{enumerate}
+
+These objectives collectively support the overarching goal of improving renewable energy forecasting reliability through weather-aware model selection, contributing to more effective renewable energy integration and grid management.
+
+\section{Thesis Structure}
+\label{sec:thesis_structure}
+
+This thesis is organized into seven main chapters, following a logical progression from problem identification through methodology development to analysis and conclusions.
+
+\textbf{Chapter~\ref{chap:introduction} (Introduction)} establishes the research context, motivation, and objectives. This chapter presents the research questions and outlines the overall structure of the thesis.
+
+\textbf{Chapter~\ref{chap:literature} (Literature Review)} reviews existing research on renewable energy forecasting, weather regime classification, and model evaluation methodologies. It identifies gaps in current knowledge and situates this research within the broader academic discourse.
+
+\textbf{Chapter~\ref{chap:methodology} (Methodology)} presents the research design and methodological framework. The chapter describes the dual-pipeline architecture, which consists of (1) a Weather Stability Classification pipeline that processes meteorological data to identify stable and unstable periods, (2) a Renewable Energy Prediction Models pipeline that implements and evaluates statistical forecasting models, and (3) a Comparative Analysis pipeline that merges stability classifications with model performance metrics to assess robustness. This chapter also details data collection procedures, preprocessing steps, and analysis methods.
+
+\textbf{Chapter~\ref{chap:data} (Data and Experimental Setup)} provides comprehensive documentation of the datasets used in this research, including weather data from the German Meteorological Service (DWD) and renewable energy production data. The chapter describes data sources, collection procedures, quality assurance measures, and experimental configuration.
+
+\textbf{Chapter~\ref{chap:results} (Results)} presents the empirical findings, including Weather Stability Index characteristics, model performance metrics stratified by weather regime, statistical test results, and model robustness rankings. Results are presented through descriptive statistics, tables, and visualizations.
+
+\textbf{Chapter~\ref{chap:discussion} (Discussion)} interprets the results in the context of existing literature, discusses implications for operational forecasting systems, acknowledges limitations of the study, and explores the practical significance of the findings.
+
+\textbf{Chapter~\ref{chap:conclusion} (Conclusion)} summarizes the main contributions of this research, revisits the research questions, discusses their resolution, and suggests directions for future work.
+
+The thesis follows a structured approach where the dual-pipeline methodology enables systematic evaluation of model robustness to weather instability, ultimately converging on comparative analysis that addresses all three research questions.
+
+
+\chapter{Literature Review}
+\label{chap:literature}
+
+\section{Introduction}
+% Introduction to the literature review
+
+\section{Background Theory}
+% Background theory will go here
+
+\subsection{Subsection}
+% Subsection content
+
+\section{Related Work}
+% Related work will go here
+
+\section{Gap Analysis}
+% Gap analysis will go here
+
+\section{Summary}
+% Summary of literature review
+
+
+\chapter{Methodology}
+\label{chap:methodology}
+
+\section{Research Design}
+\label{sec:research_design}
+
+The research design follows a dual-pipeline architecture that enables systematic evaluation of model performance under different weather stability regimes. This design addresses the research questions (Section~\ref{sec:research_questions}) by independently processing weather classification and energy prediction before combining them for comparative analysis.
+
+\subsection{Pipeline Architecture}
+
+The methodology consists of three interconnected pipelines that operate in parallel and converge for final analysis:
+
+\subsubsection{Pipeline 1: Weather Stability Classification}
+
+This pipeline processes meteorological data to identify stable and unstable weather periods:
+
+\begin{itemize}
+    \item \textbf{Input:} Eleven weather attributes collected for 2024 at hourly resolution, covering Germany-wide and 16 Bundesländer (federal states). The attributes include:
+    \begin{itemize}
+        \item Temperature (mean, minimum, maximum)
+        \item Cloudiness (cloud cover percentage)
+        \item Dew point (atmospheric moisture indicator)
+        \item Extreme wind (peak wind measurements)
+        \item Moisture (relative humidity)
+        \item Precipitation (rainfall in mm)
+        \item Pressure (atmospheric pressure in hPa)
+        \item Soil temperature
+        \item Sun (sunshine duration)
+        \item Visibility (horizontal visibility)
+        \item Weather phenomena (categorical weather events)
+        \item Wind and wind\_synop (wind speed and direction)
+    \end{itemize}
+    
+    \item \textbf{Process:} The pipeline applies feature engineering to extract variability, trend, and extreme event indicators from raw weather data. These features are used to compute a Weather Stability Index (WSI) that quantifies atmospheric variability. The WSI is then classified into stable and unstable regimes using Gaussian Mixture Models (GMM) \cite{mclachlan2000finite} with temporal smoothing via Hidden Markov Models (HMM) \cite{rabiner1989tutorial} to account for regime persistence.
+    
+    \item \textbf{Output:} A timeline with weather stability labels (stable/unstable) for each hour in the analysis period, enabling stratification of subsequent analyses by weather regime.
+\end{itemize}
+
+\subsubsection{Pipeline 2: Renewable Energy Prediction Models}
+
+This pipeline implements and evaluates statistical forecasting models:
+
+\begin{itemize}
+    \item \textbf{Input:} Renewable energy production data (solar PV and wind power) for 2024, along with relevant weather features. For solar prediction, key inputs include solar radiation (if available), cloudiness, temperature, and temporal features (hour of day, day of year, day of week). For wind prediction, inputs include wind speed, wind direction, atmospheric pressure, temperature, and temporal features.
+    
+    \item \textbf{Process:} Multiple statistical models from the literature are implemented, including:
+    \begin{itemize}
+        \item Persistence model (baseline: next-hour equals current-hour)
+        \item Seasonal persistence (same hour from previous week)
+        \item ARIMA/SARIMA (autoregressive integrated moving average with seasonal components)
+        \item Prophet (additive seasonality model by Facebook)
+        \item Exponential smoothing (Holt-Winters with trend and seasonality)
+    \end{itemize}
+    Models are trained using walk-forward validation, where each model is trained on a rolling window of historical data and evaluated on subsequent periods, mimicking operational forecasting conditions.
+    
+    \item \textbf{Output:} Hourly predictions for renewable energy production along with performance metrics (MAE, RMSE, MAPE) computed at each time step.
+\end{itemize}
+
+\subsubsection{Pipeline 3: Comparative Analysis}
+
+This pipeline combines outputs from the previous two pipelines:
+
+\begin{itemize}
+    \item \textbf{Input:} Weather stability timeline from Pipeline 1 and model performance timeline from Pipeline 2.
+    
+    \item \textbf{Process:} The stability labels are merged with model performance metrics, creating a unified dataset where each observation includes timestamp, weather regime (stable/unstable), model predictions, actual production, and error metrics. Statistical tests are then applied to compare performance between stable and unstable periods for each model. This includes:
+    \begin{itemize}
+        \item Mann-Whitney U tests \cite{mann1947test} (non-parametric comparison)
+        \item Welch's t-tests (parametric alternative)
+        \item Linear mixed-effects models (accounting for temporal clustering)
+        \item Effect size calculations \cite{cohen1988statistical} (Cohen's d, percentage increase)
+    \end{itemize}
+    Multiple testing correction procedures \cite{benjamini1995controlling} are applied to control the false discovery rate across model comparisons.
+    Models are ranked by robustness metrics, particularly Relative Performance Degradation (RPD), which measures performance change from stable to unstable conditions relative to baseline performance.
+    
+    \item \textbf{Output:} Model rankings, statistical test results, robustness assessments, and operational recommendations on model selection based on weather conditions.
+\end{itemize}
+
+\subsection{Design Rationale}
+
+This dual-pipeline design addresses the research questions as follows:
+
+\begin{itemize}
+    \item \textbf{RQ1} is addressed by Pipeline 3's statistical comparisons between stable and unstable periods.
+    \item \textbf{RQ2} is answered through robustness rankings computed in Pipeline 3, identifying which models show smallest performance degradation.
+    \item \textbf{RQ3} is evaluated by synthesizing findings into operational recommendations that leverage weather stability information for model selection.
+\end{itemize}
+
+The design ensures that weather classification and model evaluation are performed independently, preventing data leakage and maintaining methodological rigor. The convergence point in Pipeline 3 enables systematic comparison while preserving the integrity of each component pipeline.
+
+\section{Data Collection}
+\label{sec:data_collection}
+
+This section describes the data sources and collection procedures for both weather and renewable energy datasets used in this research.
+
+\subsection{Weather Data}
+
+\subsubsection{Data Provider}
+
+Weather data is sourced from the \textbf{Deutscher Wetterdienst (DWD)}, the German Meteorological Service, which operates a comprehensive network of weather stations throughout Germany. DWD provides open-access climate data through its climate data center, making it suitable for academic research.
+
+\subsubsection{Data Characteristics}
+
+The collected weather data has the following specifications:
+
+\begin{itemize}
+    \item \textbf{Source:} Hourly weather observations from DWD climate data center
+    \item \textbf{Period:} 2024 (full calendar year, January 1 to December 31)
+    \item \textbf{Spatial Coverage:} 
+    \begin{itemize}
+        \item Germany-wide aggregated data
+        \item 16 Bundesländer (federal states) individually
+        \item 636+ individual weather stations mapped to regions
+    \end{itemize}
+    \item \textbf{Station Network:} 636+ active weather stations distributed across Germany
+    \item \textbf{Data License:} Open data license, freely available for research use
+    \item \textbf{Temporal Resolution:} Hourly observations (8,760 hours per year)
+\end{itemize}
+
+\subsubsection{Weather Attributes Collected}
+
+Eleven weather attributes have been collected, each contributing to the Weather Stability Index computation:
+
+\begin{enumerate}
+    \item \textbf{Temperature} - hourly mean, minimum, and maximum values
+    \item \textbf{Cloudiness} - cloud cover percentage (0-100\%)
+    \item \textbf{Dew point} - atmospheric moisture indicator
+    \item \textbf{Extreme wind} - peak wind measurements
+    \item \textbf{Moisture} - relative humidity percentage
+    \item \textbf{Precipitation} - rainfall amount in millimeters
+    \item \textbf{Pressure} - atmospheric pressure in hectopascals (hPa)
+    \item \textbf{Soil temperature} - ground temperature measurements
+    \item \textbf{Sun} - sunshine duration in hours
+    \item \textbf{Visibility} - horizontal visibility in meters
+    \item \textbf{Weather phenomena} - categorical weather events
+    \item \textbf{Wind and wind\_synop} - wind speed (m/s) and wind direction (degrees)
+\end{enumerate}
+
+These attributes capture multiple dimensions of atmospheric conditions, enabling comprehensive quantification of weather variability and stability.
+
+\subsection{Renewable Energy Data}
+
+\subsubsection{Data Status and Requirements}
+
+Renewable energy production data is required for model training and evaluation. The following specifications are needed:
+
+\begin{itemize}
+    \item \textbf{Period:} 2024 (full year) to match weather data temporal coverage
+    \item \textbf{Resolution:} Hourly production data aligned with weather observations
+    \item \textbf{Geographic Scope:} 
+    \begin{itemize}
+        \item Germany-wide total production (primary requirement)
+        \item Bundesland-level production (desirable for regional analysis)
+    \end{itemize}
+    \item \textbf{Energy Types:}
+    \begin{itemize}
+        \item Solar PV production (MW or GWh)
+        \item Wind power production (MW or GWh)
+    \end{itemize}
+    \item \textbf{Data Quality:} Complete temporal coverage (all 8,760 hours), validated against installed capacity statistics
+\end{itemize}
+
+\subsubsection{Potential Data Sources}
+
+Several potential data sources have been identified for renewable energy production data:
+
+\begin{enumerate}
+    \item \textbf{ENTSO-E Transparency Platform} (\url{transparency.entsoe.eu})
+    \begin{itemize}
+        \item European transmission system operators' data platform
+        \item Provides hourly generation data by technology type
+        \item Free access with API key registration
+        \item Historical data available for Germany
+    \end{itemize}
+    
+    \item \textbf{Fraunhofer ISE Energy Charts} (\url{energy-charts.info})
+    \begin{itemize}
+        \item Public dashboard for German renewable energy statistics
+        \item Provides downloadable CSV files
+        \item Historical data available
+        \item Well-documented and widely used in research
+    \end{itemize}
+    
+    \item \textbf{SMARD (Strommarktdaten)} (\url{smard.de})
+    \begin{itemize}
+        \item Federal Network Agency (Bundesnetzagentur) platform
+        \item Official market data including renewable generation
+        \item Free registration required
+        \item Authoritative source for German energy market data
+    \end{itemize}
+\end{enumerate}
+
+Final data source selection will be based on data availability, completeness, accessibility, and alignment with research requirements. Data validation procedures will ensure consistency with known installed capacity statistics and detect any anomalies or missing values.
+
+\section{Data Preprocessing}
+\label{sec:data_preprocessing}
+
+This section documents the data preprocessing steps that have been completed for weather data and outlines additional steps required for dataset integration and analysis. The preprocessing pipeline ensures data quality, consistency, and compatibility across different data sources.
+
+\subsection{Completed Weather Data Preprocessing}
+
+The following preprocessing steps have been completed for the 2024 Germany weather dataset:
+
+\subsubsection{Step 1: Download and Initial Processing}
+
+\begin{itemize}
+    \item Downloaded raw weather data files from DWD servers for all 11 weather attributes
+    \item Converted data format from semicolon-delimited TXT files to CSV format for easier processing
+    \item Standardized timestamp format in the \texttt{MESS\_DATUM} column to ISO 8601 format (\texttt{YYYY-MM-DD HH:MM:SS})
+    \item Removed metadata and description files that are automatically included in DWD data packages
+    \item Cleaned up file structure and organized files by attribute type
+    \item Filtered data to include only 2024 observations (removed any historical data from multi-year files)
+    \item Logged all download and processing operations in the \texttt{logs/} directory for traceability
+\end{itemize}
+
+\subsubsection{Step 2: Bundesland Aggregation}
+
+\begin{itemize}
+    \item Mapped 636 weather stations to 16 German Bundesländer using a reference file (\texttt{regions.csv}) that contains station ID to Bundesland assignments
+    \item Aggregated station-level data into Bundesland-level files by combining all stations within each federal state
+    \item Created 16 CSV files per weather attribute (one file per Bundesland), preserving station IDs for traceability
+    \item Output structure: \texttt{Data/*\_by\_bundesland/*.csv} (e.g., \texttt{Data/temperature\_by\_bundesland/Bayern.csv})
+    \item Maintained data integrity by preserving all original columns while adding aggregation metadata
+\end{itemize}
+
+\subsubsection{Step 3: Germany-Wide Aggregation}
+
+\begin{itemize}
+    \item Combined all Bundesland data into single Germany-wide aggregated files
+    \item Aggregated across all 16 federal states to create country-level time series
+    \item Output structure: \texttt{Data/*\_germany\_aggregated/Germany\_total.csv}
+    \item Enables analysis at both regional (Bundesland) and national (Germany-wide) scales
+\end{itemize}
+
+\subsubsection{Step 4: Data Quality Assurance}
+
+\begin{itemize}
+    \item Removed empty files that contained no data for the 2024 period
+    \item Validated data completeness across all 11 attributes
+    \item Documented missing data patterns and temporal gaps
+    \item Generated data inventory summaries listing available stations, coverage periods, and data quality indicators
+    \item Identified and flagged potential outliers using domain knowledge (e.g., unrealistic temperature values)
+\end{itemize}
+
+\subsection{Future Preprocessing Steps for Integration}
+
+The following preprocessing steps will be required when integrating weather and renewable energy datasets:
+
+\subsubsection{Timestamp Harmonization}
+
+\begin{itemize}
+    \item Standardize all timestamps to a consistent timezone (UTC recommended to avoid daylight saving time complications)
+    \item Ensure ISO 8601 format throughout: \texttt{YYYY-MM-DD HH:MM:SS}
+    \item Create a master time index covering all 8,760 hours of 2024 (accounting for daylight saving time transitions)
+    \item Verify temporal alignment between weather and energy datasets
+\end{itemize}
+
+\subsubsection{Missing Data Strategy}
+
+A tiered approach will be applied to handle missing values:
+
+\begin{itemize}
+    \item \textbf{Tier 1 (≤2 hours missing):} Linear interpolation between adjacent valid observations
+    \item \textbf{Tier 2 (3-6 hours missing):} Forward-fill using the last valid observation, with a flag indicating imputation
+    \item \textbf{Tier 3 (>6 hours missing):} Mark periods as excluded from analysis to maintain data quality
+    \item All imputations will be logged in a \texttt{cleaning\_log.csv} file documenting imputation type, duration, and affected variables
+    \item Track percentage of original data retained after quality filtering
+\end{itemize}
+
+\subsubsection{Dataset Merging}
+
+A unified analysis dataset will be created containing:
+
+\begin{itemize}
+    \item Timestamp (hourly, aligned across all variables)
+    \item Location identifier (Germany-wide or Bundesland)
+    \item All 11 weather attributes (normalized and feature-engineered)
+    \item Renewable energy production values (solar and wind)
+    \item Weather Stability Index (WSI) values
+    \item Stability classification labels (stable/unstable)
+    \item Model predictions (for each implemented model)
+    \item Performance metrics (MAE, RMSE, MAPE per time step)
+    \item Data quality flags (missing data indicators, imputation flags, exclusion markers)
+\end{itemize}
+
+This unified dataset enables efficient analysis and ensures consistent temporal alignment across all variables.
+
+\subsubsection{Quality Checks}
+
+Final quality assurance procedures will verify:
+
+\begin{itemize}
+    \item No duplicate timestamps in the merged dataset
+    \item No temporal gaps in the time series
+    \item Reasonable value ranges (e.g., temperature between -40°C and 50°C for Germany)
+    \item Renewable energy production values consistent with installed capacity limits
+    \item Summary statistics computed for all variables to identify potential data issues
+    \item Cross-validation of aggregated values against source data
+\end{itemize}
+
+All preprocessing steps are documented with scripts stored in the \texttt{Scripts/} directory, ensuring reproducibility and transparency of the data preparation process.
+
+\section{Weather Stability Index Development}
+\label{sec:wsi_development}
+
+The Weather Stability Index (WSI) is developed using established methods for weather regime detection \cite{huth2008classifications, michelangeli1995weather, vautard1990multiple}. This section will describe the development methodology, including WSI computation using robust normalization, feature engineering approaches (variability features, trend features, extreme event flags), Gaussian Mixture Model (GMM) classification \cite{mclachlan2000finite} for stable/unstable regime detection, Hidden Markov Model (HMM) smoothing \cite{rabiner1989tutorial} for temporal dependence, justification for 6-hour temporal window resolution, and validation criteria (silhouette score, Davies-Bouldin index, Calinski-Harabasz score).
+
+% This section will describe the development of the Weather Stability Index (WSI), including:
+% - WSI computation formula using robust normalization
+% - Feature engineering approach (variability features, trend features, extreme event flags)
+% - Gaussian Mixture Model (GMM) classification method for stable/unstable regime detection
+% - Hidden Markov Model (HMM) smoothing for temporal dependence
+% - Justification for 6-hour temporal window resolution
+% - Validation criteria (silhouette score, Davies-Bouldin index, Calinski-Harabasz score)
+
+\section{Renewable Energy Prediction Models}
+\label{sec:prediction_models}
+
+This section describes the implementation of statistical prediction models for renewable energy forecasting. The model selection rationale is based on established methods in the literature \cite{giebel2011state, antonanzas2016review, placeholder_stat_vs_deep, placeholder_statistical_effectiveness}, focusing on persistence models, Seasonal Persistence, ARIMA/SARIMA, Prophet, and Exponential Smoothing approaches. Feature selection for solar PV prediction includes radiation, cloudiness, temperature, and temporal features, while wind power prediction utilizes wind speed, wind direction, pressure, temperature, and temporal features. The walk-forward validation strategy employs rolling training windows with appropriate forecast horizons and update frequencies, mimicking operational forecasting conditions.
+
+% This section will describe the implementation of statistical prediction models, including:
+% - Model selection rationale (Persistence, Seasonal Persistence, ARIMA/SARIMA, Prophet, Exponential Smoothing)
+% - Feature selection for solar PV prediction (radiation, cloudiness, temperature, temporal features)
+% - Feature selection for wind power prediction (wind speed, wind direction, pressure, temperature, temporal features)
+% - Walk-forward validation strategy (rolling training windows, forecast horizons, update frequency)
+% - Model implementation details and hyperparameter specifications
+% - Training procedures and convergence criteria
+
+\section{Performance Evaluation}
+\label{sec:performance_evaluation}
+
+Performance evaluation methods include metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles) following established practices in renewable energy forecasting \cite{giebel2011state, antonanzas2016review}. Stratified performance analysis by weather stability regime (stable vs unstable) enables systematic comparison across different weather conditions. Statistical tests for comparing performance include the Mann-Whitney U test \cite{mann1947test}, Welch's t-test, and linear mixed-effects models. Effect size calculations \cite{cohen1988statistical} (Cohen's d, percentage increase, rank-biserial correlation) quantify the practical significance of performance differences. Multiple testing correction procedures \cite{benjamini1995controlling} (Bonferroni, False Discovery Rate) control the false discovery rate, and bootstrap confidence intervals provide uncertainty quantification for performance metrics.
+
+% This section will describe performance evaluation methods, including:
+% - Metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles)
+% - Stratified performance analysis by weather stability regime (stable vs unstable)
+% - Statistical tests for comparing performance (Mann-Whitney U test, Welch's t-test, linear mixed-effects models)
+% - Effect size calculations (Cohen's d, percentage increase, rank-biserial correlation)
+% - Multiple testing correction procedures (Bonferroni, False Discovery Rate)
+% - Bootstrap confidence intervals for performance metrics
+
+\section{Robustness Analysis}
+\label{sec:robustness_analysis}
+
+% This section will describe the robustness analysis methodology, including:
+% - Robustness metrics definition (Relative Performance Degradation - RPD as primary metric, Absolute Performance Degradation - APD, Robustness Index, Coefficient of Variation)
+% - Model ranking methodology combining accuracy and robustness
+% - Bootstrap procedures for quantifying ranking uncertainty
+% - Significance testing for robustness differences between models
+% - Visual presentation methods (robustness-accuracy scatter plots, ranking bar charts)
+
+\section{Validation Approach}
+\label{sec:validation_approach}
+
+% This section will describe validation procedures, including:
+% - Cross-validation strategy (temporal cross-validation to avoid data leakage)
+% - Sensitivity analysis framework (parameter variations, window size testing)
+% - Reproducibility measures (random seed documentation, parameter configuration files)
+% - Quality assurance procedures
+% - Model assumptions and their validation
+
+\section{Ethical Considerations}
+\label{sec:ethical_considerations}
+
+This research uses publicly available weather data from the German Meteorological Service (DWD) under open data license and renewable energy production data from publicly accessible sources. All data collection and processing procedures comply with data usage terms and conditions specified by data providers. No personal or sensitive information is involved in this research. The study focuses on aggregate meteorological and energy production data that cannot be traced to individuals.
+
+All code and methodology are documented to ensure reproducibility, and results are presented transparently with appropriate statistical reporting. The research aims to contribute to public knowledge about renewable energy forecasting without any commercial or political motivations that could bias the analysis or conclusions.
+
+
+\chapter{Data and Experimental Setup}
+\label{chap:data}
+
+\section{Data Description}
+% Data description will go here
+
+\section{Data Sources}
+% Data sources will go here
+
+\section{Experimental Setup}
+% Experimental setup will go here
+
+\section{Software and Tools}
+% Software and tools used will go here
+
+
+\chapter{Results}
+\label{chap:results}
+
+\section{Introduction}
+% Introduction to results
+
+\section{Main Findings}
+% Main findings will go here
+
+\subsection{Subsection}
+% Subsection for detailed results
+
+\section{Analysis}
+% Analysis of results will go here
+
+\section{Summary}
+% Summary of results
+
+
+\chapter{Discussion}
+\label{chap:discussion}
+
+\section{Interpretation of Results}
+% Interpretation of results will go here
+
+\section{Comparison with Literature}
+% Comparison with existing literature will go here
+
+\section{Limitations}
+% Limitations will go here
+
+\section{Implications}
+% Implications of findings will go here
+
+
+\chapter{Conclusion}
+\label{chap:conclusion}
+
+\section{Summary of Contributions}
+% Summary of contributions will go here
+
+\section{Research Questions Revisited}
+% Revisiting research questions will go here
+
+\section{Future Work}
+% Future work suggestions will go here
+
+\section{Final Remarks}
+% Final remarks will go here
+
+
+% Appendices (if needed)
+\appendix
+
+\chapter{Appendix A}
+\label{appendix:a}
+% Appendix A content will go here
+
+\chapter{Appendix B}
+\label{appendix:b}
+% Appendix B content will go here
+
+
+% References
+% Bibliography file: references.bib
+% Compilation: pdflatex -> bibtex -> pdflatex -> pdflatex
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\addcontentsline{toc}{chapter}{References}
+
+% Alternative: Manual bibliography (if not using .bib file)
+% \begin{thebibliography}{99}
+% \bibitem{example1} Example Reference 1
+% \bibitem{example2} Example Reference 2
+% \end{thebibliography}
+% \addcontentsline{toc}{chapter}{References}
+
+\end{document}
+

@@ -1,0 +1,169 @@
+# Preprocessing Configuration File
+# Settings for data preprocessing and visualization
+
+# Missing value markers - values to replace with NaN
+missing_value_markers:
+  - -999
+  - -999.0
+  - "-999"
+  - "-999.0"
+  - -999.0
+
+# Outlier detection settings
+outlier_detection:
+  z_score_threshold: 3.0  # Standard deviations from mean
+  iqr_multiplier: 1.5      # IQR multiplier for outlier detection
+  
+# Domain-specific thresholds for outlier flagging (min, max)
+# Values outside these ranges will be flagged as outliers
+attribute_thresholds:
+  temperature:
+    columns: ["temperature_mean", "TT_TU_mean", "TT", "TT_STD"]
+    min: -50.0
+    max: 50.0
+  humidity:
+    columns: ["humidity_mean", "RF_TU_mean", "humidity_std", "RF_STD", "RF_TU"]
+    min: 0.0
+    max: 100.0
+  wind_speed:
+    columns: ["wind_speed", "wind_speed_synop", "F", "FF", "FX", "  F", "  FF"]
+    min: 0.0
+    max: 200.0  # km/h
+  wind_direction:
+    columns: ["wind_direction", "wind_direction_synop", "D", "DD"]
+    min: 0.0
+    max: 360.0
+  precipitation:
+    columns: ["precipitation_amount", "R1", "  R1", "RS_IND", "RR"]
+    min: 0.0
+    max: 500.0  # mm
+  pressure:
+    columns: ["pressure", "pressure_station_level", "P", "P0", "   P", "  P0", "P_STD"]
+    min: 800.0
+    max: 1100.0  # hPa
+  cloudiness:
+    columns: ["cloudiness_mean", "cloudiness", "V_N_mean", "V_N"]
+    min: 0.0
+    max: 8.0  # oktas
+  dew_point:
+    columns: ["dew_point", "TD", "  TD", "TD_STD"]
+    min: -50.0
+    max: 50.0
+  visibility:
+    columns: ["visibility", "V_VV", "VV"]
+    min: 0.0
+    max: 100.0  # km
+  soil_temperature:
+    columns: ["soil_temperature", "EBT", "TF_STD"]
+    min: -30.0
+    max: 60.0
+  sunshine:
+    columns: ["sunshine_duration", "SD_SO", "SO"]
+    min: 0.0
+    max: 24.0  # hours
+  moisture:
+    columns: ["humidity_std", "vapor_pressure_std", "VP_STD", "ABSF_STD", "absolute_humidity_std"]
+    min: 0.0
+    max: 100.0
+
+# Attribute-specific column mappings for visualization
+# Updated with meaningful column names after renaming
+attribute_column_mappings:
+  temperature:
+    value_columns: ["temperature_mean"]
+    bundesland_folder: "Temp_Bundesland_Aggregated"
+    germany_folder: "Temp_Germany_Aggregated"
+    y_label: "Temperature (°C)"
+  cloudiness:
+    value_columns: ["cloudiness_mean"]
+    bundesland_folder: "Cloudness_Bundesland_Aggregated"
+    germany_folder: "Cloudness_Germany_Aggregated"
+    y_label: "Cloudiness (oktas)"
+  wind:
+    value_columns: ["wind_speed"]
+    bundesland_folder: "wind_by_bundesland"
+    germany_folder: "wind_germany"
+    y_label: "Wind Speed (km/h)"
+  wind_synop:
+    value_columns: ["wind_speed_synop"]
+    bundesland_folder: "wind_synop_by_bundesland"
+    germany_folder: "wind_synop_germany"
+    y_label: "Wind Speed (km/h)"
+  precipitation:
+    value_columns: ["precipitation_amount"]
+    bundesland_folder: "precipitation_by_bundesland"
+    germany_folder: "precipitation_germany"
+    y_label: "Precipitation (mm)"
+  pressure:
+    value_columns: ["pressure", "pressure_station_level"]
+    bundesland_folder: "pressure_by_bundesland"
+    germany_folder: "pressure_germany"
+    y_label: "Pressure (hPa)"
+  dew_point:
+    value_columns: ["dew_point"]
+    bundesland_folder: "dew_point_by_bundesland"
+    germany_folder: "dew_point_germany_aggregated"
+    y_label: "Dew Point (°C)"
+  moisture:
+    value_columns: ["humidity_std", "vapor_pressure_std"]
+    bundesland_folder: "moisture_by_bundesland"
+    germany_folder: "moisture_germany_aggregated"
+    y_label: "Relative Humidity (%)"
+  extreme_wind:
+    value_columns: ["extreme_wind_speed_911", "extreme_wind_speed"]
+    bundesland_folder: "extreme_wind_by_bundesland"
+    germany_folder: "extreme_wind_germany_aggregated"
+    y_label: "Extreme Wind Speed (km/h)"
+  soil_temperature:
+    value_columns: ["V_TE002", "V_TE005", "V_TE010"]  # Depth-specific: 2cm, 5cm, 10cm
+    bundesland_folder: "soil_temperature_by_bundesland"
+    germany_folder: "soil_temperature_germany"
+    y_label: "Soil Temperature (°C)"
+  sun:
+    value_columns: ["sunshine_duration"]
+    bundesland_folder: "sun_by_bundesland"
+    germany_folder: "sun_germany"
+    y_label: "Sunshine Duration (hours)"
+  visibility:
+    value_columns: ["visibility"]
+    bundesland_folder: "visibility_by_bundesland"
+    germany_folder: "visibility_germany"
+    y_label: "Visibility (km)"
+
+# Visualization settings
+visualization:
+  figure_size_full_year: [20, 10]
+  figure_size_monthly: [16, 8]
+  figure_size_distribution: [14, 8]
+  dpi: 300
+  line_width: 1.5
+  alpha: 0.7
+  germany_line_style: "--"  # Dashed line for Germany aggregation
+  germany_line_width: 2.5
+  color_palette: "tab20"
+  
+# Bundesland name mappings
+bundesland_mapping:
+  "Baden-Württemberg": "BW"
+  "Bayern": "BY"
+  "Berlin": "BE"
+  "Brandenburg": "BB"
+  "Bremen": "HB"
+  "Hamburg": "HH"
+  "Hessen": "HE"
+  "Mecklenburg-Vorpommern": "MV"
+  "Niedersachsen": "NI"
+  "Nordrhein-Westfalen": "NW"
+  "Rheinland-Pfalz": "RP"
+  "Saarland": "SL"
+  "Sachsen": "SN"
+  "Sachsen-Anhalt": "ST"
+  "Schleswig-Holstein": "SH"
+  "Thüringen": "TH"
+  
+# Data validation settings
+validation:
+  expected_year: 2024
+  timestamp_column: "datetime"  # Updated after renaming (was MESS_DATUM)
+  min_completeness: 0.0  # Minimum data completeness percentage (0 = no requirement)
+

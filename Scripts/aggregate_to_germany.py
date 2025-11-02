@@ -78,12 +78,6 @@ def main():
     
     # List of all weather attributes that were processed
     attributes = [
-        'pressure',
-        'soil_temperature',
-        'sun',
-        'visibility',
-        'weather_phenomena',
-        'wind',
         'wind_synop',
         'precipitation'
     ]
