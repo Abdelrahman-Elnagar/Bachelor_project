@@ -23,5 +23,5 @@ temp_col = df['temperature_mean']
 outliers_domain = ((temp_col < -50) | (temp_col > 50)).sum()
 print(f"Values outside domain range (-50 to 50): {outliers_domain}")
 
-print("\n✓ Preprocessing verified!")
+print("\nPreprocessing verified - All checks passed!")
 

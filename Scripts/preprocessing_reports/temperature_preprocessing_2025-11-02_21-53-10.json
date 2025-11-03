@@ -1,0 +1,239 @@
+{
+  "timestamp": "2025-11-02_21-53-10",
+  "overall_stats": {
+    "files_processed": 17,
+    "total_rows_before": 149328,
+    "total_rows_after": 143942,
+    "missing_values_replaced": "0",
+    "outliers_removed": "5386",
+    "nan_rows_removed": "0",
+    "validation_errors": []
+  },
+  "file_reports": [
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Baden-W\u00fcrttemberg_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Baden-W\u00fcrttemberg_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8586,
+      "rows_removed": 198,
+      "missing_replaced": 0,
+      "outliers_removed": 198,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 2.25
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Bayern_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Bayern_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8726,
+      "rows_removed": 58,
+      "missing_replaced": 0,
+      "outliers_removed": 58,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 0.66
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Berlin_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Berlin_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8778,
+      "rows_removed": 6,
+      "missing_replaced": 0,
+      "outliers_removed": 6,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 0.07
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Brandenburg_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Brandenburg_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8606,
+      "rows_removed": 178,
+      "missing_replaced": 0,
+      "outliers_removed": 178,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 2.03
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Bremen_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Bremen_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8586,
+      "rows_removed": 198,
+      "missing_replaced": 0,
+      "outliers_removed": 198,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 2.25
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Hamburg_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Hamburg_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8732,
+      "rows_removed": 52,
+      "missing_replaced": 0,
+      "outliers_removed": 52,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 0.59
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Hessen_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Hessen_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8405,
+      "rows_removed": 379,
+      "missing_replaced": 0,
+      "outliers_removed": 379,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 4.31
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Mecklenburg-Vorpommern_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Mecklenburg-Vorpommern_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8056,
+      "rows_removed": 728,
+      "missing_replaced": 0,
+      "outliers_removed": 728,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 8.29
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Niedersachsen_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Niedersachsen_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8398,
+      "rows_removed": 386,
+      "missing_replaced": 0,
+      "outliers_removed": 386,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 4.39
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Nordrhein-Westfalen_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Nordrhein-Westfalen_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8188,
+      "rows_removed": 596,
+      "missing_replaced": 0,
+      "outliers_removed": 596,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 6.79
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Rheinland-Pfalz_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Rheinland-Pfalz_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8408,
+      "rows_removed": 376,
+      "missing_replaced": 0,
+      "outliers_removed": 376,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 4.28
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Saarland_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Saarland_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8583,
+      "rows_removed": 201,
+      "missing_replaced": 0,
+      "outliers_removed": 201,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 2.29
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Sachsen-Anhalt_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Sachsen-Anhalt_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 7953,
+      "rows_removed": 831,
+      "missing_replaced": 0,
+      "outliers_removed": 831,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 9.46
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Sachsen_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Sachsen_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8429,
+      "rows_removed": 355,
+      "missing_replaced": 0,
+      "outliers_removed": 355,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 4.04
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Schleswig-Holstein_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Schleswig-Holstein_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8281,
+      "rows_removed": 503,
+      "missing_replaced": 0,
+      "outliers_removed": 503,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 5.73
+    },
+    {
+      "file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated\\Th\u00fcringen_aggregated.csv",
+      "output_file": "Data\\Bundesland_aggregation\\Temp_Bundesland_Aggregated_preprocessed\\Th\u00fcringen_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8477,
+      "rows_removed": 307,
+      "missing_replaced": 0,
+      "outliers_removed": 307,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 3.49
+    },
+    {
+      "file": "Data\\Germany_aggregation\\Temp_Germany_Aggregated\\Temp_Germany_aggregated.csv",
+      "output_file": "Data\\Germany_aggregation\\Temp_Germany_Aggregated_preprocessed\\Temp_Germany_aggregated.csv",
+      "attribute": "temperature",
+      "rows_before": 8784,
+      "rows_after": 8750,
+      "rows_removed": 34,
+      "missing_replaced": 0,
+      "outliers_removed": 34,
+      "nan_rows_removed": 0,
+      "data_loss_percent": 0.39
+    }
+  ],
+  "config": {
+    "missing_value_markers": [
+      -999,
+      -999.0,
+      "-999",
+      "-999.0",
+      -999.0
+    ],
+    "z_score_threshold": 3.0,
+    "iqr_multiplier": 1.5,
+    "temperature_thresholds": {
+      "columns": [
+        "temperature_mean",
+        "TT_TU_mean",
+        "TT",
+        "TT_STD"
+      ],
+      "min": -50.0,
+      "max": 50.0
+    }
+  }
+}

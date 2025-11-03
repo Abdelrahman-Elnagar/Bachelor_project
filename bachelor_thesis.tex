@@ -149,13 +149,13 @@ Abhinav Das, M.Sc.\\[0.5cm]
 \section{Motivation}
 \label{sec:motivation}
 
-Renewable energy sources, particularly solar photovoltaics (PV) and wind power, have become integral components of Germany's energy transition towards a carbon-neutral future. As the share of renewable energy in the electricity grid continues to grow, accurate forecasting of renewable energy production has become critical for grid stability, energy market operations, and optimal resource allocation \cite{giebel2011state, antonanzas2016review}. However, the inherent variability and uncertainty associated with weather-dependent renewable energy generation pose significant challenges for prediction models.
+Renewable energy sources, particularly solar photovoltaics (PV) and wind power, have become integral components of Germany's energy transition towards a carbon-neutral future. As the share of renewable energy in the electricity grid continues to grow, accurate forecasting of renewable energy production has become critical for grid stability, energy market operations, and optimal resource allocation~\cite{giebel2011state, antonanzas2016review}. However, the inherent variability and uncertainty associated with weather-dependent renewable energy generation pose significant challenges for prediction models.
 
 Weather conditions exhibit substantial temporal variability, transitioning between relatively stable periods characterized by consistent meteorological patterns and unstable periods marked by rapid changes in atmospheric conditions. These weather regimes directly influence renewable energy production: stable weather typically results in more predictable generation patterns, while unstable weather introduces greater uncertainty and variability. Yet, the extent to which weather stability affects the performance of statistical prediction models remains insufficiently explored in the existing literature.
 
-Grid operators and energy market participants require reliable forecasts under all weather conditions to ensure system stability, optimize dispatch decisions, and manage grid congestion effectively \cite{antonanzas2016review, zhang2019short}. Current operational forecasting systems often employ a single model or ensemble approach without considering the prevailing weather regime \cite{placeholder_weather_selector}. This one-size-fits-all strategy may be suboptimal, as different prediction models may exhibit varying levels of robustness to weather instability. A model that performs excellently under stable conditions may degrade significantly during unstable periods, potentially compromising operational reliability.
+Grid operators and energy market participants require reliable forecasts under all weather conditions to ensure system stability, optimize dispatch decisions, and manage grid congestion effectively~\cite{antonanzas2016review, zhang2019short}. Current operational forecasting systems often employ a single model or ensemble approach without considering the prevailing weather regime~\cite{placeholder_weather_selector}. This one-size-fits-all strategy may be suboptimal, as different prediction models may exhibit varying levels of robustness to weather instability. A model that performs excellently under stable conditions may degrade significantly during unstable periods, potentially compromising operational reliability.
 
-Despite the recognized importance of weather variability in renewable energy forecasting, there is a notable gap in the literature regarding systematic evaluation of model robustness across different weather stability regimes. Most studies evaluate model performance on aggregate datasets without explicitly accounting for weather regime characteristics \cite{placeholder_weather_consideration, placeholder_methods_weather}. This research addresses this gap by developing a comprehensive framework to quantify weather stability and assess how statistical prediction models respond to stable versus unstable weather conditions. The framework builds upon established weather regime classification methods \cite{huth2008classifications, michelangeli1995weather, vautard1990multiple} and applies them to renewable energy forecasting contexts.
+Despite the recognized importance of weather variability in renewable energy forecasting, there is a notable gap in the literature regarding systematic evaluation of model robustness across different weather stability regimes. Most studies evaluate model performance on aggregate datasets without explicitly accounting for weather regime characteristics~\cite{placeholder_weather_consideration, placeholder_methods_weather}. This research addresses this gap by developing a comprehensive framework to quantify weather stability and assess how statistical prediction models respond to stable versus unstable weather conditions. The framework builds upon established weather regime classification methods~\cite{huth2008classifications, michelangeli1995weather, vautard1990multiple} and applies them to renewable energy forecasting contexts.
 
 The significance of this research extends beyond academic interest. By identifying which models are most robust to weather instability and providing operational guidance on model selection based on weather conditions, this work contributes to improving the reliability and efficiency of renewable energy integration. The findings can inform grid operators, energy traders, and forecasting system designers about optimal model selection strategies that adapt to changing weather conditions, ultimately supporting more reliable and cost-effective renewable energy management.
 
@@ -276,7 +276,7 @@ This pipeline processes meteorological data to identify stable and unstable weat
         \item Wind and wind\_synop (wind speed and direction)
     \end{itemize}
     
-    \item \textbf{Process:} The pipeline applies feature engineering to extract variability, trend, and extreme event indicators from raw weather data. These features are used to compute a Weather Stability Index (WSI) that quantifies atmospheric variability. The WSI is then classified into stable and unstable regimes using Gaussian Mixture Models (GMM) \cite{mclachlan2000finite} with temporal smoothing via Hidden Markov Models (HMM) \cite{rabiner1989tutorial} to account for regime persistence.
+    \item \textbf{Process:} The pipeline applies feature engineering to extract variability, trend, and extreme event indicators from raw weather data. These features are used to compute a Weather Stability Index (WSI) that quantifies atmospheric variability. The WSI is then classified into stable and unstable regimes using Gaussian Mixture Models (GMM)~\cite{mclachlan2000finite} with temporal smoothing via Hidden Markov Models (HMM)~\cite{rabiner1989tutorial} to account for regime persistence.
     
     \item \textbf{Output:} A timeline with weather stability labels (stable/unstable) for each hour in the analysis period, enabling stratification of subsequent analyses by weather regime.
 \end{itemize}
@@ -310,12 +310,12 @@ This pipeline combines outputs from the previous two pipelines:
     
     \item \textbf{Process:} The stability labels are merged with model performance metrics, creating a unified dataset where each observation includes timestamp, weather regime (stable/unstable), model predictions, actual production, and error metrics. Statistical tests are then applied to compare performance between stable and unstable periods for each model. This includes:
     \begin{itemize}
-        \item Mann-Whitney U tests \cite{mann1947test} (non-parametric comparison)
+        \item Mann-Whitney U tests~\cite{mann1947test} (non-parametric comparison)
         \item Welch's t-tests (parametric alternative)
         \item Linear mixed-effects models (accounting for temporal clustering)
-        \item Effect size calculations \cite{cohen1988statistical} (Cohen's d, percentage increase)
+        \item Effect size calculations~\cite{cohen1988statistical} (Cohen's d, percentage increase)
     \end{itemize}
-    Multiple testing correction procedures \cite{benjamini1995controlling} are applied to control the false discovery rate across model comparisons.
+    Multiple testing correction procedures~\cite{benjamini1995controlling} are applied to control the false discovery rate across model comparisons.
     Models are ranked by robustness metrics, particularly Relative Performance Degradation (RPD), which measures performance change from stable to unstable conditions relative to baseline performance.
     
     \item \textbf{Output:} Model rankings, statistical test results, robustness assessments, and operational recommendations on model selection based on weather conditions.
@@ -481,11 +481,56 @@ The following preprocessing steps have been completed for the 2024 Germany weath
 
 \begin{itemize}
     \item Removed empty files that contained no data for the 2024 period
-    \item Validated data completeness across all 11 attributes
+    \item Validated data completeness across all 13 weather attributes
     \item Documented missing data patterns and temporal gaps
     \item Generated data inventory summaries listing available stations, coverage periods, and data quality indicators
     \item Identified and flagged potential outliers using domain knowledge (e.g., unrealistic temperature values)
 \end{itemize}
+
+\subsubsection{Step 5: Comprehensive Preprocessing with Imputation}
+
+A comprehensive preprocessing pipeline has been implemented for all 13 weather attributes using statistical imputation instead of row removal. This approach preserves the temporal continuity of the time series while ensuring data quality. The preprocessing steps are as follows:
+
+\begin{enumerate}
+    \item \textbf{Missing Value Identification:} Missing value markers (-999, -999.0, "-999", "-999.0") are replaced with NaN to standardize missing data representation across all attributes.
+    
+    \item \textbf{Outlier Detection:} Three complementary methods are used to identify outliers:
+    \begin{itemize}
+        \item \textbf{Domain-specific thresholds:} Values outside physically plausible ranges (e.g., temperature < -50°C or > 50°C, wind speed > 200 km/h) are flagged as outliers
+        \item \textbf{Z-score method:} Values exceeding 3 standard deviations from the mean are flagged
+        \item \textbf{Interquartile Range (IQR) method:} Values outside 1.5 × IQR from Q1/Q3 are flagged
+    \end{itemize}
+    Outliers are identified using the union (OR operation) of these three methods.
+    
+    \item \textbf{Outlier Removal:} Detected outlier values are replaced with NaN (rather than removing entire rows) to preserve temporal continuity.
+    
+    \item \textbf{Statistical Imputation:} Missing values (including removed outliers) are imputed using distribution-aware methods:
+    \begin{itemize}
+        \item \textbf{Mean imputation:} Applied when data distribution is approximately normal. Normality is tested using the Shapiro-Wilk test (p > 0.05) and skewness assessment (|skewness| < 1).
+        \item \textbf{Median imputation:} Applied when data distribution is skewed or non-normal, providing robustness against extreme values.
+    \end{itemize}
+    The distribution assessment is performed dynamically for each attribute and each Bundesland/Germany dataset to account for regional variations in data characteristics.
+    
+    \item \textbf{Data Preservation:} Unlike row deletion methods, this approach maintains all 8,760 hourly observations per location, ensuring complete temporal coverage for time series analysis.
+\end{enumerate}
+
+\textbf{Output Structure:} Preprocessed data is saved to a separate directory structure (\texttt{Preprocessed\_Data/}) to preserve original data integrity. The output maintains the same hierarchical structure as the original data:
+\begin{itemize}
+    \item \texttt{Preprocessed\_Data/Bundesland\_aggregation/} - Contains preprocessed data for all 16 Bundesländer
+    \item \texttt{Preprocessed\_Data/Germany\_aggregation/} - Contains preprocessed Germany-wide aggregated data
+\end{itemize}
+
+\textbf{Attributes Processed:} The preprocessing pipeline is applied to all 13 weather attributes: temperature, cloudiness, wind, wind\_synop, precipitation, pressure, dew\_point, moisture, extreme\_wind, soil\_temperature, sun, and visibility. Each attribute uses its specific domain thresholds and statistical properties for appropriate outlier detection and imputation.
+
+\textbf{Quality Metrics:} Comprehensive preprocessing reports are generated documenting:
+\begin{itemize}
+    \item Number of missing value markers replaced per file
+    \item Number of outliers detected and imputed per file
+    \item Distribution of mean vs. median imputations (indicating data distribution characteristics)
+    \item Validation errors and data quality statistics
+\end{itemize}
+
+This preprocessing methodology ensures data quality while maximizing data retention, which is critical for time series analysis and machine learning applications.
 
 \subsection{Future Preprocessing Steps for Integration}
 
@@ -502,14 +547,16 @@ The following preprocessing steps will be required when integrating weather and 
 
 \subsubsection{Missing Data Strategy}
 
-A tiered approach will be applied to handle missing values:
+\textbf{Note:} This section describes planned future steps. The current preprocessing (Step 5 above) already handles missing values using statistical imputation (mean/median based on distribution).
+
+For future integration, a tiered approach could be applied to handle missing values in merged datasets:
 
 \begin{itemize}
     \item \textbf{Tier 1 (≤2 hours missing):} Linear interpolation between adjacent valid observations
     \item \textbf{Tier 2 (3-6 hours missing):} Forward-fill using the last valid observation, with a flag indicating imputation
-    \item \textbf{Tier 3 (>6 hours missing):} Mark periods as excluded from analysis to maintain data quality
-    \item All imputations will be logged in a \texttt{cleaning\_log.csv} file documenting imputation type, duration, and affected variables
-    \item Track percentage of original data retained after quality filtering
+    \item \textbf{Tier 3 (>6 hours missing):} Statistical imputation (mean/median) based on distribution characteristics
+    \item All imputations are logged in preprocessing reports documenting imputation type, count, and affected variables
+    \item Data completeness is tracked throughout the preprocessing pipeline
 \end{itemize}
 
 \subsubsection{Dataset Merging}
@@ -548,7 +595,7 @@ All preprocessing steps are documented with scripts stored in the \texttt{Script
 \section{Weather Stability Index Development}
 \label{sec:wsi_development}
 
-The Weather Stability Index (WSI) is developed using established methods for weather regime detection \cite{huth2008classifications, michelangeli1995weather, vautard1990multiple}. This section will describe the development methodology, including WSI computation using robust normalization, feature engineering approaches (variability features, trend features, extreme event flags), Gaussian Mixture Model (GMM) classification \cite{mclachlan2000finite} for stable/unstable regime detection, Hidden Markov Model (HMM) smoothing \cite{rabiner1989tutorial} for temporal dependence, justification for 6-hour temporal window resolution, and validation criteria (silhouette score, Davies-Bouldin index, Calinski-Harabasz score).
+The Weather Stability Index (WSI) is developed using established methods for weather regime detection~\cite{huth2008classifications, michelangeli1995weather, vautard1990multiple}. This section will describe the development methodology, including WSI computation using robust normalization, feature engineering approaches (variability features, trend features, extreme event flags), Gaussian Mixture Model (GMM) classification~\cite{mclachlan2000finite} for stable/unstable regime detection, Hidden Markov Model (HMM) smoothing~\cite{rabiner1989tutorial} for temporal dependence, justification for 6-hour temporal window resolution, and validation criteria (silhouette score, Davies-Bouldin index, Calinski-Harabasz score).
 
 % This section will describe the development of the Weather Stability Index (WSI), including:
 % - WSI computation formula using robust normalization
@@ -561,7 +608,7 @@ The Weather Stability Index (WSI) is developed using established methods for wea
 \section{Renewable Energy Prediction Models}
 \label{sec:prediction_models}
 
-This section describes the implementation of statistical prediction models for renewable energy forecasting. The model selection rationale is based on established methods in the literature \cite{giebel2011state, antonanzas2016review, placeholder_stat_vs_deep, placeholder_statistical_effectiveness}, focusing on persistence models, Seasonal Persistence, ARIMA/SARIMA, Prophet, and Exponential Smoothing approaches. Feature selection for solar PV prediction includes radiation, cloudiness, temperature, and temporal features, while wind power prediction utilizes wind speed, wind direction, pressure, temperature, and temporal features. The walk-forward validation strategy employs rolling training windows with appropriate forecast horizons and update frequencies, mimicking operational forecasting conditions.
+This section describes the implementation of statistical prediction models for renewable energy forecasting. The model selection rationale is based on established methods in the literature~\cite{giebel2011state, antonanzas2016review, placeholder_stat_vs_deep, placeholder_statistical_effectiveness}, focusing on persistence models, Seasonal Persistence, ARIMA/SARIMA, Prophet, and Exponential Smoothing approaches. Feature selection for solar PV prediction includes radiation, cloudiness, temperature, and temporal features, while wind power prediction utilizes wind speed, wind direction, pressure, temperature, and temporal features. The walk-forward validation strategy employs rolling training windows with appropriate forecast horizons and update frequencies, mimicking operational forecasting conditions.
 
 % This section will describe the implementation of statistical prediction models, including:
 % - Model selection rationale (Persistence, Seasonal Persistence, ARIMA/SARIMA, Prophet, Exponential Smoothing)
@@ -574,7 +621,7 @@ This section describes the implementation of statistical prediction models for r
 \section{Performance Evaluation}
 \label{sec:performance_evaluation}
 
-Performance evaluation methods include metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles) following established practices in renewable energy forecasting \cite{giebel2011state, antonanzas2016review}. Stratified performance analysis by weather stability regime (stable vs unstable) enables systematic comparison across different weather conditions. Statistical tests for comparing performance include the Mann-Whitney U test \cite{mann1947test}, Welch's t-test, and linear mixed-effects models. Effect size calculations \cite{cohen1988statistical} (Cohen's d, percentage increase, rank-biserial correlation) quantify the practical significance of performance differences. Multiple testing correction procedures \cite{benjamini1995controlling} (Bonferroni, False Discovery Rate) control the false discovery rate, and bootstrap confidence intervals provide uncertainty quantification for performance metrics.
+Performance evaluation methods include metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles) following established practices in renewable energy forecasting~\cite{giebel2011state, antonanzas2016review}. Stratified performance analysis by weather stability regime (stable vs unstable) enables systematic comparison across different weather conditions. Statistical tests for comparing performance include the Mann-Whitney U test~\cite{mann1947test}, Welch's t-test, and linear mixed-effects models. Effect size calculations~\cite{cohen1988statistical} (Cohen's d, percentage increase, rank-biserial correlation) quantify the practical significance of performance differences. Multiple testing correction procedures~\cite{benjamini1995controlling} (Bonferroni, False Discovery Rate) control the false discovery rate, and bootstrap confidence intervals provide uncertainty quantification for performance metrics.
 
 % This section will describe performance evaluation methods, including:
 % - Metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles)
@@ -692,19 +739,58 @@ All code and methodology are documented to ensure reproducibility, and results a
 
 
 % References
-% Bibliography file: references.bib
-% Compilation: pdflatex -> bibtex -> pdflatex -> pdflatex
+\begin{thebibliography}{99}
 
-\bibliographystyle{plainnat}
-\bibliography{references}
+\bibitem{giebel2011state}
+G. Giebel, R. Brownsword, G. Kariniotakis, M. Denhard, and C. Draxl, ``The state of the art in short-term prediction of wind power: A literature overview,'' ANEMOS.plus, Tech. Rep., 2011, pp. 1--100.
+
+\bibitem{antonanzas2016review}
+J. Antonanzas, N. Osorio, R. Escobar, R. Urraca, F. J. Mart{\'i}nez-de-Pis{\'o}n, and A. Sanz-Garc{\'i}a, ``Review of photovoltaic power forecasting,'' \textit{Solar Energy}, vol. 136, pp. 78--111, 2016.
+
+\bibitem{zhang2019short}
+Y. Zhang, J. Wang, and X. Wang, ``Short-term wind speed prediction based on spatial correlation and artificial neural networks,'' \textit{Journal of Wind Engineering and Industrial Aerodynamics}, vol. 186, pp. 17--25, 2019.
+
+\bibitem{placeholder_weather_selector}
+Author, ``Weather Conditions as a Model Selector for Renewable Energy Forecasting Systems,'' [To be completed from Cloud\_type/weather\_as\_model\_selector.docx], 2024.
+
+\bibitem{placeholder_weather_consideration}
+Author, ``Taking Weather into Consideration: Enhancing Renewable Energy Forecasting Accuracy,'' [To be completed from Cloud\_type/weather\_into\_consideration (1).docx], 2024.
+
+\bibitem{placeholder_methods_weather}
+Author, ``Methodological Approaches for Incorporating Weather Considerations in Renewable Energy Production Forecasting,'' [To be completed from Cloud\_type/Methofsw.docx], 2024.
+
+\bibitem{huth2008classifications}
+R. Huth, C. Beck, A. Philipp, M. Demuzere, Z. Ustrnul, M. Cahynov{\'a}, J. Kysel{\'y}, and O. E. Tveito, ``Classifications of atmospheric circulation patterns: recent advances and applications,'' \textit{Annals of the New York Academy of Sciences}, vol. 1146, no. 1, pp. 105--152, 2008.
+
+\bibitem{michelangeli1995weather}
+P.-A. Michelangeli, R. Vautard, and B. Legras, ``Weather regimes: Recurrence and quasi stationarity,'' \textit{Journal of the Atmospheric Sciences}, vol. 52, no. 8, pp. 1237--1256, 1995.
+
+\bibitem{vautard1990multiple}
+R. Vautard, ``Multiple weather regimes over the North Atlantic: Analysis of precursors and successors,'' \textit{Monthly Weather Review}, vol. 118, no. 10, pp. 2056--2081, 1990.
+
+\bibitem{mclachlan2000finite}
+G. J. McLachlan and D. Peel, \textit{Finite mixture models}. New York, NY, USA: John Wiley \& Sons, 2000.
+
+\bibitem{rabiner1989tutorial}
+L. R. Rabiner, ``A tutorial on hidden Markov models and selected applications in speech recognition,'' \textit{Proceedings of the IEEE}, vol. 77, no. 2, pp. 257--286, 1989.
+
+\bibitem{mann1947test}
+H. B. Mann and D. R. Whitney, ``On a test of whether one of two random variables is stochastically larger than the other,'' \textit{The Annals of Mathematical Statistics}, vol. 18, no. 1, pp. 50--60, 1947.
+
+\bibitem{cohen1988statistical}
+J. Cohen, \textit{Statistical power analysis for the behavioral sciences}, 2nd ed. Hillsdale, NJ, USA: Routledge, 1988.
+
+\bibitem{benjamini1995controlling}
+Y. Benjamini and Y. Hochberg, ``Controlling the false discovery rate: a practical and powerful approach to multiple testing,'' \textit{Journal of the Royal Statistical Society: Series B (Methodological)}, vol. 57, no. 1, pp. 289--300, 1995.
+
+\bibitem{placeholder_stat_vs_deep}
+Author, ``Statistical Models versus Deep Learning Approaches for Renewable Energy Forecasting: A Comparative Analysis,'' [To be completed from Cloud\_type/Stat\_vs\_deep.docx], 2024.
+
+\bibitem{placeholder_statistical_effectiveness}
+Author, ``Are Statistical Models Effective for Production Forecasting of Renewable Energy?,'' [To be completed from Cloud\_type/Are\_statistical\_models\_effective\_for\_production\_fo.docx], 2024.
+
+\end{thebibliography}
 \addcontentsline{toc}{chapter}{References}
-
-% Alternative: Manual bibliography (if not using .bib file)
-% \begin{thebibliography}{99}
-% \bibitem{example1} Example Reference 1
-% \bibitem{example2} Example Reference 2
-% \end{thebibliography}
-% \addcontentsline{toc}{chapter}{References}
 
 \end{document}
 

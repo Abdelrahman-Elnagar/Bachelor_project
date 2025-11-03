@@ -1,0 +1,3 @@
+file,output_file,attribute,rows,missing_replaced,outliers_removed,nan_imputed,mean_imputations,median_imputations
+Data\Germany_aggregation\precipitation_germany\Germany_total.csv,Preprocessed_Data\Germany_aggregation\precipitation_germany\Germany_total.csv,precipitation,4114457,2628306,495895,509190,0,509190
+Data\Germany_aggregation\moisture_germany_aggregated\Germany_total.csv,Preprocessed_Data\Germany_aggregation\moisture_germany_aggregated\Germany_total.csv,moisture,4203020,0,40443,40443,0,40443

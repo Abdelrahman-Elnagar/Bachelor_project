@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-11-03_00-20-59",
+  "overall_stats": {
+    "files_processed": 2,
+    "total_rows": 8317477,
+    "missing_values_replaced": "2628306",
+    "outliers_removed": "536338",
+    "nan_values_imputed": "549633",
+    "mean_imputations": 0,
+    "median_imputations": "549633",
+    "validation_errors": []
+  },
+  "file_reports": [
+    {
+      "file": "Data\\Germany_aggregation\\precipitation_germany\\Germany_total.csv",
+      "output_file": "Preprocessed_Data\\Germany_aggregation\\precipitation_germany\\Germany_total.csv",
+      "attribute": "precipitation",
+      "rows": 4114457,
+      "missing_replaced": 2628306,
+      "outliers_removed": 495895,
+      "nan_imputed": 509190,
+      "mean_imputations": 0,
+      "median_imputations": 509190
+    },
+    {
+      "file": "Data\\Germany_aggregation\\moisture_germany_aggregated\\Germany_total.csv",
+      "output_file": "Preprocessed_Data\\Germany_aggregation\\moisture_germany_aggregated\\Germany_total.csv",
+      "attribute": "moisture",
+      "rows": 4203020,
+      "missing_replaced": 0,
+      "outliers_removed": 40443,
+      "nan_imputed": 40443,
+      "mean_imputations": 0,
+      "median_imputations": 40443
+    }
+  ],
+  "config": {
+    "missing_value_markers": [
+      -999,
+      -999.0,
+      "-999",
+      "-999.0",
+      -999.0
+    ],
+    "z_score_threshold": 3.0,
+    "iqr_multiplier": 1.5
+  }
+}
