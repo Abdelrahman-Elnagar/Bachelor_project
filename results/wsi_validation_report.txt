@@ -1,0 +1,30 @@
+============================================================
+WSI VALIDATION REPORT
+============================================================
+
+Generated: 2025-11-04 12:35:17
+
+CLUSTER VALIDATION
+------------------------------------------------------------
+Stable periods: 6863 (78.1%)
+Unstable periods: 1921 (21.9%)
+Status: moderate_imbalance
+
+CLASSIFICATION METRICS
+------------------------------------------------------------
+Silhouette Score: 0.5490 (target: > 0.4)
+Davies-Bouldin Index: 0.5413 (lower is better)
+Calinski-Harabasz Score: 22375.4455 (higher is better)
+
+METHOD COMPARISON
+------------------------------------------------------------
+GMM_vs_K-Means:
+  Cohen's kappa: 0.5513
+  Agreement: 79.5%
+GMM_vs_Percentile:
+  Cohen's kappa: 0.9129
+  Agreement: 96.9%
+K-Means_vs_Percentile:
+  Cohen's kappa: 0.6237
+  Agreement: 82.6%
+

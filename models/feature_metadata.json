@@ -1,0 +1,19 @@
+{
+  "selected_features": [
+    "temp_range",
+    "pressure_change",
+    "wind_cv",
+    "precip_intensity",
+    "humidity_std",
+    "temp_trend",
+    "pressure_trend",
+    "wind_trend",
+    "high_wind_flag",
+    "heavy_precip_flag",
+    "rapid_temp_change",
+    "storm_flag"
+  ],
+  "total_features_engineered": 39,
+  "normalization_method": "robust_scaling_median_iqr",
+  "timestamp": "2025-11-04T12:16:41.699127"
+}

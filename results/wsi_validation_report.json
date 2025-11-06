@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-11-04T12:35:17.177767",
+  "cluster_validation": {
+    "stable_count": 6863,
+    "unstable_count": 1921,
+    "stable_proportion": 0.7813069216757741,
+    "unstable_proportion": 0.21869307832422585,
+    "status": "moderate_imbalance"
+  },
+  "method_comparison": {
+    "GMM_vs_K-Means": {
+      "cohens_kappa": 0.5512513916400388,
+      "agreement": 0.7948542805100182
+    },
+    "GMM_vs_Percentile": {
+      "cohens_kappa": 0.9128781878663076,
+      "agreement": 0.9686930783242259
+    },
+    "K-Means_vs_Percentile": {
+      "cohens_kappa": 0.62365988909427,
+      "agreement": 0.8261612021857924
+    }
+  },
+  "classification_metrics": {
+    "n_components": 3,
+    "bic": -5874.294480802089,
+    "silhouette_score": 0.548973948404299,
+    "davies_bouldin_index": 0.5413298887343014,
+    "calinski_harabasz_score": 22375.445451006843,
+    "cluster_sizes": {
+      "0": 3552,
+      "1": 1922,
+      "2": 3310
+    },
+    "cluster_proportions": {
+      "0": 0.40437158469945356,
+      "1": 0.21880692167577415,
+      "2": 0.3768214936247723
+    },
+    "unstable_cluster": 1,
+    "cluster_means": {
+      "0": 0.07791414382742458,
+      "1": 0.30436657489418834,
+      "2": -0.12507999057371003
+    }
+  }
+}

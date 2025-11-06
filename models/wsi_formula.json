@@ -1,0 +1,9 @@
+{
+  "formula": "WSI_t = (1/p) * \u03a3[(x_i,t - median(x_i)) / IQR(x_i)]",
+  "method": "equal_weight_averaging",
+  "normalization": "robust_scaling_median_iqr",
+  "rolling_window_size": 6,
+  "smoothing_method": "median_filter",
+  "smoothing_kernel_size": 3,
+  "timestamp": "2025-11-04T12:17:30.104012"
+}
