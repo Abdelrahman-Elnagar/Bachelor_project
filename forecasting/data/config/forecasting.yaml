@@ -1,0 +1,199 @@
+# Energy Forecasting Configuration
+# Configuration for renewable energy forecasting pipeline
+
+data_sources:
+  entsoe:
+    enabled: false  # Set to true if API key is available
+    api_key: null   # ENTSO-E API key (or set via environment variable)
+    base_url: "https://web-api.tp.entsoe.eu/api"
+  
+  csv:
+    enabled: true
+    # Paths to CSV files (if available)
+    solar_path: null  # Path to solar CSV file
+    wind_path: null   # Path to wind CSV file
+    # If null, script will look in data/raw/ directory
+
+preprocessing:
+  timezone: "UTC"  # Standardize to UTC
+  missing_value_strategy: "interpolate"  # Options: interpolate, forward_fill, zero
+  outlier_handling: "flag"  # Options: flag, remove, clip
+
+features:
+  # Weather features to include (from WSI pipeline)
+  weather_features:
+    - "temperature_mean"
+    - "cloudiness"
+    - "wind_speed"
+    - "pressure"
+    - "precipitation"
+    - "sun_duration"
+    - "WSI_smoothed"
+    - "WSI_rolling_6h_mean"
+    - "WSI_rolling_24h_mean"
+    - "WSI_rolling_6h_std"
+  
+  # Solar-specific features
+  solar_features:
+    - "cloudiness"
+    - "sun_duration"
+    - "temperature_mean"
+    - "hour_sin"
+    - "hour_cos"
+    - "day_of_year_sin"
+    - "day_of_year_cos"
+    - "WSI_smoothed"
+    - "unstable_gmm"
+  
+  # Wind-specific features
+  wind_features:
+    - "wind_speed"
+    - "wind_direction"
+    - "pressure"
+    - "temperature_mean"
+    - "hour_sin"
+    - "hour_cos"
+    - "day_of_year_sin"
+    - "day_of_year_cos"
+    - "WSI_smoothed"
+    - "unstable_gmm"
+  
+  # Regime features
+  regime_features:
+    - "unstable_gmm"
+    - "unstable_kmeans"
+    - "unstable_percentile"
+    - "regime_duration"
+    - "stability_probability_gmm"
+
+forecasting:
+  horizons: [1, 3, 6, 24]  # Forecast horizons in hours
+  primary_horizon: 1  # Primary horizon for evaluation
+  
+  # Walk-forward validation
+  walk_forward:
+    train_window_days: 90  # Training window size in days
+    step_size_days: 7  # Step size between retraining
+    min_train_samples: 720  # Minimum samples for training (30 days)
+  
+  # Time series cross-validation
+  cv:
+    n_splits: 5  # Number of CV folds
+    test_size_days: 7  # Test set size in days
+    gap_days: 1  # Gap between train and test
+
+models:
+  # Baseline models
+  persistence:
+    enabled: true
+  
+  seasonal_persistence:
+    enabled: true
+    period: 168  # Weekly period (7 days * 24 hours)
+  
+  sarimax:
+    enabled: true
+    max_p: 5
+    max_d: 2
+    max_q: 5
+    max_P: 2
+    max_D: 1
+    max_Q: 2
+    seasonal_period: 24
+  
+  prophet:
+    enabled: true
+    yearly_seasonality: true
+    weekly_seasonality: true
+    daily_seasonality: true
+  
+  # Gradient boosting models
+  lightgbm:
+    enabled: true
+    optuna_trials: 50  # Reduced for CPU efficiency
+    early_stopping_rounds: 20
+  
+  xgboost:
+    enabled: true
+    optuna_trials: 50
+  
+  catboost:
+    enabled: true
+    optuna_trials: 50
+  
+  # Neural forecasting models (CPU-optimized)
+  nbeats:
+    enabled: true
+    optuna_trials: 30  # Reduced for CPU efficiency
+    max_stacks: 3
+    max_blocks_per_stack: 2
+    hidden_dim: 128  # Reduced from typical 512
+    batch_size: 32  # Smaller for CPU
+    max_epochs: 50
+    early_stopping_patience: 15
+  
+  tcn:
+    enabled: true
+    optuna_trials: 30
+    max_filters: 64  # Reduced from typical 128
+    max_kernel_size: 5
+    max_layers: 4
+    batch_size: 32
+    max_epochs: 50
+    early_stopping_patience: 15
+  
+  tft:
+    enabled: true
+    optuna_trials: 20  # Most expensive, fewer trials
+    max_hidden_dim: 128  # Reduced from typical 256
+    max_attention_heads: 4  # Reduced from typical 8
+    max_lstm_layers: 2
+    batch_size: 16  # Smaller for CPU
+    max_epochs: 50
+    early_stopping_patience: 15
+  
+  # Probabilistic models
+  quantile_lightgbm:
+    enabled: true
+    quantiles: [0.1, 0.5, 0.9]
+  
+  conformal_prediction:
+    enabled: true
+    coverage: 0.9
+
+evaluation:
+  metrics:
+    - "MAE"
+    - "RMSE"
+    - "MAPE"
+    - "sMAPE"
+    - "pinball_loss"
+    - "coverage"
+  
+  stratification:
+    - "stable_vs_unstable"
+    - "monthly"
+    - "seasonal"
+  
+  statistical_tests:
+    - "mann_whitney_u"
+    - "welch_t_test"
+  
+  effect_size_measures:
+    - "cohens_d"
+    - "percentage_increase"
+    - "rank_biserial_correlation"
+  
+  multiple_testing_correction: "fdr"  # Options: bonferroni, fdr, none
+  
+  robustness_metrics:
+    - "rpd"  # Relative Performance Degradation
+    - "coefficient_of_variation"
+    - "ranking_stability"
+
+output:
+  figures_dir: "figures"
+  results_dir: "results"
+  models_dir: "models"
+  thesis_figures_dir: "../../figures/thesis"  # Relative to base directory
+
