@@ -1,0 +1,144 @@
+\chapter{Results}
+\label{chap:results}
+
+\section{Introduction}
+% Introduction to results
+
+\section{Weather Stability Results (2024)}
+\label{sec:wsi_results}
+
+This section summarizes the empirical characteristics of the Weather Stability Index (WSI) and stability classifications for 2024.
+
+\subsection{WSI Characteristics and Regimes}
+The smoothed WSI spans from $-0.366$ to $0.663$ with mean $0.051$ and standard deviation $0.176$. Gaussian Mixture Model (GMM) model selection by BIC chose three components. Cluster means were approximately $-0.125$, $0.078$, and $0.304$; the highest-mean component was designated \emph{unstable}. Cluster proportions were $40.4\%$, $21.9\%$ (unstable), and $37.7\%$.
+
+Cluster quality metrics indicate distinct regimes: Silhouette score $0.549$, Davies–Bouldin index $0.541$, and Calinski–Harabasz score $22375.45$. Alternative methods showed high agreement with the GMM baseline (Kappa: GMM vs Percentile $0.913$, GMM vs K-Means $0.551$).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/thesis/wsi_timeline_2024.png}
+    \caption{Weather Stability Index timeline (2024) with stable (green) and unstable (red) periods.}
+    \label{fig:wsi_timeline_2024}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/thesis/wsi_distribution.png}
+    \caption{WSI distribution by regime (histogram and box plot).}
+    \label{fig:wsi_distribution}
+\end{figure}
+
+\subsection{Monthly Stability Patterns}
+Monthly stability patterns show seasonal variation in the fraction of unstable hours. Figure~\ref{fig:monthly_stability} (left) shows stacked stable vs unstable hours; Figure~\ref{fig:monthly_stability} (right) shows percentage unstable per month.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/thesis/monthly_stability_hours.png}
+    \end{subfigure}\hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/thesis/monthly_unstable_percentage.png}
+    \end{subfigure}
+    \caption{Monthly stability: hours (left) and percentage unstable (right).}
+    \label{fig:monthly_stability}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth]{figures/thesis/cluster_validation.png}
+    \caption{Cluster validation summary with WSI distribution per cluster and quality metrics (Silhouette, Davies-Bouldin, Calinski-Harabasz).}
+    \label{fig:cluster_validation}
+\end{figure}
+
+\section{Renewable Energy Data Characteristics (2024)}
+\label{sec:energy_data_results}
+
+This section presents empirical characteristics of the renewable energy production dataset, providing context for subsequent forecasting model evaluation.
+
+\subsection{Time Series Characteristics}
+
+The 2024 renewable energy dataset exhibits distinct temporal patterns reflecting the physical drivers of solar and wind generation. Figure~\ref{fig:energy_time_series} displays the complete time series for both solar PV and wind power generation throughout the year.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/thesis/energy_time_series_2024.png}
+    \caption{Complete 2024 time series for solar PV (orange) and wind power (blue) generation in Germany. The solar series shows strong diurnal and seasonal patterns, while wind generation exhibits more continuous but variable characteristics.}
+    \label{fig:energy_time_series}
+\end{figure}
+
+Solar generation demonstrates pronounced diurnal cycles with maximum values occurring during midday hours, while wind generation shows more continuous but variable patterns throughout the day. Both time series exhibit seasonal variation, with solar generation peaking during summer months and wind generation showing higher variability during winter months.
+
+\subsection{Daily and Seasonal Patterns}
+
+Figure~\ref{fig:daily_patterns} illustrates average hourly generation patterns, revealing distinct diurnal characteristics for each energy source. Solar generation exhibits a symmetric curve centered around midday, with generation approaching zero during nighttime hours. Wind generation shows more moderate variation throughout the day, with slight increases during afternoon hours consistent with daytime heating effects.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/thesis/daily_patterns.png}
+    \caption{Average hourly generation patterns for solar PV (orange) and wind power (blue) across all days in 2024. Solar shows a strong diurnal cycle, while wind exhibits more continuous generation.}
+    \label{fig:daily_patterns}
+\end{figure}
+
+Seasonal patterns, shown in Figure~\ref{fig:seasonal_patterns}, reveal strong monthly variation in solar generation, with summer months (June--August) producing substantially higher average generation than winter months (December--February). Wind generation shows more moderate seasonal variation, with winter months typically exhibiting higher average generation due to stronger pressure gradients and higher wind speeds.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/thesis/seasonal_patterns.png}
+    \caption{Monthly average generation for solar PV (orange) and wind power (blue) in 2024. Solar shows strong seasonal variation, while wind exhibits more moderate seasonal patterns.}
+    \label{fig:seasonal_patterns}
+\end{figure}
+
+\subsection{Distribution Characteristics}
+
+The distribution of generation values, shown in Figure~\ref{fig:generation_distributions}, reveals fundamental differences between solar and wind generation. Solar generation exhibits a highly right-skewed distribution with a large mode near zero, reflecting the many nighttime hours with near-zero generation. Wind generation shows a more balanced distribution centered around the mean, consistent with more continuous wind resource availability.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/thesis/generation_distributions.png}
+    \caption{Distribution of hourly generation values for solar PV (top) and wind power (bottom) in 2024. Solar shows a highly right-skewed distribution, while wind exhibits a more balanced distribution.}
+    \label{fig:generation_distributions}
+\end{figure}
+
+\subsection{Relationship with Weather Stability}
+
+The relationship between renewable energy generation and weather stability classifications provides insight into how atmospheric conditions affect generation patterns. Figure~\ref{fig:wsi_correlation} shows scatter plots of generation values against the Weather Stability Index, revealing that unstable weather periods are associated with both higher variability and, in some cases, extreme generation events.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth]{figures/thesis/wsi_correlation.png}
+    \caption{Relationship between renewable energy generation and Weather Stability Index (WSI). Higher WSI values (unstable conditions) are associated with increased generation variability.}
+    \label{fig:wsi_correlation}
+\end{figure}
+
+Figure~\ref{fig:stability_comparison} compares generation distributions stratified by stability regime (stable vs. unstable). This comparison reveals that unstable weather periods are associated with higher variance in generation values, indicating that forecasting models may face greater challenges during unstable conditions. The increased variability during unstable periods motivates the systematic evaluation of model robustness across weather regimes.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/thesis/stability_comparison.png}
+    \caption{Comparison of renewable energy generation distributions for stable (green) and unstable (red) weather regimes. Unstable periods exhibit higher variance, indicating increased forecasting challenges.}
+    \label{fig:stability_comparison}
+\end{figure}
+
+\subsection{Data Quality Summary}
+
+The preprocessing pipeline achieved excellent data quality:
+\begin{itemize}
+    \item Temporal coverage: 8,784 hours (100\% of 2024, accounting for leap year)
+    \item Missing values: 3 hours (0.034\%) handled through interpolation
+    \item Outliers: 0 detected using $Z > 4.0$ threshold
+    \item Data range validation: All values within physically plausible bounds
+    \item Temporal alignment: Complete alignment with weather stability classifications
+\end{itemize}
+
+This high-quality dataset provides a solid foundation for forecasting model training and evaluation, enabling robust assessment of model performance across different weather stability regimes.
+
+\section{Main Findings}
+The WSI-based classification yields meteorologically coherent regimes with strong separation by cluster metrics. Across 2024, $78.1\%$ of hours were stable and $21.9\%$ unstable. Monthly plots indicate clear seasonal modulation of instability, which will be used to stratify forecasting errors in subsequent analyses. The renewable energy dataset exhibits distinct temporal patterns, with solar generation showing strong diurnal and seasonal cycles while wind generation demonstrates more continuous but variable characteristics. The relationship between generation and weather stability reveals that unstable periods are associated with increased generation variability, motivating systematic evaluation of model robustness across weather regimes.
+
+\section{Analysis}
+% Analysis of results will go here
+
+\section{Summary}
+% Summary of results

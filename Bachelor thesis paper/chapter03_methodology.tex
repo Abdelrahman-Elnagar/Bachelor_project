@@ -1,0 +1,800 @@
+\chapter{Methodology}
+\label{chap:methodology}
+
+\section{Research Design}
+\label{sec:research_design}
+
+The research design follows a dual-pipeline architecture that enables systematic evaluation of model performance under different weather stability regimes. This design addresses the research questions (Section~\ref{sec:research_questions}) by independently processing weather classification and energy prediction before combining them for comparative analysis.
+
+\subsection{Pipeline Architecture}
+
+The methodology consists of three interconnected pipelines that operate in parallel and converge for final analysis:
+
+\subsubsection{Pipeline 1: Weather Stability Classification}
+
+This pipeline processes meteorological data to identify stable and unstable weather periods:
+
+\begin{itemize}
+    \item \textbf{Input:} Eleven weather attributes collected for 2024 at hourly resolution, covering Germany-wide and 16 Bundesländer (federal states). The attributes include:
+    \begin{itemize}
+        \item Temperature (mean, minimum, maximum)
+        \item Cloudiness (cloud cover percentage)
+        \item Dew point (atmospheric moisture indicator)
+        \item Extreme wind (peak wind measurements)
+        \item Moisture (relative humidity)
+        \item Precipitation (rainfall in mm)
+        \item Pressure (atmospheric pressure in hPa)
+        \item Soil temperature
+        \item Sun (sunshine duration)
+        \item Visibility (horizontal visibility)
+        \item Weather phenomena (categorical weather events)
+        \item Wind and wind\_synop (wind speed and direction)
+    \end{itemize}
+    
+    \item \textbf{Process:} The pipeline applies feature engineering to extract variability, trend, and extreme event indicators from raw weather data. These features are used to compute a Weather Stability Index (WSI) that quantifies atmospheric variability. The WSI is then classified into stable and unstable regimes using Gaussian Mixture Models (GMM)~\cite{mclachlan2000finite} with temporal smoothing via Hidden Markov Models (HMM)~\cite{rabiner1989tutorial} to account for regime persistence.
+    
+    \item \textbf{Output:} A timeline with weather stability labels (stable/unstable) for each hour in the analysis period, enabling stratification of subsequent analyses by weather regime.
+\end{itemize}
+
+\subsubsection{Pipeline 2: Renewable Energy Prediction Models}
+
+This pipeline implements and evaluates both statistical and deep learning forecasting models:
+
+\begin{itemize}
+    \item \textbf{Input:} Renewable energy production data (solar PV and wind power) for 2024, along with relevant weather features. For solar prediction, key inputs include solar radiation (if available), cloudiness, temperature, and temporal features (hour of day, day of year, day of week). For wind prediction, inputs include wind speed, wind direction, atmospheric pressure, temperature, and temporal features.
+    
+    \item \textbf{Process:} Multiple forecasting models are implemented and evaluated, including:
+    \begin{itemize}
+        \item \textbf{Statistical models:}
+        \begin{itemize}
+            \item Persistence model (baseline: next-hour equals current-hour)
+            \item Seasonal persistence (same hour from previous week)
+            \item ARIMA/SARIMA (autoregressive integrated moving average with seasonal components)
+            \item Prophet (additive seasonality model by Facebook)
+            \item Exponential smoothing (Holt-Winters with trend and seasonality)
+        \end{itemize}
+        \item \textbf{Deep learning models:}
+        \begin{itemize}
+            \item LSTM (Long Short-Term Memory networks)
+            \item CNN-LSTM (hybrid convolutional and LSTM architectures)
+            \item TCN (Temporal Convolutional Networks)
+            \item Ensemble approaches combining multiple models
+        \end{itemize}
+    \end{itemize}
+    Models are trained using walk-forward validation, where each model is trained on a rolling window of historical data and evaluated on subsequent periods, mimicking operational forecasting conditions.
+    
+    \item \textbf{Output:} Hourly predictions for renewable energy production along with performance metrics (MAE, RMSE, MAPE) computed at each time step for all models.
+\end{itemize}
+
+\subsubsection{Pipeline 3: Comparative Analysis}
+
+This pipeline combines outputs from the previous two pipelines:
+
+\begin{itemize}
+    \item \textbf{Input:} Weather stability timeline from Pipeline 1 and model performance timeline from Pipeline 2.
+    
+    \item \textbf{Process:} The stability labels are merged with model performance metrics, creating a unified dataset where each observation includes timestamp, weather regime (stable/unstable), model predictions, actual production, and error metrics. Statistical tests are then applied to compare performance between stable and unstable periods for each model. This includes:
+    \begin{itemize}
+        \item Mann-Whitney U tests~\cite{mann1947test} (non-parametric comparison)
+        \item Welch's t-tests (parametric alternative)
+        \item Linear mixed-effects models (accounting for temporal clustering)
+        \item Effect size calculations~\cite{cohen1988statistical} (Cohen's d, percentage increase)
+    \end{itemize}
+    Multiple testing correction procedures~\cite{benjamini1995controlling} are applied to control the false discovery rate across model comparisons.
+    Models are ranked by robustness metrics, particularly Relative Performance Degradation (RPD), which measures performance change from stable to unstable conditions relative to baseline performance.
+    
+    \item \textbf{Output:} Model rankings, statistical test results, robustness assessments, and operational recommendations on model selection based on weather conditions.
+\end{itemize}
+
+\subsection{Design Rationale}
+
+This dual-pipeline design addresses the research questions as follows:
+
+\begin{itemize}
+    \item \textbf{RQ1} is addressed by Pipeline 3's statistical comparisons between stable and unstable periods.
+    \item \textbf{RQ2} is answered through robustness rankings computed in Pipeline 3, identifying which models show smallest performance degradation.
+    \item \textbf{RQ3} is evaluated by synthesizing findings into operational recommendations that leverage weather stability information for model selection.
+\end{itemize}
+
+The design ensures that weather classification and model evaluation are performed independently, preventing data leakage and maintaining methodological rigor. The convergence point in Pipeline 3 enables systematic comparison while preserving the integrity of each component pipeline.
+
+\section{Data Collection}
+\label{sec:data_collection}
+
+This section describes the data sources and collection procedures for both weather and renewable energy datasets used in this research.
+
+\subsection{Weather Data}
+
+\subsubsection{Data Provider}
+
+Weather data is sourced from the \textbf{Deutscher Wetterdienst (DWD)}, the German Meteorological Service, which operates a comprehensive network of weather stations throughout Germany. DWD provides open-access climate data through its climate data center, making it suitable for academic research.
+
+\subsubsection{Data Characteristics}
+
+The collected weather data has the following specifications:
+
+\begin{itemize}
+    \item \textbf{Source:} Hourly weather observations from DWD climate data center
+    \item \textbf{Period:} 2024 (full calendar year, January 1 to December 31)
+    \item \textbf{Spatial Coverage:} 
+    \begin{itemize}
+        \item Germany-wide aggregated data
+        \item 16 Bundesländer (federal states) individually
+        \item 636+ individual weather stations mapped to regions
+    \end{itemize}
+    \item \textbf{Station Network:} 636+ active weather stations distributed across Germany
+    \item \textbf{Data License:} Open data license, freely available for research use
+    \item \textbf{Temporal Resolution:} Hourly observations (8,760 hours per year)
+\end{itemize}
+
+\subsubsection{Weather Attributes Collected}
+
+Eleven weather attributes have been collected, each contributing to the Weather Stability Index computation:
+
+\begin{enumerate}
+    \item \textbf{Temperature} - hourly mean, minimum, and maximum values
+    \item \textbf{Cloudiness} - cloud cover percentage (0-100\%)
+    \item \textbf{Dew point} - atmospheric moisture indicator
+    \item \textbf{Extreme wind} - peak wind measurements
+    \item \textbf{Moisture} - relative humidity percentage
+    \item \textbf{Precipitation} - rainfall amount in millimeters
+    \item \textbf{Pressure} - atmospheric pressure in hectopascals (hPa)
+    \item \textbf{Soil temperature} - ground temperature measurements
+    \item \textbf{Sun} - sunshine duration in hours
+    \item \textbf{Visibility} - horizontal visibility in meters
+    \item \textbf{Weather phenomena} - categorical weather events
+    \item \textbf{Wind and wind\_synop} - wind speed (m/s) and wind direction (degrees)
+\end{enumerate}
+
+These attributes capture multiple dimensions of atmospheric conditions, enabling comprehensive quantification of weather variability and stability.
+
+\subsection{Renewable Energy Data}
+
+\subsubsection{Data Source and Collection}
+
+Renewable energy production data for Germany was obtained from the \textbf{ENTSO-E Transparency Platform} (\url{transparency.entsoe.eu}), which provides hourly generation data aggregated by production type. The ENTSO-E platform serves as the official data portal for European transmission system operators and is widely recognized as an authoritative source for energy market analysis~\cite{giebel2011state}.
+
+The dataset covers the full calendar year 2024, with temporal resolution of 15-minute intervals (Market Time Units, MTU) that were subsequently aggregated to hourly resolution to match weather data granularity. The data collection process involved:
+
+\begin{itemize}
+    \item \textbf{Data Format:} CSV files containing actual generation per production type, with timestamps in local time (CET/CEST) format
+    \item \textbf{Production Types:} Separate columns for solar photovoltaic (PV) generation, wind onshore, and wind offshore, which were combined to create total wind generation
+    \item \textbf{Time Alignment:} Conversion from local time (Central European Time with daylight saving transitions) to Coordinated Universal Time (UTC) to ensure consistency with weather data timestamps
+    \item \textbf{Aggregation:} 15-minute MTU values aggregated to hourly means using arithmetic averaging, preserving total energy generation characteristics
+\end{itemize}
+
+\subsubsection{Data Characteristics}
+
+The collected renewable energy dataset exhibits the following characteristics:
+
+\begin{itemize}
+    \item \textbf{Period:} January 1, 2024 00:00 UTC to December 31, 2024 23:00 UTC (8,784 hours, accounting for leap year)
+    \item \textbf{Geographic Scope:} Germany-wide total production aggregated across all federal states
+    \item \textbf{Energy Types:}
+    \begin{itemize}
+        \item Solar PV production: Range from 2.0 MW to 46,897.5 MW, with mean 7,189.0 MW and median 220.0 MW
+        \item Wind power production: Range from 46.5 MW to 51,894.8 MW, with mean 15,736.2 MW and median 13,166.0 MW
+    \end{itemize}
+    \item \textbf{Temporal Coverage:} Complete temporal coverage achieved with only 3 missing hours (0.034\%) across the entire year, which were handled through interpolation
+    \item \textbf{Data Quality:} All values are non-negative and within physically plausible ranges consistent with installed capacity statistics for Germany
+\end{itemize}
+
+The highly skewed distribution of solar generation (mean $\gg$ median) reflects the diurnal cycle and seasonal variation inherent in solar power production, with many nighttime hours producing near-zero generation. Wind generation exhibits a more balanced distribution, consistent with the more continuous nature of wind resource availability.
+
+\section{Data Preprocessing}
+\label{sec:data_preprocessing}
+
+This section documents the data preprocessing steps that have been completed for weather data and outlines additional steps required for dataset integration and analysis. The preprocessing pipeline ensures data quality, consistency, and compatibility across different data sources.
+
+\subsection{Completed Weather Data Preprocessing}
+
+The following preprocessing steps have been completed for the 2024 Germany weather dataset:
+
+\subsubsection{Step 1: Download and Initial Processing}
+
+\begin{itemize}
+    \item Downloaded raw weather data files from DWD servers for all 11 weather attributes
+    \item Converted data format from semicolon-delimited TXT files to CSV format for easier processing
+    \item Standardized timestamp format in the \texttt{MESS\_DATUM} column to ISO 8601 format (\texttt{YYYY-MM-DD HH:MM:SS})
+    \item Removed metadata and description files that are automatically included in DWD data packages
+    \item Cleaned up file structure and organized files by attribute type
+    \item Filtered data to include only 2024 observations (removed any historical data from multi-year files)
+    \item Logged all download and processing operations in the \texttt{logs/} directory for traceability
+\end{itemize}
+
+\subsubsection{Step 2: Bundesland Aggregation}
+
+\begin{itemize}
+    \item Mapped 636 weather stations to 16 German Bundesländer using a reference file (\texttt{regions.csv}) that contains station ID to Bundesland assignments
+    \item Aggregated station-level data into Bundesland-level files by combining all stations within each federal state
+    \item Created 16 CSV files per weather attribute (one file per Bundesland), preserving station IDs for traceability
+    \item Output structure: \texttt{Data/*\_by\_bundesland/*.csv} (e.g., \texttt{Data/temperature\_by\_bundesland/Bayern.csv})
+    \item Maintained data integrity by preserving all original columns while adding aggregation metadata
+\end{itemize}
+
+\subsubsection{Step 3: Germany-Wide Aggregation}
+
+\begin{itemize}
+    \item Combined all Bundesland data into single Germany-wide aggregated files
+    \item Aggregated across all 16 federal states to create country-level time series
+    \item Output structure: \texttt{Data/*\_germany\_aggregated/Germany\_total.csv}
+    \item Enables analysis at both regional (Bundesland) and national (Germany-wide) scales
+\end{itemize}
+
+\subsubsection{Step 4: Data Quality Assurance}
+
+\begin{itemize}
+    \item Removed empty files that contained no data for the 2024 period
+    \item Validated data completeness across all 13 weather attributes
+    \item Documented missing data patterns and temporal gaps
+    \item Generated data inventory summaries listing available stations, coverage periods, and data quality indicators
+    \item Identified and flagged potential outliers using domain knowledge (e.g., unrealistic temperature values)
+\end{itemize}
+
+\subsubsection{Step 5: Comprehensive Preprocessing with Imputation}
+
+A comprehensive preprocessing pipeline has been implemented for all 13 weather attributes using statistical imputation instead of row removal. This approach preserves the temporal continuity of the time series while ensuring data quality. The preprocessing steps are as follows:
+
+\begin{enumerate}
+    \item \textbf{Missing Value Identification:} Missing value markers (-999, -999.0, "-999", "-999.0") are replaced with NaN to standardize missing data representation across all attributes.
+    
+    \item \textbf{Outlier Detection:} Three complementary methods are used to identify outliers:
+    \begin{itemize}
+        \item \textbf{Domain-specific thresholds:} Values outside physically plausible ranges (e.g., temperature < -50°C or > 50°C, wind speed > 200 km/h) are flagged as outliers
+        \item \textbf{Z-score method:} Values exceeding 3 standard deviations from the mean are flagged
+        \item \textbf{Interquartile Range (IQR) method:} Values outside 1.5 × IQR from Q1/Q3 are flagged
+    \end{itemize}
+    Outliers are identified using the union (OR operation) of these three methods.
+    
+    \item \textbf{Outlier Removal:} Detected outlier values are replaced with NaN (rather than removing entire rows) to preserve temporal continuity.
+    
+    \item \textbf{Statistical Imputation:} Missing values (including removed outliers) are imputed using distribution-aware methods:
+    \begin{itemize}
+        \item \textbf{Mean imputation:} Applied when data distribution is approximately normal. Normality is tested using the Shapiro-Wilk test (p > 0.05) and skewness assessment (|skewness| < 1).
+        \item \textbf{Median imputation:} Applied when data distribution is skewed or non-normal, providing robustness against extreme values.
+    \end{itemize}
+    The distribution assessment is performed dynamically for each attribute and each Bundesland/Germany dataset to account for regional variations in data characteristics.
+    
+    \item \textbf{Data Preservation:} Unlike row deletion methods, this approach maintains all 8,760 hourly observations per location, ensuring complete temporal coverage for time series analysis.
+\end{enumerate}
+
+\textbf{Output Structure:} Preprocessed data is saved to a separate directory structure (\texttt{Preprocessed\_Data/}) to preserve original data integrity. The output maintains the same hierarchical structure as the original data:
+\begin{itemize}
+    \item \texttt{Preprocessed\_Data/Bundesland\_aggregation/} - Contains preprocessed data for all 16 Bundesländer
+    \item \texttt{Preprocessed\_Data/Germany\_aggregation/} - Contains preprocessed Germany-wide aggregated data
+\end{itemize}
+
+\textbf{Attributes Processed:} The preprocessing pipeline is applied to all 13 weather attributes: temperature, cloudiness, wind, wind\_synop, precipitation, pressure, dew\_point, moisture, extreme\_wind, soil\_temperature, sun, and visibility. Each attribute uses its specific domain thresholds and statistical properties for appropriate outlier detection and imputation.
+
+\textbf{Quality Metrics:} Comprehensive preprocessing reports are generated documenting:
+\begin{itemize}
+    \item Number of missing value markers replaced per file
+    \item Number of outliers detected and imputed per file
+    \item Distribution of mean vs. median imputations (indicating data distribution characteristics)
+    \item Validation errors and data quality statistics
+\end{itemize}
+
+This preprocessing methodology ensures data quality while maximizing data retention, which is critical for time series analysis and machine learning applications.
+
+\subsection{Energy Data Preprocessing}
+
+The preprocessing pipeline for renewable energy data addresses timestamp harmonization, missing value handling, outlier detection, and integration with weather stability classifications. This section documents the implemented procedures that ensure data quality and temporal alignment.
+
+\subsubsection{Timestamp Harmonization}
+
+Temporal alignment between energy and weather datasets is critical for accurate forecasting model training. The preprocessing pipeline implements the following timestamp harmonization procedures:
+
+\begin{itemize}
+    \item \textbf{Source Timezone Handling:} ENTSO-E data timestamps are provided in local time (CET/CEST) with explicit daylight saving time transitions. The preprocessing pipeline uses the \texttt{pytz} library to correctly identify and handle non-existent times (spring forward) and ambiguous times (fall back) during DST transitions.
+    \item \textbf{Timezone Conversion:} All timestamps are converted to Coordinated Universal Time (UTC) using the \texttt{Europe/Berlin} timezone definition. Non-existent times during spring DST transitions (when clocks move forward) are shifted forward, while ambiguous times during fall transitions are marked as \texttt{NaT} and subsequently removed to maintain temporal consistency.
+    \item \textbf{Temporal Aggregation:} 15-minute Market Time Unit (MTU) values are aggregated to hourly resolution using arithmetic mean, preserving energy generation characteristics while aligning with weather data granularity.
+    \item \textbf{Master Time Index:} A fixed hourly timeline spanning all 8,784 hours of 2024 is created, and all data sources are left-joined onto this index to ensure complete temporal coverage and prevent gaps.
+\end{itemize}
+
+This approach ensures that all datasets share identical timestamps, eliminating temporal misalignment that could introduce systematic errors in model training and evaluation.
+
+\subsubsection{Missing Value Handling}
+
+The energy dataset exhibits excellent temporal coverage, with only 3 missing hours (0.034\%) across the entire year. The preprocessing pipeline implements a comprehensive missing value handling strategy:
+
+\begin{enumerate}
+    \item \textbf{Missing Value Detection:} The pipeline identifies missing values through multiple mechanisms:
+    \begin{itemize}
+        \item Explicit missing value markers ("n/e" in ENTSO-E data format, representing "not evaluated")
+        \item NaN values in aggregated data
+        \item Temporal gaps identified through comparison with the master time index
+    \end{itemize}
+    
+    \item \textbf{Imputation Strategy:} Missing values are handled using linear interpolation with forward and backward fill as fallback:
+    \begin{equation}
+    y_t = \begin{cases}
+    y_{t-1} + \frac{y_{t+k} - y_{t-1}}{k+1} \cdot (t - (t-1)) & \text{if adjacent values exist} \\
+    y_{t-1} & \text{if forward interpolation fails (forward fill)} \\
+    y_{t+k} & \text{if backward interpolation fails (backward fill)}
+    \end{cases}
+    \end{equation}
+    where $k$ is the number of hours until the next valid observation.
+    
+    \item \textbf{Quality Flagging:} All imputed values are tracked through binary flags:
+    \begin{itemize}
+        \item \verb|{source}_missing_flag|: Marks originally missing values
+        \item \verb|{source}_interpolated_flag|: Marks values that were interpolated
+    \end{itemize}
+    These flags enable downstream analysis to assess the impact of imputation on model performance.
+\end{enumerate}
+
+The current implementation resulted in 2 interpolated values for both solar and wind generation, representing less than 0.03\% of the dataset. This minimal imputation ensures that data quality is maintained while preserving temporal continuity required for time series analysis.
+
+\subsubsection{Outlier Detection and Validation}
+
+The preprocessing pipeline implements outlier detection to identify potentially erroneous measurements while preserving legitimate extreme values that reflect actual weather-driven generation variability:
+
+\begin{itemize}
+    \item \textbf{Detection Method:} Z-score based outlier detection using a threshold of $|Z| > 4.0$:
+    \begin{equation}
+    Z_i = \frac{x_i - \mu}{\sigma}
+    \end{equation}
+    where $\mu$ and $\sigma$ are the mean and standard deviation of the generation time series.
+    
+    \item \textbf{Physical Validation:} Outliers are validated against physical constraints:
+    \begin{itemize}
+        \item Non-negative generation values (enforced through clipping at zero)
+        \item Upper bounds consistent with installed capacity statistics for Germany
+        \item Temporal consistency (sudden jumps without weather justification are flagged)
+    \end{itemize}
+    
+    \item \textbf{Current Status:} Validation of the 2024 dataset identified zero outliers using the $Z > 4.0$ threshold for both solar and wind generation, indicating high data quality and appropriate handling of extreme but legitimate weather-driven generation events.
+\end{itemize}
+
+\subsubsection{Dataset Integration}
+
+The final preprocessing step integrates energy production data with weather stability classifications:
+
+\begin{itemize}
+    \item \textbf{Unified Dataset:} The integrated dataset contains:
+    \begin{itemize}
+        \item Timestamp (hourly, UTC, aligned across all variables)
+        \item Solar PV generation (MW) with quality flags
+        \item Wind power generation (MW) with quality flags
+        \item Weather Stability Index (WSI) values (smoothed and rolling statistics)
+        \item Stability classification labels (GMM, K-Means, percentile-based)
+        \item Stability probabilities and regime durations
+    \end{itemize}
+    
+    \item \textbf{Temporal Alignment Verification:} Quality assurance procedures verify:
+    \begin{itemize}
+        \item No duplicate timestamps
+        \item Complete temporal coverage (all 8,784 hours present)
+        \item Consistent datetime formats across all variables
+        \item Successful alignment of energy and weather data timestamps
+    \end{itemize}
+    
+    \item \textbf{Data Validation Reports:} Comprehensive validation reports are generated documenting:
+    \begin{itemize}
+        \item Missing value counts and imputation statistics
+        \item Outlier detection results
+        \item Data range validation (min, max, mean, median)
+        \item Temporal coverage completeness
+        \item Quality flag distributions
+    \end{itemize}
+\end{itemize}
+
+This integrated dataset serves as the foundation for all forecasting model training and evaluation procedures described in subsequent sections.
+
+\section{Weather Stability Index Development}
+\label{sec:wsi_development}
+
+The Weather Stability Index (WSI) is developed using established methods for weather regime detection~\cite{huth2008classifications, michelangeli1995weather, vautard1990multiple}. This section describes the development methodology, including feature engineering approaches, WSI computation using robust normalization, Gaussian Mixture Model (GMM) classification~\cite{mclachlan2000finite} for stable/unstable regime detection, and validation criteria. The implementation follows a multi-level hierarchical classification framework that combines instantaneous stability metrics with temporal context to produce robust classifications.
+
+\subsection{Feature Engineering}
+
+Feature engineering transforms raw weather observations into meaningful stability indicators. The selected features are based on meteorological principles where stability is characterized by low variability, consistent trends, and absence of extreme events. This multi-scale approach aligns with the hierarchical classification framework recommended in the methodology.
+
+\subsubsection{Variability Features}
+
+Atmospheric variability is a key indicator of weather instability. Variability features are computed using a 24-hour rolling window, which captures diurnal cycles while identifying periods of abnormal variability. This temporal scale aligns with synoptic-scale meteorology where weather systems operate on characteristic timescales~\cite{holton2004introduction}.
+
+The following variability features are computed:
+
+\begin{itemize}
+    \item \textbf{Temperature standard deviation} ($\sigma_T$): Computed over a 24-hour rolling window as $\sigma_T = \sqrt{\frac{1}{n-1}\sum_{i=t-23}^{t}(T_i - \bar{T})^2}$ where $n=24$. High temperature variability indicates atmospheric instability and transition periods between air masses~\cite{holton2004introduction}.
+    
+    \item \textbf{Temperature range}: Maximum minus minimum temperature over 24-hour window, capturing extreme temperature swings within a day.
+    
+    \item \textbf{Pressure change}: Absolute change in pressure over 24 hours, $|\Delta P| = |P_t - P_{t-24}|$. Rapid pressure changes ($>5$ hPa/24h) indicate storm development or frontal passages~\cite{holton2004introduction}.
+    
+    \item \textbf{Wind coefficient of variation}: $CV_{wind} = \sigma_{wind} / \mu_{wind}$ over 24-hour window. This normalized variability measure accounts for different baseline wind speeds, making it comparable across seasons. High CV indicates gusty, unstable conditions associated with convective activity.
+    
+    \item \textbf{Precipitation intensity}: Rolling sum over 3-hour window, $P_{int}(t) = \sum_{i=t-2}^{t} P_i$. The 3-hour window captures convective precipitation events and rapid changes in precipitation intensity~\cite{houze2014cloud}.
+    
+    \item \textbf{Humidity standard deviation}: Dew point standard deviation over 24-hour window. High variability indicates air mass changes, convective mixing, or frontal passages.
+\end{itemize}
+
+\subsubsection{Trend Features}
+
+Linear trends capture directional changes in atmospheric conditions that signal transitions between weather regimes. Trend analysis is well-established in climatology for detecting regime changes~\cite{dee2011era}. Trend features are computed using linear regression (degree 1) over a 24-hour window:
+
+\begin{itemize}
+    \item \textbf{Temperature trend}: Slope of linear regression $T_i = \beta_0 + \beta_1 \cdot i + \epsilon_i$ over 24-hour window. Steep temperature trends indicate rapid atmospheric changes and regime transitions.
+    
+    \item \textbf{Pressure trend}: Barometric pressure trend slope. Pressure trends predict weather system movement and are fundamental to synoptic meteorology~\cite{holton2004introduction}. Falling pressure indicates approaching storms; rising pressure indicates clearing conditions.
+    
+    \item \textbf{Wind trend}: Wind speed trend slope. Wind speed changes reflect pressure gradient changes and are indicators of approaching weather systems.
+\end{itemize}
+
+\subsubsection{Extreme Event Flags}
+
+Extreme weather events are clear indicators of atmospheric instability. Binary flags provide interpretable, domain-expert validated indicators that complement continuous variability measures~\cite{grotjahn2016extreme}. The following flags are computed:
+
+\begin{itemize}
+    \item \textbf{High wind flag}: Binary indicator when wind speed exceeds the 90th percentile threshold. High winds indicate strong pressure gradients and unstable conditions.
+    
+    \item \textbf{Heavy precipitation flag}: Binary indicator when precipitation exceeds 5 mm threshold. This threshold is meteorologically significant and represents moderate to heavy precipitation indicating active weather systems~\cite{wmo2018guide}.
+    
+    \item \textbf{Rapid temperature change flag}: Binary indicator when $|\Delta T| > 5°C$ in 3 hours. This threshold is meteorologically significant and indicates rapid atmospheric changes such as frontal passages~\cite{wmo2018guide}.
+    
+    \item \textbf{Storm flag}: Combined condition flag when wind exceeds 90th percentile AND pressure drop exceeds 5 hPa in 6 hours. Multi-variate extreme events are stronger indicators than single variables, reducing false positives.
+\end{itemize}
+
+\subsubsection{Feature Selection and Normalization}
+
+Feature selection reduces multicollinearity, improves model interpretability, and prevents overfitting. Highly correlated features ($|r| > 0.9$) are identified using Pearson correlation coefficient and redundant features are removed, targeting a final feature set of 6--10 features~\cite{dormann2013collinearity}.
+
+Robust normalization is applied using median and interquartile range (IQR):
+
+\begin{equation}
+x_{normalized} = \frac{x - \text{median}(x)}{\text{IQR}(x)}
+\end{equation}
+
+where IQR = $Q_3 - Q_1$ (interquartile range). Robust scaling is preferred over z-score normalization for weather data because it is resistant to outliers and extreme events~\cite{huber1981robust, rousseeuw1993alternatives}. This is critical for weather data which contains legitimate extreme events that should not dominate normalization. All features are oriented so higher values indicate more instability.
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.80\textwidth]{figures/thesis/feature_correlations.png}
+%     \caption{Feature correlation matrix used for removal of highly correlated features (|r| > 0.9).}
+%     \label{fig:feature_correlations}
+% \end{figure}
+
+\subsection{WSI Computation}
+
+The instantaneous WSI is computed using equal-weight averaging of normalized features:
+
+\begin{equation}
+\text{WSI}_t = \frac{1}{p} \sum_{i=1}^{p} \frac{x_{i,t} - \text{median}(x_i)}{\text{IQR}(x_i)}
+\end{equation}
+
+where $p$ is the number of selected features. Since features are already normalized (robust scaling), this simplifies to $\text{WSI}_t = \frac{1}{p} \sum_{i=1}^{p} x_{i,t}^{norm}$. Equal-weight averaging is the baseline approach, providing interpretability and avoiding overfitting to specific features.
+
+\subsubsection{Rolling Window Statistics}
+
+The 6-hour window is justified by synoptic-scale meteorology where weather systems operate on characteristic timescales of 6--12 hours~\cite{holton2004introduction}. This temporal resolution captures synoptic-scale changes while maintaining sensitivity to mesoscale phenomena. For each time point $t$, a centered window $[t-2, t-1, t, t+1, t+2, t+3]$ is used:
+
+\begin{align}
+\text{WSI}_{\text{window},t} &= \frac{1}{6} \sum_{i \in W_t} \text{WSI}_i \\
+\text{WSI}_{\text{std},t} &= \sqrt{\frac{1}{5} \sum_{i \in W_t} (\text{WSI}_i - \text{WSI}_{\text{window},t})^2} \\
+\text{WSI}_{\text{trend},t} &= \text{slope}(\text{linear\_regression}(\text{WSI} \sim \text{time})) \text{ over } 6\text{h window}
+\end{align}
+
+where $W_t$ represents the 6-hour window centered at time $t$.
+
+\subsubsection{Temporal Smoothing}
+
+Temporal smoothing is applied using a median filter with kernel size 3:
+
+\begin{equation}
+\text{WSI}_{\text{smoothed},t} = \text{median}(\text{WSI}_{\text{window},t-1}, \text{WSI}_{\text{window},t}, \text{WSI}_{\text{window},t+1})
+\end{equation}
+
+Median filtering is robust to outliers and prevents isolated misclassifications. The kernel size of 3 (3-hour smoothing) provides additional noise reduction without excessive lag, preserving sharp transitions while removing spurious fluctuations~\cite{tukey1977exploratory}.
+
+\subsection{Classification Methods}
+
+\subsubsection{Gaussian Mixture Model Classification}
+
+Gaussian Mixture Model (GMM) classification is the primary method for identifying stable and unstable weather regimes. GMM provides probabilistic classification with uncertainty quantification and handles non-spherical clusters better than k-means~\cite{mclachlan2000finite}. The distribution of WSI values is modeled as:
+
+\begin{equation}
+P(\text{WSI}) = \sum_{k=1}^{K} \pi_k \mathcal{N}(\text{WSI} | \mu_k, \sigma_k^2)
+\end{equation}
+
+where $K$ is the number of regimes (determined by Bayesian Information Criterion, BIC), $\pi_k$ are mixing proportions, and $\mu_k, \sigma_k^2$ are regime-specific means and variances.
+
+Model selection uses BIC to prevent overfitting:
+
+\begin{equation}
+\text{BIC} = -2\ln(L) + k\ln(n)
+\end{equation}
+
+where $L$ is the likelihood, $k$ is the number of parameters, and $n$ is the sample size. The model with the lowest BIC is selected from candidate models with 1--3 components.
+
+Soft classification probabilities are computed as:
+
+\begin{equation}
+P(\text{regime}_k | \text{WSI}_t) = \frac{\pi_k \mathcal{N}(\text{WSI}_t | \mu_k, \sigma_k^2)}{\sum_{j=1}^{K} \pi_j \mathcal{N}(\text{WSI}_t | \mu_j, \sigma_j^2)}
+\end{equation}
+
+Hard classification assigns the most likely regime:
+
+\begin{equation}
+\text{regime}_t = \arg\max_k P(\text{regime}_k | \text{WSI}_t)
+\end{equation}
+
+Binary classification uses a threshold $\tau = 0.5$:
+
+\begin{equation}
+\text{unstable}_t = \begin{cases} 
+1 & \text{if } P(\text{unstable} | \text{WSI}_t) > \tau \\
+0 & \text{otherwise}
+\end{cases}
+\end{equation}
+
+The unstable regime is identified as the cluster with higher mean WSI value.
+
+\subsubsection{Alternative Classification Methods}
+
+For comparison and validation, two alternative classification methods are implemented:
+
+\begin{itemize}
+    \item \textbf{K-Means clustering (k=2)}: Applied directly to normalized features. Provides baseline comparison but assumes spherical clusters and provides no uncertainty quantification.
+    
+    \item \textbf{Percentile threshold}: Classifies as unstable if WSI $\geq$ 75th percentile. Simple, interpretable method for comparison.
+\end{itemize}
+
+\subsection{Validation Criteria}
+
+Multiple validation metrics ensure classification quality:
+
+\begin{itemize}
+    \item \textbf{Silhouette score}: $s_i = \frac{b_i - a_i}{\max(a_i, b_i)}$ where $a_i$ is the average distance to points in the same cluster, $b_i$ is the average distance to points in the nearest other cluster. Acceptable threshold: $s > 0.4$~\cite{rousseeuw1987silhouettes}.
+    
+    \item \textbf{Davies-Bouldin index}: $\text{DB} = \frac{1}{K} \sum_{i=1}^{K} \max_{j \neq i} \frac{\sigma_i + \sigma_j}{d(c_i, c_j)}$ where $\sigma_i$ is cluster dispersion and $d(c_i, c_j)$ is cluster distance. Lower values indicate better clustering.
+    
+    \item \textbf{Calinski-Harabasz score}: $\text{CH} = \frac{\text{SSB}/(K-1)}{\text{SSW}/(N-K)}$ where SSB is between-cluster sum of squares and SSW is within-cluster sum of squares. Higher values indicate better clustering.
+    
+    \item \textbf{Cluster balance}: Target 40/60 to 60/40 split to avoid extreme imbalances (90/10) which indicate poor classification or insufficient discriminative power.
+\end{itemize}
+
+\section{Renewable Energy Prediction Models}
+\label{sec:prediction_models}
+
+This section describes the implementation of forecasting models for renewable energy production, encompassing both statistical and machine learning approaches. The model selection rationale is based on established methods in the literature~\cite{giebel2011state, antonanzas2016review, sedai2023performance, devaraj2021holistic, alkhayat2021review}, with a focus on state-of-the-art methods that have demonstrated strong performance in renewable energy forecasting applications.
+
+\subsection{Model Selection Rationale}
+
+The implemented models span multiple categories to enable comprehensive comparison across modeling paradigms:
+
+\begin{itemize}
+    \item \textbf{Baseline Models:} Simple persistence-based methods that serve as performance benchmarks and establish minimum acceptable accuracy thresholds
+    \item \textbf{Statistical Models:} Classical time series methods that leverage temporal dependencies and seasonality patterns
+    \item \textbf{Gradient Boosting Models:} Tree-based ensemble methods that capture non-linear relationships and feature interactions
+    \item \textbf{Probabilistic Models:} Methods that provide uncertainty quantification alongside point forecasts
+\end{itemize}
+
+This diverse model portfolio enables systematic evaluation of how different modeling approaches respond to weather stability variations, addressing the core research questions regarding model robustness.
+
+\subsection{Baseline Models}
+
+\subsubsection{Persistence Model}
+
+The persistence model serves as the fundamental baseline, assuming that the next-hour generation equals the current-hour generation:
+
+\begin{equation}
+\hat{y}_{t+h} = y_t
+\end{equation}
+
+where $h$ is the forecast horizon (primary: 1 hour). This model provides a benchmark against which all other methods must demonstrate improvement~\cite{giebel2011state}.
+
+\subsubsection{Seasonal Persistence}
+
+The seasonal persistence model exploits temporal patterns by using the same hour from the previous week:
+
+\begin{equation}
+\hat{y}_{t+h} = y_{t+h-168}
+\end{equation}
+
+where 168 represents the weekly period (7 days × 24 hours). This model captures weekly seasonality patterns that are particularly relevant for renewable energy forecasting, where similar weather conditions often recur on weekly timescales.
+
+\subsection{Statistical Models}
+
+\subsubsection{SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous Variables)}
+
+SARIMAX extends the classical ARIMA framework to incorporate seasonal patterns and exogenous weather variables~\cite{szostek2024analysis}. The model is specified as SARIMA$(p,d,q)(P,D,Q)_s$ with exogenous regressors:
+
+\begin{equation}
+\Phi(B^s)\phi(B)(1-B)^d(1-B^s)^D y_t = \Theta(B^s)\theta(B)\epsilon_t + \sum_{i=1}^{k} \beta_i x_{i,t}
+\end{equation}
+
+where $B$ is the backshift operator, $(p,d,q)$ are non-seasonal parameters, $(P,D,Q)$ are seasonal parameters, $s=24$ is the seasonal period (daily cycle), and $x_{i,t}$ are exogenous weather features.
+
+\textbf{Implementation Details:}
+\begin{itemize}
+    \item Parameter search space: $p \in [0,5]$, $d \in [0,2]$, $q \in [0,5]$, $P \in [0,2]$, $D \in [0,1]$, $Q \in [0,2]$
+    \item Model selection: Akaike Information Criterion (AIC) minimization
+    \item Exogenous features: Weather stability index (WSI), cloudiness, wind speed, temperature, and temporal encodings
+    \item Training: Maximum likelihood estimation using the Kalman filter
+\end{itemize}
+
+\subsubsection{Prophet}
+
+Prophet is an additive time series forecasting model developed by Facebook that automatically handles seasonality, trends, and holidays~\cite{taylor2018forecasting}. The model decomposes the time series as:
+
+\begin{equation}
+y(t) = g(t) + s(t) + h(t) + \epsilon_t
+\end{equation}
+
+where $g(t)$ is the trend component, $s(t)$ is the seasonal component, $h(t)$ represents holiday effects, and $\epsilon_t$ is the error term.
+
+\textbf{Implementation Details:}
+\begin{itemize}
+    \item Seasonality modes: Daily (24-hour period), weekly (7-day period), and yearly (365.25-day period)
+    \item Trend modeling: Piecewise linear or logistic growth
+    \item Regressors: Weather stability classifications and meteorological features as additional regressors
+    \item Fitting: Bayesian parameter estimation with MCMC sampling
+\end{itemize}
+
+\subsection{Gradient Boosting Models}
+
+Gradient boosting models are tree-based ensemble methods that have demonstrated strong performance in renewable energy forecasting~\cite{devaraj2021holistic, alkhayat2021review}. These models learn non-linear relationships through additive combinations of decision trees.
+
+\subsubsection{LightGBM}
+
+LightGBM (Light Gradient Boosting Machine) is a highly efficient gradient boosting framework that uses leaf-wise tree growth with depth limitation~\cite{gu2017lightgbm}. The model minimizes the objective function:
+
+\begin{equation}
+\mathcal{L} = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} \Omega(f_k)
+\end{equation}
+
+where $l$ is the loss function (mean squared error for regression), $f_k$ are the decision trees, and $\Omega$ is the regularization term.
+
+\textbf{Hyperparameter Tuning:} Optuna-based optimization with the following search space:
+\begin{itemize}
+    \item Learning rate: $[0.01, 0.3]$
+    \item Number of leaves: $[31, 127]$
+    \item Feature fraction: $[0.5, 1.0]$
+    \item Bagging fraction: $[0.5, 1.0]$
+    \item Minimum data in leaf: $[5, 20]$
+    \item Maximum depth: $[5, 15]$
+\end{itemize}
+
+\subsubsection{XGBoost}
+
+XGBoost (Extreme Gradient Boosting) extends gradient boosting with additional regularization and efficient tree construction algorithms~\cite{chen2016xgboost}. The objective function includes both L1 and L2 regularization:
+
+\begin{equation}
+\mathcal{L} = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} [\gamma T_k + \frac{1}{2}\lambda ||w_k||^2 + \alpha ||w_k||_1]
+\end{equation}
+
+where $T_k$ is the number of leaves in tree $k$, $w_k$ are leaf weights, and $\gamma$, $\lambda$, $\alpha$ are regularization parameters.
+
+\subsubsection{CatBoost}
+
+CatBoost (Categorical Boosting) is designed to handle categorical features effectively while reducing overfitting through ordered boosting~\cite{prokhorenkova2018catboost}. The algorithm uses permutation-based methods to avoid target leakage in feature statistics.
+
+\subsection{Probabilistic Forecasting Models}
+
+\subsubsection{Quantile Regression LightGBM}
+
+Quantile regression provides probabilistic forecasts by predicting multiple quantiles of the conditional distribution~\cite{koenker2001quantile}. The model is trained to minimize the quantile loss:
+
+\begin{equation}
+L_\tau(y, \hat{y}) = \begin{cases}
+\tau(y - \hat{y}) & \text{if } y \geq \hat{y} \\
+(1-\tau)(\hat{y} - y) & \text{if } y < \hat{y}
+\end{cases}
+\end{equation}
+
+where $\tau \in \{0.05, 0.25, 0.5, 0.75, 0.95\}$ are the predicted quantiles. This approach enables uncertainty quantification and prediction intervals for operational decision-making.
+
+\subsection{Feature Engineering}
+
+Feature engineering transforms raw observations into predictive features that capture temporal patterns, weather relationships, and stability regime information.
+
+\subsubsection{Temporal Features}
+
+Cyclical encoding of temporal variables captures periodic patterns:
+
+\begin{align}
+\text{hour\_sin} &= \sin\left(\frac{2\pi \cdot \text{hour}}{24}\right) \\
+\text{hour\_cos} &= \cos\left(\frac{2\pi \cdot \text{hour}}{24}\right) \\
+\text{doy\_sin} &= \sin\left(\frac{2\pi \cdot \text{day\_of\_year}}{365.25}\right) \\
+\text{doy\_cos} &= \cos\left(\frac{2\pi \cdot \text{day\_of\_year}}{365.25}\right)
+\end{align}
+
+These encodings preserve the cyclical nature of temporal features while enabling machine learning models to learn periodic relationships.
+
+\subsubsection{Weather Features}
+
+For solar PV forecasting:
+\begin{itemize}
+    \item Cloudiness (direct relationship with solar irradiance)
+    \item Sunshine duration (cumulative solar availability)
+    \item Temperature (affects PV panel efficiency)
+    \item Weather Stability Index (WSI) and stability classifications
+\end{itemize}
+
+For wind power forecasting:
+\begin{itemize}
+    \item Wind speed (primary driver of wind power generation)
+    \item Wind direction (affects power output through wind farm layout)
+    \item Atmospheric pressure (indicates pressure gradients driving wind)
+    \item Temperature (affects air density and turbine efficiency)
+    \item Weather Stability Index (WSI) and stability classifications
+\end{itemize}
+
+\subsubsection{Stability Regime Features}
+
+Weather stability classifications are incorporated as features to enable models to learn regime-specific relationships:
+\begin{itemize}
+    \item Binary stability flags (GMM, K-Means, percentile-based)
+    \item Stability probabilities (continuous uncertainty measures)
+    \item Regime duration (persistence of current stability state)
+    \item Rolling stability statistics (6-hour and 24-hour means)
+\end{itemize}
+
+\subsection{Walk-Forward Validation Strategy}
+
+Walk-forward validation mimics operational forecasting conditions by training models on historical data and evaluating on subsequent periods. This approach prevents data leakage and provides realistic performance estimates~\cite{bergmeir2012note}.
+
+\textbf{Configuration:}
+\begin{itemize}
+    \item Training window: 90 days (2,160 hours) of historical data
+    \item Step size: 7 days (168 hours) between retraining events
+    \item Forecast horizons: 1, 3, 6, and 24 hours (primary focus: 1 hour)
+    \item Minimum training samples: 720 hours (30 days) required for model training
+\end{itemize}
+
+This strategy ensures that models are continuously updated with recent data while maintaining sufficient training data for stable parameter estimation. The rolling window approach also captures temporal evolution in weather patterns and generation characteristics.
+
+\subsection{Hyperparameter Optimization}
+
+Hyperparameter tuning is performed using Optuna~\cite{akiba2019optuna}, a Bayesian optimization framework that efficiently explores the hyperparameter space. The optimization process:
+
+\begin{enumerate}
+    \item Defines search spaces for each model's hyperparameters
+    \item Uses Tree-structured Parzen Estimator (TPE) for efficient exploration
+    \item Evaluates candidate configurations using walk-forward validation
+    \item Selects optimal hyperparameters based on validation performance (minimizing MAE)
+    \item Limits optimization to 50 trials per model to balance performance and computational efficiency
+\end{enumerate}
+
+All hyperparameter configurations are logged and saved to ensure reproducibility and enable post-hoc analysis of model behavior across different parameter settings.
+
+\section{Performance Evaluation}
+\label{sec:performance_evaluation}
+
+Performance evaluation methods include metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles) following established practices in renewable energy forecasting~\cite{giebel2011state, antonanzas2016review}. Stratified performance analysis by weather stability regime (stable vs unstable) enables systematic comparison across different weather conditions. Statistical tests for comparing performance include the Mann-Whitney U test~\cite{mann1947test}, Welch's t-test, and linear mixed-effects models. Effect size calculations~\cite{cohen1988statistical} (Cohen's d, percentage increase, rank-biserial correlation) quantify the practical significance of performance differences. Multiple testing correction procedures~\cite{benjamini1995controlling} (Bonferroni, False Discovery Rate) control the false discovery rate, and bootstrap confidence intervals provide uncertainty quantification for performance metrics.
+
+% This section will describe performance evaluation methods, including:
+% - Metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles)
+% - Stratified performance analysis by weather stability regime (stable vs unstable)
+% - Statistical tests for comparing performance (Mann-Whitney U test, Welch's t-test, linear mixed-effects models)
+% - Effect size calculations (Cohen's d, percentage increase, rank-biserial correlation)
+% - Multiple testing correction procedures (Bonferroni, False Discovery Rate)
+% - Bootstrap confidence intervals for performance metrics
+
+\section{Robustness Analysis}
+\label{sec:robustness_analysis}
+
+% This section will describe the robustness analysis methodology, including:
+% - Robustness metrics definition (Relative Performance Degradation - RPD as primary metric, Absolute Performance Degradation - APD, Robustness Index, Coefficient of Variation)
+% - Model ranking methodology combining accuracy and robustness
+% - Bootstrap procedures for quantifying ranking uncertainty
+% - Significance testing for robustness differences between models
+% - Visual presentation methods (robustness-accuracy scatter plots, ranking bar charts)
+
+\section{Validation Approach}
+\label{sec:validation_approach}
+
+% This section will describe validation procedures, including:
+% - Cross-validation strategy (temporal cross-validation to avoid data leakage)
+% - Sensitivity analysis framework (parameter variations, window size testing)
+% - Reproducibility measures (random seed documentation, parameter configuration files)
+% - Quality assurance procedures
+% - Model assumptions and their validation
+
+\section{Ethical Considerations}
+\label{sec:ethical_considerations}
+
+This research uses publicly available weather data from the German Meteorological Service (DWD) under open data license and renewable energy production data from publicly accessible sources. All data collection and processing procedures comply with data usage terms and conditions specified by data providers. No personal or sensitive information is involved in this research. The study focuses on aggregate meteorological and energy production data that cannot be traced to individuals.
+
+All code and methodology are documented to ensure reproducibility, and results are presented transparently with appropriate statistical reporting. The research aims to contribute to public knowledge about renewable energy forecasting without any commercial or political motivations that could bias the analysis or conclusions.

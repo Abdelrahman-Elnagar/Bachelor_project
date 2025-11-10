@@ -1,0 +1,188 @@
+\chapter{Literature Review}
+\label{chap:literature}
+
+\section{Introduction}
+
+This chapter provides a comprehensive review of existing literature relevant to weather stability analysis in renewable energy forecasting. The review synthesizes research from three interconnected domains: (1) weather regime classification and meteorological stability analysis, (2) statistical and machine learning models for renewable energy forecasting, and (3) the integration of weather classification into forecasting model selection and evaluation. 
+
+The chapter is organized to establish the theoretical foundations, examine comparative model performance, explore weather-classified forecasting approaches, and identify gaps in current knowledge that this research addresses. This review situates the current work within the broader academic discourse and provides the context necessary to understand the significance and contributions of the proposed methodology.
+
+\section{Background Theory}
+\label{sec:background_theory}
+
+\subsection{Weather Regime Classification Fundamentals}
+
+Weather stability represents a fundamental concept in meteorology, describing the persistence of atmospheric conditions over time. Stable weather regimes are characterized by consistent meteorological patterns with minimal variability, while unstable regimes exhibit rapid transitions, high variability, and non-stationary behavior~\cite{huth2008classifications, michelangeli1995weather, vautard1990multiple}. The distinction between stable and unstable weather conditions is crucial for understanding atmospheric dynamics and has significant implications for renewable energy generation patterns.
+
+Weather systems operate across multiple temporal scales, each with characteristic time horizons. Mesoscale phenomena, such as convective systems and local wind patterns, operate over 2--6 hour periods, while synoptic-scale systems, including frontal passages and pressure changes, occur over 6--12 hour windows. Planetary-scale patterns, encompassing large-scale atmospheric circulation, operate over days to weeks. These temporal scales inform appropriate window sizes for weather stability classification and align with operational forecasting horizons for renewable energy systems.
+
+The concept of weather regimes has been extensively studied in climatology and meteorology. Huth et al.~\cite{huth2008classifications} provide a comprehensive review of atmospheric circulation pattern classifications, highlighting the importance of regime-based approaches for understanding climate variability. Michelangeli et al.~\cite{michelangeli1995weather} demonstrate that weather regimes exhibit quasi-stationarity and recurrence, making them suitable for classification and prediction. Vautard~\cite{vautard1990multiple} establishes the theoretical foundation for multiple weather regime detection over the North Atlantic, emphasizing the importance of identifying regime transitions and persistence.
+
+\subsection{Statistical Methods for Weather Classification}
+
+Weather stability classification requires methods capable of identifying distinct atmospheric states from multivariate meteorological data. Several statistical approaches have been developed for this purpose, each with distinct advantages and limitations.
+
+Threshold-based methods provide simple, interpretable classifications but suffer from arbitrary cutoff selection and limited sensitivity to regime transitions. K-means clustering offers an unsupervised approach but assumes spherical clusters and is sensitive to initialization, potentially missing non-linear patterns in meteorological data.
+
+Principal Component Analysis (PCA) provides linear dimensionality reduction but may fail to capture non-linear relationships inherent in weather systems. Gaussian Mixture Models (GMM) offer a probabilistic framework for regime detection, providing uncertainty quantification and handling non-spherical cluster shapes~\cite{mclachlan2000finite}. GMMs model the distribution of weather features as a mixture of Gaussian components, with each component representing a distinct weather regime.
+
+Hidden Markov Models (HMM) explicitly account for temporal dependence in weather stability, recognizing that atmospheric states exhibit persistence and that transitions between regimes follow probabilistic patterns~\cite{rabiner1989tutorial}. HMMs model weather stability as a hidden state sequence, where observations (weather features) are emitted probabilistically from underlying stable or unstable states. The Viterbi algorithm enables estimation of the most likely state sequence, providing robust temporal smoothing of classifications.
+
+Robust normalization methods are essential for weather stability analysis, as meteorological data frequently contains outliers and extreme events. Median and interquartile range (IQR) based normalization provides resistance to outliers while maintaining sensitivity to legitimate extreme weather events.
+
+\section{Renewable Energy Forecasting Models}
+\label{sec:forecasting_models}
+
+\subsection{Statistical Models}
+
+Statistical models have been the foundation of renewable energy forecasting for decades, providing transparent, interpretable predictions with modest computational requirements. These models are particularly effective for short-term forecasting in stable conditions with linear or near-linear relationships.
+
+\subsubsection{ARIMA and SARIMA Models}
+
+Autoregressive Integrated Moving Average (ARIMA) models and their seasonal variants (SARIMA) represent classical time series forecasting approaches. These models capture temporal dependencies through autoregressive terms, account for non-stationarity through differencing, and model residual structure through moving average components. For renewable energy forecasting, SARIMA models are particularly relevant as they explicitly model seasonal patterns inherent in solar and wind generation~\cite{giebel2011state, antonanzas2016review}.
+
+However, ARIMA/SARIMA models face limitations when dealing with non-linear relationships, high-dimensional input spaces, and long-term forecasting horizons. Their performance degrades rapidly with increased data complexity or when external factors such as weather variability introduce non-stationarity~\cite{sedai2023performance, cabello2023forecasting, alkandari2020solar}.
+
+\subsubsection{Exponential Smoothing Methods}
+
+Exponential smoothing methods, including Holt-Winters seasonal decomposition, provide robust forecasting for time series with trends and seasonality. These methods apply exponentially decreasing weights to historical observations, giving greater importance to recent data. Triple exponential smoothing (Holt-Winters) explicitly models trend and seasonal components, making it suitable for renewable energy forecasting where both diurnal and annual cycles are present.
+
+\subsubsection{Prophet Model}
+
+The Prophet model, developed by Facebook, provides an additive seasonality framework designed for business forecasting with automatic handling of holidays, trends, and seasonality. Prophet has been successfully applied to renewable energy forecasting, particularly for solar power, where it handles multiple seasonal patterns and trend changes effectively.
+
+\subsubsection{Strengths and Limitations of Statistical Models}
+
+Statistical models offer several advantages: (1) interpretability and transparency, enabling understanding of model behavior and regulatory compliance; (2) computational efficiency, requiring minimal resources; (3) effectiveness in stable, linear scenarios with sufficient historical data; and (4) established theoretical foundations with well-understood properties~\cite{makridakis2018statistical, szostek2024analysis, fatima2024review}.
+
+However, statistical models exhibit significant limitations: (1) limited ability to capture non-linear relationships inherent in complex weather-energy interactions; (2) performance degradation with increasing forecast horizons; (3) difficulty handling high-dimensional input spaces with multiple meteorological variables; and (4) reduced accuracy during volatile or extreme weather conditions~\cite{sedai2023performance, ahmed2020review, dou2023comparison}.
+
+\subsection{Machine Learning and Deep Learning Models}
+
+Machine learning and deep learning models have emerged as powerful alternatives to statistical approaches, particularly for complex, non-linear forecasting tasks with large datasets. These models excel at capturing intricate patterns, temporal dependencies, and high-dimensional relationships that challenge traditional statistical methods.
+
+\subsubsection{Long Short-Term Memory (LSTM) Networks}
+
+LSTM networks represent a class of recurrent neural networks designed to capture long-term temporal dependencies while avoiding the vanishing gradient problem of traditional RNNs. For renewable energy forecasting, LSTMs effectively model sequences of weather and generation data, learning complex temporal patterns that influence production~\cite{devaraj2021holistic, alkhayat2021review, wang2019review}.
+
+Multiple studies demonstrate that LSTM models consistently outperform statistical approaches in renewable energy forecasting, particularly for solar and wind power prediction~\cite{sedai2023performance, cabello2023forecasting, luo2021deep, husein2024towards}. LSTMs show particular strength in handling non-stationary patterns and adapting to changing weather conditions.
+
+\subsubsection{Convolutional Neural Networks (CNN) and Hybrid Architectures}
+
+CNNs, originally developed for image processing, have been adapted for time series forecasting through one-dimensional convolutions that capture local patterns in temporal sequences. Hybrid CNN-LSTM architectures combine the pattern recognition capabilities of CNNs with the temporal modeling of LSTMs, achieving superior performance in renewable energy forecasting~\cite{li2020hybrid, jamil2023predictive, lim2022solar}.
+
+Studies consistently report that hybrid CNN-LSTM models outperform standalone deep learning models and significantly exceed statistical model performance, with improvements of up to 37\% in prediction accuracy~\cite{kumari2021deep, rajagukguk2020review, venkateswaran2024efficient}.
+
+\subsubsection{Temporal Convolutional Networks (TCN)}
+
+TCN represents a modern architecture combining dilated convolutions with residual connections to achieve long-range temporal modeling without recurrent structures. TCNs provide parallel processing advantages over RNNs while maintaining comparable or superior forecasting performance~\cite{hewage2020deep, hachimi2024advancements}.
+
+\subsubsection{Ensemble and Meta-Learning Approaches}
+
+Ensemble methods combine predictions from multiple models, leveraging diversity to improve accuracy and robustness. Meta-learning frameworks automate model selection based on weather conditions, dynamically blending forecasts from different architectures to optimize performance for specific meteorological regimes~\cite{sarmas2023short, blazakis2024towards}.
+
+\subsubsection{Strengths and Limitations of Deep Learning Models}
+
+Deep learning models offer significant advantages: (1) superior ability to capture non-linear relationships and complex patterns; (2) adaptation to non-stationary data and changing conditions; (3) handling of high-dimensional input spaces with multiple meteorological variables; and (4) continued performance improvement with increasing data volume and complexity~\cite{devaraj2021holistic, alkhayat2021review, wang2019review}.
+
+However, deep learning models face challenges: (1) substantial data requirements, with performance dependent on large, high-quality datasets; (2) significant computational resources for training and inference; (3) limited interpretability, creating ``black box'' concerns for operational deployment; (4) risk of overfitting and sensitivity to hyperparameter selection; and (5) reduced effectiveness in data-scarce scenarios~\cite{devaraj2021holistic, alkhayat2021review, kumari2021deep, assaf2023review}.
+
+\subsection{Comparative Performance Analysis}
+
+The literature reveals a clear consensus: deep learning models consistently outperform traditional statistical models in most energy forecasting scenarios, especially when dealing with complex, non-linear, and high-dimensional data~\cite{sedai2023performance, cabello2023forecasting, alkandari2020solar, devaraj2021holistic, alkhayat2021review, wang2019review}. For example, Cabello-L{\'o}pez et al.~\cite{cabello2023forecasting} report that deep learning models reduced mean absolute error by up to 47\% compared to official statistical forecasts in national-level solar energy prediction.
+
+The performance gap between statistical and deep learning models widens with increasing data complexity, forecast horizon, and weather variability. Statistical models perform competitively in simple, linear, or data-scarce scenarios, but their performance plateaus with increasing complexity, while deep learning models continue to improve with richer data and more complex feature sets~\cite{sedai2023performance, assaf2023review, gupta2024review, gupta2021pv}.
+
+Hybrid models that combine statistical and deep learning approaches leverage the strengths of both paradigms, achieving superior accuracy and robustness. These hybrid approaches often outperform standalone models by combining statistical stability with deep learning flexibility~\cite{alkandari2020solar, li2020hybrid, husein2024towards, venkateswaran2024efficient, mirza2023quantile}.
+
+\section{Weather Classification in Renewable Energy Forecasting}
+\label{sec:weather_classification}
+
+\subsection{Incorporating Weather Information}
+
+The integration of weather classification into renewable energy forecasting has become increasingly important, as weather conditions are the primary driver of renewable energy variability. Weather classification methods segment meteorological data into homogeneous regimes or clusters, each associated with distinct characteristics that influence generation patterns.
+
+Weather classification is typically achieved through clustering algorithms (K-means, DBSCAN), regime identification methods (Lamb Weather Types), or feature selection based on meteorological variables such as cloud cover, wind speed, temperature, and atmospheric pressure~\cite{wang2021comparative, cervantes2025heuristic, serras2024optimizing}. These methods enable targeted model application, where different forecasting models can be selected or weighted based on prevailing weather conditions.
+
+Studies consistently report that incorporating weather classification improves model performance for both statistical and deep learning approaches, with gains more pronounced for deep learning models~\cite{ahmed2020review, rajagukguk2020review, gupta2024review, zhang2024review, gupta2021pv, pombo2022benchmarking}. Weather regime identification enhances feature relevance and model performance by focusing learning on meteorologically coherent data segments.
+
+\subsection{Weather-Driven Model Selection}
+
+Recent research explores adaptive frameworks where model selection is dynamically informed by prevailing weather regimes~\cite{wang2021comparative, cervantes2025heuristic, serras2024optimizing, jain2022novel, blazakis2024towards}. Rather than applying a single forecasting model universally, these approaches select or weight models based on weather type, optimizing accuracy by leveraging model strengths under specific conditions.
+
+Wang et al.~\cite{wang2021comparative} demonstrate that optimal model type varies with weather regime: simpler statistical or regression models often suffice under stable meteorological conditions, while deep learning models (e.g., LSTM, CNN-LSTM hybrids) outperform others during periods of high variability or extreme weather. This finding suggests that weather-aware model selection can significantly improve forecasting accuracy.
+
+Cervantes et al.~\cite{cervantes2025heuristic} apply weather classification to solar radiation forecasting across K{\"o}ppen climate zones, showing that clustering by climate type and data dispersion leads to optimal model selection for each region. Multivariate linear models performed best in tropical climates, while polynomial models excelled in arid climates, demonstrating the importance of region-specific, weather-informed model selection.
+
+Meta-learning frameworks automate this selection process, using machine learning to learn which base models perform best under specific weather conditions~\cite{sarmas2023short, blazakis2024towards}. These systems blend forecasts from multiple models, assigning weights or selecting optimal models dynamically based on weather features.
+
+\subsection{Performance Across Weather Regimes}
+
+The literature demonstrates that model performance is highly sensitive to weather type, with distinct models excelling under different conditions. Under stable meteorological conditions, statistical models remain competitive and often provide sufficient accuracy with lower computational requirements~\cite{cervantes2025heuristic, wang2021comparative, jain2022novel, blazakis2024towards}.
+
+However, during unstable or extreme weather periods, deep learning models consistently outperform statistical approaches. Deep learning models' ability to capture non-linearities and adapt to complex weather patterns makes them particularly effective during variable conditions~\cite{wang2021comparative, lim2022solar, unlu2025comparative}. Hybrid and ensemble approaches show superior performance across all weather regimes, combining the stability of statistical models with the adaptability of deep learning approaches~\cite{ferkous2024novel, lipu2021artificial}.
+
+\section{Model Robustness and Evaluation}
+\label{sec:robustness_evaluation}
+
+\subsection{Statistical Validation Methods}
+
+Validating the relationship between weather stability and model performance requires rigorous statistical methods capable of handling non-normal error distributions and temporal dependencies. The Mann-Whitney U test provides a non-parametric alternative to t-tests, robust to non-normal distributions and appropriate for skewed error distributions common in forecasting~\cite{mann1947test}. Welch's t-test offers a parametric alternative that accounts for unequal variances between stable and unstable groups.
+
+Effect size measures, including Cohen's d and percentage increase in error, quantify the practical significance of performance differences beyond statistical significance~\cite{cohen1988statistical}. Multiple testing corrections, such as the Bonferroni method and False Discovery Rate control~\cite{benjamini1995controlling}, prevent inflation of Type I error when comparing multiple models across different weather regimes.
+
+Linear mixed-effects models provide a comprehensive framework for comparing model performance while accounting for temporal clustering, repeated measures, and confounding variables. These models enable simultaneous evaluation of weather stability effects, model-specific differences, and interaction effects between weather conditions and model types.
+
+\subsection{Robustness Metrics}
+
+Model robustness quantifies the ability of forecasting models to maintain performance across different conditions. Relative Performance Degradation (RPD) measures performance change from stable to unstable conditions relative to baseline performance, normalizing for model-specific accuracy levels. RPD provides a fair comparison across models with different baseline errors, identifying which models maintain accuracy most effectively during unstable weather.
+
+Absolute Performance Degradation (APD) captures the operational impact of performance changes, useful when baseline accuracy matters for grid operations. Composite robustness indices combine accuracy and robustness metrics, balancing ``good on average'' performance with ``consistent across conditions'' behavior.
+
+\subsection{Experimental Design for Comparative Analysis}
+
+Rigorous comparative analysis requires careful experimental design. Data segmentation strategies divide datasets into stable and unstable weather periods using weather classification or clustering methods~\cite{wang2021comparative, hewage2020deep, hachimi2024advancements}. Models are then trained and evaluated on each segment, enabling systematic comparison of performance across weather regimes.
+
+Evaluation metrics including MAE, RMSE, MAPE, and skill scores provide comprehensive performance assessment. The experimental approach recommended in the literature involves training both statistical and machine learning models on each weather segment, using multiple metrics to compare performance, and interpreting results to determine model sufficiency across conditions~\cite{hewage2020deep, hachimi2024advancements, xu2020data, schultz2021can}.
+
+\section{Gap Analysis}
+\label{sec:gap_analysis}
+
+\subsection{Identified Research Gaps}
+
+Despite significant progress in renewable energy forecasting, several critical gaps remain in the literature regarding weather stability impact on model performance:
+
+\textbf{Limited Systematic Evaluation:} Most studies evaluate model performance on aggregate datasets without explicitly accounting for weather regime characteristics. There is insufficient research systematically comparing model robustness across stable and unstable weather conditions using standardized methodologies.
+
+\textbf{Insufficient Weather Stability Focus:} While weather classification is increasingly incorporated into forecasting models, there is limited research specifically examining how weather stability (as opposed to weather type) affects model performance. The distinction between stable and unstable conditions within similar weather types (e.g., sunny days with varying cloud cover variability) remains underexplored.
+
+\textbf{Gaps in Long-Term Forecasting:} Research on weather-classified forecasting predominantly focuses on short-term horizons. Long-term forecasting with weather classification and robustness analysis across weather regimes represents a significant gap.
+
+\textbf{Limited Interpretability Research:} Deep learning models' superior performance comes with reduced interpretability, creating barriers to operational adoption. Research on interpretable deep learning for weather-classified forecasting remains limited.
+
+\textbf{Generalizability Challenges:} Most studies focus on specific geographic regions or energy types. The generalizability of weather-driven model selection frameworks across diverse climates and energy sources requires further investigation.
+
+\subsection{Research Questions Alignment}
+
+This research addresses these gaps by: (1) developing a systematic framework for weather stability classification using quantitative indices and validated statistical methods; (2) conducting comprehensive comparative analysis of statistical and machine learning models across stable and unstable weather regimes; (3) providing rigorous statistical validation of error-stability relationships with appropriate effect size measures; and (4) establishing robustness metrics that enable operational model selection guidance.
+
+The dual-pipeline methodology enables independent evaluation of weather stability classification and model performance, preventing data leakage and ensuring methodological rigor. The comparative robustness analysis provides novel insights into model behavior across weather conditions, addressing a critical gap in current literature.
+
+\section{Summary}
+\label{sec:literature_summary}
+
+This literature review has established the theoretical foundations and current state of research in weather stability analysis for renewable energy forecasting. Key findings include:
+
+\begin{itemize}
+    \item Weather regime classification provides a valuable framework for understanding atmospheric variability and its impact on renewable energy generation patterns.
+    
+    \item Statistical models remain effective for simple, linear, or data-scarce scenarios but face limitations with increasing complexity, non-linearity, and weather variability.
+    
+    \item Deep learning models consistently outperform statistical approaches in complex forecasting scenarios, particularly when weather classification is incorporated, but face challenges related to data requirements, computational costs, and interpretability.
+    
+    \item Weather-driven model selection represents an emerging approach that dynamically selects models based on prevailing weather conditions, consistently improving forecasting accuracy.
+    
+    \item Significant gaps remain in systematic evaluation of model robustness across weather stability regimes, creating an opportunity for methodological contributions.
+\end{itemize}
+
+The following chapter presents the methodology developed to address these gaps, providing a comprehensive framework for weather stability classification and comparative model robustness analysis. The dual-pipeline approach ensures rigorous evaluation while enabling practical insights for operational forecasting systems.
