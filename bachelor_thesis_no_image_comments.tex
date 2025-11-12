@@ -549,24 +549,35 @@ Here's what the weather data looks like:
 
 \subsubsection{Weather Attributes Collected}
 
-Eleven weather attributes have been collected, each contributing to the Weather Stability Index computation:
+Eleven weather attributes have been collected, each contributing to the Weather Stability Index computation. The selection of these specific attributes is justified by their meteorological significance in characterizing atmospheric stability:
 
 \begin{enumerate}
-    \item \textbf{Temperature} - hourly mean, minimum, and maximum values
-    \item \textbf{Cloudiness} - cloud cover percentage (0-100\%)
-    \item \textbf{Dew point} - atmospheric moisture indicator
-    \item \textbf{Extreme wind} - peak wind measurements
-    \item \textbf{Moisture} - relative humidity percentage
-    \item \textbf{Precipitation} - rainfall amount in millimeters
-    \item \textbf{Pressure} - atmospheric pressure in hectopascals (hPa)
-    \item \textbf{Soil temperature} - ground temperature measurements
-    \item \textbf{Sun} - sunshine duration in hours
-    \item \textbf{Visibility} - horizontal visibility in meters
-    \item \textbf{Weather phenomena} - categorical weather events
-    \item \textbf{Wind and wind\_synop} - wind speed (m/s) and wind direction (degrees)
+    \item \textbf{Temperature} - hourly mean, minimum, and maximum values. \textit{Justification:} Temperature variability is a primary indicator of atmospheric instability. Rapid temperature changes signal frontal passages, air mass transitions, and convective activity. Temperature extremes (min/max) capture diurnal variability patterns that distinguish stable from unstable conditions.
+    
+    \item \textbf{Cloudiness} - cloud cover percentage (0-100\%). \textit{Justification:} Cloud cover variability reflects atmospheric mixing and convective processes. Rapid cloud cover changes indicate unstable atmospheric conditions associated with weather system transitions.
+    
+    \item \textbf{Dew point} - atmospheric moisture indicator. \textit{Justification:} Dew point variability captures air mass changes and moisture advection patterns. High variability indicates mixing between different air masses, a key characteristic of unstable conditions.
+    
+    \item \textbf{Extreme wind} - peak wind measurements. \textit{Justification:} Extreme wind events are direct indicators of atmospheric instability, associated with strong pressure gradients, storm systems, and turbulent mixing. Peak values capture the most unstable conditions better than mean wind speed.
+    
+    \item \textbf{Moisture} - relative humidity percentage. \textit{Justification:} Humidity variability reflects atmospheric mixing and convective processes. Rapid humidity changes indicate unstable conditions, particularly during frontal passages.
+    
+    \item \textbf{Precipitation} - rainfall amount in millimeters. \textit{Justification:} Precipitation is a direct consequence of atmospheric instability, requiring vertical motion and moisture convergence. Heavy or rapidly changing precipitation indicates active weather systems and unstable conditions.
+    
+    \item \textbf{Pressure} - atmospheric pressure in hectopascals (hPa). \textit{Justification:} Pressure changes are fundamental to synoptic meteorology. Rapid pressure changes ($>5$ hPa/24h) indicate approaching storms, frontal passages, and weather system transitions---all markers of instability.
+    
+    \item \textbf{Soil temperature} - ground temperature measurements. \textit{Justification:} Soil temperature variability reflects surface-atmosphere interactions and can indicate unstable boundary layer conditions, particularly during rapid weather transitions.
+    
+    \item \textbf{Sun} - sunshine duration in hours. \textit{Justification:} Sunshine duration variability reflects cloud cover changes and atmospheric transparency. Rapid changes indicate unstable conditions with active cloud formation and dissipation.
+    
+    \item \textbf{Visibility} - horizontal visibility in meters. \textit{Justification:} Visibility changes indicate fog, precipitation, or atmospheric particles, often associated with weather system transitions and unstable conditions.
+    
+    \item \textbf{Weather phenomena} - categorical weather events. \textit{Justification:} Specific weather phenomena (storms, fog, precipitation types) are direct indicators of atmospheric instability, though categorical data requires special handling in quantitative analysis.
+    
+    \item \textbf{Wind and wind\_synop} - wind speed (m/s) and wind direction (degrees). \textit{Justification:} Wind speed and direction variability capture pressure gradient changes and atmospheric flow patterns. High variability indicates unstable conditions with changing weather systems.
 \end{enumerate}
 
-These attributes capture multiple dimensions of atmospheric conditions, enabling comprehensive quantification of weather variability and stability.
+These attributes capture multiple dimensions of atmospheric conditions (thermal, dynamic, moisture, radiative), enabling comprehensive quantification of weather variability and stability. The selection follows established meteorological principles where stability is characterized by low variability across these dimensions~\cite{holton2004introduction}.
 
 \subsection{Renewable Energy Data}
 
@@ -737,8 +748,8 @@ The energy dataset exhibits excellent temporal coverage, with only 3 missing hou
     
     \item \textbf{Quality Flagging:} All imputed values are tracked through binary flags:
     \begin{itemize}
-        \item \texttt{\{source\}_missing\_flag}: Marks originally missing values
-        \item \texttt{\{source\}_interpolated\_flag}: Marks values that were interpolated
+        \item \texttt{\{source\}_missing\_flag}:~Marks originally missing values
+        \item \texttt{\{source\}_interpolated\_flag}:~Marks values that were interpolated
     \end{itemize}
     These flags enable downstream analysis to assess the impact of imputation on model performance.
 \end{enumerate}
@@ -810,11 +821,13 @@ The Weather Stability Index (WSI) is developed using established methods for wea
 
 Feature engineering transforms raw weather observations into meaningful stability indicators. The selected features are based on meteorological principles where stability is characterized by low variability, consistent trends, and absence of extreme events. This multi-scale approach aligns with the hierarchical classification framework recommended in the methodology.
 
+\textbf{Why Not Use Raw Features Directly?} A natural question arises: why not simply identify which of the 11 raw weather variables are most correlated with forecasting errors and use them directly? While this simpler approach could work, it has fundamental limitations. Raw weather values (e.g., temperature = 20°C, wind = 5 m/s) do not capture \textit{stability}---they only represent instantaneous conditions. Weather stability is inherently a temporal concept: it describes how much atmospheric conditions change over time, not their absolute values. A temperature of 20°C could occur during stable conditions (consistent 20°C for days) or unstable conditions (rapidly changing from 15°C to 25°C). The feature engineering step transforms raw observations into stability-relevant metrics (variability, trends, extremes) that directly measure atmospheric variability. Additionally, raw features have incompatible scales (temperature in °C, pressure in hPa, wind in m/s), making direct combination problematic without normalization. The current approach addresses both issues: it creates stability-relevant features and normalizes them appropriately.
+
 \subsubsection{Variability Features}
 
-Atmospheric variability is a key indicator of weather instability. Variability features are computed using a 24-hour rolling window, which captures diurnal cycles while identifying periods of abnormal variability. This temporal scale aligns with synoptic-scale meteorology where weather systems operate on characteristic timescales~\cite{holton2004introduction}.
+\textbf{Why Variability Features?} Atmospheric variability is the core concept underlying weather stability. Stable conditions exhibit low variability (consistent patterns), while unstable conditions show high variability (rapid changes). Computing variability features from raw weather attributes transforms instantaneous values into stability-relevant metrics. \textbf{Why 24-hour window?} The 24-hour rolling window is chosen to capture diurnal cycles (daily temperature patterns, day/night transitions) while identifying periods of abnormal variability that exceed normal diurnal patterns. This temporal scale aligns with synoptic-scale meteorology where weather systems operate on characteristic timescales of 6--24 hours~\cite{holton2004introduction}. A shorter window (e.g., 6 hours) would miss diurnal patterns and create false instability signals during normal day/night transitions. A longer window (e.g., 48 hours) would smooth out important short-term instability events.
 
-The following variability features are computed:
+The following variability features are computed, each with specific meteorological justification:
 
 \begin{itemize}
     \item \textbf{Temperature standard deviation} ($\sigma_T$): Computed over a 24-hour rolling window as $\sigma_T = \sqrt{\frac{1}{n-1}\sum_{i=t-23}^{t}(T_i - \bar{T})^2}$ where $n=24$. High temperature variability indicates atmospheric instability and transition periods between air masses~\cite{holton2004introduction}.
@@ -832,7 +845,7 @@ The following variability features are computed:
 
 \subsubsection{Trend Features}
 
-Linear trends capture directional changes in atmospheric conditions that signal transitions between weather regimes. Trend analysis is well-established in climatology for detecting regime changes~\cite{dee2011era}. Trend features are computed using linear regression (degree 1) over a 24-hour window:
+\textbf{Why Trend Features?} While variability features capture the magnitude of changes, trend features capture the \textit{direction} and \textit{rate} of atmospheric changes. A period with high variability but no consistent trend might indicate oscillatory behavior (potentially stable), while a period with a strong trend indicates a directional transition between weather regimes (unstable). Trend analysis is well-established in climatology for detecting regime changes~\cite{dee2011era}. \textbf{Why Linear Regression?} Linear regression (degree 1) is chosen because it captures the dominant directional change over the window period. Higher-order polynomials would capture more complex patterns but risk overfitting to noise. The linear trend provides a simple, interpretable measure of whether conditions are improving (negative trend toward stability) or deteriorating (positive trend toward instability). Trend features are computed using linear regression (degree 1) over a 24-hour window:
 
 \begin{itemize}
     \item \textbf{Temperature trend}: Slope of linear regression $T_i = \beta_0 + \beta_1 \cdot i + \epsilon_i$ over 24-hour window. Steep temperature trends indicate rapid atmospheric changes and regime transitions.
@@ -844,7 +857,7 @@ Linear trends capture directional changes in atmospheric conditions that signal 
 
 \subsubsection{Extreme Event Flags}
 
-Extreme weather events are clear indicators of atmospheric instability. Binary flags provide interpretable, domain-expert validated indicators that complement continuous variability measures~\cite{grotjahn2016extreme}. The following flags are computed:
+\textbf{Why Extreme Event Flags?} While variability and trend features capture gradual changes, extreme event flags capture sudden, dramatic changes that are unambiguous indicators of instability. Binary flags provide interpretable, domain-expert validated indicators that complement continuous variability measures~\cite{grotjahn2016extreme}. \textbf{Why Binary Flags?} Binary flags are used because extreme events have a threshold nature: once a threshold is exceeded, the event is significant regardless of how much it exceeds the threshold. This captures the non-linear nature of weather instability where small changes can trigger dramatic effects. The following flags are computed:
 
 \begin{itemize}
     \item \textbf{High wind flag}: Binary indicator when wind speed exceeds the 90th percentile threshold. High winds indicate strong pressure gradients and unstable conditions.
@@ -858,15 +871,15 @@ Extreme weather events are clear indicators of atmospheric instability. Binary f
 
 \subsubsection{Feature Selection and Normalization}
 
-Feature selection reduces multicollinearity, improves model interpretability, and prevents overfitting. Highly correlated features ($|r| > 0.9$) are identified using Pearson correlation coefficient and redundant features are removed, targeting a final feature set of 6--10 features~\cite{dormann2013collinearity}.
+\textbf{Why Feature Selection?} Feature selection reduces multicollinearity, improves model interpretability, and prevents overfitting. Highly correlated features ($|r| > 0.9$) provide redundant information and can cause numerical instability in classification algorithms. Removing redundant features reduces computational complexity while maintaining discriminative power. The target of 6--10 features balances comprehensiveness (capturing multiple dimensions of stability) with parsimony (avoiding overfitting)~\cite{dormann2013collinearity}. \textbf{Why Correlation Threshold of 0.9?} A threshold of $|r| > 0.9$ is chosen because features with correlation above 0.9 provide nearly identical information. Lower thresholds (e.g., 0.7) would remove too many features, potentially losing important information. Higher thresholds (e.g., 0.95) would retain redundant features.
 
-Robust normalization is applied using median and interquartile range (IQR):
+\textbf{Why Robust Normalization?} Robust normalization using median and interquartile range (IQR) is applied:
 
 \begin{equation}
 x_{normalized} = \frac{x - \text{median}(x)}{\text{IQR}(x)}
 \end{equation}
 
-where IQR = $Q_3 - Q_1$ (interquartile range). Robust scaling is preferred over z-score normalization for weather data because it is resistant to outliers and extreme events~\cite{huber1981robust, rousseeuw1993alternatives}. This is critical for weather data which contains legitimate extreme events that should not dominate normalization. All features are oriented so higher values indicate more instability.
+where IQR = $Q_3 - Q_1$ (interquartile range). \textbf{Why Not Z-Score Normalization?} Z-score normalization ($z = (x - \mu)/\sigma$) uses mean and standard deviation, which are sensitive to outliers. Weather data contains legitimate extreme events (storms, heat waves) that should not dominate the normalization process. Robust scaling using median and IQR is resistant to outliers and extreme events~\cite{huber1981robust, rousseeuw1993alternatives}. This ensures that a single extreme event doesn't distort the entire feature distribution. \textbf{Why Orient Features So Higher = More Instability?} All features are oriented so higher values indicate more instability. This ensures that when features are combined, they all contribute in the same direction: higher WSI = more instability. Without this orientation, some features would increase WSI while others decrease it, making interpretation difficult.
 
 \begin{figure}[H]
     \centering
@@ -877,17 +890,48 @@ where IQR = $Q_3 - Q_1$ (interquartile range). Robust scaling is preferred over 
 
 \subsection{WSI Computation}
 
+\textbf{Why Compute WSI?} The Weather Stability Index combines multiple stability-relevant features into a single metric that quantifies overall atmospheric instability. This enables systematic classification and comparison across different time periods.
+
 The instantaneous WSI is computed using equal-weight averaging of normalized features:
 
 \begin{equation}
 \text{WSI}_t = \frac{1}{p} \sum_{i=1}^{p} \frac{x_{i,t} - \text{median}(x_i)}{\text{IQR}(x_i)}
 \end{equation}
 
-where $p$ is the number of selected features. Since features are already normalized (robust scaling), this simplifies to $\text{WSI}_t = \frac{1}{p} \sum_{i=1}^{p} x_{i,t}^{norm}$. Equal-weight averaging is the baseline approach, providing interpretability and avoiding overfitting to specific features.
+where $p$ is the number of selected features. Since features are already normalized (robust scaling), this simplifies to $\text{WSI}_t = \frac{1}{p} \sum_{i=1}^{p} x_{i,t}^{norm}$.
+
+\textbf{Why Equal-Weight Averaging (Mean) Instead of Weighted Average?} Equal-weight averaging is chosen as the baseline approach for several reasons: (1) \textit{Interpretability:} Equal weights mean each feature contributes equally, making the index easy to understand and explain. (2) \textit{Avoiding Overfitting:} Weighted averages would require determining optimal weights, which could overfit to the training data and reduce generalizability. (3) \textit{No Prior Knowledge:} Without strong theoretical or empirical evidence that certain features are more important, equal weights represent the most neutral assumption. (4) \textit{Normalization Already Handles Scale:} Since all features are robustly normalized, they are already on comparable scales, making equal weights appropriate. (5) \textit{Baseline for Comparison:} Equal weights provide a baseline that can be compared against more complex weighting schemes in future work.
+
+\textbf{Why Not Principal Component Analysis (PCA)?} PCA could be used to find the linear combination that captures maximum variance, but this has limitations: (1) PCA finds the direction of maximum variance, which may not align with stability (variance could be due to seasonal patterns, not instability). (2) PCA components are difficult to interpret meteorologically. (3) PCA assumes linear relationships, while weather stability may have non-linear components. (4) Equal-weight averaging is more transparent and interpretable for operational use.
+
+\textbf{Why Not Variance-Weighted or Correlation-Weighted?} Weighting by variance or correlation with forecasting errors would require additional assumptions and could overfit. Equal weights represent the most conservative, generalizable approach.
 
 \subsubsection{Rolling Window Statistics}
 
-The 6-hour window is justified by synoptic-scale meteorology where weather systems operate on characteristic timescales of 6--12 hours~\cite{holton2004introduction}. This temporal resolution captures synoptic-scale changes while maintaining sensitivity to mesoscale phenomena. For each time point $t$, a centered window $[t-2, t-1, t, t+1, t+2, t+3]$ is used:
+\textbf{Why Rolling Window Statistics?} Instantaneous WSI values are noisy and may not represent the true atmospheric state. Weather stability is a temporal concept---a single hour's instability doesn't define a regime. Rolling window statistics provide temporal context by aggregating WSI values over a time period, capturing regime persistence and reducing noise.
+
+\textbf{Statistical Justification:} From a signal processing perspective, instantaneous WSI values contain both signal (true stability state) and noise (measurement errors, random fluctuations). The signal-to-noise ratio can be improved by averaging over multiple time points. If we assume the true stability state is relatively constant over short periods (due to atmospheric inertia), then averaging reduces noise variance by a factor of $1/n$ where $n$ is the window size, while preserving the signal. This is the fundamental principle behind moving average filters in time series analysis.
+
+\textbf{Atmospheric Physics Justification:} Weather regimes exhibit persistence due to atmospheric inertia. The atmosphere has mass and momentum, meaning it cannot change state instantaneously. A stable high-pressure system or an unstable storm system typically persists for several hours to days. This physical property justifies aggregating WSI values over time windows that match the characteristic timescales of atmospheric processes.
+
+\textbf{Why Centered Window?} The centered window $[t-2, t-1, t, t+1, t+2, t+3]$ includes both past and future values, providing symmetric smoothing. This reduces phase lag compared to backward-looking windows (which introduce delay) or forward-looking windows (which are not operationally feasible). The centered window provides the best estimate of the current state while maintaining causality for operational applications (we can use $[t-2, t-1, t]$ for real-time applications).
+
+\textbf{Why Compute Multiple Statistics (Mean, Std, Trend)?} Three statistics are computed to capture different aspects of temporal behavior: (1) \textit{Mean} ($\text{WSI}_{\text{window},t}$) captures the central tendency, representing the average stability level over the window. (2) \textit{Standard deviation} ($\text{WSI}_{\text{std},t}$) captures variability within the window, indicating whether stability is consistent or changing. (3) \textit{Trend} ($\text{WSI}_{\text{trend},t}$) captures directional change, indicating whether conditions are improving or deteriorating. Together, these statistics provide a comprehensive temporal characterization.
+
+\textbf{Why 6-Hour Window Specifically?} The 6-hour window is justified by synoptic-scale meteorology where weather systems operate on characteristic timescales of 6--12 hours~\cite{holton2004introduction}. This temporal resolution captures synoptic-scale changes (frontal passages, pressure systems) while maintaining sensitivity to mesoscale phenomena (convective activity, local wind patterns). 
+
+\textbf{Detailed Window Size Comparison:}
+\begin{itemize}
+    \item \textbf{1-hour window:} Too noisy, dominated by measurement errors and random fluctuations. Would create false instability signals during normal diurnal transitions.
+    \item \textbf{3-hour window:} Still too sensitive to noise, misses synoptic-scale patterns. Would classify normal day/night temperature transitions as instability.
+    \item \textbf{6-hour window:} Optimal balance---captures synoptic-scale weather system transitions (frontal passages typically take 6--12 hours) while maintaining sensitivity to rapid changes. Aligns with operational forecasting horizons used by grid operators.
+    \item \textbf{12-hour window:} Begins to smooth out important short-term instability events. May mix diurnal patterns (day/night cycles) with true instability, reducing discriminative power.
+    \item \textbf{24-hour window:} Too long---would average out important instability events and mix multiple weather regimes. Diurnal patterns would dominate, masking true instability signals.
+\end{itemize}
+
+\textbf{Operational Justification:} Grid operators and energy market participants typically operate on 6-hour planning horizons. The 6-hour window aligns with operational decision-making timescales, making the stability classification directly applicable to forecasting system design.
+
+For each time point $t$, a centered window $[t-2, t-1, t, t+1, t+2, t+3]$ is used:
 
 \begin{align}
 \text{WSI}_{\text{window},t} &= \frac{1}{6} \sum_{i \in W_t} \text{WSI}_i \\
@@ -899,13 +943,42 @@ where $W_t$ represents the 6-hour window centered at time $t$.
 
 \subsubsection{Temporal Smoothing}
 
+\textbf{Why Temporal Smoothing?} Even after rolling window statistics, WSI values can have isolated spikes or dips that don't represent true regime changes. Weather regimes persist over time due to atmospheric inertia---a single hour of instability doesn't define an unstable regime. Temporal smoothing reduces noise while preserving true regime transitions.
+
+\textbf{Statistical Justification:} After rolling window averaging, residual noise may still exist due to: (1) measurement errors in underlying weather data, (2) feature computation errors, (3) random atmospheric fluctuations that don't represent regime changes. Temporal smoothing acts as a low-pass filter, removing high-frequency noise (rapid fluctuations) while preserving low-frequency signals (true regime transitions). This is a standard technique in time series analysis for denoising~\cite{tukey1977exploratory}.
+
+\textbf{Atmospheric Physics Justification:} Atmospheric regimes exhibit persistence due to physical constraints. A stable high-pressure system cannot become unstable instantaneously---it requires time for pressure gradients to develop, air masses to mix, and weather systems to form. Similarly, an unstable storm system doesn't dissipate instantly. This physical persistence means that isolated spikes in WSI are likely noise rather than true regime changes. Smoothing removes these spurious fluctuations while preserving genuine transitions.
+
+\textbf{Why Not Skip Smoothing?} Without smoothing, classification algorithms would be sensitive to isolated spikes, creating false regime changes. For example, a single hour with high WSI due to measurement error could incorrectly classify an entire stable period as unstable. Smoothing prevents such misclassifications by requiring sustained instability to trigger a regime change.
+
 Temporal smoothing is applied using a median filter with kernel size 3:
 
 \begin{equation}
 \text{WSI}_{\text{smoothed},t} = \text{median}(\text{WSI}_{\text{window},t-1}, \text{WSI}_{\text{window},t}, \text{WSI}_{\text{window},t+1})
 \end{equation}
 
-Median filtering is robust to outliers and prevents isolated misclassifications. The kernel size of 3 (3-hour smoothing) provides additional noise reduction without excessive lag, preserving sharp transitions while removing spurious fluctuations~\cite{tukey1977exploratory}.
+\textbf{Why Median Filter Instead of Mean Filter?} Median filtering is robust to outliers and prevents isolated misclassifications. \textbf{Mathematical Comparison:} A mean filter computes $\bar{x} = \frac{1}{n}\sum x_i$, which is sensitive to outliers. A single extreme value can shift the mean significantly. A median filter computes $\text{median}(x)$, which is the 50th percentile---it ignores outliers completely. For example, if values are $[0.1, 0.2, 5.0]$ (where 5.0 is an outlier), the mean is 1.77 (dominated by the outlier) while the median is 0.2 (robust to the outlier). \textbf{Why This Matters:} Weather data contains legitimate extreme events (storms, heat waves) that may create isolated high WSI values. The median filter treats these as outliers if they're isolated, preserving the regime classification while still capturing sustained extreme events.
+
+\textbf{Why Not Other Smoothing Methods?}
+\begin{itemize}
+    \item \textbf{Exponential Moving Average (EMA):} EMA gives more weight to recent values: $\text{EMA}_t = \alpha \cdot x_t + (1-\alpha) \cdot \text{EMA}_{t-1}$. However, EMA introduces lag and is still sensitive to outliers. The median filter has no lag (symmetric) and is robust to outliers.
+    \item \textbf{Gaussian Filter:} Gaussian smoothing applies weighted averaging with Gaussian weights. While effective, it requires parameter tuning (standard deviation) and is computationally more complex. The median filter is simpler and parameter-free.
+    \item \textbf{Savitzky-Golay Filter:} Polynomial smoothing preserves higher moments but requires more parameters and is more complex. The median filter provides sufficient smoothing with simplicity.
+\end{itemize}
+
+\textbf{Why Kernel Size 3 Specifically?} The kernel size of 3 (3-hour smoothing) provides additional noise reduction without excessive lag, preserving sharp transitions while removing spurious fluctuations~\cite{tukey1977exploratory}. 
+
+\textbf{Detailed Kernel Size Comparison:}
+\begin{itemize}
+    \item \textbf{Kernel size 1 (no smoothing):} No smoothing applied. WSI values remain noisy, leading to classification instability and false regime changes.
+    \item \textbf{Kernel size 3:} Optimal balance---removes isolated spikes while preserving true transitions. Provides 1-hour look-ahead and 1-hour look-back, minimal lag. Most regime transitions occur over multiple hours, so 3-hour smoothing doesn't blur genuine transitions.
+    \item \textbf{Kernel size 5:} More aggressive smoothing, but introduces 2-hour lag. May blur rapid but genuine regime transitions (e.g., sudden storm development). Reduces temporal resolution unnecessarily.
+    \item \textbf{Kernel size 7:} Excessive smoothing---introduces 3-hour lag and significantly blurs transitions. Would miss important short-term instability events.
+\end{itemize}
+
+\textbf{Why Centered Kernel?} The median filter uses $[t-1, t, t+1]$, a centered kernel that includes past, present, and future values. This provides symmetric smoothing with no phase lag. For operational applications where future values aren't available, a backward-looking kernel $[t-2, t-1, t]$ can be used, but this introduces 1-hour lag. The centered kernel provides the best estimate for analysis purposes.
+
+\textbf{Interaction with Rolling Window:} The rolling window (6 hours) and temporal smoothing (3 hours) work together: the rolling window captures synoptic-scale patterns, while the median filter removes residual high-frequency noise. This two-stage approach is more effective than either method alone.
 
 \subsection{Classification Methods}
 
@@ -950,6 +1023,24 @@ Binary classification uses a threshold $\tau = 0.5$:
 
 The unstable regime is identified as the cluster with higher mean WSI value.
 
+\textbf{Why Only Classify "Unstable" for High WSI (Upward Spikes), Not Low WSI (Downward Spikes)?} This is a critical methodological choice that requires detailed justification. The classification scheme is fundamentally asymmetric: upward spikes (high WSI) are explicitly identified as "unstable," while downward spikes (low WSI) are simply classified as "stable" without further distinction. This asymmetry reflects fundamental differences in how upward and downward spikes relate to forecasting challenges.
+
+\textbf{What Do Upward Spikes (High WSI) Represent?} Upward spikes in WSI indicate periods of high atmospheric variability, rapid changes, extreme events, and weather system transitions. These conditions create forecasting challenges because: (1) \textit{Non-linear dynamics:} Rapid changes involve non-linear atmospheric processes that are difficult to model. (2) \textit{Increased uncertainty:} Extreme events and transitions have higher inherent uncertainty. (3) \textit{Model limitations:} Forecasting models struggle with rapid regime changes and extreme conditions. (4) \textit{Operational impact:} Unstable conditions require more attention from grid operators and can cause significant forecasting errors. Therefore, upward spikes are operationally critical and warrant explicit classification as "unstable."
+
+\textbf{What Do Downward Spikes (Low WSI) Represent?} Downward spikes in WSI indicate periods of very low variability, consistent patterns, and minimal atmospheric change. These represent "extremely stable" conditions. However, these conditions are \textit{not} problematic for forecasting---they are actually the easiest conditions to forecast. During extremely stable periods: (1) \textit{Linear dynamics:} Atmospheric processes are more predictable and linear. (2) \textit{Reduced uncertainty:} Consistent patterns have lower inherent uncertainty. (3) \textit{Model performance:} Forecasting models perform well during stable conditions. (4) \textit{Operational ease:} Grid operators face fewer challenges during stable periods. Therefore, downward spikes represent "easy" forecasting conditions, not a separate category of concern.
+
+\textbf{Why Not Create a Three-Way Classification (Stable, Normal, Unstable)?} A three-way classification could theoretically distinguish: (1) extremely stable (very low WSI), (2) normal stable (moderate WSI), and (3) unstable (high WSI). However, this is not necessary for our research questions because: (1) \textit{Research focus:} Our questions focus on model robustness during challenging conditions (instability), not on distinguishing degrees of easiness. (2) \textit{Statistical power:} Extremely stable conditions may be rare, providing insufficient data for robust three-way comparisons. (3) \textit{Operational relevance:} Grid operators care about identifying problematic conditions (unstable), not distinguishing between "easy" and "very easy" conditions. (4) \textit{Binary sufficiency:} A binary stable/unstable classification is sufficient to answer whether models perform differently under challenging vs. non-challenging conditions.
+
+\textbf{The Fundamental Asymmetry:} The asymmetry in classification reflects an asymmetry in the problem itself. Forecasting errors are primarily driven by unstable conditions (upward spikes), not by stable conditions (downward spikes). This is analogous to medical diagnosis: we explicitly identify "disease" (unstable) but don't need to distinguish between "healthy" and "extremely healthy" (both are just "not diseased"). The critical distinction is between problematic and non-problematic conditions, not between different degrees of non-problematic conditions.
+
+\textbf{Are We Missing Important Information by Not Treating Downward Spikes Separately?} No, we are not missing critical information. Downward spikes (very stable conditions) are correctly classified as "stable" and are expected to have low forecasting errors. If we were to create a separate "extremely stable" category, we would expect it to have even lower errors than "normal stable," but this distinction is not operationally relevant. The key question is: "Do models struggle during unstable conditions?" This is answered by comparing unstable (upward spikes) vs. stable (all downward spikes and normal conditions combined).
+
+\textbf{Mathematical Justification:} From a statistical perspective, the distribution of forecasting errors is expected to be right-skewed (higher errors during unstable conditions) rather than left-skewed (lower errors during stable conditions). This means the tail of concern is the upper tail (unstable), not the lower tail (extremely stable). Classification should focus on identifying the problematic tail, which corresponds to upward spikes in WSI.
+
+\textbf{Operational Justification:} Grid operators and energy market participants are primarily concerned with identifying periods when forecasting accuracy may degrade (unstable conditions). They are less concerned with distinguishing between different levels of good forecasting performance (stable conditions). The binary classification directly addresses operational needs: "Is this a period of concern?" (unstable) vs. "Is this a period of normal operation?" (stable).
+
+\textbf{Summary:} The asymmetry in classification (focusing on upward spikes as unstable, treating all downward spikes as stable) is justified by: (1) the fundamental asymmetry in forecasting challenges (unstable conditions are problematic, stable conditions are not), (2) the research questions focusing on model robustness during challenging conditions, (3) operational relevance (identifying problematic periods is more important than distinguishing degrees of easiness), and (4) statistical considerations (sufficient data and power for binary comparison). Downward spikes are correctly handled---they represent very stable conditions that are classified as "stable" and expected to have low forecasting errors.
+
 \subsubsection{Alternative Classification Methods}
 
 For comparison and validation, two alternative classification methods are implemented:
@@ -974,215 +1065,228 @@ Multiple validation metrics ensure classification quality:
     \item \textbf{Cluster balance}: Target 40/60 to 60/40 split to avoid extreme imbalances (90/10) which indicate poor classification or insufficient discriminative power.
 \end{itemize}
 
-\section{Renewable Energy Prediction Models}
-\label{sec:prediction_models}
+\subsection{Alternative Simplified Approach: Direct Feature Correlation}
 
-This section describes the implementation of forecasting models for renewable energy production, encompassing both statistical and machine learning approaches. The model selection rationale is based on established methods in the literature~\cite{giebel2011state, antonanzas2016review, sedai2023performance, devaraj2021holistic, alkhayat2021review}, with a focus on state-of-the-art methods that have demonstrated strong performance in renewable energy forecasting applications.
-
-\subsection{Model Selection Rationale}
-
-The implemented models span multiple categories to enable comprehensive comparison across modeling paradigms:
-
-\begin{itemize}
-    \item \textbf{Baseline Models:} Simple persistence-based methods that serve as performance benchmarks and establish minimum acceptable accuracy thresholds
-    \item \textbf{Statistical Models:} Classical time series methods that leverage temporal dependencies and seasonality patterns
-    \item \textbf{Gradient Boosting Models:} Tree-based ensemble methods that capture non-linear relationships and feature interactions
-    \item \textbf{Probabilistic Models:} Methods that provide uncertainty quantification alongside point forecasts
-\end{itemize}
-
-This diverse model portfolio enables systematic evaluation of how different modeling approaches respond to weather stability variations, addressing the core research questions regarding model robustness.
-
-\subsection{Baseline Models}
-
-\subsubsection{Persistence Model}
-
-The persistence model serves as the fundamental baseline, assuming that the next-hour generation equals the current-hour generation:
-
-\begin{equation}
-\hat{y}_{t+h} = y_t
-\end{equation}
-
-where $h$ is the forecast horizon (primary: 1 hour). This model provides a benchmark against which all other methods must demonstrate improvement~\cite{giebel2011state}.
-
-\subsubsection{Seasonal Persistence}
-
-The seasonal persistence model exploits temporal patterns by using the same hour from the previous week:
-
-\begin{equation}
-\hat{y}_{t+h} = y_{t+h-168}
-\end{equation}
-
-where 168 represents the weekly period (7 days × 24 hours). This model captures weekly seasonality patterns that are particularly relevant for renewable energy forecasting, where similar weather conditions often recur on weekly timescales.
-
-\subsection{Statistical Models}
-
-\subsubsection{SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous Variables)}
-
-SARIMAX extends the classical ARIMA framework to incorporate seasonal patterns and exogenous weather variables~\cite{szostek2024analysis}. The model is specified as SARIMA$(p,d,q)(P,D,Q)_s$ with exogenous regressors:
-
-\begin{equation}
-\Phi(B^s)\phi(B)(1-B)^d(1-B^s)^D y_t = \Theta(B^s)\theta(B)\epsilon_t + \sum_{i=1}^{k} \beta_i x_{i,t}
-\end{equation}
-
-where $B$ is the backshift operator, $(p,d,q)$ are non-seasonal parameters, $(P,D,Q)$ are seasonal parameters, $s=24$ is the seasonal period (daily cycle), and $x_{i,t}$ are exogenous weather features.
-
-\textbf{Implementation Details:}
-\begin{itemize}
-    \item Parameter search space: $p \in [0,5]$, $d \in [0,2]$, $q \in [0,5]$, $P \in [0,2]$, $D \in [0,1]$, $Q \in [0,2]$
-    \item Model selection: Akaike Information Criterion (AIC) minimization
-    \item Exogenous features: Weather stability index (WSI), cloudiness, wind speed, temperature, and temporal encodings
-    \item Training: Maximum likelihood estimation using the Kalman filter
-\end{itemize}
-
-\subsubsection{Prophet}
-
-Prophet is an additive time series forecasting model developed by Facebook that automatically handles seasonality, trends, and holidays~\cite{taylor2018forecasting}. The model decomposes the time series as:
-
-\begin{equation}
-y(t) = g(t) + s(t) + h(t) + \epsilon_t
-\end{equation}
-
-where $g(t)$ is the trend component, $s(t)$ is the seasonal component, $h(t)$ represents holiday effects, and $\epsilon_t$ is the error term.
-
-\textbf{Implementation Details:}
-\begin{itemize}
-    \item Seasonality modes: Daily (24-hour period), weekly (7-day period), and yearly (365.25-day period)
-    \item Trend modeling: Piecewise linear or logistic growth
-    \item Regressors: Weather stability classifications and meteorological features as additional regressors
-    \item Fitting: Bayesian parameter estimation with MCMC sampling
-\end{itemize}
-
-\subsection{Gradient Boosting Models}
-
-Gradient boosting models are tree-based ensemble methods that have demonstrated strong performance in renewable energy forecasting~\cite{devaraj2021holistic, alkhayat2021review}. These models learn non-linear relationships through additive combinations of decision trees.
-
-\subsubsection{LightGBM}
-
-LightGBM (Light Gradient Boosting Machine) is a highly efficient gradient boosting framework that uses leaf-wise tree growth with depth limitation~\cite{gu2017lightgbm}. The model minimizes the objective function:
-
-\begin{equation}
-\mathcal{L} = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} \Omega(f_k)
-\end{equation}
-
-where $l$ is the loss function (mean squared error for regression), $f_k$ are the decision trees, and $\Omega$ is the regularization term.
-
-\textbf{Hyperparameter Tuning:} Optuna-based optimization with the following search space:
-\begin{itemize}
-    \item Learning rate: $[0.01, 0.3]$
-    \item Number of leaves: $[31, 127]$
-    \item Feature fraction: $[0.5, 1.0]$
-    \item Bagging fraction: $[0.5, 1.0]$
-    \item Minimum data in leaf: $[5, 20]$
-    \item Maximum depth: $[5, 15]$
-\end{itemize}
-
-\subsubsection{XGBoost}
-
-XGBoost (Extreme Gradient Boosting) extends gradient boosting with additional regularization and efficient tree construction algorithms~\cite{chen2016xgboost}. The objective function includes both L1 and L2 regularization:
-
-\begin{equation}
-\mathcal{L} = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} [\gamma T_k + \frac{1}{2}\lambda ||w_k||^2 + \alpha ||w_k||_1]
-\end{equation}
-
-where $T_k$ is the number of leaves in tree $k$, $w_k$ are leaf weights, and $\gamma$, $\lambda$, $\alpha$ are regularization parameters.
-
-\subsubsection{CatBoost}
-
-CatBoost (Categorical Boosting) is designed to handle categorical features effectively while reducing overfitting through ordered boosting~\cite{prokhorenkova2018catboost}. The algorithm uses permutation-based methods to avoid target leakage in feature statistics.
-
-\subsection{Probabilistic Forecasting Models}
-
-\subsubsection{Quantile Regression LightGBM}
-
-Quantile regression provides probabilistic forecasts by predicting multiple quantiles of the conditional distribution~\cite{koenker2001quantile}. The model is trained to minimize the quantile loss:
-
-\begin{equation}
-L_\tau(y, \hat{y}) = \begin{cases}
-\tau(y - \hat{y}) & \text{if } y \geq \hat{y} \\
-(1-\tau)(\hat{y} - y) & \text{if } y < \hat{y}
-\end{cases}
-\end{equation}
-
-where $\tau \in \{0.05, 0.25, 0.5, 0.75, 0.95\}$ are the predicted quantiles. This approach enables uncertainty quantification and prediction intervals for operational decision-making.
-
-\subsection{Feature Engineering}
-
-Feature engineering transforms raw observations into predictive features that capture temporal patterns, weather relationships, and stability regime information.
-
-\subsubsection{Temporal Features}
-
-Cyclical encoding of temporal variables captures periodic patterns:
-
-\begin{align}
-\text{hour\_sin} &= \sin\left(\frac{2\pi \cdot \text{hour}}{24}\right) \\
-\text{hour\_cos} &= \cos\left(\frac{2\pi \cdot \text{hour}}{24}\right) \\
-\text{doy\_sin} &= \sin\left(\frac{2\pi \cdot \text{day\_of\_year}}{365.25}\right) \\
-\text{doy\_cos} &= \cos\left(\frac{2\pi \cdot \text{day\_of\_year}}{365.25}\right)
-\end{align}
-
-These encodings preserve the cyclical nature of temporal features while enabling machine learning models to learn periodic relationships.
-
-\subsubsection{Weather Features}
-
-For solar PV forecasting:
-\begin{itemize}
-    \item Cloudiness (direct relationship with solar irradiance)
-    \item Sunshine duration (cumulative solar availability)
-    \item Temperature (affects PV panel efficiency)
-    \item Weather Stability Index (WSI) and stability classifications
-\end{itemize}
-
-For wind power forecasting:
-\begin{itemize}
-    \item Wind speed (primary driver of wind power generation)
-    \item Wind direction (affects power output through wind farm layout)
-    \item Atmospheric pressure (indicates pressure gradients driving wind)
-    \item Temperature (affects air density and turbine efficiency)
-    \item Weather Stability Index (WSI) and stability classifications
-\end{itemize}
-
-\subsubsection{Stability Regime Features}
-
-Weather stability classifications are incorporated as features to enable models to learn regime-specific relationships:
-\begin{itemize}
-    \item Binary stability flags (GMM, K-Means, percentile-based)
-    \item Stability probabilities (continuous uncertainty measures)
-    \item Regime duration (persistence of current stability state)
-    \item Rolling stability statistics (6-hour and 24-hour means)
-\end{itemize}
-
-\subsection{Walk-Forward Validation Strategy}
-
-Walk-forward validation mimics operational forecasting conditions by training models on historical data and evaluating on subsequent periods. This approach prevents data leakage and provides realistic performance estimates~\cite{bergmeir2012note}.
-
-\textbf{Configuration:}
-\begin{itemize}
-    \item Training window: 90 days (2,160 hours) of historical data
-    \item Step size: 7 days (168 hours) between retraining events
-    \item Forecast horizons: 1, 3, 6, and 24 hours (primary focus: 1 hour)
-    \item Minimum training samples: 720 hours (30 days) required for model training
-\end{itemize}
-
-This strategy ensures that models are continuously updated with recent data while maintaining sufficient training data for stable parameter estimation. The rolling window approach also captures temporal evolution in weather patterns and generation characteristics.
-
-\subsection{Hyperparameter Optimization}
-
-Hyperparameter tuning is performed using Optuna~\cite{akiba2019optuna}, a Bayesian optimization framework that efficiently explores the hyperparameter space. The optimization process:
+For comparison, we could use a simpler approach that directly correlates raw weather variables with forecasting errors:
 
 \begin{enumerate}
-    \item Defines search spaces for each model's hyperparameters
-    \item Uses Tree-structured Parzen Estimator (TPE) for efficient exploration
-    \item Evaluates candidate configurations using walk-forward validation
-    \item Selects optimal hyperparameters based on validation performance (minimizing MAE)
-    \item Limits optimization to 50 trials per model to balance performance and computational efficiency
+    \item \textbf{Correlation Analysis:} Compute Pearson correlation between each of the 11 raw weather variables and forecasting error magnitude (MAE, RMSE).
+    \item \textbf{Feature Selection:} Select the top 3--5 variables with highest correlation (e.g., wind speed, pressure, temperature).
+    \item \textbf{Simple Index:} Create a weighted sum: $\text{Simple Index} = w_1 \cdot \text{wind} + w_2 \cdot \text{pressure} + w_3 \cdot \text{temperature}$ where weights are correlation coefficients.
+    \item \textbf{Classification:} Use percentile threshold (e.g., top 25\% = unstable).
 \end{enumerate}
 
-All hyperparameter configurations are logged and saved to ensure reproducibility and enable post-hoc analysis of model behavior across different parameter settings.
+\textbf{Trade-offs:} This simpler approach would be faster to implement and easier to interpret. However, it has several limitations: (1) it ignores temporal context (a single hour's value doesn't capture stability), (2) it requires scale normalization anyway (wind in m/s vs pressure in hPa), (3) it may miss non-linear relationships, and (4) it doesn't account for regime persistence. The current feature engineering approach addresses these limitations by explicitly modeling variability, trends, and temporal context, which are fundamental to weather stability. The added complexity is justified by the need to capture the temporal nature of stability, not just instantaneous weather conditions.
+
+\section{Renewable Energy Prediction Models}
+% \label{sec:prediction_models}
+
+% This section describes the implementation of forecasting models for renewable energy production, encompassing both statistical and machine learning approaches. The model selection rationale is based on established methods in the literature~\cite{giebel2011state, antonanzas2016review, sedai2023performance, devaraj2021holistic, alkhayat2021review}, with a focus on state-of-the-art methods that have demonstrated strong performance in renewable energy forecasting applications.
+
+% \subsection{Model Selection Rationale}
+
+% The implemented models span multiple categories to enable comprehensive comparison across modeling paradigms:
+
+%\begin{itemize}
+%    \item \textbf{Baseline Models:} Simple persistence-based methods that serve as performance benchmarks and establish minimum acceptable accuracy thresholds
+%    \item \textbf{Statistical Models:} Classical time series methods that leverage temporal dependencies and seasonality patterns
+%    \item \textbf{Gradient Boosting Models:} Tree-based ensemble methods that capture non-linear relationships and feature interactions
+%    \item \textbf{Probabilistic Models:} Methods that provide uncertainty quantification alongside point forecasts
+%\end{itemize}
+
+%This diverse model portfolio enables systematic evaluation of how different modeling approaches respond to weather stability variations, addressing the core research questions regarding model robustness.
+
+%\subsection{Baseline Models}
+
+%\subsubsection{Persistence Model}
+
+%The persistence model serves as the fundamental baseline, assuming that the next-hour generation equals the current-hour generation:
+
+%\begin{equation}
+% \hat{y}_{t+h} = y_t
+% \end{equation}
+
+% where $h$ is the forecast horizon (primary: 1 hour). This model provides a benchmark against which all other methods must demonstrate improvement~\cite{giebel2011state}.
+
+% \subsubsection{Seasonal Persistence}
+
+% The seasonal persistence model exploits temporal patterns by using the same hour from the previous week:
+
+% \begin{equation}
+% \hat{y}_{t+h} = y_{t+h-168}
+% \end{equation}
+
+% where 168 represents the weekly period (7 days × 24 hours). This model captures weekly seasonality patterns that are particularly relevant for renewable energy forecasting, where similar weather conditions often recur on weekly timescales.
+
+% \subsection{Statistical Models}
+
+% \subsubsection{SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous Variables)}
+
+% SARIMAX extends the classical ARIMA framework to incorporate seasonal patterns and exogenous weather variables~\cite{szostek2024analysis}. The model is specified as SARIMA$(p,d,q)(P,D,Q)_s$ with exogenous regressors:
+
+% \begin{equation}
+% \Phi(B^s)\phi(B)(1-B)^d(1-B^s)^D y_t = \Theta(B^s)\theta(B)\epsilon_t + \sum_{i=1}^{k} \beta_i x_{i,t}
+% \end{equation}
+
+% where $B$ is the backshift operator, $(p,d,q)$ are non-seasonal parameters, $(P,D,Q)$ are seasonal parameters, $s=24$ is the seasonal period (daily cycle), and $x_{i,t}$ are exogenous weather features.
+
+%\textbf{Implementation Details:}
+%\begin{itemize}
+%    \item Parameter search space: $p \in [0,5]$, $d \in [0,2]$, $q \in [0,5]$, $P \in [0,2]$, $D \in [0,1]$, $Q \in [0,2]$
+%    \item Model selection: Akaike Information Criterion (AIC) minimization
+%    \item Exogenous features: Weather stability index (WSI), cloudiness, wind speed, temperature, and temporal encodings
+%    \item Training: Maximum likelihood estimation using the Kalman filter
+%\end{itemize}
+
+%\subsubsection{Prophet}
+
+% Prophet is an additive time series forecasting model developed by Facebook that automatically handles seasonality, trends, and holidays~\cite{taylor2018forecasting}. The model decomposes the time series as:
+
+% \begin{equation}
+% y(t) = g(t) + s(t) + h(t) + \epsilon_t
+% \end{equation}
+
+%where $g(t)$ is the trend component, $s(t)$ is the seasonal component, $h(t)$ represents holiday effects, and $\epsilon_t$ is the error term.
+
+%\textbf{Implementation Details:}
+%\begin{itemize}
+%    \item Seasonality modes: Daily (24-hour period), weekly (7-day period), and yearly (365.25-day period)
+%    \item Trend modeling: Piecewise linear or logistic growth
+%    \item Regressors: Weather stability classifications and meteorological features as additional regressors
+%    \item Fitting: Bayesian parameter estimation with MCMC sampling
+%\end{itemize}
+
+% \subsection{Gradient Boosting Models}
+
+% Gradient boosting models are tree-based ensemble methods that have demonstrated strong performance in renewable energy forecasting~\cite{devaraj2021holistic, alkhayat2021review}. These models learn non-linear relationships through additive combinations of decision trees.
+
+% \subsubsection{LightGBM}
+
+% LightGBM (Light Gradient Boosting Machine) is a highly efficient gradient boosting framework that uses leaf-wise tree growth with depth limitation~\cite{gu2017lightgbm}. The model minimizes the objective function:
+
+% \begin{equation}
+% \mathcal{L} = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} \Omega(f_k)
+% \end{equation}
+
+% where $l$ is the loss function (mean squared error for regression), $f_k$ are the decision trees, and $\Omega$ is the regularization term.
+
+%\textbf{Hyperparameter Tuning:} Optuna-based optimization with the following search space:
+%\begin{itemize}
+%    \item Learning rate: $[0.01, 0.3]$
+%    \item Number of leaves: $[31, 127]$
+%    \item Feature fraction: $[0.5, 1.0]$
+%    \item Bagging fraction: $[0.5, 1.0]$
+%    \item Minimum data in leaf: $[5, 20]$
+%    \item Maximum depth: $[5, 15]$
+%\end{itemize}
+
+% \subsubsection{XGBoost}
+
+% XGBoost (Extreme Gradient Boosting) extends gradient boosting with additional regularization and efficient tree construction algorithms~\cite{chen2016xgboost}. The objective function includes both L1 and L2 regularization:
+
+% \begin{equation}
+% \mathcal{L} = \sum_{i=1}^{n} l(y_i, \hat{y}_i) + \sum_{k=1}^{K} [\gamma T_k + \frac{1}{2}\lambda ||w_k||^2 + \alpha ||w_k||_1]
+% \end{equation}
+
+% where $T_k$ is the number of leaves in tree $k$, $w_k$ are leaf weights, and $\gamma$, $\lambda$, $\alpha$ are regularization parameters.
+
+% \subsubsection{CatBoost}
+
+% CatBoost (Categorical Boosting) is designed to handle categorical features effectively while reducing overfitting through ordered boosting~\cite{prokhorenkova2018catboost}. The algorithm uses permutation-based methods to avoid target leakage in feature statistics.
+
+%\subsection{Probabilistic Forecasting Models}
+
+% \subsubsection{Quantile Regression LightGBM}
+
+% Quantile regression provides probabilistic forecasts by predicting multiple quantiles of the conditional distribution~\cite{koenker2001quantile}. The model is trained to minimize the quantile loss:
+
+% \begin{equation}
+% L_\tau(y, \hat{y}) = \begin{cases}
+% \tau(y - \hat{y}) & \text{if } y \geq \hat{y} \\
+% (1-\tau)(\hat{y} - y) & \text{if } y < \hat{y}
+% \end{cases}
+% \end{equation}
+
+% where $\tau \in \{0.05, 0.25, 0.5, 0.75, 0.95\}$ are the predicted quantiles. This approach enables uncertainty quantification and prediction intervals for operational decision-making.
+
+% \subsection{Feature Engineering}
+
+% Feature engineering transforms raw observations into predictive features that capture temporal patterns, weather relationships, and stability regime information.
+
+% \subsubsection{Temporal Features}
+
+% Cyclical encoding of temporal variables captures periodic patterns:
+
+%\begin{align}
+%\text{hour\_sin} &= \sin\left(\frac{2\pi \cdot \text{hour}}{24}\right) \\
+% \text{hour\_cos} &= \cos\left(\frac{2\pi \cdot \text{hour}}{24}\right) \\
+% \text{doy\_sin} &= \sin\left(\frac{2\pi \cdot \text{day\_of\_year}}{365.25}\right) \\
+% \text{doy\_cos} &= \cos\left(\frac{2\pi \cdot \text{day\_of\_year}}{365.25}\right)
+% \end{align}
+
+% These encodings preserve the cyclical nature of temporal features while enabling machine learning models to learn periodic relationships.
+
+% \subsubsection{Weather Features}
+
+% For solar PV forecasting:
+% \begin{itemize}
+%     \item Cloudiness (direct relationship with solar irradiance)
+%     \item Sunshine duration (cumulative solar availability)
+%     \item Temperature (affects PV panel efficiency)
+%     \item Weather Stability Index (WSI) and stability classifications
+% \end{itemize}
+
+% For wind power forecasting:
+% \begin{itemize}
+%     \item Wind speed (primary driver of wind power generation)
+%     \item Wind direction (affects power output through wind farm layout)
+%     \item Atmospheric pressure (indicates pressure gradients driving wind)
+%     \item Temperature (affects air density and turbine efficiency)
+%     \item Weather Stability Index (WSI) and stability classifications
+% \end{itemize}
+
+% \subsubsection{Stability Regime Features}
+
+% Weather stability classifications are incorporated as features to enable models to learn regime-specific relationships:
+% \begin{itemize}
+%     \item Binary stability flags (GMM, K-Means, percentile-based)
+%     \item Stability probabilities (continuous uncertainty measures)
+%     \item Regime duration (persistence of current stability state)
+%     \item Rolling stability statistics (6-hour and 24-hour means)
+% \end{itemize}
+
+%\subsection{Walk-Forward Validation Strategy}
+
+% Walk-forward validation mimics operational forecasting conditions by training models on historical data and evaluating on subsequent periods. This approach prevents data leakage and provides realistic performance estimates~\cite{bergmeir2012note}.
+
+%\textbf{Configuration:}
+% \begin{itemize}
+  %  \item Training window: 90 days (2,160 hours) of historical data
+%     \item Step size: 7 days (168 hours) between retraining events
+%     \item Forecast horizons: 1, 3, 6, and 24 hours (primary focus: 1 hour)
+%     \item Minimum training samples: 720 hours (30 days) required for model training
+% \end{itemize}
+
+% This strategy ensures that models are continuously updated with recent data while maintaining sufficient training data for stable parameter estimation. The rolling window approach also captures temporal evolution in weather patterns and generation characteristics.
+
+% \subsection{Hyperparameter Optimization}
+
+% Hyperparameter tuning is performed using Optuna~\cite{akiba2019optuna}, a Bayesian optimization framework that efficiently explores the hyperparameter space. The optimization process:
+
+%\begin{enumerate}
+%    \item Defines search spaces for each model's hyperparameters
+%    \item Uses Tree-structured Parzen Estimator (TPE) for efficient exploration
+%    \item Evaluates candidate configurations using walk-forward validation
+%    \item Selects optimal hyperparameters based on validation performance (minimizing MAE)
+%    \item Limits optimization to 50 trials per model to balance performance and computational efficiency
+%\end{enumerate}
+
+%All hyperparameter configurations are logged and saved to ensure reproducibility and enable post-hoc analysis of model behavior across different parameter settings.
 
 \section{Performance Evaluation}
 \label{sec:performance_evaluation}
 
-Performance evaluation methods include metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles) following established practices in renewable energy forecasting~\cite{giebel2011state, antonanzas2016review}. Stratified performance analysis by weather stability regime (stable vs unstable) enables systematic comparison across different weather conditions. Statistical tests for comparing performance include the Mann-Whitney U test~\cite{mann1947test}, Welch's t-test, and linear mixed-effects models. Effect size calculations~\cite{cohen1988statistical} (Cohen's d, percentage increase, rank-biserial correlation) quantify the practical significance of performance differences. Multiple testing correction procedures~\cite{benjamini1995controlling} (Bonferroni, False Discovery Rate) control the false discovery rate, and bootstrap confidence intervals provide uncertainty quantification for performance metrics.
+%Performance evaluation methods include metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles) following established practices in renewable energy forecasting~\cite{giebel2011state, antonanzas2016review}. Stratified performance analysis by weather stability regime (stable vs unstable) enables systematic comparison across different weather conditions. Statistical tests for comparing performance include the Mann-Whitney U test~\cite{mann1947test}, Welch's t-test, and linear mixed-effects models. Effect size calculations~\cite{cohen1988statistical} (Cohen's d, percentage increase, rank-biserial correlation) quantify the practical significance of performance differences. Multiple testing correction procedures~\cite{benjamini1995controlling} (Bonferroni, False Discovery Rate) control the false discovery rate, and bootstrap confidence intervals provide uncertainty quantification for performance metrics.
 
 % This section will describe performance evaluation methods, including:
 % - Metrics calculation (MAE, RMSE, MAPE, Bias, Forecast Skill, error percentiles)
