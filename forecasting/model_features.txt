@@ -1,0 +1,128 @@
+MODEL INPUTS (FEATURES) - VERSION 1: WITH STABILITY/REGIME FEATURES
+
+=== SOLAR GENERATION FEATURES ===
+- solar_generation_mw (1D: [N])
+- 555555555555555solar_generation_lag_1h (1D: [N])
+- 555555555555555solar_generation_lag_24h (1D: [N])
+- 555555555555555solar_generation_lag_168h (1D: [N])
+- 555555555555555solar_generation_rolling_mean_24h (1D: [N])
+- 555555555555555solar_generation_rolling_std_24h (1D: [N])
+
+=== WIND GENERATION FEATURES ===
+- wind_generation_mw (1D: [N])
+- 555555555555555wind_generation_lag_1h (1D: [N])
+- 555555555555555wind_generation_lag_24h (1D: [N])
+- 555555555555555wind_generation_lag_168h (1D: [N])
+- 555555555555555wind_generation_rolling_mean_24h (1D: [N])
+- 555555555555555wind_generation_rolling_std_24h (1D: [N])
+
+=== WEATHER ATTRIBUTES ===
+- cloudiness_mean (1D: [N])
+- dew_point (1D: [N])
+- extreme_wind_speed_911 (1D: [N])
+- temperature_mean (1D: [N])
+- humidity_mean (1D: [N])
+- absolute_humidity_std (1D: [N])
+- vapor_pressure_std (1D: [N])
+- wind_speed (1D: [N])
+- wind_direction (1D: [N])
+- wind_speed_synop (1D: [N])
+- wind_direction_synop (1D: [N])
+- sunshine_duration (1D: [N])
+- precipitation_amount (1D: [N])
+- precipitation_form (1D: [N])
+- pressure (1D: [N])
+- pressure_station_level (1D: [N])
+- visibility (1D: [N])
+- soil_temperature_* (1D: [N], multiple depths)
+
+=== STABILITY/REGIME FEATURES ===
+- WSI_smoothed (continuous)
+- stability_label_gmm (discrete GMM)
+- stability_probability_gmm (soft GMM)
+- stability_label_kmeans (discrete K-Means)
+
+=== TIME/CALENDAR FEATURES (ENGINEERED) ===
+- hour_of_day_sin (1D: [N])
+- hour_of_day_cos (1D: [N])
+- weekday_sin (1D: [N])
+- weekday_cos (1D: [N])
+- weekend (1D: [N]) - binary indicator (0=weekday, 1=weekend)
+- month_sin (1D: [N])
+- month_cos (1D: [N])
+
+
+MODEL INPUTS (FEATURES) - VERSION 2: WITHOUT STABILITY/REGIME FEATURES
+
+=== SOLAR GENERATION FEATURES ===
+- solar_generation_mw (1D: [N])
+- 555555555555555solar_generation_lag_1h (1D: [N])
+- 555555555555555solar_generation_lag_24h (1D: [N])
+- 555555555555555solar_generation_lag_168h (1D: [N])
+- 555555555555555solar_generation_rolling_mean_24h (1D: [N])
+- 555555555555555solar_generation_rolling_std_24h (1D: [N])
+
+=== WIND GENERATION FEATURES ===
+- wind_generation_mw (1D: [N])
+- 555555555555555wind_generation_lag_1h (1D: [N])
+- 555555555555555wind_generation_lag_24h (1D: [N])
+- 555555555555555wind_generation_lag_168h (1D: [N])
+- 555555555555555wind_generation_rolling_mean_24h (1D: [N])
+- 555555555555555wind_generation_rolling_std_24h (1D: [N])
+
+=== WEATHER ATTRIBUTES ===
+- temperature_mean (1D: [N])
+- humidity_mean (1D: [N])
+- dew_point (1D: [N])
+- absolute_humidity_std (1D: [N])
+- vapor_pressure_std (1D: [N])
+- wind_speed (1D: [N])
+- wind_direction (1D: [N])
+- wind_speed_synop (1D: [N])
+- wind_direction_synop (1D: [N])
+- extreme_wind_speed_911 (1D: [N])
+- cloudiness_mean (1D: [N])
+- sunshine_duration (1D: [N])
+- precipitation_amount (1D: [N])
+- precipitation_form (1D: [N])
+- pressure (1D: [N])
+- pressure_station_level (1D: [N])
+- visibility (1D: [N])
+- soil_temperature_* (1D: [N], multiple depths)
+
+=== TIME/CALENDAR FEATURES (ENGINEERED) ===
+- 555555555555555hour_of_day_sin (1D: [N])
+- 555555555555555hour_of_day_cos (1D: [N])
+- 555555555555555weekday_sin (1D: [N])
+- 555555555555555weekday_cos (1D: [N])
+- 555555555555555weekend (1D: [N]) - binary indicator (0=weekday, 1=weekend)
+- 555555555555555month_sin (1D: [N])
+- 555555555555555month_cos (1D: [N])
+
+
+MODEL OUTPUTS (TARGETS):
+
+- solar_generation_forecast_mw (1D: [N, H]) where H = forecast horizon
+- wind_generation_forecast_mw (1D: [N, H]) where H = forecast horizon
+
+
+=== NOTE: WHY BOTH SIN AND COS FOR CYCLICAL FEATURES ===
+
+Using both hour_of_day_sin and hour_of_day_cos encodes the hour as a cyclical feature.
+
+Why both are needed:
+- Hour is cyclical: 23 and 0 are adjacent, but a raw number (0-23) makes them appear far apart.
+- Sin and cos together uniquely represent each hour on a circle.
+- Using only one would map multiple hours to the same value.
+
+How it works:
+- hour_of_day_sin = sin(2π × hour / 24)
+- hour_of_day_cos = cos(2π × hour / 24)
+
+This preserves the cyclical relationship (e.g., 23 and 0 are close) and gives the model a continuous, periodic representation of time.
+
+The same logic applies to:
+- weekday_sin and weekday_cos for the 7-day cycle (weekday = sin(2π × day_of_week / 7))
+- month_sin and month_cos for the 12-month cycle (month = sin(2π × month / 12))
+
+The weekend binary indicator (0=weekday, 1=weekend) captures weekday vs weekend patterns that may differ from the cyclical weekday encoding.

@@ -879,7 +879,27 @@ The following variability features are computed, each with specific meteorologic
 x_{normalized} = \frac{x - \text{median}(x)}{\text{IQR}(x)}
 \end{equation}
 
-where IQR = $Q_3 - Q_1$ (interquartile range). \textbf{Why Not Z-Score Normalization?} Z-score normalization ($z = (x - \mu)/\sigma$) uses mean and standard deviation, which are sensitive to outliers. Weather data contains legitimate extreme events (storms, heat waves) that should not dominate the normalization process. Robust scaling using median and IQR is resistant to outliers and extreme events~\cite{huber1981robust, rousseeuw1993alternatives}. This ensures that a single extreme event doesn't distort the entire feature distribution. \textbf{Why Orient Features So Higher = More Instability?} All features are oriented so higher values indicate more instability. This ensures that when features are combined, they all contribute in the same direction: higher WSI = more instability. Without this orientation, some features would increase WSI while others decrease it, making interpretation difficult.
+where IQR = $Q_3 - Q_1$ (interquartile range). 
+
+\textbf{Important: This is NOT Min-Max Normalization (0--1 scaling).} There are different types of normalization, and we use robust normalization, not min-max normalization. The key differences are:
+
+\begin{itemize}
+    \item \textbf{Min-Max Normalization:} $x_{norm} = \frac{x - x_{min}}{x_{max} - x_{min}}$ produces values in the range [0, 1]. This is sensitive to outliers because a single extreme value ($x_{min}$ or $x_{max}$) determines the entire scaling.
+    
+    \item \textbf{Robust Normalization (our approach):} $x_{norm} = \frac{x - \text{median}(x)}{\text{IQR}(x)}$ produces values centered around 0, with no fixed range. Values can be negative (below median), near zero (at median), or positive (above median). The range depends on how far values deviate from the median, measured in IQR units.
+    
+    \item \textbf{Z-Score Normalization:} $z = \frac{x - \mu}{\sigma}$ also centers around 0, but uses mean and standard deviation, which are sensitive to outliers.
+\end{itemize}
+
+\textbf{Why Not Min-Max Normalization (0--1)?} Min-max normalization would scale all features to [0, 1], but this has critical disadvantages for weather data: (1) \textit{Outlier sensitivity:} A single extreme event (e.g., record-breaking storm) would compress all other values into a narrow range. (2) \textit{Loss of interpretability:} Values near 0.5 don't have clear meaning (are they stable or unstable?). (3) \textit{Distribution shape:} Min-max doesn't account for the distribution shape---it only uses the extremes. (4) \textit{New data problems:} If new data contains values outside the original min-max range, normalization breaks down.
+
+\textbf{Why Robust Normalization Instead?} Robust normalization using median/IQR: (1) \textit{Outlier resistance:} Median and IQR ignore extreme values, so a single storm doesn't distort the scaling. (2) \textit{Interpretability:} Values near 0 represent typical (median) conditions; positive values indicate above-normal instability; negative values indicate below-normal instability (more stable). (3) \textit{Distribution-aware:} Uses quartiles (25th, 50th, 75th percentiles) which capture the distribution shape. (4) \textit{Robust to new data:} New extreme values don't break the normalization---they just produce large positive or negative normalized values.
+
+\textbf{Value Range After Robust Normalization:} After robust normalization, features are centered around 0. Typically, about 50\% of values fall between -0.5 and +0.5 (within 0.5 IQR units of the median), about 25\% are below -0.5 (very stable), and about 25\% are above +0.5 (unstable). Extreme values can extend beyond ±2 or ±3, representing very unusual conditions. This is why WSI values range from approximately -0.55 to +0.70 (instantaneous) and -0.366 to +0.663 (smoothed), not 0--1.
+
+\textbf{Why Not Z-Score Normalization?} Z-score normalization ($z = (x - \mu)/\sigma$) uses mean and standard deviation, which are sensitive to outliers. Weather data contains legitimate extreme events (storms, heat waves) that should not dominate the normalization process. Robust scaling using median and IQR is resistant to outliers and extreme events~\cite{huber1981robust, rousseeuw1993alternatives}. This ensures that a single extreme event doesn't distort the entire feature distribution. 
+
+\textbf{Why Orient Features So Higher = More Instability?} All features are oriented so higher values indicate more instability. This ensures that when features are combined, they all contribute in the same direction: higher WSI = more instability. Without this orientation, some features would increase WSI while others decrease it, making interpretation difficult.
 
 \begin{figure}[H]
     \centering
@@ -979,6 +999,8 @@ Temporal smoothing is applied using a median filter with kernel size 3:
 \textbf{Why Centered Kernel?} The median filter uses $[t-1, t, t+1]$, a centered kernel that includes past, present, and future values. This provides symmetric smoothing with no phase lag. For operational applications where future values aren't available, a backward-looking kernel $[t-2, t-1, t]$ can be used, but this introduces 1-hour lag. The centered kernel provides the best estimate for analysis purposes.
 
 \textbf{Interaction with Rolling Window:} The rolling window (6 hours) and temporal smoothing (3 hours) work together: the rolling window captures synoptic-scale patterns, while the median filter removes residual high-frequency noise. This two-stage approach is more effective than either method alone.
+
+\paragraph{WSI Value Flow and Observed Range.} Each processing stage transforms the WSI values in a predictable way. (1) \textit{Feature normalization} uses robust normalization (median/IQR), not min-max scaling. This centers every engineered feature around zero (median) and scales it by the interquartile range. The result is values that can be negative (below median = more stable), near zero (at median = typical), or positive (above median = more unstable). This is fundamentally different from min-max normalization which would produce values in [0, 1]. After robust normalization, stable conditions produce values near 0 or negative, while unstable conditions produce positive excursions. (2) \textit{Instantaneous WSI} averages the normalized features; since normalized features are centered around 0, the WSI also oscillates around zero. In practice, the bulk of instantaneous WSI values fall between roughly $[-0.55, 0.70]$. Positive excursions correspond to simultaneous increases in variability, trends, and extreme event flags, signalling potential instability. (3) \textit{Rolling-window statistics} attenuate isolated peaks through averaging; the 6-hour mean narrows the range to about $[-0.42, 0.65]$ while the within-window standard deviation highlights sustained volatility. The rolling window reduces noise variance, making the signal cleaner while maintaining the zero-centered property. (4) \textit{Temporal smoothing} removes residual spikes using median filtering, producing the smoothed WSI $\text{WSI}_{\text{smoothed}}$. Over the 2024 dataset this smoothed index spans $[-0.366, 0.663]$ with mean $0.051$ and standard deviation $0.176$ (Section~\ref{sec:wsi_results}). The mean is slightly positive ($0.051$) because there are more periods with above-median instability than below-median stability, but the distribution remains centered near zero. Values below zero indicate stable regimes (below-median instability), values near zero denote transitional conditions (near-median), and pronounced positive values mark unstable weather (above-median instability). (5) Finally, \textit{GMM classification} converts the continuous index into probabilistic stability labels, with the high-WSI cluster (positive values) labelled unstable and the low-WSI cluster (negative/near-zero values) labelled stable. This step-wise transformation ensures the stability signal becomes progressively cleaner before discrete labels are assigned, while maintaining interpretability through the zero-centered normalization scheme.
 
 \subsection{Classification Methods}
 
@@ -1434,7 +1456,7 @@ Seasonal patterns, shown in Figure~\ref{fig:seasonal_patterns}, reveal strong mo
 
 \subsection{Distribution Characteristics}
 
-The distribution of generation values, shown in Figure~\ref{fig:generation_distributions}, reveals fundamental differences between solar and wind generation. Solar generation exhibits a highly right-skewed distribution with a large mode near zero, reflecting the many nighttime hours with near-zero generation. Wind generation shows a more balanced distribution centered around the mean, consistent with more continuous wind resource availability.
+The distribution of generation values, shown in Figure~\ref{fig:generation_distributions}, reveals fundamental differences between solar and wind generation. Solar generation exhibits a highly right-skewed distribution with a large mode near zero, reflecting the many nighttime hours with near-zero generation. Wind generation shows a more balanced distribution centered around the mean, consistent with the more continuous nature of wind resource availability.
 
 \begin{figure}[H]
     \centering
