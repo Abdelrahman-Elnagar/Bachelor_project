@@ -9,7 +9,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=64
 #SBATCH --mem=300G
-#SBATCH --time=72:00:00
+#SBATCH --time=3:00:00
 
 source ~/miniconda3/etc/profile.d/conda.sh
 
