@@ -1,0 +1,17 @@
+/usr/bin/python
+Python 3.9.18
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n562
+Job ID: 2309309
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:11:44 core-walltime
+Job Wall-clock time: 00:00:11
+Memory Utilized: 10.15 MB
+Memory Efficiency: 0.00% of 300.00 GB (300.00 GB/node)
