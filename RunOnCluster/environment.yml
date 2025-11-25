@@ -1,0 +1,21 @@
+name: bachelor_analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scikit-learn
+  - pip
+  - pip:
+    - hyperopt
+    - prophet
+    - tbats
+    - statsmodels
+    - xgboost
+    - lightgbm
+    - catboost
+    - torch
+    - neuralforecast
+
