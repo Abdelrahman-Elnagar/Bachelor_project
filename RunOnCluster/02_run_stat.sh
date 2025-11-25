@@ -3,7 +3,7 @@
 #SBATCH --job-name=run_stat
 #SBATCH --output=run_stat.out
 #SBATCH --error=run_stat.err
-#SBATCH --partition=gpu_h100
+#SBATCH --partition=gpu_a100_short
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1

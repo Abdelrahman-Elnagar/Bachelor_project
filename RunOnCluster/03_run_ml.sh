@@ -3,7 +3,7 @@
 #SBATCH --job-name=run_ml
 #SBATCH --output=run_ml.out
 #SBATCH --error=run_ml.err
-#SBATCH --partition=gpu_h100
+#SBATCH --partition=gpu_a100_short
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
