@@ -167,28 +167,32 @@ def train_rf(params, X_tr, y_tr, X_te, y_te):
     return {'loss': rmse, 'status': STATUS_OK, 'model': model}
 
 def train_nf_lstm(params, df_train, df_test):
-    # Extract exog cols
-    exog_cols = [c for c in df_train.columns if c not in ['unique_id', 'ds', 'y']]
-    h = len(df_test)
-    
-    model = LSTM(h=h, input_size=min(h, 96), loss=MAE(),
-                 hidden_size=params['hidden_size'],
-                 num_layers=params['num_layers'],
-                 dropout=params['dropout'],
-                 max_steps=params['max_steps'],
-                 futr_exog_list=exog_cols,
-                 accelerator=DEVICE) # 'cuda' or 'cpu'
-    
-    nf = NeuralForecast(models=[model], freq='H')
-    nf.fit(df=df_train)
-    
-    futr_df = df_test.drop(columns=['y'])
-    fcst = nf.predict(futr_df=futr_df)
-    
-    preds = fcst['LSTM'].values
-    y_true = df_test['y'].values
-    rmse = np.sqrt(mean_squared_error(y_true, preds))
-    return {'loss': rmse, 'status': STATUS_OK, 'model_obj': nf}
+    try:
+        # Extract exog cols
+        exog_cols = [c for c in df_train.columns if c not in ['unique_id', 'ds', 'y']]
+        h = len(df_test)
+        
+        model = LSTM(h=h, input_size=min(h, 96), loss=MAE(),
+                     hidden_size=params['hidden_size'],
+                     num_layers=params['num_layers'],
+                     dropout=params['dropout'],
+                     max_steps=params['max_steps'],
+                     futr_exog_list=exog_cols,
+                     accelerator=DEVICE) # 'cuda' or 'cpu'
+        
+        nf = NeuralForecast(models=[model], freq='H')
+        nf.fit(df=df_train)
+        
+        futr_df = df_test.drop(columns=['y'])
+        fcst = nf.predict(futr_df=futr_df)
+        
+        preds = fcst['LSTM'].values
+        y_true = df_test['y'].values
+        rmse = np.sqrt(mean_squared_error(y_true, preds))
+        return {'loss': rmse, 'status': STATUS_OK, 'model_obj': nf}
+    except Exception as e:
+        print(f"   [WARNING] LSTM training failed: {e}")
+        return {'loss': float('inf'), 'status': STATUS_OK, 'model_obj': None}
 
 def train_cnn_lstm(params, X_tr, y_tr, X_te, y_te):
     seq_len = params['seq_len']
@@ -271,6 +275,9 @@ if __name__ == "__main__":
                 y_true = y_te
             elif model_name == "lstm":
                 res = train_nf_lstm(best_params, df_tr, df_te)
+                if res.get('model_obj') is None:
+                    print(f"   [ERROR] LSTM training failed for {experiment}. Skipping...")
+                    continue
                 futr = df_te.drop(columns=['y'])
                 y_pred = res['model_obj'].predict(futr)['LSTM'].values
                 y_true = df_te['y'].values

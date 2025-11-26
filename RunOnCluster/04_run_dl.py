@@ -236,7 +236,7 @@ def train_and_eval(params, model_name, data):
 
     except Exception as e:
         print(f"   [WARNING] DL Trial failed: {e}")
-        return {'loss': float('inf'), 'status': STATUS_OK}
+        return {'loss': float('inf'), 'status': STATUS_OK, 'model_obj': None}
 
 def append_results_to_file(model_name, experiment, best_params, metrics):
     filename = f"{OUTPUT_DIR}/results_{model_name}.txt"
@@ -287,7 +287,12 @@ if __name__ == "__main__":
             # Final Run
             print("   [Training] Final Run with Champion Parameters...")
             final_run = train_and_eval(best_params, model_name, data)
-            nf_model = final_run['model_obj']
+            nf_model = final_run.get('model_obj', None)
+            
+            # Check if training succeeded
+            if nf_model is None:
+                print(f"   [ERROR] Final training failed for {experiment}. Skipping...")
+                continue
             
             # Generate Final Predictions
             futr_df = data['df_test'].drop(columns=['y'])

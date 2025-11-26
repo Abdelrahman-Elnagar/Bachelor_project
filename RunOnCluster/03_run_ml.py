@@ -130,11 +130,11 @@ def train_and_eval(params, model_name, X_train, y_train, X_test, y_test):
     
     # XGBoost Logic
     if model_name == "xgboost":
-        model = xgb.XGBRegressor(**params, n_jobs=-1, random_state=42)
-        # Fit with Early Stopping
+        model = xgb.XGBRegressor(**params, n_jobs=-1, random_state=42, 
+                                 early_stopping_rounds=50)
+        # Fit with Early Stopping (API v2.0+)
         model.fit(X_train, y_train, 
                   eval_set=[(X_test, y_test)], 
-                  early_stopping_rounds=50, 
                   verbose=False)
         
     # LightGBM Logic
