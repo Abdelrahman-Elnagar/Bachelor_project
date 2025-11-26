@@ -11,7 +11,7 @@
 #SBATCH --mem=300G
 #SBATCH --time=72:00:00
 
-source ~/miniconda3/etc/profile.d/conda.sh
+source /opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/etc/profile.d/conda.sh
 
 conda activate bachelor_analysis
 
