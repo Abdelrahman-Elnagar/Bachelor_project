@@ -1,0 +1,20 @@
+EXP: with_wsi_solar
+Params: {'cnn_filters': 32, 'kernel_size': 5, 'lr': 0.00792673230717149, 'lstm_hidden': 128, 'n_layers': 1, 'seq_len': 48}
+RMSE: 3901.5900
+MAE: 1645.6661
+---
+EXP: no_wsi_solar
+Params: {'cnn_filters': 64, 'kernel_size': 3, 'lr': 0.00885588151600563, 'lstm_hidden': 128, 'n_layers': 2, 'seq_len': 48}
+RMSE: 4086.9655
+MAE: 2619.5350
+---
+EXP: with_wsi_wind
+Params: {'cnn_filters': 64, 'kernel_size': 3, 'lr': 0.007829295734554861, 'lstm_hidden': 128, 'n_layers': 2, 'seq_len': 48}
+RMSE: 21166.5587
+MAE: 16780.1284
+---
+EXP: no_wsi_wind
+Params: {'cnn_filters': 64, 'kernel_size': 3, 'lr': 0.009282285356044572, 'lstm_hidden': 128, 'n_layers': 1, 'seq_len': 48}
+RMSE: 20937.6544
+MAE: 16521.7448
+---

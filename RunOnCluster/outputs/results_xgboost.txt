@@ -1,0 +1,40 @@
+==================================================
+MODEL: XGBOOST (Aggressive Tuning)
+==================================================
+
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-26 08:49:51
+Best Parameters: {'colsample_bytree': 0.8855668418433724, 'learning_rate': 0.02944170068420767, 'max_depth': 13, 'min_child_weight': 4, 'n_estimators': 2400, 'reg_alpha': 0.0030672192836386433, 'reg_lambda': 61.26679818734122, 'subsample': 0.7401759080529471}
+
+Performance Metrics:
+   MAE : 787.4067 MW
+   RMSE: 1401.5479 MW
+   R2  : 0.8871
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-26 08:53:05
+Best Parameters: {'colsample_bytree': 0.9572413564269429, 'learning_rate': 0.009541474223464557, 'max_depth': 14, 'min_child_weight': 9, 'n_estimators': 3700, 'reg_alpha': 0.0008887922147127914, 'reg_lambda': 42.143531578747215, 'subsample': 0.6233484862327361}
+
+Performance Metrics:
+   MAE : 721.1589 MW
+   RMSE: 1351.7789 MW
+   R2  : 0.8950
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-26 08:54:01
+Best Parameters: {'colsample_bytree': 0.7616271643389726, 'learning_rate': 0.038180308635546605, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 4100, 'reg_alpha': 1.0248741263024807e-05, 'reg_lambda': 4.520371894148268, 'subsample': 0.6985671459595459}
+
+Performance Metrics:
+   MAE : 3999.5491 MW
+   RMSE: 4925.9213 MW
+   R2  : 0.8537
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-26 08:57:40
+Best Parameters: {'colsample_bytree': 0.8798367846760923, 'learning_rate': 0.005172324900213101, 'max_depth': 14, 'min_child_weight': 9, 'n_estimators': 3700, 'reg_alpha': 2.0720310749121214, 'reg_lambda': 6.060665419255364e-05, 'subsample': 0.5029909940906294}
+
+Performance Metrics:
+   MAE : 3914.3085 MW
+   RMSE: 4870.0902 MW
+   R2  : 0.8570
+--------------------------------------------------

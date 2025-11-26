@@ -1,0 +1,191 @@
+/home/hu/hu_hu/hu_elnaab01/.conda/envs/bachelor_analysis/bin/python
+Python 3.10.19
+========================================
+   PHASE 5: LEGACY SUITE                
+   (RF, LSTM, CNN-LSTM)                 
+========================================
+
+>>> ENTERING ARENA: RANDOM_FOREST <<<
+
+   [Experiment] with_wsi_solar ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:00<00:05,  3.31trial/s, best loss: 2352.869776985314] 10%|█         | 2/20 [00:00<00:06,  2.72trial/s, best loss: 2352.869776985314] 15%|█▌        | 3/20 [00:01<00:06,  2.45trial/s, best loss: 2343.981735845659] 20%|██        | 4/20 [00:01<00:05,  3.00trial/s, best loss: 2323.014157214225] 25%|██▌       | 5/20 [00:01<00:05,  2.56trial/s, best loss: 2323.014157214225] 30%|███       | 6/20 [00:02<00:05,  2.46trial/s, best loss: 2323.014157214225] 35%|███▌      | 7/20 [00:02<00:05,  2.39trial/s, best loss: 2323.014157214225] 40%|████      | 8/20 [00:03<00:04,  2.44trial/s, best loss: 2323.014157214225] 45%|████▌     | 9/20 [00:03<00:04,  2.33trial/s, best loss: 2323.014157214225] 50%|█████     | 10/20 [00:04<00:04,  2.37trial/s, best loss: 2323.014157214225] 55%|█████▌    | 11/20 [00:04<00:04,  2.25trial/s, best loss: 2323.014157214225] 60%|██████    | 12/20 [00:05<00:04,  1.80trial/s, best loss: 2323.014157214225] 65%|██████▌   | 13/20 [00:05<00:03,  2.08trial/s, best loss: 2323.014157214225] 70%|███████   | 14/20 [00:06<00:03,  1.66trial/s, best loss: 2323.014157214225] 75%|███████▌  | 15/20 [00:07<00:03,  1.48trial/s, best loss: 2323.014157214225] 80%|████████  | 16/20 [00:08<00:02,  1.35trial/s, best loss: 2323.014157214225] 85%|████████▌ | 17/20 [00:09<00:02,  1.29trial/s, best loss: 2323.014157214225] 90%|█████████ | 18/20 [00:09<00:01,  1.54trial/s, best loss: 2323.014157214225] 95%|█████████▌| 19/20 [00:09<00:00,  1.84trial/s, best loss: 2323.014157214225]100%|██████████| 20/20 [00:10<00:00,  1.98trial/s, best loss: 2323.014157214225]100%|██████████| 20/20 [00:10<00:00,  1.96trial/s, best loss: 2323.014157214225]
+   [Training] Champion Run...
+   [Result] RMSE: 2323.01
+[REPORT] Saved outputs/results_random_forest.txt
+
+   [Experiment] no_wsi_solar ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:00<00:10,  1.80trial/s, best loss: 2327.868422090092] 10%|█         | 2/20 [00:01<00:11,  1.61trial/s, best loss: 2327.868422090092] 15%|█▌        | 3/20 [00:01<00:07,  2.18trial/s, best loss: 2311.9723185625217] 20%|██        | 4/20 [00:01<00:05,  2.68trial/s, best loss: 2311.9723185625217] 25%|██▌       | 5/20 [00:01<00:04,  3.10trial/s, best loss: 2308.856797501126]  30%|███       | 6/20 [00:02<00:04,  3.42trial/s, best loss: 2308.856797501126] 35%|███▌      | 7/20 [00:02<00:05,  2.29trial/s, best loss: 2308.856797501126] 40%|████      | 8/20 [00:03<00:04,  2.74trial/s, best loss: 2308.856797501126] 45%|████▌     | 9/20 [00:03<00:03,  2.94trial/s, best loss: 2308.856797501126] 50%|█████     | 10/20 [00:04<00:04,  2.18trial/s, best loss: 2308.856797501126] 55%|█████▌    | 11/20 [00:04<00:04,  1.85trial/s, best loss: 2308.856797501126] 60%|██████    | 12/20 [00:05<00:03,  2.05trial/s, best loss: 2308.856797501126] 65%|██████▌   | 13/20 [00:05<00:03,  2.14trial/s, best loss: 2308.856797501126] 70%|███████   | 14/20 [00:05<00:02,  2.59trial/s, best loss: 2308.856797501126] 75%|███████▌  | 15/20 [00:06<00:01,  2.71trial/s, best loss: 2308.856797501126] 80%|████████  | 16/20 [00:06<00:01,  2.94trial/s, best loss: 2308.856797501126] 85%|████████▌ | 17/20 [00:06<00:00,  3.10trial/s, best loss: 2308.856797501126] 90%|█████████ | 18/20 [00:07<00:00,  2.15trial/s, best loss: 2308.856797501126] 95%|█████████▌| 19/20 [00:07<00:00,  2.18trial/s, best loss: 2308.856797501126]100%|██████████| 20/20 [00:08<00:00,  1.77trial/s, best loss: 2308.856797501126]100%|██████████| 20/20 [00:08<00:00,  2.27trial/s, best loss: 2308.856797501126]
+   [Training] Champion Run...
+   [Result] RMSE: 2308.86
+[REPORT] Saved outputs/results_random_forest.txt
+
+   [Experiment] with_wsi_wind ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:00<00:03,  5.16trial/s, best loss: 4992.9202990694275] 10%|█         | 2/20 [00:01<00:12,  1.41trial/s, best loss: 4992.9202990694275] 15%|█▌        | 3/20 [00:01<00:08,  1.93trial/s, best loss: 4964.297905064667]  20%|██        | 4/20 [00:02<00:11,  1.42trial/s, best loss: 4964.297905064667] 25%|██▌       | 5/20 [00:02<00:08,  1.80trial/s, best loss: 4951.777714961942] 30%|███       | 6/20 [00:03<00:09,  1.54trial/s, best loss: 4951.777714961942] 35%|███▌      | 7/20 [00:03<00:06,  1.96trial/s, best loss: 4951.777714961942] 40%|████      | 8/20 [00:04<00:05,  2.37trial/s, best loss: 4951.777714961942] 45%|████▌     | 9/20 [00:04<00:03,  2.75trial/s, best loss: 4951.777714961942] 50%|█████     | 10/20 [00:04<00:03,  2.93trial/s, best loss: 4951.777714961942] 55%|█████▌    | 11/20 [00:04<00:02,  3.20trial/s, best loss: 4951.777714961942] 60%|██████    | 12/20 [00:05<00:03,  2.14trial/s, best loss: 4951.777714961942] 65%|██████▌   | 13/20 [00:05<00:02,  2.51trial/s, best loss: 4951.777714961942] 70%|███████   | 14/20 [00:06<00:02,  2.42trial/s, best loss: 4951.777714961942] 75%|███████▌  | 15/20 [00:06<00:02,  2.39trial/s, best loss: 4951.777714961942] 80%|████████  | 16/20 [00:07<00:02,  1.77trial/s, best loss: 4951.777714961942] 85%|████████▌ | 17/20 [00:08<00:01,  1.91trial/s, best loss: 4951.777714961942] 90%|█████████ | 18/20 [00:08<00:00,  2.06trial/s, best loss: 4951.777714961942] 95%|█████████▌| 19/20 [00:08<00:00,  2.24trial/s, best loss: 4951.777714961942]100%|██████████| 20/20 [00:09<00:00,  1.80trial/s, best loss: 4951.777714961942]100%|██████████| 20/20 [00:09<00:00,  2.06trial/s, best loss: 4951.777714961942]
+   [Training] Champion Run...
+   [Result] RMSE: 4951.78
+[REPORT] Saved outputs/results_random_forest.txt
+
+   [Experiment] no_wsi_wind ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:00<00:14,  1.31trial/s, best loss: 5049.183127389434] 10%|█         | 2/20 [00:01<00:09,  1.88trial/s, best loss: 4841.602161331003] 15%|█▌        | 3/20 [00:01<00:06,  2.60trial/s, best loss: 4841.602161331003] 20%|██        | 4/20 [00:01<00:06,  2.65trial/s, best loss: 4841.602161331003] 25%|██▌       | 5/20 [00:01<00:05,  2.96trial/s, best loss: 4841.602161331003] 30%|███       | 6/20 [00:02<00:05,  2.70trial/s, best loss: 4841.602161331003] 35%|███▌      | 7/20 [00:02<00:04,  3.04trial/s, best loss: 4841.602161331003] 40%|████      | 8/20 [00:03<00:04,  2.85trial/s, best loss: 4841.602161331003] 45%|████▌     | 9/20 [00:03<00:03,  2.99trial/s, best loss: 4841.602161331003] 50%|█████     | 10/20 [00:03<00:02,  3.38trial/s, best loss: 4827.34317255602] 55%|█████▌    | 11/20 [00:04<00:04,  2.24trial/s, best loss: 4827.34317255602] 60%|██████    | 12/20 [00:05<00:04,  1.91trial/s, best loss: 4827.34317255602] 65%|██████▌   | 13/20 [00:05<00:03,  1.90trial/s, best loss: 4827.34317255602] 70%|███████   | 14/20 [00:05<00:02,  2.05trial/s, best loss: 4827.34317255602] 75%|███████▌  | 15/20 [00:06<00:02,  2.17trial/s, best loss: 4827.34317255602] 80%|████████  | 16/20 [00:06<00:01,  2.60trial/s, best loss: 4827.34317255602] 85%|████████▌ | 17/20 [00:07<00:01,  2.10trial/s, best loss: 4827.34317255602] 90%|█████████ | 18/20 [00:07<00:00,  2.49trial/s, best loss: 4827.34317255602] 95%|█████████▌| 19/20 [00:08<00:00,  1.85trial/s, best loss: 4827.34317255602]100%|██████████| 20/20 [00:08<00:00,  2.20trial/s, best loss: 4799.877107853875]100%|██████████| 20/20 [00:08<00:00,  2.32trial/s, best loss: 4799.877107853875]
+   [Training] Champion Run...
+   [Result] RMSE: 4799.88
+[REPORT] Saved outputs/results_random_forest.txt
+
+>>> ENTERING ARENA: LSTM <<<
+
+   [Experiment] with_wsi_solar ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 24.67trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 39.93trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 50.69trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 58.51trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 64.52trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 69.28trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 73.12trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 76.31trial/s, best loss: inf] 45%|████▌     | 9/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 85.73trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 85.73trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 97.65trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed for with_wsi_solar. Skipping...
+
+   [Experiment] no_wsi_solar ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 53.79trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 73.26trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 83.52trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 89.45trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 93.75trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 96.82trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 99.08trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 100.83trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 102.23trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 103.38trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 104.40trial/s, best loss: inf] 60%|██████    | 12/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 113.75trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 113.75trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 113.50trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed for no_wsi_solar. Skipping...
+
+   [Experiment] with_wsi_wind ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 53.05trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 72.00trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 81.60trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 87.41trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 91.33trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 94.23trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 96.36trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 98.00trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 99.38trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 100.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 101.43trial/s, best loss: inf] 60%|██████    | 12/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 110.51trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 110.51trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 109.89trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed for with_wsi_wind. Skipping...
+
+   [Experiment] no_wsi_wind ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 56.95trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 76.31trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 85.68trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 91.67trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 95.66trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 98.54trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 100.71trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 102.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 103.67trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 103.65trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 104.47trial/s, best loss: inf] 60%|██████    | 12/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 113.82trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 113.82trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 114.48trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed for no_wsi_wind. Skipping...
+
+>>> ENTERING ARENA: CNN_LSTM <<<
+
+   [Experiment] with_wsi_solar ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:04<01:23,  4.40s/trial, best loss: 4557.603052970189] 10%|█         | 2/20 [00:06<00:57,  3.21s/trial, best loss: 4336.5073079763815] 15%|█▌        | 3/20 [00:09<00:50,  2.96s/trial, best loss: 4336.5073079763815] 20%|██        | 4/20 [00:12<00:45,  2.86s/trial, best loss: 4336.5073079763815] 25%|██▌       | 5/20 [00:14<00:39,  2.65s/trial, best loss: 4336.5073079763815] 30%|███       | 6/20 [00:17<00:37,  2.66s/trial, best loss: 4260.535966060029]  35%|███▌      | 7/20 [00:19<00:34,  2.66s/trial, best loss: 4260.535966060029] 40%|████      | 8/20 [00:22<00:30,  2.57s/trial, best loss: 4260.535966060029] 45%|████▌     | 9/20 [00:24<00:27,  2.50s/trial, best loss: 3889.4443799137302] 50%|█████     | 10/20 [00:26<00:24,  2.45s/trial, best loss: 3889.4443799137302] 55%|█████▌    | 11/20 [00:29<00:22,  2.52s/trial, best loss: 3889.4443799137302] 60%|██████    | 12/20 [00:31<00:19,  2.45s/trial, best loss: 3889.4443799137302] 65%|██████▌   | 13/20 [00:34<00:17,  2.53s/trial, best loss: 3889.4443799137302] 70%|███████   | 14/20 [00:36<00:14,  2.47s/trial, best loss: 3889.4443799137302] 75%|███████▌  | 15/20 [00:39<00:12,  2.53s/trial, best loss: 3889.4443799137302] 80%|████████  | 16/20 [00:42<00:10,  2.58s/trial, best loss: 3889.4443799137302] 85%|████████▌ | 17/20 [00:44<00:07,  2.62s/trial, best loss: 3889.4443799137302] 90%|█████████ | 18/20 [00:47<00:05,  2.53s/trial, best loss: 3889.4443799137302] 95%|█████████▌| 19/20 [00:49<00:02,  2.47s/trial, best loss: 3889.4443799137302]100%|██████████| 20/20 [00:51<00:00,  2.43s/trial, best loss: 3889.4443799137302]100%|██████████| 20/20 [00:51<00:00,  2.59s/trial, best loss: 3889.4443799137302]
+   [Training] Champion Run...
+   [Result] RMSE: 3901.59
+[REPORT] Saved outputs/results_cnn_lstm.txt
+
+   [Experiment] no_wsi_solar ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:02<00:50,  2.67s/trial, best loss: 4582.82473560619] 10%|█         | 2/20 [00:05<00:44,  2.48s/trial, best loss: 4433.613394076726] 15%|█▌        | 3/20 [00:07<00:43,  2.56s/trial, best loss: 4433.613394076726] 20%|██        | 4/20 [00:10<00:41,  2.60s/trial, best loss: 4433.613394076726] 25%|██▌       | 5/20 [00:12<00:37,  2.50s/trial, best loss: 4433.613394076726] 30%|███       | 6/20 [00:14<00:34,  2.43s/trial, best loss: 4433.613394076726] 35%|███▌      | 7/20 [00:17<00:31,  2.39s/trial, best loss: 4433.613394076726] 40%|████      | 8/20 [00:19<00:28,  2.38s/trial, best loss: 4423.6667070546455] 45%|████▌     | 9/20 [00:21<00:25,  2.36s/trial, best loss: 4325.521317241837]  50%|█████     | 10/20 [00:24<00:24,  2.47s/trial, best loss: 4325.521317241837] 55%|█████▌    | 11/20 [00:27<00:22,  2.54s/trial, best loss: 4325.521317241837] 60%|██████    | 12/20 [00:30<00:20,  2.58s/trial, best loss: 4325.521317241837] 65%|██████▌   | 13/20 [00:32<00:18,  2.63s/trial, best loss: 4074.234449295165] 70%|███████   | 14/20 [00:35<00:15,  2.54s/trial, best loss: 4074.234449295165] 75%|███████▌  | 15/20 [00:37<00:12,  2.46s/trial, best loss: 4074.234449295165] 80%|████████  | 16/20 [00:39<00:09,  2.42s/trial, best loss: 4074.234449295165] 85%|████████▌ | 17/20 [00:42<00:07,  2.51s/trial, best loss: 4074.234449295165] 90%|█████████ | 18/20 [00:44<00:04,  2.45s/trial, best loss: 4074.234449295165] 95%|█████████▌| 19/20 [00:47<00:02,  2.53s/trial, best loss: 4074.234449295165]100%|██████████| 20/20 [00:49<00:00,  2.46s/trial, best loss: 4074.234449295165]100%|██████████| 20/20 [00:49<00:00,  2.49s/trial, best loss: 4074.234449295165]
+   [Training] Champion Run...
+   [Result] RMSE: 4086.97
+[REPORT] Saved outputs/results_cnn_lstm.txt
+
+   [Experiment] with_wsi_wind ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:02<00:50,  2.67s/trial, best loss: 22375.182732010053] 10%|█         | 2/20 [00:05<00:48,  2.71s/trial, best loss: 21398.719617167622] 15%|█▌        | 3/20 [00:08<00:45,  2.69s/trial, best loss: 21398.719617167622] 20%|██        | 4/20 [00:10<00:42,  2.68s/trial, best loss: 21398.719617167622] 25%|██▌       | 5/20 [00:13<00:40,  2.69s/trial, best loss: 21398.719617167622] 30%|███       | 6/20 [00:15<00:35,  2.56s/trial, best loss: 21398.719617167622] 35%|███▌      | 7/20 [00:18<00:33,  2.61s/trial, best loss: 21398.719617167622] 40%|████      | 8/20 [00:21<00:31,  2.65s/trial, best loss: 21157.024396883506] 45%|████▌     | 9/20 [00:23<00:29,  2.66s/trial, best loss: 21157.024396883506] 50%|█████     | 10/20 [00:26<00:25,  2.57s/trial, best loss: 21157.024396883506] 55%|█████▌    | 11/20 [00:28<00:23,  2.61s/trial, best loss: 21157.024396883506] 60%|██████    | 12/20 [00:31<00:20,  2.52s/trial, best loss: 21157.024396883506] 65%|██████▌   | 13/20 [00:33<00:17,  2.46s/trial, best loss: 21157.024396883506] 70%|███████   | 14/20 [00:35<00:14,  2.41s/trial, best loss: 21157.024396883506] 75%|███████▌  | 15/20 [00:38<00:12,  2.48s/trial, best loss: 21157.024396883506] 80%|████████  | 16/20 [00:41<00:10,  2.56s/trial, best loss: 21157.024396883506] 85%|████████▌ | 17/20 [00:43<00:07,  2.60s/trial, best loss: 21157.024396883506] 90%|█████████ | 18/20 [00:46<00:05,  2.52s/trial, best loss: 21157.024396883506] 95%|█████████▌| 19/20 [00:49<00:02,  2.57s/trial, best loss: 21157.024396883506]100%|██████████| 20/20 [00:51<00:00,  2.61s/trial, best loss: 21157.024396883506]100%|██████████| 20/20 [00:51<00:00,  2.59s/trial, best loss: 21157.024396883506]
+   [Training] Champion Run...
+   [Result] RMSE: 21166.56
+[REPORT] Saved outputs/results_cnn_lstm.txt
+
+   [Experiment] no_wsi_wind ...
+   [Tuning] ...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:02<00:44,  2.33s/trial, best loss: 21437.36790673094] 10%|█         | 2/20 [00:04<00:41,  2.30s/trial, best loss: 21437.36790673094] 15%|█▌        | 3/20 [00:07<00:42,  2.50s/trial, best loss: 21437.36790673094] 20%|██        | 4/20 [00:10<00:41,  2.58s/trial, best loss: 21437.36790673094] 25%|██▌       | 5/20 [00:12<00:37,  2.48s/trial, best loss: 21437.36790673094] 30%|███       | 6/20 [00:15<00:35,  2.56s/trial, best loss: 21437.36790673094] 35%|███▌      | 7/20 [00:17<00:32,  2.49s/trial, best loss: 21437.36790673094] 40%|████      | 8/20 [00:20<00:30,  2.57s/trial, best loss: 21437.36790673094] 45%|████▌     | 9/20 [00:22<00:27,  2.49s/trial, best loss: 21437.36790673094] 50%|█████     | 10/20 [00:24<00:24,  2.44s/trial, best loss: 21437.36790673094] 55%|█████▌    | 11/20 [00:27<00:22,  2.51s/trial, best loss: 21437.36790673094] 60%|██████    | 12/20 [00:30<00:20,  2.57s/trial, best loss: 21437.36790673094] 65%|██████▌   | 13/20 [00:32<00:17,  2.50s/trial, best loss: 20947.56112624516] 70%|███████   | 14/20 [00:35<00:15,  2.57s/trial, best loss: 20947.56112624516] 75%|███████▌  | 15/20 [00:37<00:13,  2.62s/trial, best loss: 20947.56112624516] 80%|████████  | 16/20 [00:40<00:10,  2.63s/trial, best loss: 20947.56112624516] 85%|████████▌ | 17/20 [00:43<00:07,  2.65s/trial, best loss: 20947.56112624516] 90%|█████████ | 18/20 [00:46<00:05,  2.66s/trial, best loss: 20947.56112624516] 95%|█████████▌| 19/20 [00:48<00:02,  2.55s/trial, best loss: 20947.56112624516]100%|██████████| 20/20 [00:50<00:00,  2.59s/trial, best loss: 20947.56112624516]100%|██████████| 20/20 [00:50<00:00,  2.55s/trial, best loss: 20947.56112624516]
+   [Training] Champion Run...
+   [Result] RMSE: 20937.65
+[REPORT] Saved outputs/results_cnn_lstm.txt
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2314005
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:25:26
+CPU Efficiency: 8.08% of 05:14:40 core-walltime
+Job Wall-clock time: 00:04:55
+Memory Utilized: 1.81 GB
+Memory Efficiency: 0.60% of 300.00 GB (300.00 GB/node)

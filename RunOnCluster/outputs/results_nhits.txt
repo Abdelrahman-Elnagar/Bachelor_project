@@ -1,0 +1,18 @@
+==================================================
+MODEL: NHITS
+==================================================
+
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-26 11:04:20
+Best Parameters: {'batch_size': 32, 'dropout': 0.09904146120110585, 'learning_rate': 0.00042148301589936055, 'max_steps': 500, 'mlp_units_choice': 0, 'n_blocks_choice': 0}
+MAE : 2387.3004 MW
+RMSE: 4154.3828 MW
+R2  : 0.0081
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-26 11:08:50
+Best Parameters: {'batch_size': 128, 'dropout': 0.18498105891487693, 'learning_rate': 0.00027566687132853844, 'max_steps': 1000, 'mlp_units_choice': 0, 'n_blocks_choice': 0}
+MAE : 3265.0782 MW
+RMSE: 4470.8383 MW
+R2  : -0.1488
+--------------------------------------------------

@@ -1,0 +1,40 @@
+==================================================
+MODEL: CATBOOST (Aggressive Tuning)
+==================================================
+
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-26 09:04:14
+Best Parameters: {'bagging_temperature': 0.9619993673512276, 'depth': 6, 'iterations': 2200, 'l2_leaf_reg': 1.5703822695586496, 'learning_rate': 0.03294890980331842, 'random_strength': 1.2803319130969188, 'subsample': 0.5808574239936837}
+
+Performance Metrics:
+   MAE : 837.1864 MW
+   RMSE: 1410.1426 MW
+   R2  : 0.8857
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-26 09:05:08
+Best Parameters: {'bagging_temperature': 0.36001286376739733, 'depth': 8, 'iterations': 500, 'l2_leaf_reg': 3.5274270351535963, 'learning_rate': 0.17394751509557893, 'random_strength': 2.070756774240577, 'subsample': 0.6526903268269915}
+
+Performance Metrics:
+   MAE : 817.0134 MW
+   RMSE: 1295.9324 MW
+   R2  : 0.9035
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-26 09:05:49
+Best Parameters: {'bagging_temperature': 0.32383775817534144, 'depth': 5, 'iterations': 2700, 'l2_leaf_reg': 8.435999083278084, 'learning_rate': 0.20815773243736083, 'random_strength': 8.142866092752227, 'subsample': 0.828076601731651}
+
+Performance Metrics:
+   MAE : 3533.3672 MW
+   RMSE: 4522.2944 MW
+   R2  : 0.8767
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-26 09:06:24
+Best Parameters: {'bagging_temperature': 0.26564027440664495, 'depth': 6, 'iterations': 800, 'l2_leaf_reg': 3.1646197384914916, 'learning_rate': 0.25157393259490307, 'random_strength': 9.165790508662864, 'subsample': 0.80675696801455}
+
+Performance Metrics:
+   MAE : 3697.7536 MW
+   RMSE: 4630.8671 MW
+   R2  : 0.8707
+--------------------------------------------------

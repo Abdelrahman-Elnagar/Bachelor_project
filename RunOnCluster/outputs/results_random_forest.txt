@@ -1,0 +1,20 @@
+EXP: with_wsi_solar
+Params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+RMSE: 2323.0142
+MAE: 1131.1550
+---
+EXP: no_wsi_solar
+Params: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+RMSE: 2308.8568
+MAE: 1124.2089
+---
+EXP: with_wsi_wind
+Params: {'max_depth': 20, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}
+RMSE: 4951.7777
+MAE: 3983.3740
+---
+EXP: no_wsi_wind
+Params: {'max_depth': None, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}
+RMSE: 4799.8771
+MAE: 3847.6644
+---

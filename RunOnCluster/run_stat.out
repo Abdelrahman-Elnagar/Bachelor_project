@@ -40,3 +40,17 @@ Python 3.10.19
    [Experiment] with_wsi_solar ...
    [Tuning] Running 30 trials...
   0%|          | 0/30 [00:00<?, ?trial/s, best loss=?]  3%|▎         | 1/30 [07:30<3:37:32, 450.09s/trial, best loss: 137360422364.13759]
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2310697
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.00% of 1-02:01:36 core-walltime
+Job Wall-clock time: 00:24:24
+Memory Utilized: 26.50 GB
+Memory Efficiency: 8.83% of 300.00 GB (300.00 GB/node)

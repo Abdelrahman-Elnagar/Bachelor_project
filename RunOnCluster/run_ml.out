@@ -1,0 +1,747 @@
+/home/hu/hu_hu/hu_elnaab01/.conda/envs/bachelor_analysis/bin/python
+Python 3.10.19
+========================================
+   PHASE 2: THE MACHINE LEARNING ARENA  
+   (XGBoost / LightGBM / CatBoost)      
+========================================
+
+>>> ENTERING ARENA: XGBOOST <<<
+
+   [Experiment] with_wsi_solar ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:06<05:12,  6.39s/trial, best loss: 1714.5530725001288]  4%|▍         | 2/50 [00:28<12:44, 15.92s/trial, best loss: 1714.5530725001288]  6%|▌         | 3/50 [00:29<06:59,  8.93s/trial, best loss: 1547.8633641000479]  8%|▊         | 4/50 [00:31<04:45,  6.20s/trial, best loss: 1547.8633641000479] 10%|█         | 5/50 [00:32<03:09,  4.21s/trial, best loss: 1547.8633641000479] 12%|█▏        | 6/50 [00:36<03:06,  4.24s/trial, best loss: 1547.8633641000479] 14%|█▍        | 7/50 [00:37<02:21,  3.30s/trial, best loss: 1547.8633641000479] 16%|█▌        | 8/50 [00:39<01:50,  2.63s/trial, best loss: 1547.8633641000479] 18%|█▊        | 9/50 [00:39<01:25,  2.07s/trial, best loss: 1547.8633641000479] 20%|██        | 10/50 [00:40<01:01,  1.54s/trial, best loss: 1547.8633641000479] 22%|██▏       | 11/50 [00:44<01:26,  2.22s/trial, best loss: 1547.8633641000479] 24%|██▍       | 12/50 [00:45<01:09,  1.83s/trial, best loss: 1547.8633641000479] 26%|██▌       | 13/50 [00:46<01:03,  1.73s/trial, best loss: 1547.8633641000479] 28%|██▊       | 14/50 [00:46<00:44,  1.25s/trial, best loss: 1547.8633641000479] 30%|███       | 15/50 [00:50<01:06,  1.91s/trial, best loss: 1547.8633641000479] 32%|███▏      | 16/50 [00:51<00:59,  1.74s/trial, best loss: 1547.8633641000479] 34%|███▍      | 17/50 [00:51<00:45,  1.37s/trial, best loss: 1547.8633641000479] 36%|███▌      | 18/50 [00:57<01:23,  2.60s/trial, best loss: 1547.8633641000479] 38%|███▊      | 19/50 [00:59<01:19,  2.55s/trial, best loss: 1547.8633641000479] 40%|████      | 20/50 [01:14<03:07,  6.23s/trial, best loss: 1547.8633641000479] 42%|████▏     | 21/50 [01:15<02:13,  4.61s/trial, best loss: 1547.8633641000479] 44%|████▍     | 22/50 [01:15<01:32,  3.31s/trial, best loss: 1547.8633641000479] 46%|████▌     | 23/50 [01:23<02:03,  4.58s/trial, best loss: 1547.8633641000479] 48%|████▊     | 24/50 [01:24<01:31,  3.53s/trial, best loss: 1547.8633641000479] 50%|█████     | 25/50 [01:25<01:09,  2.77s/trial, best loss: 1547.8633641000479] 52%|█████▏    | 26/50 [01:35<02:01,  5.06s/trial, best loss: 1547.8633641000479] 54%|█████▍    | 27/50 [01:36<01:28,  3.85s/trial, best loss: 1547.0993966693886] 56%|█████▌    | 28/50 [01:37<01:05,  2.97s/trial, best loss: 1547.0993966693886] 58%|█████▊    | 29/50 [01:38<00:46,  2.21s/trial, best loss: 1547.0993966693886] 60%|██████    | 30/50 [01:38<00:34,  1.71s/trial, best loss: 1547.0993966693886] 62%|██████▏   | 31/50 [02:01<02:30,  7.92s/trial, best loss: 1547.0993966693886] 64%|██████▍   | 32/50 [02:06<02:08,  7.15s/trial, best loss: 1547.0993966693886] 66%|██████▌   | 33/50 [02:06<01:26,  5.11s/trial, best loss: 1547.0993966693886] 68%|██████▊   | 34/50 [02:07<01:02,  3.89s/trial, best loss: 1547.0993966693886] 70%|███████   | 35/50 [02:08<00:42,  2.86s/trial, best loss: 1547.0993966693886] 72%|███████▏  | 36/50 [02:15<00:57,  4.11s/trial, best loss: 1547.0993966693886] 74%|███████▍  | 37/50 [02:25<01:18,  6.00s/trial, best loss: 1401.5479309396624] 76%|███████▌  | 38/50 [02:32<01:16,  6.34s/trial, best loss: 1401.5479309396624] 78%|███████▊  | 39/50 [02:35<00:56,  5.11s/trial, best loss: 1401.5479309396624] 80%|████████  | 40/50 [02:37<00:42,  4.21s/trial, best loss: 1401.5479309396624] 82%|████████▏ | 41/50 [02:41<00:37,  4.20s/trial, best loss: 1401.5479309396624] 84%|████████▍ | 42/50 [02:47<00:37,  4.64s/trial, best loss: 1401.5479309396624] 86%|████████▌ | 43/50 [02:48<00:25,  3.63s/trial, best loss: 1401.5479309396624] 88%|████████▊ | 44/50 [02:51<00:20,  3.36s/trial, best loss: 1401.5479309396624] 90%|█████████ | 45/50 [02:56<00:19,  3.91s/trial, best loss: 1401.5479309396624] 92%|█████████▏| 46/50 [02:59<00:14,  3.70s/trial, best loss: 1401.5479309396624] 94%|█████████▍| 47/50 [03:00<00:08,  2.78s/trial, best loss: 1401.5479309396624] 96%|█████████▌| 48/50 [03:01<00:04,  2.47s/trial, best loss: 1401.5479309396624] 98%|█████████▊| 49/50 [03:11<00:04,  4.65s/trial, best loss: 1401.5479309396624]100%|██████████| 50/50 [03:12<00:00,  3.49s/trial, best loss: 1401.5479309396624]100%|██████████| 50/50 [03:12<00:00,  3.85s/trial, best loss: 1401.5479309396624]
+   [Champion Params] {'colsample_bytree': 0.8855668418433724, 'learning_rate': 0.02944170068420767, 'max_depth': 13, 'min_child_weight': 4, 'n_estimators': 2400, 'reg_alpha': 0.0030672192836386433, 'reg_lambda': 61.26679818734122, 'subsample': 0.7401759080529471}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 1401.55 | MAE: 787.41
+   [REPORT] Saved to outputs/results_xgboost.txt
+
+   [Experiment] no_wsi_solar ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:01<01:04,  1.33s/trial, best loss: 1460.424848460999]  4%|▍         | 2/50 [00:01<00:36,  1.32trial/s, best loss: 1460.424848460999]  6%|▌         | 3/50 [00:06<01:59,  2.53s/trial, best loss: 1460.424848460999]  8%|▊         | 4/50 [00:12<02:53,  3.78s/trial, best loss: 1460.424848460999] 10%|█         | 5/50 [00:13<02:20,  3.12s/trial, best loss: 1460.424848460999] 12%|█▏        | 6/50 [00:17<02:16,  3.09s/trial, best loss: 1460.424848460999] 14%|█▍        | 7/50 [00:17<01:35,  2.22s/trial, best loss: 1460.424848460999] 16%|█▌        | 8/50 [00:21<02:00,  2.87s/trial, best loss: 1460.424848460999] 18%|█▊        | 9/50 [00:40<05:23,  7.89s/trial, best loss: 1460.424848460999] 20%|██        | 10/50 [00:41<03:46,  5.67s/trial, best loss: 1460.424848460999] 22%|██▏       | 11/50 [00:42<02:42,  4.16s/trial, best loss: 1413.829484242806] 24%|██▍       | 12/50 [00:44<02:17,  3.62s/trial, best loss: 1413.829484242806] 26%|██▌       | 13/50 [00:45<01:39,  2.69s/trial, best loss: 1413.829484242806] 28%|██▊       | 14/50 [00:45<01:12,  2.02s/trial, best loss: 1413.829484242806] 30%|███       | 15/50 [00:45<00:52,  1.50s/trial, best loss: 1413.829484242806] 32%|███▏      | 16/50 [00:48<01:02,  1.85s/trial, best loss: 1413.829484242806] 34%|███▍      | 17/50 [01:01<02:55,  5.31s/trial, best loss: 1413.829484242806] 36%|███▌      | 18/50 [01:02<02:03,  3.85s/trial, best loss: 1413.829484242806] 38%|███▊      | 19/50 [01:06<02:05,  4.04s/trial, best loss: 1413.829484242806] 40%|████      | 20/50 [01:15<02:40,  5.34s/trial, best loss: 1351.7788987900688] 42%|████▏     | 21/50 [01:17<02:06,  4.37s/trial, best loss: 1351.7788987900688] 44%|████▍     | 22/50 [01:18<01:33,  3.34s/trial, best loss: 1351.7788987900688] 46%|████▌     | 23/50 [01:18<01:07,  2.51s/trial, best loss: 1351.7788987900688] 48%|████▊     | 24/50 [01:20<01:00,  2.34s/trial, best loss: 1351.7788987900688] 50%|█████     | 25/50 [01:25<01:15,  3.00s/trial, best loss: 1351.7788987900688] 52%|█████▏    | 26/50 [01:25<00:51,  2.16s/trial, best loss: 1351.7788987900688] 54%|█████▍    | 27/50 [01:26<00:41,  1.79s/trial, best loss: 1351.7788987900688] 56%|█████▌    | 28/50 [01:26<00:30,  1.37s/trial, best loss: 1351.7788987900688] 58%|█████▊    | 29/50 [01:27<00:25,  1.21s/trial, best loss: 1351.7788987900688] 60%|██████    | 30/50 [01:34<01:00,  3.03s/trial, best loss: 1351.7788987900688] 62%|██████▏   | 31/50 [01:35<00:42,  2.22s/trial, best loss: 1351.7788987900688] 64%|██████▍   | 32/50 [01:37<00:39,  2.20s/trial, best loss: 1351.7788987900688] 66%|██████▌   | 33/50 [01:38<00:31,  1.83s/trial, best loss: 1351.7788987900688] 68%|██████▊   | 34/50 [01:38<00:21,  1.35s/trial, best loss: 1351.7788987900688] 70%|███████   | 35/50 [01:55<01:29,  5.93s/trial, best loss: 1351.7788987900688] 72%|███████▏  | 36/50 [02:01<01:23,  5.99s/trial, best loss: 1351.7788987900688] 74%|███████▍  | 37/50 [02:15<01:50,  8.47s/trial, best loss: 1351.7788987900688] 76%|███████▌  | 38/50 [02:20<01:28,  7.36s/trial, best loss: 1351.7788987900688] 78%|███████▊  | 39/50 [02:27<01:19,  7.26s/trial, best loss: 1351.7788987900688] 80%|████████  | 40/50 [02:32<01:06,  6.61s/trial, best loss: 1351.7788987900688] 82%|████████▏ | 41/50 [02:36<00:53,  5.96s/trial, best loss: 1351.7788987900688] 84%|████████▍ | 42/50 [02:44<00:52,  6.56s/trial, best loss: 1351.7788987900688] 86%|████████▌ | 43/50 [02:46<00:36,  5.22s/trial, best loss: 1351.7788987900688] 88%|████████▊ | 44/50 [02:50<00:28,  4.79s/trial, best loss: 1351.7788987900688] 90%|█████████ | 45/50 [02:53<00:21,  4.33s/trial, best loss: 1351.7788987900688] 92%|█████████▏| 46/50 [02:57<00:15,  3.98s/trial, best loss: 1351.7788987900688] 94%|█████████▍| 47/50 [02:58<00:09,  3.29s/trial, best loss: 1351.7788987900688] 96%|█████████▌| 48/50 [03:02<00:06,  3.34s/trial, best loss: 1351.7788987900688] 98%|█████████▊| 49/50 [03:05<00:03,  3.17s/trial, best loss: 1351.7788987900688]100%|██████████| 50/50 [03:05<00:00,  2.44s/trial, best loss: 1351.7788987900688]100%|██████████| 50/50 [03:05<00:00,  3.72s/trial, best loss: 1351.7788987900688]
+   [Champion Params] {'colsample_bytree': 0.9572413564269429, 'learning_rate': 0.009541474223464557, 'max_depth': 14, 'min_child_weight': 9, 'n_estimators': 3700, 'reg_alpha': 0.0008887922147127914, 'reg_lambda': 42.143531578747215, 'subsample': 0.6233484862327361}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 1351.78 | MAE: 721.16
+   [REPORT] Saved to outputs/results_xgboost.txt
+
+   [Experiment] with_wsi_wind ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:00<00:21,  2.26trial/s, best loss: 5257.515367275156]  4%|▍         | 2/50 [00:00<00:23,  2.08trial/s, best loss: 5257.515367275156]  6%|▌         | 3/50 [00:03<01:00,  1.29s/trial, best loss: 5001.551759612435]  8%|▊         | 4/50 [00:03<00:37,  1.22trial/s, best loss: 4976.463221953609] 10%|█         | 5/50 [00:11<02:34,  3.43s/trial, best loss: 4976.463221953609] 12%|█▏        | 6/50 [00:15<02:44,  3.75s/trial, best loss: 4976.463221953609] 14%|█▍        | 7/50 [00:16<02:04,  2.89s/trial, best loss: 4976.463221953609] 16%|█▌        | 8/50 [00:17<01:31,  2.19s/trial, best loss: 4976.463221953609] 18%|█▊        | 9/50 [00:17<01:05,  1.59s/trial, best loss: 4976.463221953609] 20%|██        | 10/50 [00:19<01:04,  1.60s/trial, best loss: 4976.463221953609] 22%|██▏       | 11/50 [00:19<00:46,  1.18s/trial, best loss: 4976.463221953609] 24%|██▍       | 12/50 [00:20<00:37,  1.01trial/s, best loss: 4956.023103301124] 28%|██▊       | 14/50 [00:20<00:24,  1.45trial/s, best loss: 4956.023103301124] 30%|███       | 15/50 [00:22<00:32,  1.08trial/s, best loss: 4956.023103301124] 32%|███▏      | 16/50 [00:22<00:24,  1.39trial/s, best loss: 4956.023103301124] 34%|███▍      | 17/50 [00:23<00:26,  1.25trial/s, best loss: 4956.023103301124] 36%|███▌      | 18/50 [00:32<01:38,  3.07s/trial, best loss: 4956.023103301124] 38%|███▊      | 19/50 [00:33<01:19,  2.56s/trial, best loss: 4956.023103301124] 40%|████      | 20/50 [00:34<00:59,  1.97s/trial, best loss: 4956.023103301124] 44%|████▍     | 22/50 [00:35<00:38,  1.37s/trial, best loss: 4956.023103301124] 46%|████▌     | 23/50 [00:36<00:30,  1.15s/trial, best loss: 4956.023103301124] 48%|████▊     | 24/50 [00:36<00:25,  1.03trial/s, best loss: 4956.023103301124] 50%|█████     | 25/50 [00:36<00:18,  1.35trial/s, best loss: 4956.023103301124] 52%|█████▏    | 26/50 [00:38<00:24,  1.04s/trial, best loss: 4956.023103301124] 54%|█████▍    | 27/50 [00:39<00:26,  1.14s/trial, best loss: 4956.023103301124] 56%|█████▌    | 28/50 [00:40<00:18,  1.18trial/s, best loss: 4956.023103301124] 58%|█████▊    | 29/50 [00:41<00:21,  1.03s/trial, best loss: 4956.023103301124] 60%|██████    | 30/50 [00:42<00:18,  1.07trial/s, best loss: 4956.023103301124] 62%|██████▏   | 31/50 [00:45<00:32,  1.72s/trial, best loss: 4956.023103301124] 66%|██████▌   | 33/50 [00:46<00:16,  1.00trial/s, best loss: 4956.023103301124] 68%|██████▊   | 34/50 [00:46<00:14,  1.13trial/s, best loss: 4956.023103301124] 70%|███████   | 35/50 [00:46<00:10,  1.42trial/s, best loss: 4956.023103301124] 72%|███████▏  | 36/50 [00:47<00:09,  1.49trial/s, best loss: 4956.023103301124] 74%|███████▍  | 37/50 [00:48<00:08,  1.47trial/s, best loss: 4956.023103301124] 76%|███████▌  | 38/50 [00:51<00:15,  1.32s/trial, best loss: 4956.023103301124] 78%|███████▊  | 39/50 [00:51<00:11,  1.04s/trial, best loss: 4956.023103301124] 80%|████████  | 40/50 [00:52<00:10,  1.06s/trial, best loss: 4956.023103301124] 82%|████████▏ | 41/50 [00:52<00:07,  1.25trial/s, best loss: 4956.023103301124] 86%|████████▌ | 43/50 [00:52<00:03,  2.07trial/s, best loss: 4941.327302888316] 88%|████████▊ | 44/50 [00:53<00:02,  2.51trial/s, best loss: 4941.327302888316] 90%|█████████ | 45/50 [00:53<00:01,  2.69trial/s, best loss: 4941.327302888316] 92%|█████████▏| 46/50 [00:53<00:01,  3.11trial/s, best loss: 4941.327302888316] 94%|█████████▍| 47/50 [00:53<00:00,  3.61trial/s, best loss: 4925.921259700727] 96%|█████████▌| 48/50 [00:54<00:00,  2.45trial/s, best loss: 4925.921259700727] 98%|█████████▊| 49/50 [00:54<00:00,  2.51trial/s, best loss: 4925.921259700727]100%|██████████| 50/50 [00:55<00:00,  1.94trial/s, best loss: 4925.921259700727]100%|██████████| 50/50 [00:55<00:00,  1.11s/trial, best loss: 4925.921259700727]
+   [Champion Params] {'colsample_bytree': 0.7616271643389726, 'learning_rate': 0.038180308635546605, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 4100, 'reg_alpha': 1.0248741263024807e-05, 'reg_lambda': 4.520371894148268, 'subsample': 0.6985671459595459}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 4925.92 | MAE: 3999.55
+   [REPORT] Saved to outputs/results_xgboost.txt
+
+   [Experiment] no_wsi_wind ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:04<03:40,  4.49s/trial, best loss: 5210.807824459686]  4%|▍         | 2/50 [00:04<01:41,  2.11s/trial, best loss: 5157.45416612185]   6%|▌         | 3/50 [00:07<01:38,  2.10s/trial, best loss: 5013.398364335582]  8%|▊         | 4/50 [00:08<01:31,  1.99s/trial, best loss: 5013.398364335582] 10%|█         | 5/50 [00:09<01:07,  1.50s/trial, best loss: 5013.398364335582] 12%|█▏        | 6/50 [00:10<00:54,  1.25s/trial, best loss: 5013.398364335582] 14%|█▍        | 7/50 [00:10<00:39,  1.09trial/s, best loss: 5013.398364335582] 16%|█▌        | 8/50 [00:15<01:32,  2.21s/trial, best loss: 5013.398364335582] 18%|█▊        | 9/50 [00:15<01:09,  1.68s/trial, best loss: 5013.398364335582] 20%|██        | 10/50 [00:16<00:48,  1.22s/trial, best loss: 5013.398364335582] 24%|██▍       | 12/50 [00:16<00:27,  1.40trial/s, best loss: 5013.398364335582] 26%|██▌       | 13/50 [00:20<00:57,  1.56s/trial, best loss: 5013.398364335582] 28%|██▊       | 14/50 [00:20<00:43,  1.21s/trial, best loss: 5013.398364335582] 30%|███       | 15/50 [00:33<02:33,  4.38s/trial, best loss: 5013.398364335582] 32%|███▏      | 16/50 [00:33<01:50,  3.24s/trial, best loss: 5013.398364335582] 34%|███▍      | 17/50 [00:34<01:19,  2.42s/trial, best loss: 5013.398364335582] 36%|███▌      | 18/50 [00:34<01:01,  1.92s/trial, best loss: 5013.398364335582] 38%|███▊      | 19/50 [00:41<01:41,  3.27s/trial, best loss: 4877.345318428094] 42%|████▏     | 21/50 [00:41<00:53,  1.83s/trial, best loss: 4877.345318428094] 44%|████▍     | 22/50 [00:42<00:42,  1.53s/trial, best loss: 4877.345318428094] 46%|████▌     | 23/50 [00:46<00:58,  2.15s/trial, best loss: 4877.345318428094] 48%|████▊     | 24/50 [00:54<01:36,  3.73s/trial, best loss: 4870.090161002175] 50%|█████     | 25/50 [01:01<01:57,  4.72s/trial, best loss: 4870.090161002175] 52%|█████▏    | 26/50 [01:19<03:22,  8.45s/trial, best loss: 4870.090161002175] 54%|█████▍    | 27/50 [01:29<03:27,  9.01s/trial, best loss: 4870.090161002175] 56%|█████▌    | 28/50 [01:39<03:20,  9.11s/trial, best loss: 4870.090161002175] 58%|█████▊    | 29/50 [01:42<02:34,  7.35s/trial, best loss: 4870.090161002175] 60%|██████    | 30/50 [01:52<02:47,  8.37s/trial, best loss: 4870.090161002175] 62%|██████▏   | 31/50 [01:55<02:06,  6.63s/trial, best loss: 4870.090161002175] 64%|██████▍   | 32/50 [01:56<01:29,  4.98s/trial, best loss: 4870.090161002175] 66%|██████▌   | 33/50 [02:06<01:51,  6.58s/trial, best loss: 4870.090161002175] 68%|██████▊   | 34/50 [02:18<02:08,  8.01s/trial, best loss: 4870.090161002175] 70%|███████   | 35/50 [02:26<02:02,  8.13s/trial, best loss: 4870.090161002175] 72%|███████▏  | 36/50 [02:28<01:28,  6.30s/trial, best loss: 4870.090161002175] 74%|███████▍  | 37/50 [02:36<01:25,  6.61s/trial, best loss: 4870.090161002175] 76%|███████▌  | 38/50 [02:37<01:00,  5.07s/trial, best loss: 4870.090161002175] 78%|███████▊  | 39/50 [02:37<00:39,  3.61s/trial, best loss: 4870.090161002175] 80%|████████  | 40/50 [02:38<00:28,  2.90s/trial, best loss: 4870.090161002175] 82%|████████▏ | 41/50 [02:45<00:36,  4.06s/trial, best loss: 4870.090161002175] 84%|████████▍ | 42/50 [02:46<00:23,  2.95s/trial, best loss: 4870.090161002175] 86%|████████▌ | 43/50 [02:48<00:20,  2.93s/trial, best loss: 4870.090161002175] 88%|████████▊ | 44/50 [02:49<00:12,  2.16s/trial, best loss: 4870.090161002175] 90%|█████████ | 45/50 [02:54<00:14,  2.94s/trial, best loss: 4870.090161002175] 92%|█████████▏| 46/50 [02:54<00:08,  2.09s/trial, best loss: 4870.090161002175] 94%|█████████▍| 47/50 [02:56<00:06,  2.30s/trial, best loss: 4870.090161002175] 96%|█████████▌| 48/50 [03:01<00:05,  2.93s/trial, best loss: 4870.090161002175] 98%|█████████▊| 49/50 [03:04<00:02,  2.99s/trial, best loss: 4870.090161002175]100%|██████████| 50/50 [03:31<00:00, 10.04s/trial, best loss: 4870.090161002175]100%|██████████| 50/50 [03:31<00:00,  4.22s/trial, best loss: 4870.090161002175]
+   [Champion Params] {'colsample_bytree': 0.8798367846760923, 'learning_rate': 0.005172324900213101, 'max_depth': 14, 'min_child_weight': 9, 'n_estimators': 3700, 'reg_alpha': 2.0720310749121214, 'reg_lambda': 6.060665419255364e-05, 'subsample': 0.5029909940906294}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 4870.09 | MAE: 3914.31
+   [REPORT] Saved to outputs/results_xgboost.txt
+
+>>> ENTERING ARENA: LIGHTGBM <<<
+
+   [Experiment] with_wsi_solar ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Training until validation scores don't improve for 50 rounds
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Early stopping, best iteration is:
+[1180]	valid_0's l2: 2.3805e+06
+  0%|          | 0/50 [00:03<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:03<02:42,  3.32s/trial, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+  2%|▏         | 1/50 [00:03<02:42,  3.32s/trial, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[48]	valid_0's l2: 5.00224e+06
+  2%|▏         | 1/50 [00:03<02:42,  3.32s/trial, best loss: 1542.8854469534522]  4%|▍         | 2/50 [00:03<01:17,  1.61s/trial, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+  4%|▍         | 2/50 [00:03<01:17,  1.61s/trial, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[146]	valid_0's l2: 3.66507e+06
+  4%|▍         | 2/50 [00:04<01:17,  1.61s/trial, best loss: 1542.8854469534522]  6%|▌         | 3/50 [00:04<00:52,  1.12s/trial, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+  6%|▌         | 3/50 [00:04<00:52,  1.12s/trial, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[116]	valid_0's l2: 3.35618e+06
+  6%|▌         | 3/50 [00:04<00:52,  1.12s/trial, best loss: 1542.8854469534522]  8%|▊         | 4/50 [00:04<00:42,  1.08trial/s, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+  8%|▊         | 4/50 [00:04<00:42,  1.08trial/s, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[149]	valid_0's l2: 3.48107e+06
+  8%|▊         | 4/50 [00:05<00:42,  1.08trial/s, best loss: 1542.8854469534522] 10%|█         | 5/50 [00:05<00:36,  1.23trial/s, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+ 10%|█         | 5/50 [00:05<00:36,  1.23trial/s, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[909]	valid_0's l2: 2.85948e+06
+ 10%|█         | 5/50 [00:10<00:36,  1.23trial/s, best loss: 1542.8854469534522] 12%|█▏        | 6/50 [00:10<01:37,  2.22s/trial, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+ 12%|█▏        | 6/50 [00:10<01:37,  2.22s/trial, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[348]	valid_0's l2: 5.36005e+06
+ 12%|█▏        | 6/50 [00:13<01:37,  2.22s/trial, best loss: 1542.8854469534522] 14%|█▍        | 7/50 [00:13<01:53,  2.63s/trial, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+ 14%|█▍        | 7/50 [00:14<01:53,  2.63s/trial, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[1228]	valid_0's l2: 2.71895e+06
+ 14%|█▍        | 7/50 [00:17<01:53,  2.63s/trial, best loss: 1542.8854469534522] 16%|█▌        | 8/50 [00:17<02:09,  3.07s/trial, best loss: 1542.8854469534522]                                                                                Training until validation scores don't improve for 50 rounds
+ 16%|█▌        | 8/50 [00:17<02:09,  3.07s/trial, best loss: 1542.8854469534522]                                                                                Early stopping, best iteration is:
+[247]	valid_0's l2: 1.95414e+06
+ 16%|█▌        | 8/50 [00:18<02:09,  3.07s/trial, best loss: 1542.8854469534522] 18%|█▊        | 9/50 [00:18<01:38,  2.40s/trial, best loss: 1397.9040704187532]                                                                                Training until validation scores don't improve for 50 rounds
+ 18%|█▊        | 9/50 [00:18<01:38,  2.40s/trial, best loss: 1397.9040704187532]                                                                                Early stopping, best iteration is:
+[77]	valid_0's l2: 7.43081e+06
+ 18%|█▊        | 9/50 [00:19<01:38,  2.40s/trial, best loss: 1397.9040704187532] 20%|██        | 10/50 [00:19<01:09,  1.75s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 20%|██        | 10/50 [00:20<01:09,  1.75s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[51]	valid_0's l2: 3.35594e+06
+ 20%|██        | 10/50 [00:21<01:09,  1.75s/trial, best loss: 1397.9040704187532] 22%|██▏       | 11/50 [00:21<01:18,  2.00s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 22%|██▏       | 11/50 [00:21<01:18,  2.00s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[71]	valid_0's l2: 6.50077e+06
+ 22%|██▏       | 11/50 [00:22<01:18,  2.00s/trial, best loss: 1397.9040704187532] 24%|██▍       | 12/50 [00:22<01:06,  1.75s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 24%|██▍       | 12/50 [00:22<01:06,  1.75s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[152]	valid_0's l2: 3.33416e+06
+ 24%|██▍       | 12/50 [00:23<01:06,  1.75s/trial, best loss: 1397.9040704187532] 26%|██▌       | 13/50 [00:23<00:52,  1.41s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 26%|██▌       | 13/50 [00:23<00:52,  1.41s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[48]	valid_0's l2: 6.12899e+06
+ 26%|██▌       | 13/50 [00:23<00:52,  1.41s/trial, best loss: 1397.9040704187532] 28%|██▊       | 14/50 [00:23<00:39,  1.10s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 28%|██▊       | 14/50 [00:23<00:39,  1.10s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[44]	valid_0's l2: 4.52191e+06
+ 28%|██▊       | 14/50 [00:24<00:39,  1.10s/trial, best loss: 1397.9040704187532] 30%|███       | 15/50 [00:24<00:30,  1.17trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 30%|███       | 15/50 [00:24<00:30,  1.17trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[328]	valid_0's l2: 3.4119e+06
+ 30%|███       | 15/50 [00:25<00:30,  1.17trial/s, best loss: 1397.9040704187532] 32%|███▏      | 16/50 [00:25<00:31,  1.08trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 32%|███▏      | 16/50 [00:25<00:31,  1.08trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[326]	valid_0's l2: 3.10337e+06
+ 32%|███▏      | 16/50 [00:26<00:31,  1.08trial/s, best loss: 1397.9040704187532] 34%|███▍      | 17/50 [00:26<00:33,  1.00s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 34%|███▍      | 17/50 [00:26<00:33,  1.00s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[344]	valid_0's l2: 3.14271e+06
+ 34%|███▍      | 17/50 [00:27<00:33,  1.00s/trial, best loss: 1397.9040704187532] 36%|███▌      | 18/50 [00:27<00:32,  1.01s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 36%|███▌      | 18/50 [00:27<00:32,  1.01s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[32]	valid_0's l2: 3.97644e+06
+ 36%|███▌      | 18/50 [00:27<00:32,  1.01s/trial, best loss: 1397.9040704187532] 38%|███▊      | 19/50 [00:27<00:23,  1.30trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 38%|███▊      | 19/50 [00:27<00:23,  1.30trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[40]	valid_0's l2: 4.23681e+06
+ 38%|███▊      | 19/50 [00:28<00:23,  1.30trial/s, best loss: 1397.9040704187532] 40%|████      | 20/50 [00:28<00:20,  1.50trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 40%|████      | 20/50 [00:28<00:20,  1.50trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[688]	valid_0's l2: 3.0185e+06
+ 40%|████      | 20/50 [00:29<00:20,  1.50trial/s, best loss: 1397.9040704187532] 42%|████▏     | 21/50 [00:29<00:21,  1.37trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 42%|████▏     | 21/50 [00:29<00:21,  1.37trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[582]	valid_0's l2: 2.5341e+06
+ 42%|████▏     | 21/50 [00:29<00:21,  1.37trial/s, best loss: 1397.9040704187532] 44%|████▍     | 22/50 [00:29<00:19,  1.46trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 44%|████▍     | 22/50 [00:29<00:19,  1.46trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[2943]	valid_0's l2: 2.75879e+06
+ 44%|████▍     | 22/50 [00:49<00:19,  1.46trial/s, best loss: 1397.9040704187532] 46%|████▌     | 23/50 [00:49<02:55,  6.48s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 46%|████▌     | 23/50 [00:51<02:55,  6.48s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[263]	valid_0's l2: 2.85428e+06
+ 46%|████▌     | 23/50 [00:58<02:55,  6.48s/trial, best loss: 1397.9040704187532] 48%|████▊     | 24/50 [00:58<03:08,  7.26s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 48%|████▊     | 24/50 [00:58<03:08,  7.26s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[148]	valid_0's l2: 5.15266e+06
+ 48%|████▊     | 24/50 [01:00<03:08,  7.26s/trial, best loss: 1397.9040704187532] 50%|█████     | 25/50 [01:00<02:20,  5.63s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 50%|█████     | 25/50 [01:00<02:20,  5.63s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[192]	valid_0's l2: 2.30948e+06
+ 50%|█████     | 25/50 [01:01<02:20,  5.63s/trial, best loss: 1397.9040704187532] 52%|█████▏    | 26/50 [01:01<01:40,  4.18s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 52%|█████▏    | 26/50 [01:01<01:40,  4.18s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[35]	valid_0's l2: 2.51407e+06
+ 52%|█████▏    | 26/50 [01:01<01:40,  4.18s/trial, best loss: 1397.9040704187532] 54%|█████▍    | 27/50 [01:01<01:10,  3.05s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 54%|█████▍    | 27/50 [01:01<01:10,  3.05s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[152]	valid_0's l2: 2.25701e+06
+ 54%|█████▍    | 27/50 [01:02<01:10,  3.05s/trial, best loss: 1397.9040704187532] 56%|█████▌    | 28/50 [01:02<00:49,  2.25s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 56%|█████▌    | 28/50 [01:02<00:49,  2.25s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[216]	valid_0's l2: 2.05594e+06
+ 56%|█████▌    | 28/50 [01:02<00:49,  2.25s/trial, best loss: 1397.9040704187532] 58%|█████▊    | 29/50 [01:02<00:37,  1.80s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 58%|█████▊    | 29/50 [01:02<00:37,  1.80s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[208]	valid_0's l2: 2.29454e+06
+ 58%|█████▊    | 29/50 [01:03<00:37,  1.80s/trial, best loss: 1397.9040704187532] 60%|██████    | 30/50 [01:03<00:26,  1.35s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 60%|██████    | 30/50 [01:03<00:26,  1.35s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[265]	valid_0's l2: 2.43564e+06
+ 60%|██████    | 30/50 [01:04<00:26,  1.35s/trial, best loss: 1397.9040704187532] 62%|██████▏   | 31/50 [01:04<00:22,  1.21s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 62%|██████▏   | 31/50 [01:04<00:22,  1.21s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[422]	valid_0's l2: 2.11008e+06
+ 62%|██████▏   | 31/50 [01:05<00:22,  1.21s/trial, best loss: 1397.9040704187532] 64%|██████▍   | 32/50 [01:05<00:21,  1.21s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 64%|██████▍   | 32/50 [01:05<00:21,  1.21s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[92]	valid_0's l2: 2.34486e+06
+ 64%|██████▍   | 32/50 [01:06<00:21,  1.21s/trial, best loss: 1397.9040704187532] 66%|██████▌   | 33/50 [01:06<00:20,  1.21s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 66%|██████▌   | 33/50 [01:06<00:20,  1.21s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[184]	valid_0's l2: 6.15349e+06
+ 66%|██████▌   | 33/50 [01:08<00:20,  1.21s/trial, best loss: 1397.9040704187532] 68%|██████▊   | 34/50 [01:08<00:23,  1.47s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 68%|██████▊   | 34/50 [01:08<00:23,  1.47s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[160]	valid_0's l2: 3.25529e+06
+ 68%|██████▊   | 34/50 [01:09<00:23,  1.47s/trial, best loss: 1397.9040704187532] 70%|███████   | 35/50 [01:09<00:18,  1.20s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 70%|███████   | 35/50 [01:09<00:18,  1.20s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[80]	valid_0's l2: 3.37182e+06
+ 70%|███████   | 35/50 [01:09<00:18,  1.20s/trial, best loss: 1397.9040704187532] 72%|███████▏  | 36/50 [01:09<00:12,  1.11trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 72%|███████▏  | 36/50 [01:09<00:12,  1.11trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[126]	valid_0's l2: 8.27066e+06
+ 72%|███████▏  | 36/50 [01:10<00:12,  1.11trial/s, best loss: 1397.9040704187532] 74%|███████▍  | 37/50 [01:10<00:12,  1.01trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 74%|███████▍  | 37/50 [01:10<00:12,  1.01trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[88]	valid_0's l2: 6.07305e+06
+ 74%|███████▍  | 37/50 [01:11<00:12,  1.01trial/s, best loss: 1397.9040704187532] 76%|███████▌  | 38/50 [01:11<00:11,  1.07trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 76%|███████▌  | 38/50 [01:11<00:11,  1.07trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[102]	valid_0's l2: 3.36212e+06
+ 76%|███████▌  | 38/50 [01:11<00:11,  1.07trial/s, best loss: 1397.9040704187532] 78%|███████▊  | 39/50 [01:11<00:08,  1.22trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 78%|███████▊  | 39/50 [01:11<00:08,  1.22trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[123]	valid_0's l2: 2.52238e+06
+ 78%|███████▊  | 39/50 [01:12<00:08,  1.22trial/s, best loss: 1397.9040704187532] 80%|████████  | 40/50 [01:12<00:08,  1.20trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 80%|████████  | 40/50 [01:12<00:08,  1.20trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[367]	valid_0's l2: 2.75519e+06
+ 80%|████████  | 40/50 [01:14<00:08,  1.20trial/s, best loss: 1397.9040704187532] 82%|████████▏ | 41/50 [01:14<00:11,  1.22s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 82%|████████▏ | 41/50 [01:14<00:11,  1.22s/trial, best loss: 1397.9040704187532]                                                                                 Did not meet early stopping. Best iteration is:
+[800]	valid_0's l2: 2.43412e+06
+ 82%|████████▏ | 41/50 [01:16<00:11,  1.22s/trial, best loss: 1397.9040704187532] 84%|████████▍ | 42/50 [01:16<00:11,  1.47s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 84%|████████▍ | 42/50 [01:18<00:11,  1.47s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[24]	valid_0's l2: 7.31442e+06
+ 84%|████████▍ | 42/50 [01:18<00:11,  1.47s/trial, best loss: 1397.9040704187532] 86%|████████▌ | 43/50 [01:18<00:11,  1.60s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 86%|████████▌ | 43/50 [01:18<00:11,  1.60s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[66]	valid_0's l2: 2.50874e+06
+ 86%|████████▌ | 43/50 [01:19<00:11,  1.60s/trial, best loss: 1397.9040704187532] 88%|████████▊ | 44/50 [01:19<00:07,  1.23s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 88%|████████▊ | 44/50 [01:19<00:07,  1.23s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[86]	valid_0's l2: 2.73886e+06
+ 88%|████████▊ | 44/50 [01:19<00:07,  1.23s/trial, best loss: 1397.9040704187532] 90%|█████████ | 45/50 [01:19<00:04,  1.02trial/s, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 90%|█████████ | 45/50 [01:19<00:04,  1.02trial/s, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[322]	valid_0's l2: 4.37071e+06
+ 90%|█████████ | 45/50 [01:22<00:04,  1.02trial/s, best loss: 1397.9040704187532] 92%|█████████▏| 46/50 [01:22<00:05,  1.42s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 92%|█████████▏| 46/50 [01:22<00:05,  1.42s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[559]	valid_0's l2: 3.95938e+06
+ 92%|█████████▏| 46/50 [01:24<00:05,  1.42s/trial, best loss: 1397.9040704187532] 94%|█████████▍| 47/50 [01:24<00:05,  1.73s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 94%|█████████▍| 47/50 [01:24<00:05,  1.73s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[197]	valid_0's l2: 3.08962e+06
+ 94%|█████████▍| 47/50 [01:25<00:05,  1.73s/trial, best loss: 1397.9040704187532] 96%|█████████▌| 48/50 [01:25<00:02,  1.41s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 96%|█████████▌| 48/50 [01:26<00:02,  1.41s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[45]	valid_0's l2: 2.24962e+06
+ 96%|█████████▌| 48/50 [01:28<00:02,  1.41s/trial, best loss: 1397.9040704187532] 98%|█████████▊| 49/50 [01:29<00:02,  2.15s/trial, best loss: 1397.9040704187532]                                                                                 Training until validation scores don't improve for 50 rounds
+ 98%|█████████▊| 49/50 [01:29<00:02,  2.15s/trial, best loss: 1397.9040704187532]                                                                                 Early stopping, best iteration is:
+[58]	valid_0's l2: 3.98816e+06
+ 98%|█████████▊| 49/50 [01:29<00:02,  2.15s/trial, best loss: 1397.9040704187532]100%|██████████| 50/50 [01:29<00:00,  1.62s/trial, best loss: 1397.9040704187532]100%|██████████| 50/50 [01:29<00:00,  1.79s/trial, best loss: 1397.9040704187532]
+   [Champion Params] {'colsample_bytree': 0.8650045782554616, 'learning_rate': 0.06441878544368872, 'max_depth': 30, 'min_child_samples': 75, 'n_estimators': 1700, 'num_leaves': 111, 'reg_alpha': 0.03951293720903066, 'reg_lambda': 41.42308776029928, 'subsample': 0.6482873600085839}
+   [Training] Retraining Champion Model for Final Verification...
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[247]	valid_0's l2: 1.95414e+06
+   [Result] RMSE: 1397.90 | MAE: 807.58
+   [REPORT] Saved to outputs/results_lightgbm.txt
+
+   [Experiment] no_wsi_solar ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Training until validation scores don't improve for 50 rounds
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Early stopping, best iteration is:
+[469]	valid_0's l2: 5.27307e+06
+  0%|          | 0/50 [00:04<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:04<03:59,  4.89s/trial, best loss: 2296.317374592874]                                                                               Training until validation scores don't improve for 50 rounds
+  2%|▏         | 1/50 [00:04<03:59,  4.89s/trial, best loss: 2296.317374592874]                                                                               Early stopping, best iteration is:
+[312]	valid_0's l2: 2.93198e+06
+  2%|▏         | 1/50 [00:05<03:59,  4.89s/trial, best loss: 2296.317374592874]  4%|▍         | 2/50 [00:05<02:02,  2.55s/trial, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+  4%|▍         | 2/50 [00:05<02:02,  2.55s/trial, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[542]	valid_0's l2: 4.33047e+06
+  4%|▍         | 2/50 [00:08<02:02,  2.55s/trial, best loss: 1712.3039739342207]  6%|▌         | 3/50 [00:08<01:58,  2.53s/trial, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+  6%|▌         | 3/50 [00:09<01:58,  2.53s/trial, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[33]	valid_0's l2: 3.65899e+06
+  6%|▌         | 3/50 [00:09<01:58,  2.53s/trial, best loss: 1712.3039739342207]  8%|▊         | 4/50 [00:09<01:27,  1.91s/trial, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+  8%|▊         | 4/50 [00:09<01:27,  1.91s/trial, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[480]	valid_0's l2: 6.88063e+06
+  8%|▊         | 4/50 [00:11<01:27,  1.91s/trial, best loss: 1712.3039739342207] 10%|█         | 5/50 [00:11<01:33,  2.09s/trial, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+ 10%|█         | 5/50 [00:11<01:33,  2.09s/trial, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[161]	valid_0's l2: 3.18942e+06
+ 10%|█         | 5/50 [00:11<01:33,  2.09s/trial, best loss: 1712.3039739342207] 12%|█▏        | 6/50 [00:11<01:05,  1.49s/trial, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+ 12%|█▏        | 6/50 [00:12<01:05,  1.49s/trial, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[193]	valid_0's l2: 4.1159e+06
+ 12%|█▏        | 6/50 [00:13<01:05,  1.49s/trial, best loss: 1712.3039739342207] 14%|█▍        | 7/50 [00:13<01:05,  1.52s/trial, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+ 14%|█▍        | 7/50 [00:13<01:05,  1.52s/trial, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[121]	valid_0's l2: 4.62467e+06
+ 14%|█▍        | 7/50 [00:13<01:05,  1.52s/trial, best loss: 1712.3039739342207] 16%|█▌        | 8/50 [00:13<00:47,  1.13s/trial, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+ 16%|█▌        | 8/50 [00:13<00:47,  1.13s/trial, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[173]	valid_0's l2: 4.91481e+06
+ 16%|█▌        | 8/50 [00:14<00:47,  1.13s/trial, best loss: 1712.3039739342207] 18%|█▊        | 9/50 [00:14<00:40,  1.00trial/s, best loss: 1712.3039739342207]                                                                                Training until validation scores don't improve for 50 rounds
+ 18%|█▊        | 9/50 [00:14<00:40,  1.00trial/s, best loss: 1712.3039739342207]                                                                                Early stopping, best iteration is:
+[89]	valid_0's l2: 3.16139e+06
+ 18%|█▊        | 9/50 [00:14<00:40,  1.00trial/s, best loss: 1712.3039739342207] 20%|██        | 10/50 [00:14<00:29,  1.35trial/s, best loss: 1712.3039739342207]                                                                                 Training until validation scores don't improve for 50 rounds
+ 20%|██        | 10/50 [00:14<00:29,  1.35trial/s, best loss: 1712.3039739342207]                                                                                 Early stopping, best iteration is:
+[553]	valid_0's l2: 2.40006e+06
+ 20%|██        | 10/50 [00:15<00:29,  1.35trial/s, best loss: 1712.3039739342207] 22%|██▏       | 11/50 [00:15<00:26,  1.47trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 22%|██▏       | 11/50 [00:15<00:26,  1.47trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[1169]	valid_0's l2: 3.29075e+06
+ 22%|██▏       | 11/50 [00:16<00:26,  1.47trial/s, best loss: 1549.2132221830373] 24%|██▍       | 12/50 [00:16<00:34,  1.11trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 24%|██▍       | 12/50 [00:16<00:34,  1.11trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[51]	valid_0's l2: 2.81086e+06
+ 24%|██▍       | 12/50 [00:16<00:34,  1.11trial/s, best loss: 1549.2132221830373] 26%|██▌       | 13/50 [00:17<00:26,  1.38trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 26%|██▌       | 13/50 [00:17<00:26,  1.38trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[57]	valid_0's l2: 4.64625e+06
+ 26%|██▌       | 13/50 [00:18<00:26,  1.38trial/s, best loss: 1549.2132221830373] 28%|██▊       | 14/50 [00:18<00:33,  1.06trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 28%|██▊       | 14/50 [00:18<00:33,  1.06trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[218]	valid_0's l2: 3.11615e+06
+ 28%|██▊       | 14/50 [00:19<00:33,  1.06trial/s, best loss: 1549.2132221830373] 30%|███       | 15/50 [00:19<00:31,  1.12trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 30%|███       | 15/50 [00:19<00:31,  1.12trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[595]	valid_0's l2: 5.75984e+06
+ 30%|███       | 15/50 [00:23<00:31,  1.12trial/s, best loss: 1549.2132221830373] 32%|███▏      | 16/50 [00:23<01:01,  1.80s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 32%|███▏      | 16/50 [00:23<01:01,  1.80s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[895]	valid_0's l2: 2.97687e+06
+ 32%|███▏      | 16/50 [00:26<01:01,  1.80s/trial, best loss: 1549.2132221830373] 34%|███▍      | 17/50 [00:26<01:15,  2.29s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 34%|███▍      | 17/50 [00:26<01:15,  2.29s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[51]	valid_0's l2: 6.07718e+06
+ 34%|███▍      | 17/50 [00:28<01:15,  2.29s/trial, best loss: 1549.2132221830373] 36%|███▌      | 18/50 [00:28<01:07,  2.11s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 36%|███▌      | 18/50 [00:28<01:07,  2.11s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[256]	valid_0's l2: 2.96845e+06
+ 36%|███▌      | 18/50 [00:29<01:07,  2.11s/trial, best loss: 1549.2132221830373] 38%|███▊      | 19/50 [00:29<00:53,  1.72s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 38%|███▊      | 19/50 [00:29<00:53,  1.72s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[122]	valid_0's l2: 3.20105e+06
+ 38%|███▊      | 19/50 [00:29<00:53,  1.72s/trial, best loss: 1549.2132221830373] 40%|████      | 20/50 [00:29<00:37,  1.25s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 40%|████      | 20/50 [00:30<00:37,  1.25s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[98]	valid_0's l2: 2.58859e+06
+ 40%|████      | 20/50 [00:32<00:37,  1.25s/trial, best loss: 1549.2132221830373] 42%|████▏     | 21/50 [00:32<00:54,  1.86s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 42%|████▏     | 21/50 [00:32<00:54,  1.86s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[107]	valid_0's l2: 2.51192e+06
+ 42%|████▏     | 21/50 [00:32<00:54,  1.86s/trial, best loss: 1549.2132221830373] 44%|████▍     | 22/50 [00:33<00:40,  1.45s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 44%|████▍     | 22/50 [00:33<00:40,  1.45s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[72]	valid_0's l2: 2.78521e+06
+ 44%|████▍     | 22/50 [00:33<00:40,  1.45s/trial, best loss: 1549.2132221830373] 46%|████▌     | 23/50 [00:33<00:30,  1.14s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 46%|████▌     | 23/50 [00:33<00:30,  1.14s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[286]	valid_0's l2: 3.8194e+06
+ 46%|████▌     | 23/50 [00:33<00:30,  1.14s/trial, best loss: 1549.2132221830373] 48%|████▊     | 24/50 [00:33<00:23,  1.09trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 48%|████▊     | 24/50 [00:33<00:23,  1.09trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[809]	valid_0's l2: 3.33174e+06
+ 48%|████▊     | 24/50 [00:35<00:23,  1.09trial/s, best loss: 1549.2132221830373] 50%|█████     | 25/50 [00:35<00:31,  1.25s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 50%|█████     | 25/50 [00:35<00:31,  1.25s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[276]	valid_0's l2: 2.74425e+06
+ 50%|█████     | 25/50 [00:36<00:31,  1.25s/trial, best loss: 1549.2132221830373] 52%|█████▏    | 26/50 [00:36<00:23,  1.02trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 52%|█████▏    | 26/50 [00:36<00:23,  1.02trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[281]	valid_0's l2: 2.74695e+06
+ 52%|█████▏    | 26/50 [00:37<00:23,  1.02trial/s, best loss: 1549.2132221830373] 54%|█████▍    | 27/50 [00:37<00:25,  1.10s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 54%|█████▍    | 27/50 [00:37<00:25,  1.10s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[46]	valid_0's l2: 4.54328e+06
+ 54%|█████▍    | 27/50 [00:37<00:25,  1.10s/trial, best loss: 1549.2132221830373] 56%|█████▌    | 28/50 [00:37<00:19,  1.15trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 56%|█████▌    | 28/50 [00:37<00:19,  1.15trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[731]	valid_0's l2: 2.78949e+06
+ 56%|█████▌    | 28/50 [00:40<00:19,  1.15trial/s, best loss: 1549.2132221830373] 58%|█████▊    | 29/50 [00:40<00:27,  1.29s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 58%|█████▊    | 29/50 [00:40<00:27,  1.29s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[356]	valid_0's l2: 3.6537e+06
+ 58%|█████▊    | 29/50 [00:41<00:27,  1.29s/trial, best loss: 1549.2132221830373] 60%|██████    | 30/50 [00:41<00:27,  1.40s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 60%|██████    | 30/50 [00:41<00:27,  1.40s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[241]	valid_0's l2: 4.14486e+06
+ 60%|██████    | 30/50 [00:42<00:27,  1.40s/trial, best loss: 1549.2132221830373] 62%|██████▏   | 31/50 [00:42<00:21,  1.12s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 62%|██████▏   | 31/50 [00:44<00:21,  1.12s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[48]	valid_0's l2: 3.95745e+06
+ 62%|██████▏   | 31/50 [00:44<00:21,  1.12s/trial, best loss: 1549.2132221830373] 64%|██████▍   | 32/50 [00:44<00:26,  1.46s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 64%|██████▍   | 32/50 [00:44<00:26,  1.46s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[405]	valid_0's l2: 6.62961e+06
+ 64%|██████▍   | 32/50 [00:46<00:26,  1.46s/trial, best loss: 1549.2132221830373] 66%|██████▌   | 33/50 [00:46<00:27,  1.60s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 66%|██████▌   | 33/50 [00:46<00:27,  1.60s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[66]	valid_0's l2: 2.88203e+06
+ 66%|██████▌   | 33/50 [00:46<00:27,  1.60s/trial, best loss: 1549.2132221830373] 68%|██████▊   | 34/50 [00:46<00:19,  1.20s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 68%|██████▊   | 34/50 [00:46<00:19,  1.20s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[289]	valid_0's l2: 4.98696e+06
+ 68%|██████▊   | 34/50 [00:47<00:19,  1.20s/trial, best loss: 1549.2132221830373] 70%|███████   | 35/50 [00:47<00:14,  1.03trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 70%|███████   | 35/50 [00:47<00:14,  1.03trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[108]	valid_0's l2: 2.77499e+06
+ 70%|███████   | 35/50 [00:47<00:14,  1.03trial/s, best loss: 1549.2132221830373] 72%|███████▏  | 36/50 [00:47<00:11,  1.18trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 72%|███████▏  | 36/50 [00:47<00:11,  1.18trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[475]	valid_0's l2: 2.9025e+06
+ 72%|███████▏  | 36/50 [00:50<00:11,  1.18trial/s, best loss: 1549.2132221830373] 74%|███████▍  | 37/50 [00:50<00:17,  1.35s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 74%|███████▍  | 37/50 [00:51<00:17,  1.35s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[95]	valid_0's l2: 3.20669e+06
+ 74%|███████▍  | 37/50 [00:53<00:17,  1.35s/trial, best loss: 1549.2132221830373] 76%|███████▌  | 38/50 [00:53<00:23,  1.93s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 76%|███████▌  | 38/50 [00:53<00:23,  1.93s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[85]	valid_0's l2: 5.35847e+06
+ 76%|███████▌  | 38/50 [00:54<00:23,  1.93s/trial, best loss: 1549.2132221830373] 78%|███████▊  | 39/50 [00:54<00:18,  1.67s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 78%|███████▊  | 39/50 [00:54<00:18,  1.67s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[222]	valid_0's l2: 3.06504e+06
+ 78%|███████▊  | 39/50 [00:55<00:18,  1.67s/trial, best loss: 1549.2132221830373] 80%|████████  | 40/50 [00:55<00:13,  1.39s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 80%|████████  | 40/50 [00:55<00:13,  1.39s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[456]	valid_0's l2: 2.96541e+06
+ 80%|████████  | 40/50 [00:56<00:13,  1.39s/trial, best loss: 1549.2132221830373] 82%|████████▏ | 41/50 [00:56<00:12,  1.38s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 82%|████████▏ | 41/50 [00:56<00:12,  1.38s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[872]	valid_0's l2: 3.14218e+06
+ 82%|████████▏ | 41/50 [00:57<00:12,  1.38s/trial, best loss: 1549.2132221830373] 84%|████████▍ | 42/50 [00:57<00:10,  1.34s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 84%|████████▍ | 42/50 [00:58<00:10,  1.34s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[87]	valid_0's l2: 2.77256e+06
+ 84%|████████▍ | 42/50 [00:58<00:10,  1.34s/trial, best loss: 1549.2132221830373] 86%|████████▌ | 43/50 [00:58<00:08,  1.15s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 86%|████████▌ | 43/50 [00:58<00:08,  1.15s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[331]	valid_0's l2: 3.14869e+06
+ 86%|████████▌ | 43/50 [00:59<00:08,  1.15s/trial, best loss: 1549.2132221830373] 88%|████████▊ | 44/50 [00:59<00:06,  1.06s/trial, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 88%|████████▊ | 44/50 [00:59<00:06,  1.06s/trial, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[214]	valid_0's l2: 2.53192e+06
+ 88%|████████▊ | 44/50 [00:59<00:06,  1.06s/trial, best loss: 1549.2132221830373] 90%|█████████ | 45/50 [00:59<00:04,  1.19trial/s, best loss: 1549.2132221830373]                                                                                 Training until validation scores don't improve for 50 rounds
+ 90%|█████████ | 45/50 [01:00<00:04,  1.19trial/s, best loss: 1549.2132221830373]                                                                                 Early stopping, best iteration is:
+[127]	valid_0's l2: 2.39582e+06
+ 90%|█████████ | 45/50 [01:01<00:04,  1.19trial/s, best loss: 1549.2132221830373] 92%|█████████▏| 46/50 [01:01<00:04,  1.12s/trial, best loss: 1547.8442230072856]                                                                                 Training until validation scores don't improve for 50 rounds
+ 92%|█████████▏| 46/50 [01:01<00:04,  1.12s/trial, best loss: 1547.8442230072856]                                                                                 Early stopping, best iteration is:
+[105]	valid_0's l2: 4.88536e+06
+ 92%|█████████▏| 46/50 [01:02<00:04,  1.12s/trial, best loss: 1547.8442230072856] 94%|█████████▍| 47/50 [01:02<00:03,  1.01s/trial, best loss: 1547.8442230072856]                                                                                 Training until validation scores don't improve for 50 rounds
+ 94%|█████████▍| 47/50 [01:02<00:03,  1.01s/trial, best loss: 1547.8442230072856]                                                                                 Early stopping, best iteration is:
+[557]	valid_0's l2: 4.10767e+06
+ 94%|█████████▍| 47/50 [01:04<00:03,  1.01s/trial, best loss: 1547.8442230072856] 96%|█████████▌| 48/50 [01:04<00:02,  1.43s/trial, best loss: 1547.8442230072856]                                                                                 Training until validation scores don't improve for 50 rounds
+ 96%|█████████▌| 48/50 [01:04<00:02,  1.43s/trial, best loss: 1547.8442230072856]                                                                                 Early stopping, best iteration is:
+[377]	valid_0's l2: 2.84363e+06
+ 96%|█████████▌| 48/50 [01:05<00:02,  1.43s/trial, best loss: 1547.8442230072856] 98%|█████████▊| 49/50 [01:05<00:01,  1.37s/trial, best loss: 1547.8442230072856]                                                                                 Training until validation scores don't improve for 50 rounds
+ 98%|█████████▊| 49/50 [01:06<00:01,  1.37s/trial, best loss: 1547.8442230072856]                                                                                 Early stopping, best iteration is:
+[219]	valid_0's l2: 5.88619e+06
+ 98%|█████████▊| 49/50 [01:07<00:01,  1.37s/trial, best loss: 1547.8442230072856]100%|██████████| 50/50 [01:07<00:00,  1.36s/trial, best loss: 1547.8442230072856]100%|██████████| 50/50 [01:07<00:00,  1.35s/trial, best loss: 1547.8442230072856]
+   [Champion Params] {'colsample_bytree': 0.7403783627517069, 'learning_rate': 0.07096121508653415, 'max_depth': 30, 'min_child_samples': 86, 'n_estimators': 3800, 'num_leaves': 213, 'reg_alpha': 0.1284705979995679, 'reg_lambda': 0.2405396628207522, 'subsample': 0.5617325786047821}
+   [Training] Retraining Champion Model for Final Verification...
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[127]	valid_0's l2: 2.39582e+06
+   [Result] RMSE: 1547.84 | MAE: 899.09
+   [REPORT] Saved to outputs/results_lightgbm.txt
+
+   [Experiment] with_wsi_wind ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Training until validation scores don't improve for 50 rounds
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Early stopping, best iteration is:
+[608]	valid_0's l2: 2.58602e+07
+  0%|          | 0/50 [00:06<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:06<05:35,  6.86s/trial, best loss: 5085.290643325485]                                                                               Training until validation scores don't improve for 50 rounds
+  2%|▏         | 1/50 [00:07<05:35,  6.86s/trial, best loss: 5085.290643325485]                                                                               Early stopping, best iteration is:
+[101]	valid_0's l2: 2.29775e+07
+  2%|▏         | 1/50 [00:08<05:35,  6.86s/trial, best loss: 5085.290643325485]  4%|▍         | 2/50 [00:08<02:54,  3.63s/trial, best loss: 4793.48573217358]                                                                               Training until validation scores don't improve for 50 rounds
+  4%|▍         | 2/50 [00:08<02:54,  3.63s/trial, best loss: 4793.48573217358]                                                                              Early stopping, best iteration is:
+[572]	valid_0's l2: 2.23603e+07
+  4%|▍         | 2/50 [00:10<02:54,  3.63s/trial, best loss: 4793.48573217358]  6%|▌         | 3/50 [00:10<02:16,  2.90s/trial, best loss: 4728.669046279983]                                                                               Training until validation scores don't improve for 50 rounds
+  6%|▌         | 3/50 [00:10<02:16,  2.90s/trial, best loss: 4728.669046279983]                                                                               Early stopping, best iteration is:
+[221]	valid_0's l2: 2.24851e+07
+  6%|▌         | 3/50 [00:11<02:16,  2.90s/trial, best loss: 4728.669046279983]  8%|▊         | 4/50 [00:11<01:36,  2.10s/trial, best loss: 4728.669046279983]                                                                               Training until validation scores don't improve for 50 rounds
+  8%|▊         | 4/50 [00:11<01:36,  2.10s/trial, best loss: 4728.669046279983]                                                                               Early stopping, best iteration is:
+[1020]	valid_0's l2: 2.40227e+07
+  8%|▊         | 4/50 [00:27<01:36,  2.10s/trial, best loss: 4728.669046279983] 10%|█         | 5/50 [00:27<05:29,  7.31s/trial, best loss: 4728.669046279983]                                                                               Training until validation scores don't improve for 50 rounds
+ 10%|█         | 5/50 [00:27<05:29,  7.31s/trial, best loss: 4728.669046279983]                                                                               Early stopping, best iteration is:
+[954]	valid_0's l2: 2.53691e+07
+ 10%|█         | 5/50 [00:33<05:29,  7.31s/trial, best loss: 4728.669046279983] 12%|█▏        | 6/50 [00:34<05:07,  6.99s/trial, best loss: 4728.669046279983]                                                                               Training until validation scores don't improve for 50 rounds
+ 12%|█▏        | 6/50 [00:35<05:07,  6.99s/trial, best loss: 4728.669046279983]                                                                               Early stopping, best iteration is:
+[269]	valid_0's l2: 2.27034e+07
+ 12%|█▏        | 6/50 [00:38<05:07,  6.99s/trial, best loss: 4728.669046279983] 14%|█▍        | 7/50 [00:38<04:22,  6.10s/trial, best loss: 4728.669046279983]                                                                               Training until validation scores don't improve for 50 rounds
+ 14%|█▍        | 7/50 [00:38<04:22,  6.10s/trial, best loss: 4728.669046279983]                                                                               Early stopping, best iteration is:
+[288]	valid_0's l2: 2.50369e+07
+ 14%|█▍        | 7/50 [00:39<04:22,  6.10s/trial, best loss: 4728.669046279983] 16%|█▌        | 8/50 [00:39<03:09,  4.51s/trial, best loss: 4728.669046279983]                                                                               Training until validation scores don't improve for 50 rounds
+ 16%|█▌        | 8/50 [00:39<03:09,  4.51s/trial, best loss: 4728.669046279983]                                                                               Early stopping, best iteration is:
+[120]	valid_0's l2: 2.52313e+07
+ 16%|█▌        | 8/50 [00:40<03:09,  4.51s/trial, best loss: 4728.669046279983] 18%|█▊        | 9/50 [00:40<02:18,  3.39s/trial, best loss: 4728.669046279983]                                                                               Training until validation scores don't improve for 50 rounds
+ 18%|█▊        | 9/50 [00:40<02:18,  3.39s/trial, best loss: 4728.669046279983]                                                                               Early stopping, best iteration is:
+[20]	valid_0's l2: 2.55611e+07
+ 18%|█▊        | 9/50 [00:40<02:18,  3.39s/trial, best loss: 4728.669046279983] 20%|██        | 10/50 [00:40<01:38,  2.46s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 20%|██        | 10/50 [00:40<01:38,  2.46s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[22]	valid_0's l2: 2.49873e+07
+ 20%|██        | 10/50 [00:40<01:38,  2.46s/trial, best loss: 4728.669046279983] 22%|██▏       | 11/50 [00:40<01:09,  1.79s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 22%|██▏       | 11/50 [00:44<01:09,  1.79s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[70]	valid_0's l2: 2.40943e+07
+ 22%|██▏       | 11/50 [00:44<01:09,  1.79s/trial, best loss: 4728.669046279983] 24%|██▍       | 12/50 [00:44<01:33,  2.46s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 24%|██▍       | 12/50 [00:44<01:33,  2.46s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[67]	valid_0's l2: 2.40648e+07
+ 24%|██▍       | 12/50 [00:45<01:33,  2.46s/trial, best loss: 4728.669046279983] 26%|██▌       | 13/50 [00:45<01:07,  1.83s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 26%|██▌       | 13/50 [00:45<01:07,  1.83s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[43]	valid_0's l2: 2.33865e+07
+ 26%|██▌       | 13/50 [00:45<01:07,  1.83s/trial, best loss: 4728.669046279983] 28%|██▊       | 14/50 [00:45<00:49,  1.38s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 28%|██▊       | 14/50 [00:48<00:49,  1.38s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[39]	valid_0's l2: 2.38801e+07
+ 28%|██▊       | 14/50 [00:48<00:49,  1.38s/trial, best loss: 4728.669046279983] 30%|███       | 15/50 [00:48<01:06,  1.91s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 30%|███       | 15/50 [00:48<01:06,  1.91s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[416]	valid_0's l2: 2.39935e+07
+ 30%|███       | 15/50 [00:53<01:06,  1.91s/trial, best loss: 4728.669046279983] 32%|███▏      | 16/50 [00:53<01:38,  2.89s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 32%|███▏      | 16/50 [00:54<01:38,  2.89s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[45]	valid_0's l2: 2.39401e+07
+ 32%|███▏      | 16/50 [00:54<01:38,  2.89s/trial, best loss: 4728.669046279983] 34%|███▍      | 17/50 [00:54<01:11,  2.15s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 34%|███▍      | 17/50 [00:54<01:11,  2.15s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[36]	valid_0's l2: 2.39579e+07
+ 34%|███▍      | 17/50 [00:54<01:11,  2.15s/trial, best loss: 4728.669046279983] 36%|███▌      | 18/50 [00:54<00:51,  1.60s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 36%|███▌      | 18/50 [00:54<00:51,  1.60s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[42]	valid_0's l2: 2.23722e+07
+ 36%|███▌      | 18/50 [00:55<00:51,  1.60s/trial, best loss: 4728.669046279983] 38%|███▊      | 19/50 [00:55<00:38,  1.24s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 38%|███▊      | 19/50 [00:55<00:38,  1.24s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[21]	valid_0's l2: 2.5259e+07
+ 38%|███▊      | 19/50 [00:55<00:38,  1.24s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 40%|████      | 20/50 [00:55<00:37,  1.24s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[58]	valid_0's l2: 2.45864e+07
+ 40%|████      | 20/50 [00:55<00:37,  1.24s/trial, best loss: 4728.669046279983] 42%|████▏     | 21/50 [00:55<00:23,  1.22trial/s, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 42%|████▏     | 21/50 [00:55<00:23,  1.22trial/s, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[62]	valid_0's l2: 2.38777e+07
+ 42%|████▏     | 21/50 [00:56<00:23,  1.22trial/s, best loss: 4728.669046279983] 44%|████▍     | 22/50 [00:56<00:22,  1.22trial/s, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 44%|████▍     | 22/50 [00:56<00:22,  1.22trial/s, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[190]	valid_0's l2: 2.39808e+07
+ 44%|████▍     | 22/50 [00:58<00:22,  1.22trial/s, best loss: 4728.669046279983] 46%|████▌     | 23/50 [00:58<00:30,  1.15s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 46%|████▌     | 23/50 [00:58<00:30,  1.15s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[99]	valid_0's l2: 2.4899e+07
+ 46%|████▌     | 23/50 [00:58<00:30,  1.15s/trial, best loss: 4728.669046279983] 48%|████▊     | 24/50 [00:58<00:22,  1.13trial/s, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 48%|████▊     | 24/50 [00:58<00:22,  1.13trial/s, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[834]	valid_0's l2: 2.41982e+07
+ 48%|████▊     | 24/50 [01:01<00:22,  1.13trial/s, best loss: 4728.669046279983] 50%|█████     | 25/50 [01:01<00:33,  1.34s/trial, best loss: 4728.669046279983]                                                                                Training until validation scores don't improve for 50 rounds
+ 50%|█████     | 25/50 [01:01<00:33,  1.34s/trial, best loss: 4728.669046279983]                                                                                Early stopping, best iteration is:
+[68]	valid_0's l2: 2.19346e+07
+ 50%|█████     | 25/50 [01:01<00:33,  1.34s/trial, best loss: 4728.669046279983] 52%|█████▏    | 26/50 [01:01<00:25,  1.05s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 52%|█████▏    | 26/50 [01:01<00:25,  1.05s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[133]	valid_0's l2: 2.29964e+07
+ 52%|█████▏    | 26/50 [01:02<00:25,  1.05s/trial, best loss: 4683.441480530763] 54%|█████▍    | 27/50 [01:02<00:20,  1.10trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 54%|█████▍    | 27/50 [01:02<00:20,  1.10trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[143]	valid_0's l2: 2.34707e+07
+ 54%|█████▍    | 27/50 [01:03<00:20,  1.10trial/s, best loss: 4683.441480530763] 56%|█████▌    | 28/50 [01:03<00:19,  1.15trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 56%|█████▌    | 28/50 [01:03<00:19,  1.15trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[407]	valid_0's l2: 2.30684e+07
+ 56%|█████▌    | 28/50 [01:03<00:19,  1.15trial/s, best loss: 4683.441480530763] 58%|█████▊    | 29/50 [01:03<00:16,  1.24trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 58%|█████▊    | 29/50 [01:04<00:16,  1.24trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[432]	valid_0's l2: 2.41542e+07
+ 58%|█████▊    | 29/50 [01:05<00:16,  1.24trial/s, best loss: 4683.441480530763] 60%|██████    | 30/50 [01:05<00:23,  1.17s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 60%|██████    | 30/50 [01:05<00:23,  1.17s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[440]	valid_0's l2: 2.24122e+07
+ 60%|██████    | 30/50 [01:06<00:23,  1.17s/trial, best loss: 4683.441480530763] 62%|██████▏   | 31/50 [01:06<00:22,  1.18s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 62%|██████▏   | 31/50 [01:06<00:22,  1.18s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[128]	valid_0's l2: 2.31347e+07
+ 62%|██████▏   | 31/50 [01:07<00:22,  1.18s/trial, best loss: 4683.441480530763] 64%|██████▍   | 32/50 [01:07<00:18,  1.00s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 64%|██████▍   | 32/50 [01:07<00:18,  1.00s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[105]	valid_0's l2: 2.28946e+07
+ 64%|██████▍   | 32/50 [01:07<00:18,  1.00s/trial, best loss: 4683.441480530763] 66%|██████▌   | 33/50 [01:07<00:14,  1.21trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 66%|██████▌   | 33/50 [01:08<00:14,  1.21trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[146]	valid_0's l2: 2.28258e+07
+ 66%|██████▌   | 33/50 [01:09<00:14,  1.21trial/s, best loss: 4683.441480530763] 68%|██████▊   | 34/50 [01:09<00:15,  1.02trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 68%|██████▊   | 34/50 [01:09<00:15,  1.02trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[296]	valid_0's l2: 2.25644e+07
+ 68%|██████▊   | 34/50 [01:10<00:15,  1.02trial/s, best loss: 4683.441480530763] 70%|███████   | 35/50 [01:10<00:14,  1.00trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 70%|███████   | 35/50 [01:10<00:14,  1.00trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[446]	valid_0's l2: 2.31761e+07
+ 70%|███████   | 35/50 [01:12<00:14,  1.00trial/s, best loss: 4683.441480530763] 72%|███████▏  | 36/50 [01:12<00:17,  1.23s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 72%|███████▏  | 36/50 [01:12<00:17,  1.23s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[684]	valid_0's l2: 2.26222e+07
+ 72%|███████▏  | 36/50 [01:14<00:17,  1.23s/trial, best loss: 4683.441480530763] 74%|███████▍  | 37/50 [01:14<00:20,  1.57s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 74%|███████▍  | 37/50 [01:14<00:20,  1.57s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[219]	valid_0's l2: 2.3961e+07
+ 74%|███████▍  | 37/50 [01:14<00:20,  1.57s/trial, best loss: 4683.441480530763] 76%|███████▌  | 38/50 [01:14<00:14,  1.19s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 76%|███████▌  | 38/50 [01:14<00:14,  1.19s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[304]	valid_0's l2: 2.37524e+07
+ 76%|███████▌  | 38/50 [01:15<00:14,  1.19s/trial, best loss: 4683.441480530763] 78%|███████▊  | 39/50 [01:15<00:11,  1.06s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 78%|███████▊  | 39/50 [01:15<00:11,  1.06s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[205]	valid_0's l2: 2.32374e+07
+ 78%|███████▊  | 39/50 [01:16<00:11,  1.06s/trial, best loss: 4683.441480530763] 80%|████████  | 40/50 [01:16<00:08,  1.13trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 80%|████████  | 40/50 [01:16<00:08,  1.13trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[150]	valid_0's l2: 2.51999e+07
+ 80%|████████  | 40/50 [01:16<00:08,  1.13trial/s, best loss: 4683.441480530763] 82%|████████▏ | 41/50 [01:16<00:07,  1.20trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 82%|████████▏ | 41/50 [01:16<00:07,  1.20trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[100]	valid_0's l2: 2.39637e+07
+ 82%|████████▏ | 41/50 [01:17<00:07,  1.20trial/s, best loss: 4683.441480530763] 84%|████████▍ | 42/50 [01:17<00:06,  1.19trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 84%|████████▍ | 42/50 [01:17<00:06,  1.19trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[22]	valid_0's l2: 2.5695e+07
+ 84%|████████▍ | 42/50 [01:17<00:06,  1.19trial/s, best loss: 4683.441480530763] 86%|████████▌ | 43/50 [01:17<00:04,  1.57trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 86%|████████▌ | 43/50 [01:17<00:04,  1.57trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[110]	valid_0's l2: 2.49599e+07
+ 86%|████████▌ | 43/50 [01:18<00:04,  1.57trial/s, best loss: 4683.441480530763] 88%|████████▊ | 44/50 [01:18<00:04,  1.33trial/s, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 88%|████████▊ | 44/50 [01:18<00:04,  1.33trial/s, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[601]	valid_0's l2: 2.32822e+07
+ 88%|████████▊ | 44/50 [01:21<00:04,  1.33trial/s, best loss: 4683.441480530763] 90%|█████████ | 45/50 [01:21<00:06,  1.33s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 90%|█████████ | 45/50 [01:21<00:06,  1.33s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[35]	valid_0's l2: 2.37608e+07
+ 90%|█████████ | 45/50 [01:22<00:06,  1.33s/trial, best loss: 4683.441480530763] 92%|█████████▏| 46/50 [01:22<00:04,  1.20s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 92%|█████████▏| 46/50 [01:23<00:04,  1.20s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[450]	valid_0's l2: 2.38419e+07
+ 92%|█████████▏| 46/50 [01:28<00:04,  1.20s/trial, best loss: 4683.441480530763] 94%|█████████▍| 47/50 [01:28<00:07,  2.65s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 94%|█████████▍| 47/50 [01:28<00:07,  2.65s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[165]	valid_0's l2: 2.50096e+07
+ 94%|█████████▍| 47/50 [01:28<00:07,  2.65s/trial, best loss: 4683.441480530763] 96%|█████████▌| 48/50 [01:28<00:03,  1.94s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 96%|█████████▌| 48/50 [01:29<00:03,  1.94s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[401]	valid_0's l2: 2.31876e+07
+ 96%|█████████▌| 48/50 [01:29<00:03,  1.94s/trial, best loss: 4683.441480530763] 98%|█████████▊| 49/50 [01:29<00:01,  1.69s/trial, best loss: 4683.441480530763]                                                                                Training until validation scores don't improve for 50 rounds
+ 98%|█████████▊| 49/50 [01:29<00:01,  1.69s/trial, best loss: 4683.441480530763]                                                                                Early stopping, best iteration is:
+[237]	valid_0's l2: 2.3897e+07
+ 98%|█████████▊| 49/50 [01:31<00:01,  1.69s/trial, best loss: 4683.441480530763]100%|██████████| 50/50 [01:31<00:00,  1.75s/trial, best loss: 4683.441480530763]100%|██████████| 50/50 [01:31<00:00,  1.83s/trial, best loss: 4683.441480530763]
+   [Champion Params] {'colsample_bytree': 0.7947526908111789, 'learning_rate': 0.04586656510656509, 'max_depth': 10, 'min_child_samples': 80, 'n_estimators': 4200, 'num_leaves': 61, 'reg_alpha': 1.0933040286357592, 'reg_lambda': 0.275728255882872, 'subsample': 0.74252260826126}
+   [Training] Retraining Champion Model for Final Verification...
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[68]	valid_0's l2: 2.19346e+07
+   [Result] RMSE: 4683.44 | MAE: 3737.02
+   [REPORT] Saved to outputs/results_lightgbm.txt
+
+   [Experiment] no_wsi_wind ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Training until validation scores don't improve for 50 rounds
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]                                                      Early stopping, best iteration is:
+[186]	valid_0's l2: 2.86265e+07
+  0%|          | 0/50 [00:02<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:02<02:23,  2.93s/trial, best loss: 5350.370498804144]                                                                               Training until validation scores don't improve for 50 rounds
+  2%|▏         | 1/50 [00:03<02:23,  2.93s/trial, best loss: 5350.370498804144]                                                                               Early stopping, best iteration is:
+[113]	valid_0's l2: 2.8449e+07
+  2%|▏         | 1/50 [00:03<02:23,  2.93s/trial, best loss: 5350.370498804144]  4%|▍         | 2/50 [00:03<01:16,  1.60s/trial, best loss: 5333.760496066407]                                                                               Training until validation scores don't improve for 50 rounds
+  4%|▍         | 2/50 [00:03<01:16,  1.60s/trial, best loss: 5333.760496066407]                                                                               Early stopping, best iteration is:
+[19]	valid_0's l2: 2.49728e+07
+  4%|▍         | 2/50 [00:03<01:16,  1.60s/trial, best loss: 5333.760496066407]  6%|▌         | 3/50 [00:03<00:48,  1.04s/trial, best loss: 4997.279551857824]                                                                               Training until validation scores don't improve for 50 rounds
+  6%|▌         | 3/50 [00:04<00:48,  1.04s/trial, best loss: 4997.279551857824]                                                                               Early stopping, best iteration is:
+[51]	valid_0's l2: 2.40989e+07
+  6%|▌         | 3/50 [00:04<00:48,  1.04s/trial, best loss: 4997.279551857824]  8%|▊         | 4/50 [00:04<00:39,  1.18trial/s, best loss: 4909.06311692574]                                                                               Training until validation scores don't improve for 50 rounds
+  8%|▊         | 4/50 [00:04<00:39,  1.18trial/s, best loss: 4909.06311692574]                                                                              Early stopping, best iteration is:
+[277]	valid_0's l2: 2.72524e+07
+  8%|▊         | 4/50 [00:04<00:39,  1.18trial/s, best loss: 4909.06311692574] 10%|█         | 5/50 [00:04<00:30,  1.46trial/s, best loss: 4909.06311692574]                                                                              Training until validation scores don't improve for 50 rounds
+ 10%|█         | 5/50 [00:04<00:30,  1.46trial/s, best loss: 4909.06311692574]                                                                              Early stopping, best iteration is:
+[57]	valid_0's l2: 2.53939e+07
+ 10%|█         | 5/50 [00:05<00:30,  1.46trial/s, best loss: 4909.06311692574] 12%|█▏        | 6/50 [00:05<00:25,  1.72trial/s, best loss: 4909.06311692574]                                                                              Training until validation scores don't improve for 50 rounds
+ 12%|█▏        | 6/50 [00:05<00:25,  1.72trial/s, best loss: 4909.06311692574]                                                                              Early stopping, best iteration is:
+[397]	valid_0's l2: 2.52029e+07
+ 12%|█▏        | 6/50 [00:06<00:25,  1.72trial/s, best loss: 4909.06311692574] 14%|█▍        | 7/50 [00:06<00:27,  1.57trial/s, best loss: 4909.06311692574]                                                                              Training until validation scores don't improve for 50 rounds
+ 14%|█▍        | 7/50 [00:06<00:27,  1.57trial/s, best loss: 4909.06311692574]                                                                              Early stopping, best iteration is:
+[55]	valid_0's l2: 2.52877e+07
+ 14%|█▍        | 7/50 [00:06<00:27,  1.57trial/s, best loss: 4909.06311692574] 16%|█▌        | 8/50 [00:06<00:25,  1.65trial/s, best loss: 4909.06311692574]                                                                              Training until validation scores don't improve for 50 rounds
+ 16%|█▌        | 8/50 [00:06<00:25,  1.65trial/s, best loss: 4909.06311692574]                                                                              Early stopping, best iteration is:
+[200]	valid_0's l2: 2.30642e+07
+ 16%|█▌        | 8/50 [00:07<00:25,  1.65trial/s, best loss: 4909.06311692574] 18%|█▊        | 9/50 [00:07<00:26,  1.55trial/s, best loss: 4802.523077950317]                                                                               Training until validation scores don't improve for 50 rounds
+ 18%|█▊        | 9/50 [00:07<00:26,  1.55trial/s, best loss: 4802.523077950317]                                                                               Early stopping, best iteration is:
+[155]	valid_0's l2: 2.28753e+07
+ 18%|█▊        | 9/50 [00:07<00:26,  1.55trial/s, best loss: 4802.523077950317] 20%|██        | 10/50 [00:07<00:25,  1.58trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 20%|██        | 10/50 [00:08<00:25,  1.58trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[207]	valid_0's l2: 2.6356e+07
+ 20%|██        | 10/50 [00:09<00:25,  1.58trial/s, best loss: 4782.814677148918] 22%|██▏       | 11/50 [00:09<00:32,  1.22trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 22%|██▏       | 11/50 [00:09<00:32,  1.22trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[102]	valid_0's l2: 2.58285e+07
+ 22%|██▏       | 11/50 [00:09<00:32,  1.22trial/s, best loss: 4782.814677148918] 24%|██▍       | 12/50 [00:09<00:26,  1.45trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 24%|██▍       | 12/50 [00:09<00:26,  1.45trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[48]	valid_0's l2: 2.38859e+07
+ 24%|██▍       | 12/50 [00:09<00:26,  1.45trial/s, best loss: 4782.814677148918] 26%|██▌       | 13/50 [00:09<00:20,  1.80trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 26%|██▌       | 13/50 [00:09<00:20,  1.80trial/s, best loss: 4782.814677148918]                                                                                Did not meet early stopping. Best iteration is:
+[697]	valid_0's l2: 2.61818e+07
+ 26%|██▌       | 13/50 [00:10<00:20,  1.80trial/s, best loss: 4782.814677148918] 28%|██▊       | 14/50 [00:10<00:23,  1.54trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 28%|██▊       | 14/50 [00:10<00:23,  1.54trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[113]	valid_0's l2: 2.5938e+07
+ 28%|██▊       | 14/50 [00:11<00:23,  1.54trial/s, best loss: 4782.814677148918] 30%|███       | 15/50 [00:11<00:27,  1.27trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 30%|███       | 15/50 [00:11<00:27,  1.27trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[85]	valid_0's l2: 2.98522e+07
+ 30%|███       | 15/50 [00:12<00:27,  1.27trial/s, best loss: 4782.814677148918] 32%|███▏      | 16/50 [00:12<00:24,  1.39trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 32%|███▏      | 16/50 [00:12<00:24,  1.39trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[40]	valid_0's l2: 2.45612e+07
+ 32%|███▏      | 16/50 [00:12<00:24,  1.39trial/s, best loss: 4782.814677148918] 34%|███▍      | 17/50 [00:12<00:22,  1.45trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 34%|███▍      | 17/50 [00:13<00:22,  1.45trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[198]	valid_0's l2: 2.55689e+07
+ 34%|███▍      | 17/50 [00:13<00:22,  1.45trial/s, best loss: 4782.814677148918] 36%|███▌      | 18/50 [00:13<00:23,  1.36trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 36%|███▌      | 18/50 [00:13<00:23,  1.36trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[48]	valid_0's l2: 2.50355e+07
+ 36%|███▌      | 18/50 [00:13<00:23,  1.36trial/s, best loss: 4782.814677148918] 38%|███▊      | 19/50 [00:13<00:17,  1.78trial/s, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 38%|███▊      | 19/50 [00:14<00:17,  1.78trial/s, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[194]	valid_0's l2: 2.66069e+07
+ 38%|███▊      | 19/50 [00:16<00:17,  1.78trial/s, best loss: 4782.814677148918] 40%|████      | 20/50 [00:16<00:31,  1.04s/trial, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 40%|████      | 20/50 [00:16<00:31,  1.04s/trial, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[387]	valid_0's l2: 2.32661e+07
+ 40%|████      | 20/50 [00:17<00:31,  1.04s/trial, best loss: 4782.814677148918] 42%|████▏     | 21/50 [00:17<00:31,  1.08s/trial, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 42%|████▏     | 21/50 [00:17<00:31,  1.08s/trial, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[272]	valid_0's l2: 2.33145e+07
+ 42%|████▏     | 21/50 [00:18<00:31,  1.08s/trial, best loss: 4782.814677148918] 44%|████▍     | 22/50 [00:18<00:28,  1.03s/trial, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 44%|████▍     | 22/50 [00:18<00:28,  1.03s/trial, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[388]	valid_0's l2: 2.43233e+07
+ 44%|████▍     | 22/50 [00:19<00:28,  1.03s/trial, best loss: 4782.814677148918] 46%|████▌     | 23/50 [00:19<00:32,  1.19s/trial, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 46%|████▌     | 23/50 [00:19<00:32,  1.19s/trial, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[210]	valid_0's l2: 2.46137e+07
+ 46%|████▌     | 23/50 [00:20<00:32,  1.19s/trial, best loss: 4782.814677148918] 48%|████▊     | 24/50 [00:20<00:26,  1.03s/trial, best loss: 4782.814677148918]                                                                                Training until validation scores don't improve for 50 rounds
+ 48%|████▊     | 24/50 [00:20<00:26,  1.03s/trial, best loss: 4782.814677148918]                                                                                Early stopping, best iteration is:
+[255]	valid_0's l2: 2.28745e+07
+ 48%|████▊     | 24/50 [00:21<00:26,  1.03s/trial, best loss: 4782.814677148918] 50%|█████     | 25/50 [00:21<00:25,  1.01s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 50%|█████     | 25/50 [00:21<00:25,  1.01s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[430]	valid_0's l2: 2.31609e+07
+ 50%|█████     | 25/50 [00:23<00:25,  1.01s/trial, best loss: 4782.724433260256] 52%|█████▏    | 26/50 [00:23<00:35,  1.47s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 52%|█████▏    | 26/50 [00:24<00:35,  1.47s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[375]	valid_0's l2: 2.32101e+07
+ 52%|█████▏    | 26/50 [00:25<00:35,  1.47s/trial, best loss: 4782.724433260256] 54%|█████▍    | 27/50 [00:25<00:33,  1.45s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 54%|█████▍    | 27/50 [00:26<00:33,  1.45s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[266]	valid_0's l2: 2.57754e+07
+ 54%|█████▍    | 27/50 [00:27<00:33,  1.45s/trial, best loss: 4782.724433260256] 56%|█████▌    | 28/50 [00:27<00:38,  1.77s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 56%|█████▌    | 28/50 [00:27<00:38,  1.77s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[182]	valid_0's l2: 2.36386e+07
+ 56%|█████▌    | 28/50 [00:29<00:38,  1.77s/trial, best loss: 4782.724433260256] 58%|█████▊    | 29/50 [00:29<00:35,  1.71s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 58%|█████▊    | 29/50 [00:29<00:35,  1.71s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[768]	valid_0's l2: 2.7584e+07
+ 58%|█████▊    | 29/50 [00:30<00:35,  1.71s/trial, best loss: 4782.724433260256] 60%|██████    | 30/50 [00:30<00:31,  1.55s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 60%|██████    | 30/50 [00:30<00:31,  1.55s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[366]	valid_0's l2: 2.34981e+07
+ 60%|██████    | 30/50 [00:31<00:31,  1.55s/trial, best loss: 4782.724433260256] 62%|██████▏   | 31/50 [00:31<00:27,  1.45s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 62%|██████▏   | 31/50 [00:31<00:27,  1.45s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[181]	valid_0's l2: 2.29943e+07
+ 62%|██████▏   | 31/50 [00:32<00:27,  1.45s/trial, best loss: 4782.724433260256] 64%|██████▍   | 32/50 [00:32<00:21,  1.19s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 64%|██████▍   | 32/50 [00:33<00:21,  1.19s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[648]	valid_0's l2: 2.3323e+07
+ 64%|██████▍   | 32/50 [00:35<00:21,  1.19s/trial, best loss: 4782.724433260256] 66%|██████▌   | 33/50 [00:35<00:32,  1.90s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 66%|██████▌   | 33/50 [00:36<00:32,  1.90s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[407]	valid_0's l2: 2.65853e+07
+ 66%|██████▌   | 33/50 [00:41<00:32,  1.90s/trial, best loss: 4782.724433260256] 68%|██████▊   | 34/50 [00:41<00:47,  2.96s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 68%|██████▊   | 34/50 [00:41<00:47,  2.96s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[80]	valid_0's l2: 2.7351e+07
+ 68%|██████▊   | 34/50 [00:41<00:47,  2.96s/trial, best loss: 4782.724433260256] 70%|███████   | 35/50 [00:41<00:31,  2.13s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 70%|███████   | 35/50 [00:41<00:31,  2.13s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[301]	valid_0's l2: 2.54883e+07
+ 70%|███████   | 35/50 [00:42<00:31,  2.13s/trial, best loss: 4782.724433260256] 72%|███████▏  | 36/50 [00:42<00:26,  1.87s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 72%|███████▏  | 36/50 [00:42<00:26,  1.87s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[181]	valid_0's l2: 2.29394e+07
+ 72%|███████▏  | 36/50 [00:43<00:26,  1.87s/trial, best loss: 4782.724433260256] 74%|███████▍  | 37/50 [00:43<00:19,  1.50s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 74%|███████▍  | 37/50 [00:43<00:19,  1.50s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[260]	valid_0's l2: 2.41146e+07
+ 74%|███████▍  | 37/50 [00:45<00:19,  1.50s/trial, best loss: 4782.724433260256] 76%|███████▌  | 38/50 [00:45<00:20,  1.75s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 76%|███████▌  | 38/50 [00:45<00:20,  1.75s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[70]	valid_0's l2: 2.42502e+07
+ 76%|███████▌  | 38/50 [00:46<00:20,  1.75s/trial, best loss: 4782.724433260256] 78%|███████▊  | 39/50 [00:46<00:14,  1.35s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 78%|███████▊  | 39/50 [00:46<00:14,  1.35s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[356]	valid_0's l2: 2.31837e+07
+ 78%|███████▊  | 39/50 [00:47<00:14,  1.35s/trial, best loss: 4782.724433260256] 80%|████████  | 40/50 [00:48<00:14,  1.47s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 80%|████████  | 40/50 [00:48<00:14,  1.47s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[107]	valid_0's l2: 2.60389e+07
+ 80%|████████  | 40/50 [00:48<00:14,  1.47s/trial, best loss: 4782.724433260256] 82%|████████▏ | 41/50 [00:48<00:09,  1.10s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 82%|████████▏ | 41/50 [00:48<00:09,  1.10s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[31]	valid_0's l2: 2.50308e+07
+ 82%|████████▏ | 41/50 [00:48<00:09,  1.10s/trial, best loss: 4782.724433260256] 84%|████████▍ | 42/50 [00:48<00:06,  1.18trial/s, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 84%|████████▍ | 42/50 [00:48<00:06,  1.18trial/s, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[102]	valid_0's l2: 2.34229e+07
+ 84%|████████▍ | 42/50 [00:48<00:06,  1.18trial/s, best loss: 4782.724433260256] 86%|████████▌ | 43/50 [00:48<00:04,  1.40trial/s, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 86%|████████▌ | 43/50 [00:48<00:04,  1.40trial/s, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[277]	valid_0's l2: 2.62744e+07
+ 86%|████████▌ | 43/50 [00:49<00:04,  1.40trial/s, best loss: 4782.724433260256] 88%|████████▊ | 44/50 [00:49<00:04,  1.23trial/s, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 88%|████████▊ | 44/50 [00:49<00:04,  1.23trial/s, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[509]	valid_0's l2: 2.43129e+07
+ 88%|████████▊ | 44/50 [00:51<00:04,  1.23trial/s, best loss: 4782.724433260256] 90%|█████████ | 45/50 [00:51<00:05,  1.11s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 90%|█████████ | 45/50 [00:51<00:05,  1.11s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[105]	valid_0's l2: 2.609e+07
+ 90%|█████████ | 45/50 [00:55<00:05,  1.11s/trial, best loss: 4782.724433260256] 92%|█████████▏| 46/50 [00:55<00:07,  1.86s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 92%|█████████▏| 46/50 [00:55<00:07,  1.86s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[57]	valid_0's l2: 2.31781e+07
+ 92%|█████████▏| 46/50 [00:55<00:07,  1.86s/trial, best loss: 4782.724433260256] 94%|█████████▍| 47/50 [00:55<00:04,  1.43s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 94%|█████████▍| 47/50 [00:55<00:04,  1.43s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[21]	valid_0's l2: 2.33293e+07
+ 94%|█████████▍| 47/50 [00:55<00:04,  1.43s/trial, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 96%|█████████▌| 48/50 [00:55<00:02,  1.43s/trial, best loss: 4782.724433260256]                                                                                Early stopping, best iteration is:
+[323]	valid_0's l2: 2.31393e+07
+ 96%|█████████▌| 48/50 [00:56<00:02,  1.43s/trial, best loss: 4782.724433260256] 98%|█████████▊| 49/50 [00:56<00:00,  1.03trial/s, best loss: 4782.724433260256]                                                                                Training until validation scores don't improve for 50 rounds
+ 98%|█████████▊| 49/50 [00:56<00:00,  1.03trial/s, best loss: 4782.724433260256]                                                                                Did not meet early stopping. Best iteration is:
+[600]	valid_0's l2: 2.43413e+07
+ 98%|█████████▊| 49/50 [01:03<00:00,  1.03trial/s, best loss: 4782.724433260256]100%|██████████| 50/50 [01:03<00:00,  2.35s/trial, best loss: 4782.724433260256]100%|██████████| 50/50 [01:03<00:00,  1.26s/trial, best loss: 4782.724433260256]
+   [Champion Params] {'colsample_bytree': 0.8162178282523798, 'learning_rate': 0.012745459283183594, 'max_depth': 30, 'min_child_samples': 80, 'n_estimators': 4800, 'num_leaves': 197, 'reg_alpha': 21.54748903563212, 'reg_lambda': 0.032372319553646514, 'subsample': 0.6946372754026694}
+   [Training] Retraining Champion Model for Final Verification...
+Training until validation scores don't improve for 50 rounds
+Early stopping, best iteration is:
+[255]	valid_0's l2: 2.28745e+07
+   [Result] RMSE: 4782.72 | MAE: 3845.76
+   [REPORT] Saved to outputs/results_lightgbm.txt
+
+>>> ENTERING ARENA: CATBOOST <<<
+
+   [Experiment] with_wsi_solar ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:01<01:01,  1.26s/trial, best loss: 1932.3978258220336]  4%|▍         | 2/50 [00:03<01:30,  1.88s/trial, best loss: 1842.6202653596185]  6%|▌         | 3/50 [00:05<01:30,  1.92s/trial, best loss: 1644.5074105787294]  8%|▊         | 4/50 [00:09<02:14,  2.92s/trial, best loss: 1644.5074105787294] 10%|█         | 5/50 [00:10<01:33,  2.08s/trial, best loss: 1580.981709872711]  12%|█▏        | 6/50 [00:10<01:04,  1.47s/trial, best loss: 1580.981709872711] 14%|█▍        | 7/50 [00:11<00:48,  1.12s/trial, best loss: 1410.1425856459775] 16%|█▌        | 8/50 [00:14<01:10,  1.67s/trial, best loss: 1410.1425856459775] 18%|█▊        | 9/50 [00:14<00:50,  1.22s/trial, best loss: 1410.1425856459775] 20%|██        | 10/50 [00:19<01:33,  2.33s/trial, best loss: 1410.1425856459775] 22%|██▏       | 11/50 [00:21<01:26,  2.23s/trial, best loss: 1410.1425856459775] 24%|██▍       | 12/50 [00:21<01:00,  1.60s/trial, best loss: 1410.1425856459775] 26%|██▌       | 13/50 [00:24<01:16,  2.08s/trial, best loss: 1410.1425856459775] 28%|██▊       | 14/50 [00:24<00:54,  1.52s/trial, best loss: 1410.1425856459775] 30%|███       | 15/50 [00:25<00:48,  1.38s/trial, best loss: 1410.1425856459775] 32%|███▏      | 16/50 [00:28<00:58,  1.71s/trial, best loss: 1410.1425856459775] 34%|███▍      | 17/50 [00:31<01:11,  2.17s/trial, best loss: 1410.1425856459775] 36%|███▌      | 18/50 [00:31<00:51,  1.60s/trial, best loss: 1410.1425856459775] 38%|███▊      | 19/50 [00:33<00:51,  1.67s/trial, best loss: 1410.1425856459775] 40%|████      | 20/50 [00:33<00:38,  1.29s/trial, best loss: 1410.1425856459775] 42%|████▏     | 21/50 [00:34<00:34,  1.20s/trial, best loss: 1410.1425856459775] 44%|████▍     | 22/50 [00:35<00:30,  1.11s/trial, best loss: 1410.1425856459775] 46%|████▌     | 23/50 [00:36<00:23,  1.15trial/s, best loss: 1410.1425856459775] 48%|████▊     | 24/50 [00:36<00:21,  1.21trial/s, best loss: 1410.1425856459775] 50%|█████     | 25/50 [00:37<00:16,  1.53trial/s, best loss: 1410.1425856459775] 52%|█████▏    | 26/50 [00:39<00:31,  1.30s/trial, best loss: 1410.1425856459775] 54%|█████▍    | 27/50 [00:40<00:25,  1.10s/trial, best loss: 1410.1425856459775] 56%|█████▌    | 28/50 [00:40<00:19,  1.15trial/s, best loss: 1410.1425856459775] 58%|█████▊    | 29/50 [00:41<00:15,  1.34trial/s, best loss: 1410.1425856459775] 60%|██████    | 30/50 [00:43<00:20,  1.03s/trial, best loss: 1410.1425856459775] 62%|██████▏   | 31/50 [00:43<00:16,  1.17trial/s, best loss: 1410.1425856459775] 64%|██████▍   | 32/50 [00:44<00:17,  1.03trial/s, best loss: 1410.1425856459775] 66%|██████▌   | 33/50 [00:45<00:13,  1.30trial/s, best loss: 1410.1425856459775] 68%|██████▊   | 34/50 [00:47<00:18,  1.16s/trial, best loss: 1410.1425856459775] 70%|███████   | 35/50 [00:47<00:13,  1.13trial/s, best loss: 1410.1425856459775] 72%|███████▏  | 36/50 [00:48<00:13,  1.07trial/s, best loss: 1410.1425856459775] 74%|███████▍  | 37/50 [00:48<00:10,  1.29trial/s, best loss: 1410.1425856459775] 76%|███████▌  | 38/50 [00:49<00:08,  1.35trial/s, best loss: 1410.1425856459775] 78%|███████▊  | 39/50 [00:57<00:32,  2.93s/trial, best loss: 1410.1425856459775] 80%|████████  | 40/50 [00:58<00:22,  2.29s/trial, best loss: 1410.1425856459775] 82%|████████▏ | 41/50 [00:58<00:15,  1.70s/trial, best loss: 1410.1425856459775] 84%|████████▍ | 42/50 [00:59<00:10,  1.32s/trial, best loss: 1410.1425856459775] 86%|████████▌ | 43/50 [00:59<00:08,  1.19s/trial, best loss: 1410.1425856459775] 88%|████████▊ | 44/50 [01:00<00:06,  1.09s/trial, best loss: 1410.1425856459775] 90%|█████████ | 45/50 [01:01<00:05,  1.04s/trial, best loss: 1410.1425856459775] 92%|█████████▏| 46/50 [01:02<00:04,  1.04s/trial, best loss: 1410.1425856459775] 94%|█████████▍| 47/50 [01:07<00:06,  2.08s/trial, best loss: 1410.1425856459775] 96%|█████████▌| 48/50 [01:08<00:03,  1.77s/trial, best loss: 1410.1425856459775] 98%|█████████▊| 49/50 [01:10<00:01,  1.75s/trial, best loss: 1410.1425856459775]100%|██████████| 50/50 [01:12<00:00,  1.94s/trial, best loss: 1410.1425856459775]100%|██████████| 50/50 [01:12<00:00,  1.45s/trial, best loss: 1410.1425856459775]
+   [Champion Params] {'bagging_temperature': 0.9619993673512276, 'depth': 6, 'iterations': 2200, 'l2_leaf_reg': 1.5703822695586496, 'learning_rate': 0.03294890980331842, 'random_strength': 1.2803319130969188, 'subsample': 0.5808574239936837}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 1410.14 | MAE: 837.19
+   [REPORT] Saved to outputs/results_catboost.txt
+
+   [Experiment] no_wsi_solar ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:01<01:24,  1.72s/trial, best loss: 1821.8716526715584]  4%|▍         | 2/50 [00:02<00:48,  1.01s/trial, best loss: 1579.5965040843535]  6%|▌         | 3/50 [00:02<00:37,  1.24trial/s, best loss: 1523.2684146373074]  8%|▊         | 4/50 [00:06<01:32,  2.02s/trial, best loss: 1523.2684146373074] 10%|█         | 5/50 [00:07<01:16,  1.69s/trial, best loss: 1523.2684146373074] 12%|█▏        | 6/50 [00:09<01:12,  1.65s/trial, best loss: 1523.2684146373074] 14%|█▍        | 7/50 [00:09<00:49,  1.16s/trial, best loss: 1517.7310634055718] 16%|█▌        | 8/50 [00:10<00:48,  1.15s/trial, best loss: 1517.7310634055718] 18%|█▊        | 9/50 [00:13<01:07,  1.65s/trial, best loss: 1517.7310634055718] 20%|██        | 10/50 [00:15<01:07,  1.69s/trial, best loss: 1517.7310634055718] 22%|██▏       | 11/50 [00:18<01:22,  2.12s/trial, best loss: 1517.7310634055718] 24%|██▍       | 12/50 [00:18<01:02,  1.65s/trial, best loss: 1517.7310634055718] 26%|██▌       | 13/50 [00:19<00:46,  1.27s/trial, best loss: 1517.7310634055718] 28%|██▊       | 14/50 [00:20<00:50,  1.41s/trial, best loss: 1517.7310634055718] 30%|███       | 15/50 [00:21<00:36,  1.04s/trial, best loss: 1517.7310634055718] 32%|███▏      | 16/50 [00:22<00:38,  1.14s/trial, best loss: 1517.7310634055718] 34%|███▍      | 17/50 [00:24<00:49,  1.50s/trial, best loss: 1517.7310634055718] 36%|███▌      | 18/50 [00:26<00:47,  1.47s/trial, best loss: 1517.7310634055718] 38%|███▊      | 19/50 [00:27<00:44,  1.42s/trial, best loss: 1517.7310634055718] 40%|████      | 20/50 [00:28<00:39,  1.30s/trial, best loss: 1517.7310634055718] 42%|████▏     | 21/50 [00:28<00:28,  1.03trial/s, best loss: 1421.1304661118254] 44%|████▍     | 22/50 [00:29<00:22,  1.25trial/s, best loss: 1421.1304661118254] 46%|████▌     | 23/50 [00:29<00:16,  1.59trial/s, best loss: 1421.1304661118254] 48%|████▊     | 24/50 [00:29<00:12,  2.00trial/s, best loss: 1421.1304661118254] 50%|█████     | 25/50 [00:29<00:10,  2.34trial/s, best loss: 1421.1304661118254] 52%|█████▏    | 26/50 [00:30<00:12,  1.90trial/s, best loss: 1417.084494677207]  54%|█████▍    | 27/50 [00:31<00:11,  2.04trial/s, best loss: 1417.084494677207] 56%|█████▌    | 28/50 [00:31<00:09,  2.37trial/s, best loss: 1417.084494677207] 58%|█████▊    | 29/50 [00:31<00:09,  2.26trial/s, best loss: 1417.084494677207] 60%|██████    | 30/50 [00:32<00:07,  2.67trial/s, best loss: 1417.084494677207] 62%|██████▏   | 31/50 [00:32<00:10,  1.82trial/s, best loss: 1417.084494677207] 64%|██████▍   | 32/50 [00:33<00:09,  1.95trial/s, best loss: 1417.084494677207] 66%|██████▌   | 33/50 [00:33<00:07,  2.18trial/s, best loss: 1295.9324425225484] 68%|██████▊   | 34/50 [00:34<00:07,  2.23trial/s, best loss: 1295.9324425225484] 70%|███████   | 35/50 [00:35<00:09,  1.66trial/s, best loss: 1295.9324425225484] 72%|███████▏  | 36/50 [00:35<00:08,  1.74trial/s, best loss: 1295.9324425225484] 74%|███████▍  | 37/50 [00:36<00:07,  1.71trial/s, best loss: 1295.9324425225484] 76%|███████▌  | 38/50 [00:37<00:08,  1.49trial/s, best loss: 1295.9324425225484] 78%|███████▊  | 39/50 [00:37<00:05,  1.96trial/s, best loss: 1295.9324425225484] 80%|████████  | 40/50 [00:37<00:04,  2.17trial/s, best loss: 1295.9324425225484] 82%|████████▏ | 41/50 [00:38<00:05,  1.53trial/s, best loss: 1295.9324425225484] 84%|████████▍ | 42/50 [00:38<00:04,  1.86trial/s, best loss: 1295.9324425225484] 86%|████████▌ | 43/50 [00:40<00:05,  1.39trial/s, best loss: 1295.9324425225484] 88%|████████▊ | 44/50 [00:40<00:03,  1.74trial/s, best loss: 1295.9324425225484] 90%|█████████ | 45/50 [00:41<00:04,  1.21trial/s, best loss: 1295.9324425225484] 92%|█████████▏| 46/50 [00:50<00:13,  3.33s/trial, best loss: 1295.9324425225484] 94%|█████████▍| 47/50 [00:52<00:08,  2.77s/trial, best loss: 1295.9324425225484] 96%|█████████▌| 48/50 [00:52<00:04,  2.02s/trial, best loss: 1295.9324425225484] 98%|█████████▊| 49/50 [00:53<00:01,  1.60s/trial, best loss: 1295.9324425225484]100%|██████████| 50/50 [00:53<00:00,  1.25s/trial, best loss: 1295.9324425225484]100%|██████████| 50/50 [00:53<00:00,  1.07s/trial, best loss: 1295.9324425225484]
+   [Champion Params] {'bagging_temperature': 0.36001286376739733, 'depth': 8, 'iterations': 500, 'l2_leaf_reg': 3.5274270351535963, 'learning_rate': 0.17394751509557893, 'random_strength': 2.070756774240577, 'subsample': 0.6526903268269915}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 1295.93 | MAE: 817.01
+   [REPORT] Saved to outputs/results_catboost.txt
+
+   [Experiment] with_wsi_wind ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:00<00:39,  1.23trial/s, best loss: 4978.788836249066]  4%|▍         | 2/50 [00:00<00:21,  2.25trial/s, best loss: 4978.788836249066]  6%|▌         | 3/50 [00:02<00:45,  1.03trial/s, best loss: 4896.016728840821]  8%|▊         | 4/50 [00:02<00:30,  1.52trial/s, best loss: 4896.016728840821] 10%|█         | 5/50 [00:02<00:21,  2.05trial/s, best loss: 4854.498092311839] 12%|█▏        | 6/50 [00:03<00:19,  2.25trial/s, best loss: 4839.809075523129] 14%|█▍        | 7/50 [00:04<00:32,  1.30trial/s, best loss: 4839.809075523129] 16%|█▌        | 8/50 [00:08<01:09,  1.65s/trial, best loss: 4839.809075523129] 18%|█▊        | 9/50 [00:08<00:55,  1.35s/trial, best loss: 4839.809075523129] 20%|██        | 10/50 [00:09<00:40,  1.01s/trial, best loss: 4802.703802014544] 22%|██▏       | 11/50 [00:10<00:37,  1.04trial/s, best loss: 4802.703802014544] 24%|██▍       | 12/50 [00:10<00:28,  1.33trial/s, best loss: 4802.703802014544] 26%|██▌       | 13/50 [00:10<00:25,  1.44trial/s, best loss: 4802.703802014544] 28%|██▊       | 14/50 [00:11<00:24,  1.49trial/s, best loss: 4786.882710429913] 30%|███       | 15/50 [00:13<00:36,  1.04s/trial, best loss: 4786.882710429913] 32%|███▏      | 16/50 [00:14<00:31,  1.09trial/s, best loss: 4786.882710429913] 34%|███▍      | 17/50 [00:16<00:49,  1.49s/trial, best loss: 4786.882710429913] 36%|███▌      | 18/50 [00:18<00:45,  1.41s/trial, best loss: 4786.882710429913] 38%|███▊      | 19/50 [00:19<00:41,  1.35s/trial, best loss: 4786.882710429913] 40%|████      | 20/50 [00:20<00:37,  1.25s/trial, best loss: 4786.882710429913] 42%|████▏     | 21/50 [00:20<00:27,  1.07trial/s, best loss: 4786.882710429913] 44%|████▍     | 22/50 [00:21<00:24,  1.15trial/s, best loss: 4786.882710429913] 46%|████▌     | 23/50 [00:21<00:19,  1.41trial/s, best loss: 4786.882710429913] 48%|████▊     | 24/50 [00:22<00:18,  1.42trial/s, best loss: 4765.717806261004] 50%|█████     | 25/50 [00:22<00:15,  1.63trial/s, best loss: 4765.717806261004] 52%|█████▏    | 26/50 [00:23<00:14,  1.69trial/s, best loss: 4726.440762888526] 54%|█████▍    | 27/50 [00:24<00:17,  1.31trial/s, best loss: 4726.440762888526] 56%|█████▌    | 28/50 [00:24<00:14,  1.48trial/s, best loss: 4726.440762888526] 58%|█████▊    | 29/50 [00:26<00:18,  1.12trial/s, best loss: 4726.440762888526] 60%|██████    | 30/50 [00:26<00:15,  1.29trial/s, best loss: 4726.440762888526] 62%|██████▏   | 31/50 [00:27<00:14,  1.31trial/s, best loss: 4726.440762888526] 64%|██████▍   | 32/50 [00:31<00:32,  1.81s/trial, best loss: 4726.440762888526] 66%|██████▌   | 33/50 [00:31<00:22,  1.31s/trial, best loss: 4726.440762888526] 68%|██████▊   | 34/50 [00:32<00:15,  1.02trial/s, best loss: 4590.533070958228] 70%|███████   | 35/50 [00:35<00:25,  1.70s/trial, best loss: 4590.533070958228] 72%|███████▏  | 36/50 [00:35<00:17,  1.25s/trial, best loss: 4590.533070958228] 74%|███████▍  | 37/50 [00:36<00:14,  1.08s/trial, best loss: 4590.533070958228] 76%|███████▌  | 38/50 [00:36<00:10,  1.17trial/s, best loss: 4590.533070958228] 78%|███████▊  | 39/50 [00:36<00:07,  1.55trial/s, best loss: 4522.294351924257] 80%|████████  | 40/50 [00:37<00:05,  1.88trial/s, best loss: 4522.294351924257] 82%|████████▏ | 41/50 [00:37<00:04,  2.11trial/s, best loss: 4522.294351924257] 84%|████████▍ | 42/50 [00:37<00:03,  2.59trial/s, best loss: 4522.294351924257] 86%|████████▌ | 43/50 [00:37<00:02,  2.99trial/s, best loss: 4522.294351924257] 88%|████████▊ | 44/50 [00:38<00:02,  2.33trial/s, best loss: 4522.294351924257] 90%|█████████ | 45/50 [00:39<00:02,  2.17trial/s, best loss: 4522.294351924257] 92%|█████████▏| 46/50 [00:39<00:01,  2.58trial/s, best loss: 4522.294351924257] 94%|█████████▍| 47/50 [00:39<00:00,  3.07trial/s, best loss: 4522.294351924257] 96%|█████████▌| 48/50 [00:39<00:00,  3.51trial/s, best loss: 4522.294351924257] 98%|█████████▊| 49/50 [00:40<00:00,  3.08trial/s, best loss: 4522.294351924257]100%|██████████| 50/50 [00:40<00:00,  2.95trial/s, best loss: 4522.294351924257]100%|██████████| 50/50 [00:40<00:00,  1.24trial/s, best loss: 4522.294351924257]
+   [Champion Params] {'bagging_temperature': 0.32383775817534144, 'depth': 5, 'iterations': 2700, 'l2_leaf_reg': 8.435999083278084, 'learning_rate': 0.20815773243736083, 'random_strength': 8.142866092752227, 'subsample': 0.828076601731651}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 4522.29 | MAE: 3533.37
+   [REPORT] Saved to outputs/results_catboost.txt
+
+   [Experiment] no_wsi_wind ...
+   [INFO] Dropping non-numeric columns: {'datetime'}
+   [Tuning] Running 50 trials with TPE Bayesian Optimization...
+  0%|          | 0/50 [00:00<?, ?trial/s, best loss=?]  2%|▏         | 1/50 [00:00<00:20,  2.45trial/s, best loss: 5367.174946467025]  4%|▍         | 2/50 [00:01<00:25,  1.87trial/s, best loss: 4937.142787601569]  6%|▌         | 3/50 [00:01<00:18,  2.53trial/s, best loss: 4937.142787601569]  8%|▊         | 4/50 [00:01<00:18,  2.49trial/s, best loss: 4851.769478329614] 10%|█         | 5/50 [00:02<00:17,  2.54trial/s, best loss: 4851.769478329614] 12%|█▏        | 6/50 [00:03<00:31,  1.40trial/s, best loss: 4851.769478329614] 14%|█▍        | 7/50 [00:04<00:30,  1.40trial/s, best loss: 4851.769478329614] 16%|█▌        | 8/50 [00:04<00:24,  1.71trial/s, best loss: 4832.429676823186] 18%|█▊        | 9/50 [00:05<00:33,  1.24trial/s, best loss: 4832.429676823186] 20%|██        | 10/50 [00:06<00:27,  1.46trial/s, best loss: 4832.429676823186] 22%|██▏       | 11/50 [00:09<00:54,  1.40s/trial, best loss: 4832.429676823186] 24%|██▍       | 12/50 [00:10<00:51,  1.36s/trial, best loss: 4832.429676823186] 26%|██▌       | 13/50 [00:10<00:37,  1.02s/trial, best loss: 4832.429676823186] 28%|██▊       | 14/50 [00:11<00:31,  1.14trial/s, best loss: 4832.429676823186] 30%|███       | 15/50 [00:12<00:30,  1.14trial/s, best loss: 4832.429676823186] 32%|███▏      | 16/50 [00:12<00:21,  1.55trial/s, best loss: 4832.429676823186] 34%|███▍      | 17/50 [00:13<00:25,  1.32trial/s, best loss: 4762.564068992959] 36%|███▌      | 18/50 [00:14<00:28,  1.14trial/s, best loss: 4762.564068992959] 38%|███▊      | 19/50 [00:16<00:39,  1.28s/trial, best loss: 4762.564068992959] 40%|████      | 20/50 [00:16<00:28,  1.04trial/s, best loss: 4762.564068992959] 42%|████▏     | 21/50 [00:17<00:27,  1.06trial/s, best loss: 4762.564068992959] 44%|████▍     | 22/50 [00:18<00:25,  1.08trial/s, best loss: 4762.564068992959] 46%|████▌     | 23/50 [00:18<00:19,  1.39trial/s, best loss: 4762.564068992959] 48%|████▊     | 24/50 [00:19<00:15,  1.68trial/s, best loss: 4762.564068992959] 50%|█████     | 25/50 [00:19<00:12,  1.99trial/s, best loss: 4762.564068992959] 52%|█████▏    | 26/50 [00:20<00:19,  1.25trial/s, best loss: 4762.564068992959] 54%|█████▍    | 27/50 [00:21<00:14,  1.54trial/s, best loss: 4762.564068992959] 56%|█████▌    | 28/50 [00:21<00:11,  1.85trial/s, best loss: 4762.564068992959] 58%|█████▊    | 29/50 [00:21<00:09,  2.28trial/s, best loss: 4630.867069234199] 60%|██████    | 30/50 [00:22<00:12,  1.60trial/s, best loss: 4630.867069234199] 62%|██████▏   | 31/50 [00:23<00:13,  1.41trial/s, best loss: 4630.867069234199] 64%|██████▍   | 32/50 [00:26<00:23,  1.30s/trial, best loss: 4630.867069234199] 66%|██████▌   | 33/50 [00:26<00:16,  1.05trial/s, best loss: 4630.867069234199] 68%|██████▊   | 34/50 [00:28<00:19,  1.21s/trial, best loss: 4630.867069234199] 70%|███████   | 35/50 [00:29<00:16,  1.12s/trial, best loss: 4630.867069234199] 72%|███████▏  | 36/50 [00:29<00:11,  1.18trial/s, best loss: 4630.867069234199] 74%|███████▍  | 37/50 [00:29<00:08,  1.57trial/s, best loss: 4630.867069234199] 76%|███████▌  | 38/50 [00:29<00:06,  1.99trial/s, best loss: 4630.867069234199] 78%|███████▊  | 39/50 [00:29<00:04,  2.39trial/s, best loss: 4630.867069234199] 80%|████████  | 40/50 [00:30<00:03,  2.96trial/s, best loss: 4630.867069234199] 82%|████████▏ | 41/50 [00:30<00:02,  3.26trial/s, best loss: 4630.867069234199] 84%|████████▍ | 42/50 [00:30<00:02,  2.71trial/s, best loss: 4630.867069234199] 86%|████████▌ | 43/50 [00:31<00:02,  3.03trial/s, best loss: 4630.867069234199] 88%|████████▊ | 44/50 [00:31<00:01,  3.46trial/s, best loss: 4630.867069234199] 90%|█████████ | 45/50 [00:33<00:03,  1.29trial/s, best loss: 4630.867069234199] 92%|█████████▏| 46/50 [00:33<00:02,  1.68trial/s, best loss: 4630.867069234199] 94%|█████████▍| 47/50 [00:33<00:01,  2.15trial/s, best loss: 4630.867069234199] 98%|█████████▊| 49/50 [00:33<00:00,  3.35trial/s, best loss: 4630.867069234199]100%|██████████| 50/50 [00:34<00:00,  2.84trial/s, best loss: 4630.867069234199]100%|██████████| 50/50 [00:34<00:00,  1.46trial/s, best loss: 4630.867069234199]
+   [Champion Params] {'bagging_temperature': 0.26564027440664495, 'depth': 6, 'iterations': 800, 'l2_leaf_reg': 3.1646197384914916, 'learning_rate': 0.25157393259490307, 'random_strength': 9.165790508662864, 'subsample': 0.80675696801455}
+   [Training] Retraining Champion Model for Final Verification...
+   [Result] RMSE: 4630.87 | MAE: 3697.75
+   [REPORT] Saved to outputs/results_catboost.txt
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2310786
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 09:02:19
+CPU Efficiency: 41.74% of 21:39:12 core-walltime
+Job Wall-clock time: 00:20:18
+Memory Utilized: 2.54 GB
+Memory Efficiency: 0.85% of 300.00 GB (300.00 GB/node)
