@@ -1,0 +1,18 @@
+==================================================
+MODEL: PROPHET
+==================================================
+
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-26 08:03:17
+Best Parameters: {'changepoint_prior_scale': 0.07327101493179723, 'changepoint_range': 0.8362689728110181, 'seasonality_mode': 'multiplicative', 'seasonality_prior_scale': 0.7945674121542559}
+MAE : 1648.9900 MW
+RMSE: 2424.2463 MW
+R2  : 0.6622
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-26 08:04:00
+Best Parameters: {'changepoint_prior_scale': 0.11428416861124054, 'changepoint_range': 0.9133776192479427, 'seasonality_mode': 'multiplicative', 'seasonality_prior_scale': 0.921625384866699}
+MAE : 1673.9206 MW
+RMSE: 2442.9115 MW
+R2  : 0.6570
+--------------------------------------------------
