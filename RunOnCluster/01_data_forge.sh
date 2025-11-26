@@ -3,7 +3,7 @@
 #SBATCH --job-name=data_forge
 #SBATCH --output=data_forge.out
 #SBATCH --error=data_forge.err
-#SBATCH --partition=gpu_a100_short
+#SBATCH --partition=dev_gpu_h100
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
