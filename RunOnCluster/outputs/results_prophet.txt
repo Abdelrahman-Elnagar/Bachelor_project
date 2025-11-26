@@ -16,3 +16,17 @@ MAE : 1673.9206 MW
 RMSE: 2442.9115 MW
 R2  : 0.6570
 --------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-26 08:04:40
+Best Parameters: {'changepoint_prior_scale': 0.0010036558666905446, 'changepoint_range': 0.9497595515034791, 'seasonality_mode': 'additive', 'seasonality_prior_scale': 0.23890258071248696}
+MAE : 4048.4850 MW
+RMSE: 5011.3242 MW
+R2  : 0.8486
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-26 08:05:20
+Best Parameters: {'changepoint_prior_scale': 0.009804594748678662, 'changepoint_range': 0.8870692237858095, 'seasonality_mode': 'additive', 'seasonality_prior_scale': 8.617569975084317}
+MAE : 4194.3858 MW
+RMSE: 5197.7869 MW
+R2  : 0.8371
+--------------------------------------------------
