@@ -1,5 +1,8 @@
-/var/spool/slurmd/job2309309/slurm_script: line 14: /home/hu/hu_hu/hu_elnaab01/miniconda3/etc/profile.d/conda.sh: No such file or directory
-/var/spool/slurmd/job2309309/slurm_script: line 16: conda: command not found
+/var/spool/slurmd/job2310204/slurm_script: line 14: /home/hu/hu_hu/hu_elnaab01/miniconda3/etc/profile.d/conda.sh: No such file or directory
+Traceback (most recent call last):
+  File "/opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/condabin/conda", line 12, in <module>
+    from conda.cli import main
+ModuleNotFoundError: No module named 'conda'
 Traceback (most recent call last):
   File "/pfs/data6/home/hu/hu_hu/hu_elnaab01/projects/my_project/Bachelor_project/RunOnCluster/01_data_forge.py", line 12, in <module>
     import pandas as pd
