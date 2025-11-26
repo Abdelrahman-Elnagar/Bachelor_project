@@ -200,21 +200,16 @@ def train_and_eval(params, model_name, data):
                 futr_exog_list=exog_cols,
                 n_blocks=n_blocks,
                 mlp_units=mlp_units,
-                dropout_prob_theta=params['dropout'],
-                val_check_steps=100,
-                early_stop_patience_steps=3
+                dropout_prob_theta=params['dropout']
             )
             
         elif model_name == "tft":
-            # TFT requires val_size for early stopping
             model = TFT(
                 **base_args,
                 futr_exog_list=exog_cols,
                 hidden_size=params['hidden_size'],
                 dropout=params['dropout'],
-                hidden_continuous_size=params['hidden_continuous_size'],
-                val_check_steps=100,
-                early_stop_patience_steps=3
+                hidden_continuous_size=params['hidden_continuous_size']
             )
             
         elif model_name == "patchtst":
@@ -225,16 +220,15 @@ def train_and_eval(params, model_name, data):
                 patch_len=params['patch_len'],
                 n_heads=params['n_heads'],
                 d_model=params['d_model'],
-                dropout=params['dropout'],
-                val_check_steps=100,
-                early_stop_patience_steps=3
+                dropout=params['dropout']
             )
 
         # Train
         nf = NeuralForecast(models=[model], freq='H')
         
-        # We fit on Train with validation split for early stopping (10% of train data)
-        nf.fit(df=df_train, val_size=int(0.1 * len(df_train)))
+        # We fit on Train without validation split (horizon is too large for practical val_size)
+        # The models have max_steps limit to prevent overfitting
+        nf.fit(df=df_train, val_size=0)
         
         # Predict
         # We need to pass the future exogenous variables found in df_test
