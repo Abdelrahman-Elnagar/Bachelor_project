@@ -16,7 +16,7 @@ from sklearn.preprocessing import StandardScaler
 
 # --- CONFIGURATION ---
 # UPDATE THIS PATH to where your CSVs actually live on the cluster
-DATA_DIR = "Bachelor abroad/training_data" 
+DATA_DIR = "/home/hu/hu_hu/hu_elnaab01/projects/my_project/Bachelor_project/training_data" 
 OUTPUT_DIR = "processed_data"
 
 FILES = {
