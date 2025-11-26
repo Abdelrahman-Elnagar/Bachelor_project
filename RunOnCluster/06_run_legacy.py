@@ -56,10 +56,16 @@ MODELS = ["random_forest", "lstm", "cnn_lstm"]
 def load_raw(experiment_name):
     # For RF and Custom CNN-LSTM
     try:
-        X_train = pd.read_parquet(f"{DATA_DIR}/X_train_{experiment_name}.parquet").values
+        X_train_df = pd.read_parquet(f"{DATA_DIR}/X_train_{experiment_name}.parquet")
+        X_test_df = pd.read_parquet(f"{DATA_DIR}/X_test_{experiment_name}.parquet")
+        
+        # Filter: Keep ONLY numeric columns
+        X_train = X_train_df.select_dtypes(include=[np.number]).values
+        X_test = X_test_df.select_dtypes(include=[np.number]).values
+        
         y_train = pd.read_parquet(f"{DATA_DIR}/y_train_{experiment_name}.parquet").values.ravel()
-        X_test = pd.read_parquet(f"{DATA_DIR}/X_test_{experiment_name}.parquet").values
         y_test = pd.read_parquet(f"{DATA_DIR}/y_test_{experiment_name}.parquet").values.ravel()
+        
         return X_train, y_train, X_test, y_test
     except: return None, None, None, None
 

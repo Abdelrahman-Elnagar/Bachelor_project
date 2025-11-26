@@ -76,14 +76,20 @@ def process_and_save(filename, tag):
         scaler = StandardScaler()
         
         # Identify numeric columns (exclude dates/strings if any)
-        num_cols = X_train.select_dtypes(include=[np.number]).columns
+        num_cols = X_train.select_dtypes(include=[np.number]).columns.tolist()
+        
+        # Keep ONLY numeric columns (drop datetime, strings, etc.)
+        X_train = X_train[num_cols].copy()
+        X_test = X_test[num_cols].copy()
         
         # Learn stats from Train
-        scaler.fit(X_train[num_cols])
+        scaler.fit(X_train)
         
-        # Transform both
-        X_train[num_cols] = scaler.transform(X_train[num_cols])
-        X_test[num_cols] = scaler.transform(X_test[num_cols])
+        # Transform both (now all columns are numeric)
+        X_train[:] = scaler.transform(X_train)
+        X_test[:] = scaler.transform(X_test)
+        
+        print(f"   Features: {len(num_cols)} numeric columns")
         
         # 4. Save to Parquet (Fast & Efficient)
         # We save X and y separately.

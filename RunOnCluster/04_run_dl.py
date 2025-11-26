@@ -84,6 +84,10 @@ def load_and_adapt_dl_data(experiment_name):
             test_dates = pd.date_range(start=train_dates[-1], periods=len(y_test) + 1, freq='H')[1:]
             X_train_exog = X_train
             X_test_exog = X_test
+        
+        # Safety: Keep ONLY numeric columns for exogenous variables
+        X_train_exog = X_train_exog.select_dtypes(include=[np.number])
+        X_test_exog = X_test_exog.select_dtypes(include=[np.number])
 
         # 2. Build Panel DataFrame (Long Format)
         # We assign a static unique_id since we have 1 series per experiment
@@ -126,12 +130,9 @@ def get_search_space(model_name):
     if model_name == "nhits":
         return {
             **common,
-            # Number of stacks (blocks)
-            'n_blocks': hp.choice('n_blocks', [[1, 1, 1], [2, 2, 2]]), 
-            # Hidden layers per block
-            'n_layers': hp.choice('n_layers', [[2, 2, 2], [4, 4, 4]]),
-            # Width of MLP
-            'mlp_units': hp.choice('mlp_units', [[512, 512, 512], [64, 64, 64]]),
+            # Use integers instead of lists for simpler hyperopt handling
+            'n_blocks_choice': hp.choice('n_blocks_choice', [0, 1]), # 0=[1,1,1], 1=[2,2,2]
+            'mlp_units_choice': hp.choice('mlp_units_choice', [0, 1]), # 0=512, 1=64
             'dropout': hp.uniform('dropout', 0.0, 0.5)
         }
         
@@ -139,7 +140,6 @@ def get_search_space(model_name):
         return {
             **common,
             'hidden_size': hp.choice('hidden_size', [64, 128, 256]),
-            'attn_head_size': hp.choice('attn_head_size', [4]), # Heads per attention layer
             'dropout': hp.uniform('dropout', 0.0, 0.5),
             'hidden_continuous_size': hp.choice('hidden_continuous_size', [16, 32, 64])
         }
@@ -170,64 +170,96 @@ def train_and_eval(params, model_name, data):
         # Initialize Model
         model = None
         
-        # Standard Args
-        model_args = {
+        # Base Args (common to all models)
+        base_args = {
             'h': h,
             'input_size': input_size,
             'loss': MAE(),
-            'scaler_type': 'standard', # DL needs internal scaling of Y
-            'futr_exog_list': exog_cols, # We assume we know weather for future
+            'scaler_type': 'standard',
             'max_steps': params['max_steps'],
             'learning_rate': params['learning_rate'],
             'batch_size': params['batch_size'],
-            'val_check_steps': 100,
-            'early_stop_patience_steps': 3,
             'accelerator': ACCELERATOR
         }
         
         if model_name == "nhits":
+            # Convert choice indices to actual parameter lists
+            # Use same structure for all: 3 stacks, varying blocks and units
+            if params['n_blocks_choice'] == 0:
+                n_blocks = [1, 1, 1]
+            else:
+                n_blocks = [2, 2, 2]
+            
+            if params['mlp_units_choice'] == 0:
+                mlp_units = [[512, 512], [512, 512], [512, 512]]
+            else:
+                mlp_units = [[64, 64], [64, 64], [64, 64]]
+            
             model = NHITS(
-                **model_args,
-                n_blocks=params['n_blocks'],
-                n_layers=params['n_layers'],
-                mlp_units=params['mlp_units'],
-                dropout_prob_theta=params['dropout']
+                **base_args,
+                futr_exog_list=exog_cols,
+                n_blocks=n_blocks,
+                mlp_units=mlp_units,
+                dropout_prob_theta=params['dropout'],
+                val_check_steps=100,
+                early_stop_patience_steps=3
             )
             
         elif model_name == "tft":
+            # TFT requires val_size for early stopping
             model = TFT(
-                **model_args,
+                **base_args,
+                futr_exog_list=exog_cols,
                 hidden_size=params['hidden_size'],
-                attn_head_size=params['attn_head_size'],
                 dropout=params['dropout'],
-                hidden_continuous_size=params['hidden_continuous_size']
+                hidden_continuous_size=params['hidden_continuous_size'],
+                val_check_steps=100,
+                early_stop_patience_steps=3
             )
             
         elif model_name == "patchtst":
+            # PatchTST does NOT support exogenous variables - remove them
             model = PatchTST(
-                **model_args,
+                **base_args,
+                # NO futr_exog_list for PatchTST!
                 patch_len=params['patch_len'],
                 n_heads=params['n_heads'],
                 d_model=params['d_model'],
-                dropout=params['dropout']
+                dropout=params['dropout'],
+                val_check_steps=100,
+                early_stop_patience_steps=3
             )
 
         # Train
         nf = NeuralForecast(models=[model], freq='H')
         
-        # We fit on Train. We pass 'df_test' ONLY as the future exogenous values wrapper
-        # The actual Y in df_test is hidden from the model during predict
-        nf.fit(df=df_train)
+        # We fit on Train with validation split for early stopping (10% of train data)
+        nf.fit(df=df_train, val_size=int(0.1 * len(df_train)))
         
         # Predict
         # We need to pass the future exogenous variables found in df_test
-        futr_df = df_test.drop(columns=['y']) 
+        # For PatchTST (no exog support), futr_df will just have unique_id and ds
+        if model_name == "patchtst":
+            # PatchTST doesn't use exogenous variables
+            futr_df = df_test[['unique_id', 'ds']].copy()
+        else:
+            futr_df = df_test.drop(columns=['y'])
+        
         forecasts = nf.predict(futr_df=futr_df)
         
         # Extract predictions matching the test set
-        # Ensure alignment
+        # Model name in forecasts might be uppercase (NHITS, TFT, PatchTST)
+        model_col = None
+        for col in forecasts.columns:
+            if col.upper() == model_name.upper():
+                model_col = col
+                break
+        
+        if model_col is None:
+            raise ValueError(f"Cannot find prediction column for {model_name}. Available: {forecasts.columns.tolist()}")
+        
         y_true = df_test['y'].values
-        y_pred = forecasts[model_name].values
+        y_pred = forecasts[model_col].values
         
         # Evaluation
         rmse = np.sqrt(mean_squared_error(y_true, y_pred))
@@ -295,9 +327,26 @@ if __name__ == "__main__":
                 continue
             
             # Generate Final Predictions
-            futr_df = data['df_test'].drop(columns=['y'])
+            if model_name == "patchtst":
+                # PatchTST doesn't use exogenous variables
+                futr_df = data['df_test'][['unique_id', 'ds']].copy()
+            else:
+                futr_df = data['df_test'].drop(columns=['y'])
+            
             forecasts = nf_model.predict(futr_df=futr_df)
-            y_pred = forecasts[model_name].values
+            
+            # Model name in forecasts might be uppercase (NHITS, TFT, PatchTST)
+            model_col = None
+            for col in forecasts.columns:
+                if col.upper() == model_name.upper():
+                    model_col = col
+                    break
+            
+            if model_col is None:
+                print(f"   [ERROR] Cannot find prediction column. Available: {forecasts.columns.tolist()}")
+                continue
+                
+            y_pred = forecasts[model_col].values
             y_true = data['df_test']['y'].values
             
             metrics = {

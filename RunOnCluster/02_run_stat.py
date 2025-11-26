@@ -86,6 +86,10 @@ def load_and_adapt_data(experiment_name):
             test_dates = pd.date_range(start=train_dates[-1], periods=len(y_test) + 1, freq='H')[1:]
             X_train_exog = X_train
             X_test_exog = X_test
+        
+        # Safety: Keep ONLY numeric columns (statistical models need numeric features)
+        X_train_exog = X_train_exog.select_dtypes(include=[np.number])
+        X_test_exog = X_test_exog.select_dtypes(include=[np.number])
 
         return {
             'y_train': y_train.values.ravel(),

@@ -48,6 +48,18 @@ def load_data(experiment_name):
         y_train = pd.read_parquet(f"{DATA_DIR}/y_train_{experiment_name}.parquet").values.ravel()
         X_test = pd.read_parquet(f"{DATA_DIR}/X_test_{experiment_name}.parquet")
         y_test = pd.read_parquet(f"{DATA_DIR}/y_test_{experiment_name}.parquet").values.ravel()
+        
+        # Filter: Keep ONLY numeric columns (XGBoost/LightGBM/CatBoost requirement)
+        # Drop datetime, object, and other non-numeric types
+        numeric_cols = X_train.select_dtypes(include=[np.number]).columns.tolist()
+        
+        if len(numeric_cols) < len(X_train.columns):
+            dropped_cols = set(X_train.columns) - set(numeric_cols)
+            print(f"   [INFO] Dropping non-numeric columns: {dropped_cols}")
+        
+        X_train = X_train[numeric_cols]
+        X_test = X_test[numeric_cols]
+        
         return X_train, y_train, X_test, y_test
     except FileNotFoundError:
         print(f"[ERROR] Could not find data for {experiment_name}. Run 01_data_forge.py first!")
