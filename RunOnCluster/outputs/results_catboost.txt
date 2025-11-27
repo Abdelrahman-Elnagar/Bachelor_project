@@ -38,3 +38,39 @@ Performance Metrics:
    RMSE: 4630.8671 MW
    R2  : 0.8707
 --------------------------------------------------
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-27 20:30:44
+Best Parameters: {'bagging_temperature': 0.9886045636009317, 'depth': 5, 'iterations': 2500, 'l2_leaf_reg': 1.9724326683273963, 'learning_rate': 0.18532844632294096, 'random_strength': 1.1153381487920075, 'subsample': 0.8121271127564038}
+
+Performance Metrics:
+   MAE : 883.3899 MW
+   RMSE: 1347.3918 MW
+   R2  : 0.8957
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-27 20:32:05
+Best Parameters: {'bagging_temperature': 0.8860761676792472, 'depth': 6, 'iterations': 1000, 'l2_leaf_reg': 1.0013886094653974, 'learning_rate': 0.015953048855269734, 'random_strength': 1.0271186315104865, 'subsample': 0.5082420463104733}
+
+Performance Metrics:
+   MAE : 808.3718 MW
+   RMSE: 1397.7624 MW
+   R2  : 0.8877
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-27 20:32:44
+Best Parameters: {'bagging_temperature': 0.307468965828373, 'depth': 8, 'iterations': 1500, 'l2_leaf_reg': 1.5975943161106676, 'learning_rate': 0.16691850189564864, 'random_strength': 6.800680565775249, 'subsample': 0.7661540047479023}
+
+Performance Metrics:
+   MAE : 3663.0157 MW
+   RMSE: 4670.1136 MW
+   R2  : 0.8685
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-27 20:33:21
+Best Parameters: {'bagging_temperature': 0.8414796448896724, 'depth': 5, 'iterations': 1900, 'l2_leaf_reg': 5.874877449515296, 'learning_rate': 0.20032049757851436, 'random_strength': 8.90949992120902, 'subsample': 0.7289066319326285}
+
+Performance Metrics:
+   MAE : 3702.3186 MW
+   RMSE: 4638.3100 MW
+   R2  : 0.8703
+--------------------------------------------------

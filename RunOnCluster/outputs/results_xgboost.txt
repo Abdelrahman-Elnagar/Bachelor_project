@@ -38,3 +38,39 @@ Performance Metrics:
    RMSE: 4870.0902 MW
    R2  : 0.8570
 --------------------------------------------------
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-27 20:15:00
+Best Parameters: {'colsample_bytree': 0.9679950701275913, 'learning_rate': 0.052821282890689394, 'max_depth': 5, 'min_child_weight': 4, 'n_estimators': 900, 'reg_alpha': 0.00026198760892508026, 'reg_lambda': 8.941684811632813, 'subsample': 0.5742936813328876}
+
+Performance Metrics:
+   MAE : 807.4842 MW
+   RMSE: 1466.8361 MW
+   R2  : 0.8763
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-27 20:17:43
+Best Parameters: {'colsample_bytree': 0.9766579781122507, 'learning_rate': 0.01032269422131411, 'max_depth': 6, 'min_child_weight': 3, 'n_estimators': 1600, 'reg_alpha': 1.2093516210059937e-05, 'reg_lambda': 91.53140954521271, 'subsample': 0.8207945726973589}
+
+Performance Metrics:
+   MAE : 770.7605 MW
+   RMSE: 1388.9438 MW
+   R2  : 0.8891
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-27 20:20:00
+Best Parameters: {'colsample_bytree': 0.9657705444778502, 'learning_rate': 0.2881678555588717, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 600, 'reg_alpha': 0.9199326446810466, 'reg_lambda': 0.001902087384877073, 'subsample': 0.8296083584334565}
+
+Performance Metrics:
+   MAE : 3819.9068 MW
+   RMSE: 4762.9891 MW
+   R2  : 0.8632
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-27 20:22:53
+Best Parameters: {'colsample_bytree': 0.8609011099700672, 'learning_rate': 0.025984580410817318, 'max_depth': 11, 'min_child_weight': 9, 'n_estimators': 2000, 'reg_alpha': 1.0305565944909442e-05, 'reg_lambda': 1.4817769775656487e-05, 'subsample': 0.5703535841060439}
+
+Performance Metrics:
+   MAE : 3871.0951 MW
+   RMSE: 4820.0192 MW
+   R2  : 0.8599
+--------------------------------------------------

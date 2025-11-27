@@ -1,0 +1,132 @@
+/home/hu/hu_hu/hu_elnaab01/.conda/envs/bachelor_analysis/bin/python
+Python 3.10.19
+================================================================================
+   TFT ONLY (WITH DETAILED TRACKING) on GPU
+================================================================================
+
+>>> EXPERIMENT: WITH_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  5%|▌         | 1/20 [00:00<00:02,  8.01trial/s, best loss: inf] 10%|█         | 2/20 [00:00<00:01, 15.80trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 10%|█         | 2/20 [00:00<00:01, 15.80trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 15%|█▌        | 3/20 [00:00<00:01, 15.80trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 20%|██        | 4/20 [00:00<00:01, 15.80trial/s, best loss: inf] 25%|██▌       | 5/20 [00:00<00:01, 11.85trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 25%|██▌       | 5/20 [00:00<00:01, 11.85trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 30%|███       | 6/20 [00:00<00:01, 11.85trial/s, best loss: inf] 35%|███▌      | 7/20 [00:00<00:01, 11.96trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 35%|███▌      | 7/20 [00:00<00:01, 11.96trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 40%|████      | 8/20 [00:00<00:01, 11.96trial/s, best loss: inf] 45%|████▌     | 9/20 [00:00<00:00, 13.83trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 13.83trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 50%|█████     | 10/20 [00:00<00:00, 13.83trial/s, best loss: inf] 55%|█████▌    | 11/20 [00:00<00:00, 15.25trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 15.25trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 60%|██████    | 12/20 [00:00<00:00, 15.25trial/s, best loss: inf] 65%|██████▌   | 13/20 [00:00<00:00, 12.72trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 65%|██████▌   | 13/20 [00:01<00:00, 12.72trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 70%|███████   | 14/20 [00:01<00:00, 12.72trial/s, best loss: inf] 75%|███████▌  | 15/20 [00:01<00:00,  9.92trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 75%|███████▌  | 15/20 [00:01<00:00,  9.92trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 80%|████████  | 16/20 [00:01<00:00,  9.92trial/s, best loss: inf] 85%|████████▌ | 17/20 [00:01<00:00, 10.71trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 85%|████████▌ | 17/20 [00:01<00:00, 10.71trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 90%|█████████ | 18/20 [00:01<00:00, 10.71trial/s, best loss: inf] 95%|█████████▌| 19/20 [00:01<00:00, 11.16trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 95%|█████████▌| 19/20 [00:01<00:00, 11.16trial/s, best loss: inf]100%|██████████| 20/20 [00:01<00:00, 12.04trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+   [ERROR] Training failed. Skipping...
+
+>>> EXPERIMENT: NO_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  5%|▌         | 1/20 [00:00<00:01, 11.77trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 10%|█         | 2/20 [00:00<00:01, 16.85trial/s, best loss: inf] 15%|█▌        | 3/20 [00:00<00:00, 25.11trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 25.11trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 20%|██        | 4/20 [00:00<00:00, 25.11trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 25.11trial/s, best loss: inf] 30%|███       | 6/20 [00:00<00:01, 12.90trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 30%|███       | 6/20 [00:00<00:01, 12.90trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 35%|███▌      | 7/20 [00:00<00:01, 12.90trial/s, best loss: inf] 40%|████      | 8/20 [00:00<00:00, 13.87trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 40%|████      | 8/20 [00:00<00:00, 13.87trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 13.87trial/s, best loss: inf] 50%|█████     | 10/20 [00:00<00:00, 13.48trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 50%|█████     | 10/20 [00:00<00:00, 13.48trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 13.48trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 60%|██████    | 12/20 [00:00<00:00, 13.48trial/s, best loss: inf] 65%|██████▌   | 13/20 [00:00<00:00, 17.38trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 17.38trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 70%|███████   | 14/20 [00:01<00:00, 17.38trial/s, best loss: inf] 75%|███████▌  | 15/20 [00:01<00:00, 14.09trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 75%|███████▌  | 15/20 [00:01<00:00, 14.09trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 80%|████████  | 16/20 [00:01<00:00, 14.09trial/s, best loss: inf] 85%|████████▌ | 17/20 [00:01<00:00, 14.20trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 85%|████████▌ | 17/20 [00:01<00:00, 14.20trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 90%|█████████ | 18/20 [00:01<00:00, 14.20trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 95%|█████████▌| 19/20 [00:01<00:00, 14.20trial/s, best loss: inf]100%|██████████| 20/20 [00:01<00:00, 15.24trial/s, best loss: inf]100%|██████████| 20/20 [00:01<00:00, 14.95trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+   [ERROR] Training failed. Skipping...
+
+>>> EXPERIMENT: WITH_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  5%|▌         | 1/20 [00:00<00:01, 11.58trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 10%|█         | 2/20 [00:00<00:01, 14.84trial/s, best loss: inf] 15%|█▌        | 3/20 [00:00<00:00, 22.10trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 22.10trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 20%|██        | 4/20 [00:00<00:00, 22.10trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 22.10trial/s, best loss: inf] 30%|███       | 6/20 [00:00<00:01, 12.21trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 30%|███       | 6/20 [00:00<00:01, 12.21trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 35%|███▌      | 7/20 [00:00<00:01, 12.21trial/s, best loss: inf] 40%|████      | 8/20 [00:00<00:00, 12.53trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 40%|████      | 8/20 [00:00<00:00, 12.53trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 12.53trial/s, best loss: inf] 50%|█████     | 10/20 [00:00<00:00, 12.44trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 50%|█████     | 10/20 [00:00<00:00, 12.44trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 12.44trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 60%|██████    | 12/20 [00:00<00:00, 12.44trial/s, best loss: inf] 65%|██████▌   | 13/20 [00:00<00:00, 13.53trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 65%|██████▌   | 13/20 [00:01<00:00, 13.53trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 70%|███████   | 14/20 [00:01<00:00, 13.53trial/s, best loss: inf] 75%|███████▌  | 15/20 [00:01<00:00, 11.84trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 75%|███████▌  | 15/20 [00:01<00:00, 11.84trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 80%|████████  | 16/20 [00:01<00:00, 11.84trial/s, best loss: inf] 85%|████████▌ | 17/20 [00:01<00:00, 11.10trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 85%|████████▌ | 17/20 [00:01<00:00, 11.10trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 90%|█████████ | 18/20 [00:01<00:00, 11.10trial/s, best loss: inf] 95%|█████████▌| 19/20 [00:01<00:00, 11.05trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 95%|█████████▌| 19/20 [00:01<00:00, 11.05trial/s, best loss: inf]100%|██████████| 20/20 [00:01<00:00, 12.24trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+   [ERROR] Training failed. Skipping...
+
+>>> EXPERIMENT: NO_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+  5%|▌         | 1/20 [00:00<00:02,  7.78trial/s, best loss: inf] 10%|█         | 2/20 [00:00<00:01, 15.45trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 10%|█         | 2/20 [00:00<00:01, 15.45trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 15%|█▌        | 3/20 [00:00<00:01, 15.45trial/s, best loss: inf] 20%|██        | 4/20 [00:00<00:01, 10.56trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 20%|██        | 4/20 [00:00<00:01, 10.56trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 25%|██▌       | 5/20 [00:00<00:01, 10.56trial/s, best loss: inf] 30%|███       | 6/20 [00:00<00:01, 11.97trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 30%|███       | 6/20 [00:00<00:01, 11.97trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 35%|███▌      | 7/20 [00:00<00:01, 11.97trial/s, best loss: inf] 40%|████      | 8/20 [00:00<00:00, 12.82trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 40%|████      | 8/20 [00:00<00:00, 12.82trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 12.82trial/s, best loss: inf] 50%|█████     | 10/20 [00:00<00:00, 13.51trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 50%|█████     | 10/20 [00:00<00:00, 13.51trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 13.51trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 60%|██████    | 12/20 [00:00<00:00, 13.51trial/s, best loss: inf] 65%|██████▌   | 13/20 [00:00<00:00, 16.75trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 16.75trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 70%|███████   | 14/20 [00:01<00:00, 16.75trial/s, best loss: inf] 75%|███████▌  | 15/20 [00:01<00:00, 12.04trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 75%|███████▌  | 15/20 [00:01<00:00, 12.04trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 80%|████████  | 16/20 [00:01<00:00, 12.04trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 85%|████████▌ | 17/20 [00:01<00:00, 12.04trial/s, best loss: inf] 90%|█████████ | 18/20 [00:01<00:00, 14.70trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 90%|█████████ | 18/20 [00:01<00:00, 14.70trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+ 95%|█████████▌| 19/20 [00:01<00:00, 14.70trial/s, best loss: inf]100%|██████████| 20/20 [00:01<00:00, 14.44trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'hidden_continuous_size'
+   [ERROR] Training failed. Skipping...
+
+================================================================================
+TFT COMPLETE
+================================================================================
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2344656
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:00:13
+CPU Efficiency: 0.62% of 00:35:12 core-walltime
+Job Wall-clock time: 00:00:33
+Memory Utilized: 730.67 MB
+Memory Efficiency: 0.24% of 300.00 GB (300.00 GB/node)

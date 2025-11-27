@@ -30,3 +30,31 @@ MAE : 4194.3858 MW
 RMSE: 5197.7869 MW
 R2  : 0.8371
 --------------------------------------------------
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-27 19:09:32
+Best Parameters: {'changepoint_prior_scale': 0.08872481590875105, 'changepoint_range': 0.852657313606622, 'seasonality_mode': 'multiplicative', 'seasonality_prior_scale': 1.0088997984544639}
+MAE : 1664.0205 MW
+RMSE: 2422.5933 MW
+R2  : 0.6627
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-27 19:10:10
+Best Parameters: {'changepoint_prior_scale': 0.020907756977550745, 'changepoint_range': 0.9359955112217923, 'seasonality_mode': 'multiplicative', 'seasonality_prior_scale': 0.2354728131073533}
+MAE : 1696.4200 MW
+RMSE: 2445.8950 MW
+R2  : 0.6562
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-27 19:10:49
+Best Parameters: {'changepoint_prior_scale': 0.001025330255871483, 'changepoint_range': 0.8437566140128531, 'seasonality_mode': 'additive', 'seasonality_prior_scale': 0.8344848747577255}
+MAE : 4067.8074 MW
+RMSE: 5037.0776 MW
+R2  : 0.8470
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-27 19:11:30
+Best Parameters: {'changepoint_prior_scale': 0.008001851827294293, 'changepoint_range': 0.9101302137806762, 'seasonality_mode': 'additive', 'seasonality_prior_scale': 0.0181931316083169}
+MAE : 4188.6851 MW
+RMSE: 5188.2356 MW
+R2  : 0.8377
+--------------------------------------------------

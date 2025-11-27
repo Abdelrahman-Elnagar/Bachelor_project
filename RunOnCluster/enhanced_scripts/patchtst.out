@@ -1,0 +1,132 @@
+/home/hu/hu_hu/hu_elnaab01/.conda/envs/bachelor_analysis/bin/python
+Python 3.10.19
+================================================================================
+   PATCHTST ONLY (WITH DETAILED TRACKING) on GPU
+================================================================================
+
+>>> EXPERIMENT: WITH_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  5%|▌         | 1/20 [00:00<00:01, 16.72trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 10%|█         | 2/20 [00:00<00:00, 23.29trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 15%|█▌        | 3/20 [00:00<00:00, 26.65trial/s, best loss: inf] 20%|██        | 4/20 [00:00<00:00, 35.43trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 20%|██        | 4/20 [00:00<00:00, 35.43trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 25%|██▌       | 5/20 [00:00<00:00, 35.43trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 30%|███       | 6/20 [00:00<00:00, 35.43trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 35%|███▌      | 7/20 [00:00<00:00, 35.43trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 40%|████      | 8/20 [00:00<00:00, 35.43trial/s, best loss: inf] 45%|████▌     | 9/20 [00:00<00:00, 41.29trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 45%|████▌     | 9/20 [00:00<00:00, 41.29trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 50%|█████     | 10/20 [00:00<00:00, 41.29trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 55%|█████▌    | 11/20 [00:00<00:00, 41.29trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 60%|██████    | 12/20 [00:00<00:00, 41.29trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 65%|██████▌   | 13/20 [00:00<00:00, 41.29trial/s, best loss: inf] 70%|███████   | 14/20 [00:00<00:00, 43.00trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 70%|███████   | 14/20 [00:00<00:00, 43.00trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 75%|███████▌  | 15/20 [00:00<00:00, 43.00trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 80%|████████  | 16/20 [00:00<00:00, 43.00trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 85%|████████▌ | 17/20 [00:00<00:00, 43.00trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 90%|█████████ | 18/20 [00:00<00:00, 43.00trial/s, best loss: inf] 95%|█████████▌| 19/20 [00:00<00:00, 43.76trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 95%|█████████▌| 19/20 [00:00<00:00, 43.76trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 42.77trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+   [ERROR] Training failed. Skipping...
+
+>>> EXPERIMENT: NO_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  5%|▌         | 1/20 [00:00<00:00, 21.03trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 10%|█         | 2/20 [00:00<00:00, 28.97trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 15%|█▌        | 3/20 [00:00<00:00, 32.89trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 20%|██        | 4/20 [00:00<00:00, 35.53trial/s, best loss: inf] 25%|██▌       | 5/20 [00:00<00:00, 44.30trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 25%|██▌       | 5/20 [00:00<00:00, 44.30trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 30%|███       | 6/20 [00:00<00:00, 44.30trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 35%|███▌      | 7/20 [00:00<00:00, 44.30trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 40%|████      | 8/20 [00:00<00:00, 44.30trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 45%|████▌     | 9/20 [00:00<00:00, 44.30trial/s, best loss: inf] 50%|█████     | 10/20 [00:00<00:00, 44.90trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 50%|█████     | 10/20 [00:00<00:00, 44.90trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 55%|█████▌    | 11/20 [00:00<00:00, 44.90trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 60%|██████    | 12/20 [00:00<00:00, 44.90trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 65%|██████▌   | 13/20 [00:00<00:00, 44.90trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 70%|███████   | 14/20 [00:00<00:00, 44.90trial/s, best loss: inf] 75%|███████▌  | 15/20 [00:00<00:00, 43.41trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 75%|███████▌  | 15/20 [00:00<00:00, 43.41trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 80%|████████  | 16/20 [00:00<00:00, 43.41trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 85%|████████▌ | 17/20 [00:00<00:00, 43.41trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 90%|█████████ | 18/20 [00:00<00:00, 43.41trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 95%|█████████▌| 19/20 [00:00<00:00, 43.41trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 43.52trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 43.72trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+   [ERROR] Training failed. Skipping...
+
+>>> EXPERIMENT: WITH_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  5%|▌         | 1/20 [00:00<00:00, 19.26trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 10%|█         | 2/20 [00:00<00:00, 25.90trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 15%|█▌        | 3/20 [00:00<00:00, 29.03trial/s, best loss: inf] 20%|██        | 4/20 [00:00<00:00, 38.42trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 20%|██        | 4/20 [00:00<00:00, 38.42trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 25%|██▌       | 5/20 [00:00<00:00, 38.42trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 30%|███       | 6/20 [00:00<00:00, 38.42trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 35%|███▌      | 7/20 [00:00<00:00, 38.42trial/s, best loss: inf] 40%|████      | 8/20 [00:00<00:00, 22.08trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 40%|████      | 8/20 [00:00<00:00, 22.08trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 45%|████▌     | 9/20 [00:00<00:00, 22.08trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 50%|█████     | 10/20 [00:00<00:00, 22.08trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 55%|█████▌    | 11/20 [00:00<00:00, 22.08trial/s, best loss: inf] 60%|██████    | 12/20 [00:00<00:00, 27.45trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 60%|██████    | 12/20 [00:00<00:00, 27.45trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 65%|██████▌   | 13/20 [00:00<00:00, 27.45trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 70%|███████   | 14/20 [00:00<00:00, 27.45trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 75%|███████▌  | 15/20 [00:00<00:00, 27.45trial/s, best loss: inf] 80%|████████  | 16/20 [00:00<00:00, 30.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 80%|████████  | 16/20 [00:00<00:00, 30.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 85%|████████▌ | 17/20 [00:00<00:00, 30.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 90%|█████████ | 18/20 [00:00<00:00, 30.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 95%|█████████▌| 19/20 [00:00<00:00, 30.52trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 33.08trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 30.56trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+   [ERROR] Training failed. Skipping...
+
+>>> EXPERIMENT: NO_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+  5%|▌         | 1/20 [00:00<00:00, 20.70trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 10%|█         | 2/20 [00:00<00:00, 26.95trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 15%|█▌        | 3/20 [00:00<00:00, 30.80trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 20%|██        | 4/20 [00:00<00:00, 33.47trial/s, best loss: inf] 25%|██▌       | 5/20 [00:00<00:00, 41.51trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 25%|██▌       | 5/20 [00:00<00:00, 41.51trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 30%|███       | 6/20 [00:00<00:00, 41.51trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 35%|███▌      | 7/20 [00:00<00:00, 41.51trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 40%|████      | 8/20 [00:00<00:00, 41.51trial/s, best loss: inf]                                                                    [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 45%|████▌     | 9/20 [00:00<00:00, 41.51trial/s, best loss: inf] 50%|█████     | 10/20 [00:00<00:00, 42.13trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 50%|█████     | 10/20 [00:00<00:00, 42.13trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 55%|█████▌    | 11/20 [00:00<00:00, 42.13trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 60%|██████    | 12/20 [00:00<00:00, 42.13trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 65%|██████▌   | 13/20 [00:00<00:00, 42.13trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 70%|███████   | 14/20 [00:00<00:00, 42.13trial/s, best loss: inf] 75%|███████▌  | 15/20 [00:00<00:00, 42.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 75%|███████▌  | 15/20 [00:00<00:00, 42.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 80%|████████  | 16/20 [00:00<00:00, 42.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 85%|████████▌ | 17/20 [00:00<00:00, 42.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 90%|█████████ | 18/20 [00:00<00:00, 42.52trial/s, best loss: inf]                                                                     [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+ 95%|█████████▌| 19/20 [00:00<00:00, 42.52trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 42.21trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 42.18trial/s, best loss: inf]
+   [Training] Final Run...
+   [WARNING] Trial failed: Trainer.__init__() got an unexpected keyword argument 'd_model'
+   [ERROR] Training failed. Skipping...
+
+================================================================================
+PATCHTST COMPLETE
+================================================================================
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2344657
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:00:09
+CPU Efficiency: 0.43% of 00:35:12 core-walltime
+Job Wall-clock time: 00:00:33
+Memory Utilized: 624.79 MB
+Memory Efficiency: 0.20% of 300.00 GB (300.00 GB/node)

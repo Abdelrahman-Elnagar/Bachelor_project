@@ -1,0 +1,60 @@
+/home/hu/hu_hu/hu_elnaab01/.conda/envs/bachelor_analysis/bin/python
+Python 3.10.19
+================================================================================
+   RANDOM FOREST ONLY (WITH DETAILED TRACKING)
+================================================================================
+
+>>> EXPERIMENT: WITH_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:01<00:21,  1.13s/trial, best loss: 2349.226892492278] 10%|█         | 2/20 [00:01<00:11,  1.54trial/s, best loss: 2318.586066566373] 15%|█▌        | 3/20 [00:02<00:11,  1.42trial/s, best loss: 2318.586066566373] 20%|██        | 4/20 [00:02<00:09,  1.70trial/s, best loss: 2318.586066566373] 25%|██▌       | 5/20 [00:03<00:08,  1.83trial/s, best loss: 2318.586066566373] 30%|███       | 6/20 [00:03<00:07,  1.97trial/s, best loss: 2318.586066566373] 35%|███▌      | 7/20 [00:03<00:05,  2.23trial/s, best loss: 2318.586066566373] 40%|████      | 8/20 [00:04<00:05,  2.27trial/s, best loss: 2318.586066566373] 45%|████▌     | 9/20 [00:04<00:04,  2.50trial/s, best loss: 2318.586066566373] 50%|█████     | 10/20 [00:05<00:04,  2.33trial/s, best loss: 2318.586066566373] 55%|█████▌    | 11/20 [00:05<00:03,  2.29trial/s, best loss: 2318.586066566373] 60%|██████    | 12/20 [00:05<00:03,  2.28trial/s, best loss: 2318.586066566373] 65%|██████▌   | 13/20 [00:06<00:03,  2.29trial/s, best loss: 2318.586066566373] 70%|███████   | 14/20 [00:06<00:02,  2.35trial/s, best loss: 2318.586066566373] 75%|███████▌  | 15/20 [00:07<00:02,  1.67trial/s, best loss: 2318.586066566373] 80%|████████  | 16/20 [00:08<00:02,  1.86trial/s, best loss: 2318.586066566373] 85%|████████▌ | 17/20 [00:08<00:01,  2.22trial/s, best loss: 2318.586066566373] 90%|█████████ | 18/20 [00:09<00:01,  1.78trial/s, best loss: 2318.586066566373] 95%|█████████▌| 19/20 [00:09<00:00,  2.00trial/s, best loss: 2318.586066566373]100%|██████████| 20/20 [00:09<00:00,  2.32trial/s, best loss: 2318.586066566373]100%|██████████| 20/20 [00:09<00:00,  2.02trial/s, best loss: 2318.586066566373]
+   [Training] Champion Run...
+   [Result] RMSE: 2318.59 | MAE: 1127.92
+[REPORT] Saved ../outputs/results_random_forest.txt
+   [DETAILED] Saved 1757 predictions to detailed_results/random_forest_with_wsi_solar.csv
+   [DETAILED] Appended to master file: detailed_results/all_predictions.csv
+
+>>> EXPERIMENT: NO_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:00<00:05,  3.73trial/s, best loss: 2381.834684955864] 10%|█         | 2/20 [00:00<00:06,  2.94trial/s, best loss: 2327.868422090092] 15%|█▌        | 3/20 [00:01<00:08,  1.98trial/s, best loss: 2327.868422090092] 20%|██        | 4/20 [00:02<00:10,  1.50trial/s, best loss: 2327.868422090092] 25%|██▌       | 5/20 [00:02<00:07,  1.88trial/s, best loss: 2327.868422090092] 30%|███       | 6/20 [00:02<00:06,  2.15trial/s, best loss: 2327.868422090092] 35%|███▌      | 7/20 [00:03<00:05,  2.55trial/s, best loss: 2327.868422090092] 40%|████      | 8/20 [00:04<00:06,  1.80trial/s, best loss: 2327.868422090092] 45%|████▌     | 9/20 [00:04<00:05,  2.08trial/s, best loss: 2327.868422090092] 50%|█████     | 10/20 [00:05<00:05,  1.72trial/s, best loss: 2327.868422090092] 55%|█████▌    | 11/20 [00:05<00:04,  2.05trial/s, best loss: 2327.868422090092] 60%|██████    | 12/20 [00:05<00:03,  2.44trial/s, best loss: 2327.868422090092] 65%|██████▌   | 13/20 [00:05<00:02,  2.79trial/s, best loss: 2327.868422090092] 70%|███████   | 14/20 [00:06<00:02,  2.51trial/s, best loss: 2327.868422090092] 75%|███████▌  | 15/20 [00:06<00:02,  2.48trial/s, best loss: 2327.868422090092] 80%|████████  | 16/20 [00:07<00:02,  1.85trial/s, best loss: 2327.868422090092] 85%|████████▌ | 17/20 [00:08<00:01,  2.05trial/s, best loss: 2327.868422090092] 90%|█████████ | 18/20 [00:08<00:01,  1.73trial/s, best loss: 2327.868422090092] 95%|█████████▌| 19/20 [00:09<00:00,  2.07trial/s, best loss: 2327.868422090092]100%|██████████| 20/20 [00:09<00:00,  2.19trial/s, best loss: 2327.868422090092]100%|██████████| 20/20 [00:09<00:00,  2.11trial/s, best loss: 2327.868422090092]
+   [Training] Champion Run...
+   [Result] RMSE: 2327.87 | MAE: 1129.73
+[REPORT] Saved ../outputs/results_random_forest.txt
+   [DETAILED] Saved 1757 predictions to detailed_results/random_forest_no_wsi_solar.csv
+   [DETAILED] Appended to master file: detailed_results/all_predictions.csv
+
+>>> EXPERIMENT: WITH_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:00<00:15,  1.27trial/s, best loss: 4999.355779425338] 10%|█         | 2/20 [00:01<00:10,  1.74trial/s, best loss: 4999.355779425338] 15%|█▌        | 3/20 [00:01<00:08,  1.97trial/s, best loss: 4999.355779425338] 20%|██        | 4/20 [00:02<00:09,  1.60trial/s, best loss: 4982.912528203508] 25%|██▌       | 5/20 [00:02<00:07,  2.06trial/s, best loss: 4982.912528203508] 30%|███       | 6/20 [00:03<00:06,  2.12trial/s, best loss: 4982.912528203508] 35%|███▌      | 7/20 [00:03<00:07,  1.71trial/s, best loss: 4982.912528203508] 40%|████      | 8/20 [00:04<00:05,  2.12trial/s, best loss: 4982.912528203508] 45%|████▌     | 9/20 [00:04<00:05,  2.15trial/s, best loss: 4982.912528203508] 50%|█████     | 10/20 [00:04<00:03,  2.56trial/s, best loss: 4982.912528203508] 55%|█████▌    | 11/20 [00:05<00:03,  2.62trial/s, best loss: 4982.912528203508] 60%|██████    | 12/20 [00:05<00:03,  2.01trial/s, best loss: 4982.912528203508] 65%|██████▌   | 13/20 [00:06<00:04,  1.61trial/s, best loss: 4982.912528203508] 70%|███████   | 14/20 [00:07<00:03,  1.80trial/s, best loss: 4982.912528203508] 75%|███████▌  | 15/20 [00:08<00:03,  1.50trial/s, best loss: 4976.30158719328]  80%|████████  | 16/20 [00:09<00:02,  1.35trial/s, best loss: 4976.30158719328] 85%|████████▌ | 17/20 [00:09<00:01,  1.68trial/s, best loss: 4976.30158719328] 90%|█████████ | 18/20 [00:09<00:00,  2.03trial/s, best loss: 4971.33431883837] 95%|█████████▌| 19/20 [00:10<00:00,  2.19trial/s, best loss: 4971.33431883837]100%|██████████| 20/20 [00:10<00:00,  2.59trial/s, best loss: 4971.33431883837]100%|██████████| 20/20 [00:10<00:00,  1.96trial/s, best loss: 4971.33431883837]
+   [Training] Champion Run...
+   [Result] RMSE: 4971.33 | MAE: 4003.84
+[REPORT] Saved ../outputs/results_random_forest.txt
+   [DETAILED] Saved 1757 predictions to detailed_results/random_forest_with_wsi_wind.csv
+   [DETAILED] Appended to master file: detailed_results/all_predictions.csv
+
+>>> EXPERIMENT: NO_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]  5%|▌         | 1/20 [00:00<00:16,  1.17trial/s, best loss: 5001.0687485432445] 10%|█         | 2/20 [00:01<00:08,  2.07trial/s, best loss: 5001.0687485432445] 15%|█▌        | 3/20 [00:01<00:10,  1.68trial/s, best loss: 5001.0687485432445] 20%|██        | 4/20 [00:02<00:10,  1.51trial/s, best loss: 4978.628997735986]  25%|██▌       | 5/20 [00:02<00:08,  1.80trial/s, best loss: 4975.522924214307] 30%|███       | 6/20 [00:03<00:09,  1.55trial/s, best loss: 4975.522924214307] 35%|███▌      | 7/20 [00:04<00:08,  1.50trial/s, best loss: 4975.522924214307] 40%|████      | 8/20 [00:04<00:06,  1.86trial/s, best loss: 4813.481650254289] 45%|████▌     | 9/20 [00:04<00:04,  2.24trial/s, best loss: 4813.481650254289] 50%|█████     | 10/20 [00:05<00:03,  2.64trial/s, best loss: 4813.481650254289] 55%|█████▌    | 11/20 [00:05<00:04,  1.98trial/s, best loss: 4813.481650254289] 60%|██████    | 12/20 [00:06<00:04,  1.70trial/s, best loss: 4813.481650254289] 65%|██████▌   | 13/20 [00:07<00:04,  1.54trial/s, best loss: 4813.481650254289] 70%|███████   | 14/20 [00:08<00:04,  1.49trial/s, best loss: 4813.481650254289] 75%|███████▌  | 15/20 [00:08<00:02,  1.77trial/s, best loss: 4813.481650254289] 80%|████████  | 16/20 [00:08<00:01,  2.10trial/s, best loss: 4813.481650254289] 85%|████████▌ | 17/20 [00:09<00:01,  2.15trial/s, best loss: 4813.481650254289] 90%|█████████ | 18/20 [00:10<00:01,  1.63trial/s, best loss: 4813.481650254289] 95%|█████████▌| 19/20 [00:11<00:00,  1.49trial/s, best loss: 4813.481650254289]100%|██████████| 20/20 [00:11<00:00,  1.47trial/s, best loss: 4813.481650254289]100%|██████████| 20/20 [00:11<00:00,  1.70trial/s, best loss: 4813.481650254289]
+   [Training] Champion Run...
+   [Result] RMSE: 4813.48 | MAE: 3859.51
+[REPORT] Saved ../outputs/results_random_forest.txt
+   [DETAILED] Saved 1757 predictions to detailed_results/random_forest_no_wsi_wind.csv
+   [DETAILED] Appended to master file: detailed_results/all_predictions.csv
+
+================================================================================
+RANDOM FOREST COMPLETE
+================================================================================
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2344708
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:25:06
+CPU Efficiency: 36.20% of 01:09:20 core-walltime
+Job Wall-clock time: 00:01:05
+Memory Utilized: 1.03 GB
+Memory Efficiency: 0.34% of 300.00 GB (300.00 GB/node)

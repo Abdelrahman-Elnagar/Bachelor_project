@@ -18,3 +18,27 @@ Params: {'max_depth': None, 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_e
 RMSE: 4799.8771
 MAE: 3847.6644
 ---
+EXP: with_wsi_solar
+Params: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 100}
+RMSE: 2318.5861
+MAE: 1127.9229
+R2: 0.6910
+---
+EXP: no_wsi_solar
+Params: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+RMSE: 2327.8684
+MAE: 1129.7325
+R2: 0.6886
+---
+EXP: with_wsi_wind
+Params: {'max_depth': None, 'min_samples_leaf': 4, 'min_samples_split': 5, 'n_estimators': 100}
+RMSE: 4971.3343
+MAE: 4003.8375
+R2: 0.8510
+---
+EXP: no_wsi_wind
+Params: {'max_depth': None, 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 100}
+RMSE: 4813.4817
+MAE: 3859.5074
+R2: 0.8603
+---

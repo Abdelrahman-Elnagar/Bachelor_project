@@ -38,3 +38,39 @@ Performance Metrics:
    RMSE: 4782.7244 MW
    R2  : 0.8621
 --------------------------------------------------
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-27 20:25:56
+Best Parameters: {'colsample_bytree': 0.7711909308461529, 'learning_rate': 0.00504571078785863, 'max_depth': 10, 'min_child_samples': 84, 'n_estimators': 4800, 'num_leaves': 106, 'reg_alpha': 0.007507333551458545, 'reg_lambda': 16.277989061719552, 'subsample': 0.6093697890322756}
+
+Performance Metrics:
+   MAE : 809.0948 MW
+   RMSE: 1374.6685 MW
+   R2  : 0.8914
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-27 20:27:05
+Best Parameters: {'colsample_bytree': 0.7279877388281814, 'learning_rate': 0.0594013039826918, 'max_depth': -1, 'min_child_samples': 84, 'n_estimators': 2600, 'num_leaves': 198, 'reg_alpha': 3.6282804880999073, 'reg_lambda': 0.07769248359826489, 'subsample': 0.9998140520293683}
+
+Performance Metrics:
+   MAE : 882.6633 MW
+   RMSE: 1505.3099 MW
+   R2  : 0.8698
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-27 20:27:40
+Best Parameters: {'colsample_bytree': 0.7351648751404082, 'learning_rate': 0.06779171494549334, 'max_depth': 20, 'min_child_samples': 99, 'n_estimators': 2100, 'num_leaves': 80, 'reg_alpha': 1.3101538009824065, 'reg_lambda': 7.571224316535568, 'subsample': 0.825267365654104}
+
+Performance Metrics:
+   MAE : 3757.0008 MW
+   RMSE: 4701.9195 MW
+   R2  : 0.8667
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-27 20:28:40
+Best Parameters: {'colsample_bytree': 0.8422531218506714, 'learning_rate': 0.06201332730504053, 'max_depth': 20, 'min_child_samples': 83, 'n_estimators': 1300, 'num_leaves': 36, 'reg_alpha': 0.0006851499195893873, 'reg_lambda': 27.865635616469316, 'subsample': 0.5041086919499617}
+
+Performance Metrics:
+   MAE : 3825.7831 MW
+   RMSE: 4768.7430 MW
+   R2  : 0.8629
+--------------------------------------------------

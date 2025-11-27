@@ -1,0 +1,132 @@
+/home/hu/hu_hu/hu_elnaab01/.conda/envs/bachelor_analysis/bin/python
+Python 3.10.19
+================================================================================
+   LSTM ONLY (WITH DETAILED TRACKING) on CUDA
+================================================================================
+
+>>> EXPERIMENT: WITH_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 32.69trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 50.16trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 61.16trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 68.79trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 74.39trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 78.63trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 81.98trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 84.70trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 86.88trial/s, best loss: inf] 50%|█████     | 10/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 96.40trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 96.40trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 103.01trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed. Skipping...
+
+>>> EXPERIMENT: NO_WSI_SOLAR <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 57.09trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 76.49trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 86.00trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 92.02trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 95.98trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 98.74trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 100.83trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 102.51trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 103.81trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 104.74trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 105.63trial/s, best loss: inf] 60%|██████    | 12/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 115.07trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 115.07trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 115.18trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed. Skipping...
+
+>>> EXPERIMENT: WITH_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 54.26trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 73.06trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 82.44trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 88.19trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 91.97trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 94.42trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 96.57trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 98.19trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 99.50trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 100.57trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 101.49trial/s, best loss: inf] 60%|██████    | 12/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 110.58trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 110.58trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 110.78trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed. Skipping...
+
+>>> EXPERIMENT: NO_WSI_WIND <<<
+   [Tuning] Running 20 trials...
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  0%|          | 0/20 [00:00<?, ?trial/s, best loss=?]                                                         [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+  5%|▌         | 1/20 [00:00<00:00, 52.38trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 10%|█         | 2/20 [00:00<00:00, 71.85trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 15%|█▌        | 3/20 [00:00<00:00, 82.22trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 20%|██        | 4/20 [00:00<00:00, 88.68trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 25%|██▌       | 5/20 [00:00<00:00, 93.02trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 30%|███       | 6/20 [00:00<00:00, 96.17trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 35%|███▌      | 7/20 [00:00<00:00, 98.60trial/s, best loss: inf]                                                                    [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 40%|████      | 8/20 [00:00<00:00, 100.46trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 45%|████▌     | 9/20 [00:00<00:00, 101.90trial/s, best loss: inf]                                                                     [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 50%|█████     | 10/20 [00:00<00:00, 103.12trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 55%|█████▌    | 11/20 [00:00<00:00, 104.17trial/s, best loss: inf] 60%|██████    | 12/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 60%|██████    | 12/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 65%|██████▌   | 13/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 70%|███████   | 14/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 75%|███████▌  | 15/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 80%|████████  | 16/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 85%|████████▌ | 17/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 90%|█████████ | 18/20 [00:00<00:00, 113.50trial/s, best loss: inf]                                                                      [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+ 95%|█████████▌| 19/20 [00:00<00:00, 113.50trial/s, best loss: inf]100%|██████████| 20/20 [00:00<00:00, 114.29trial/s, best loss: inf]
+   [Training] Champion Run...
+   [WARNING] LSTM training failed: Trainer.__init__() got an unexpected keyword argument 'hidden_size'
+   [ERROR] LSTM training failed. Skipping...
+
+================================================================================
+LSTM COMPLETE - Check detailed_results/
+================================================================================
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2344709
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:00:08
+CPU Efficiency: 0.33% of 00:40:32 core-walltime
+Job Wall-clock time: 00:00:38
+Memory Utilized: 10.10 MB
+Memory Efficiency: 0.00% of 300.00 GB (300.00 GB/node)

@@ -16,3 +16,45 @@ MAE : 3265.0782 MW
 RMSE: 4470.8383 MW
 R2  : -0.1488
 --------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-26 11:15:46
+Best Parameters: {'batch_size': 32, 'dropout': 0.05201784186286729, 'learning_rate': 0.0002878042134130882, 'max_steps': 1000, 'mlp_units_choice': 0, 'n_blocks_choice': 0}
+MAE : 10559.1721 MW
+RMSE: 12946.8843 MW
+R2  : -0.0108
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-26 11:21:10
+Best Parameters: {'batch_size': 32, 'dropout': 0.10620521001883537, 'learning_rate': 0.002570020169561723, 'max_steps': 1000, 'mlp_units_choice': 1, 'n_blocks_choice': 1}
+MAE : 13409.0894 MW
+RMSE: 16045.2870 MW
+R2  : -0.5525
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_SOLAR ---
+Date: 2025-11-27 20:40:45
+Best Parameters: {'batch_size': 128, 'dropout': 0.15090677468878405, 'learning_rate': 0.0003893938489930602, 'max_steps': 500, 'mlp_units_choice': 0, 'n_blocks_choice': 0}
+MAE : 2285.7833 MW
+RMSE: 4124.0195 MW
+R2  : 0.0226
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_SOLAR ---
+Date: 2025-11-27 20:46:24
+Best Parameters: {'batch_size': 64, 'dropout': 0.04293899661267342, 'learning_rate': 0.0004922906542203383, 'max_steps': 1000, 'mlp_units_choice': 0, 'n_blocks_choice': 1}
+MAE : 2298.9840 MW
+RMSE: 3462.2122 MW
+R2  : 0.3111
+--------------------------------------------------
+--- EXPERIMENT: WITH_WSI_WIND ---
+Date: 2025-11-27 20:54:02
+Best Parameters: {'batch_size': 32, 'dropout': 0.07439347290241988, 'learning_rate': 0.007691543079120821, 'max_steps': 1000, 'mlp_units_choice': 0, 'n_blocks_choice': 1}
+MAE : 11314.8018 MW
+RMSE: 13099.5412 MW
+R2  : -0.0348
+--------------------------------------------------
+--- EXPERIMENT: NO_WSI_WIND ---
+Date: 2025-11-27 20:59:27
+Best Parameters: {'batch_size': 32, 'dropout': 0.11760073767944301, 'learning_rate': 0.0002453963654885207, 'max_steps': 500, 'mlp_units_choice': 0, 'n_blocks_choice': 1}
+MAE : 11244.7737 MW
+RMSE: 13563.7366 MW
+R2  : -0.1094
+--------------------------------------------------

@@ -1,0 +1,23 @@
+/home/hu/hu_hu/hu_elnaab01/.conda/envs/bachelor_analysis/bin/python
+Python 3.10.19
+================================================================================
+   TBATS ONLY (WITH DETAILED TRACKING)
+================================================================================
+
+>>> EXPERIMENT: WITH_WSI_SOLAR <<<
+   [Tuning] Running 30 trials...
+  0%|          | 0/30 [00:00<?, ?trial/s, best loss=?]  3%|▎         | 1/30 [01:02<30:04, 62.21s/trial, best loss: 9450.904926417375]  7%|▋         | 2/30 [02:19<33:18, 71.36s/trial, best loss: 9450.904926417375] 10%|█         | 3/30 [05:04<51:18, 114.01s/trial, best loss: 7480.7168405327575] 13%|█▎        | 4/30 [08:00<59:53, 138.20s/trial, best loss: 3964.8936518307214] 17%|█▋        | 5/30 [13:04<1:22:36, 198.28s/trial, best loss: 3964.8936518307214] 20%|██        | 6/30 [18:23<1:35:41, 239.24s/trial, best loss: 3964.8936518307214] 23%|██▎       | 7/30 [19:41<1:11:31, 186.58s/trial, best loss: 3964.8936518307214]
+============================= JOB FEEDBACK =============================
+
+NodeName=uc3n082
+Job ID: 2344603
+Cluster: uc3
+User/Group: hu_elnaab01/hu_hu
+State: CANCELLED (exit code 0)
+Nodes: 1
+Cores per node: 64
+CPU Utilized: 00:00:01
+CPU Efficiency: 0.00% of 22:52:48 core-walltime
+Job Wall-clock time: 00:21:27
+Memory Utilized: 24.03 GB
+Memory Efficiency: 8.01% of 300.00 GB (300.00 GB/node)
