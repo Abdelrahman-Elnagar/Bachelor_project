@@ -57,7 +57,7 @@ def train_and_eval(params, data):
             use_trend=params['use_trend'],
             use_damped_trend=params['use_damped_trend'],
             use_arma_errors=params['use_arma_errors'],
-            seasonal_periods=[24, 24*365.25]
+            seasonal_periods=[24]
         )
         model = estimator.fit(y_train)
         preds = model.forecast(steps=len(y_test))
