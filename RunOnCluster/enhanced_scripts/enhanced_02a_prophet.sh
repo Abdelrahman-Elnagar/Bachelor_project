@@ -3,7 +3,7 @@
 #SBATCH --job-name=prophet
 #SBATCH --output=prophet.out
 #SBATCH --error=prophet.err
-#SBATCH --partition=gpu_a100_il
+#SBATCH --partition=gpu_mi300
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
