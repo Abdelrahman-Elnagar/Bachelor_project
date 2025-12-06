@@ -4,7 +4,7 @@ Defines search spaces and objective functions for hyperparameter optimization.
 """
 
 import numpy as np
-from hyperopt import hp, fmin, tpe, Trials, STATUS_OK
+from hyperopt import hp, fmin, tpe, Trials, STATUS_OK, space_eval
 from sklearn.metrics import mean_squared_error
 import warnings
 warnings.filterwarnings('ignore')
@@ -271,16 +271,8 @@ def tune_hyperparameters(model_name, X_train, y_train, X_val, y_val, max_evals=1
         verbose=False
     )
     
-    # Get best parameters (handle choice indices)
-    best_params = {}
-    for key, value in best.items():
-        # For choice parameters, get the actual value
-        param_space = config['space'][key]
-        if hasattr(param_space, 'pos_args') and len(param_space.pos_args) > 0:
-            # It's a choice parameter
-            best_params[key] = param_space.pos_args[0][value]
-        else:
-            best_params[key] = value
+    # Get best parameters using space_eval to convert Apply objects to actual values
+    best_params = space_eval(config['space'], best)
     
     # Train final model with best parameters
     wrapper_classes = {
