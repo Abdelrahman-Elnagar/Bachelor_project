@@ -3,13 +3,13 @@
 #SBATCH --job-name=prophet
 #SBATCH --output=prophet.out
 #SBATCH --error=prophet.err
-#SBATCH --partition=dev_gpu_h100
+#SBATCH --partition=gpu_a100_il
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=64
 #SBATCH --mem=300G
-#SBATCH --time=00:30:00
+#SBATCH --time=06:00:00
 
 source /opt/bwhpc/common/devel/miniforge/24.11.0-py3.12/etc/profile.d/conda.sh
 
